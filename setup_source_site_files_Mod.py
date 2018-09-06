@@ -19,10 +19,14 @@ from datetime import date
 from obspy import UTCDateTime
 from obspy.clients.fdsn import Client
 
+# directory clean-up
+,includeavailability=True
+
 # Get the working directory so everything is a subset of that
 cwd = os.getcwd()
 # Import event and station list
-df_event=pd.read_csv(cwd+'/event_list.csv')
+#df_event=pd.read_csv(cwd+'/event_list.csv')
+df_event=pd.read_csv(cwd+'/event_list_1.csv')
 df_station=pd.read_csv(cwd+'/station_list.csv')
 df_setup=pd.read_csv(cwd+'/setup_parameters.csv')
 
@@ -71,10 +75,12 @@ for ev_num in range(len(df_event.id)):
     event_id = df_event.id[ev_num]
     t1 = UTCDateTime(str(df_event.year[ev_num])+"-"+str(df_event.month[ev_num])+"-"+str(df_event.day[ev_num])+"T"+str(df_event.hour[ev_num])+":"+str(df_event.minute[ev_num])+":"+str(df_event.second[ev_num])+".000")
     t2 = t1+waveformlength
+    print("Requesting event: ",t1)
 
     # creat bulk variable to call all the stations for this event
     bulk=[]
     for x in range(len(networks)):
+        print("Requesting network/station/location/channel: ",networks[x],stations[x],locations[x],channels[x])
         bulkrow=(networks[x],stations[x],locations[x],channels[x],t1,t2)
         bulk.append(bulkrow)
 
@@ -105,15 +111,19 @@ for ev_num in range(len(df_event.id)):
             #print("working on station "+str(st_num)+stast)
 #            st[st_num].remove_response(output='VEL', pre_filt=pre_filt, zero_mean=True).detrend('simple').taper(0.05,type = 'hann')
             tr=st[st_num]
+            print(tr.get_id())
             tr.detrend('simple').taper(0.05,type = 'hann').remove_response(output='VEL', pre_filt=pre_filt, zero_mean=True)
 
 # decimate sample rate to outputRate
             if int(tr.stats.sampling_rate) > outputRate :
                 decimateVal=int(tr.stats.sampling_rate/outputRate)
                 print("Decimating to output rate of ",outputRate," Hz, from ",tr.stats.sampling_rate," Hz (factor of ",decimateVal,")")
+                logical_print=1
             else:
-                print("Output sample rate below record sample rate (",outputSampleRate,",",tr.stats.sampling_rate,")")
-                sys.exit()
+                print("Output sample rate below record sample rate: ",outputRate,tr.stats.sampling_rate,")")
+                print("Not writing event "+event_id+" station "+stast+" to file...")
+                logical_print=0
+            
             tr.decimate(decimateVal)
 
             # Get picks in ordinal time and then make them relative to the start time
@@ -187,20 +197,22 @@ for ev_num in range(len(df_event.id)):
             if not os.path.exists(cwd+"/data/"+str(df_event.year[ev_num])+stm+stday+sthour+stminute+stsecond):
                 os.makedirs(cwd+"/data/"+str(df_event.year[ev_num])+stm+stday+sthour+stminute+stsecond)
             # Write out the sac file to the main data directory and the event folder
-            out_file=cwd+"/data/"+str(df_event.year[ev_num])+stm+stday+sthour+stminute+stsecond+"/"+str(df_event.year[ev_num])+stm+stday+sthour+stminute+stsecond+"_"+stnn+"_"+tr.stats.channel+".sac"
-            tr_filt.write(out_file, format='SAC')
-            out_file=cwd+"/data/"+str(df_event.year[ev_num])+stm+stday+sthour+stminute+stsecond+"_"+stnn+"_"+tr.stats.channel+".sac"
-            tr_filt.write(out_file, format='SAC')
+            if logical_print:
+                out_file=cwd+"/data/"+str(df_event.year[ev_num])+stm+stday+sthour+stminute+stsecond+"/"+str(df_event.year[ev_num])+stm+stday+sthour+stminute+stsecond+"_"+stnn+"_"+tr.stats.channel+".sac"
+                tr_filt.write(out_file, format='SAC')
+                out_file=cwd+"/data/"+str(df_event.year[ev_num])+stm+stday+sthour+stminute+stsecond+"_"+stnn+"_"+tr.stats.channel+".sac"
+                tr_filt.write(out_file, format='SAC')
             # Save the picks and event and station ids to use below
-            ccc=tr.stats.channel
-            if (ccc[2]=='Z'):
-                p_pick_time.append(str(pick_file_diff))
-                s_pick_time.append(str(pick_file_diff_s))
-                window.append(str(pick_file_diff_ps))
-                ev_time_file.append(str(df_event.year[ev_num])+stm+stday+sthour+stminute+stsecond)
-                stat_time.append(stnn)
-            else:
-                print("outputing sac files")
+                ccc=tr.stats.channel
+                if (ccc[2]=='Z'):
+                    p_pick_time.append(str(pick_file_diff))
+                    s_pick_time.append(str(pick_file_diff_s))
+                    window.append(str(pick_file_diff_ps))
+                    ev_time_file.append(str(df_event.year[ev_num])+stm+stday+sthour+stminute+stsecond)
+                    stat_time.append(stnn)
+                else:
+                    print("outputing sac files")
+
     print("event "+str(ev_num)+" is done")
 
 
@@ -227,7 +239,8 @@ for xx in range(len(stations)):
         stast=stations[xx]
         stachan=channels[xx]
         staloc=locations[xx]
-        inv=fdsn_client.get_stations(network=netst,station=stast,location=staloc,channel=stachan,starttime=t_start,endtime=t_end,level='channel')
+        print("inv-get_stations: station/network: ",stast,netst)
+        inv=fdsn_client.get_stations(network=netst,station=stast,location=staloc,channel=stachan,starttime=t_start,endtime=t_end,level='channel',,includeavailability=True)
         net=inv[0]
         sta=net[0]
         station_lat=sta.latitude
@@ -275,8 +288,6 @@ for xx in range(len(stations)):
         print("no waveforms or picks for station "+stast)
 
 # Create the files of events, with phase arrival and window duration
-#!/usr/bin/env python
-
 #
 
 ## Import needed packages and functions
