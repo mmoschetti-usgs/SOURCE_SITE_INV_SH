@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 # User needs to run "conda activate comcat" before running script
+print("Prior to first call, user needs to run:\n    conda activate comcat")
 
 ## Import needed packages and functions
 import obspy as op
@@ -12,6 +13,7 @@ import os
 from os import listdir
 from os.path import isfile, join
 import fnmatch
+import shutil
 import libcomcat
 #from libcomcat.utils import phase_reader
 from libcomcat.utils import read_phases
@@ -19,16 +21,26 @@ from datetime import date
 from obspy import UTCDateTime
 from obspy.clients.fdsn import Client
 
-# directory clean-up
-,includeavailability=True
-
 # Get the working directory so everything is a subset of that
 cwd = os.getcwd()
+
+# directory clean-up
+if os.path.isdir(cwd+'/data/'):
+    shutil.rmtree(cwd+'/data/')
+if os.path.exists('fortran_stations.txt'): 
+    os.remove('fortran_stations.txt')
+
 # Import event and station list
-#df_event=pd.read_csv(cwd+'/event_list.csv')
-df_event=pd.read_csv(cwd+'/event_list_1.csv')
-df_station=pd.read_csv(cwd+'/station_list.csv')
-df_setup=pd.read_csv(cwd+'/setup_parameters.csv')
+#eventFile=str(cwd+'/event_list_1.csv')
+eventFile=str(cwd+'/event_list.csv')
+stationFile=str(cwd+'/station_list.csv')
+parameterFile=str(cwd+'/setup_parameters.csv')
+df_event=pd.read_csv(eventFile)
+df_station=pd.read_csv(stationFile)
+df_setup=pd.read_csv(parameterFile)
+print("Reading event file: ",eventFile)
+print("Reading station file: ",stationFile)
+print("Reading parameter file: ",parameterFile)
 
 # Define filter parameters from setup file
 fmin1=df_setup.fmin1[0]
@@ -79,10 +91,17 @@ for ev_num in range(len(df_event.id)):
 
     # creat bulk variable to call all the stations for this event
     bulk=[]
+    cntBulk=0
     for x in range(len(networks)):
-        print("Requesting network/station/location/channel: ",networks[x],stations[x],locations[x],channels[x])
+#        print("Requesting network/station/location/channel: ",networks[x],stations[x],locations[x],channels[x])
         bulkrow=(networks[x],stations[x],locations[x],channels[x],t1,t2)
         bulk.append(bulkrow)
+#        if cntBulk==9:
+#            cntBulk=0
+#            st = fdsn_client.get_waveforms_bulk(bulk,attach_response=True,debug=True)
+#            print(bulk)
+#        else:
+#            cntBulk +=1
 
     # Load picks for this event
     picks_folder = cwd+'/Phase_Data/'
@@ -95,7 +114,7 @@ for ev_num in range(len(df_event.id)):
     s_indices = [f for f, s in enumerate(picks.Phase) if 'S' in s]
 
     # Get all the waveform for this event from IRIS
-    st = fdsn_client.get_waveforms_bulk(bulk,attach_response=True)
+    st = fdsn_client.get_waveforms_bulk(bulk,attach_response=True,timeout=120,debug=True)
     # Loop over stations
     for st_num in range(len(st)):
         # Need to save the picks in the right order
@@ -240,7 +259,7 @@ for xx in range(len(stations)):
         stachan=channels[xx]
         staloc=locations[xx]
         print("inv-get_stations: station/network: ",stast,netst)
-        inv=fdsn_client.get_stations(network=netst,station=stast,location=staloc,channel=stachan,starttime=t_start,endtime=t_end,level='channel',,includeavailability=True)
+        inv=fdsn_client.get_stations(network=netst,station=stast,location=staloc,channel=stachan,starttime=t_start,endtime=t_end,level='channel',includeavailability=True)
         net=inv[0]
         sta=net[0]
         station_lat=sta.latitude
