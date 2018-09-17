@@ -61,7 +61,8 @@ minWindow=df_setup.windowlength[0]
 outputRate=df_setup.outputSampleRate[0]
 # REMOVE
 # Call for sac files from IRIS
-fdsn_client = Client('IRIS')
+#fdsn_client = Client('IRIS')
+fdsn_client = Client('https://service.iris.edu')
 # some hard-coded parameters
 # minimum window duration for spectra
 #minWindow=10
