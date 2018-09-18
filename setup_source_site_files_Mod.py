@@ -32,8 +32,10 @@ if os.path.exists('fortran_stations.txt'):
 
 # Import event and station list
 #eventFile=str(cwd+'/event_list_1.csv')
+#eventFile=str(cwd+'/event_list.csv')
 eventFile=str(cwd+'/event_list.csv')
 stationFile=str(cwd+'/station_list.csv')
+#stationFile=str(cwd+'/station_list_test.csv')
 parameterFile=str(cwd+'/setup_parameters.csv')
 df_event=pd.read_csv(eventFile)
 df_station=pd.read_csv(stationFile)
@@ -260,7 +262,9 @@ for xx in range(len(stations)):
         stachan=channels[xx]
         staloc=locations[xx]
         print("inv-get_stations: station/network: ",stast,netst)
+        print("staloc/start-time/end-time: ", staloc, t_start,t_end)
         inv=fdsn_client.get_stations(network=netst,station=stast,location=staloc,channel=stachan,starttime=t_start,endtime=t_end,level='channel',includeavailability=True)
+        print(inv)
         net=inv[0]
         sta=net[0]
         station_lat=sta.latitude
@@ -321,6 +325,7 @@ for file1 in listdir(dataDir):
         evDirNm=file1
 #        print(evDir)
         outputName=cwd+"/data/"+evDirNm+"NAMESa.DAT"
+        print("NAMESa File: ", outputName)
         with open(outputName, "w") as myfile:
 #        f = open(outputName,'w')
 #    f.close()
@@ -355,18 +360,21 @@ for file1 in listdir(dataDir):
                 pick_use=''.join(pick_use)
                 win=''.join(win)
                 win=win[0:5]
-                winFloat=float(win)
-                if winFloat<minWindow:
-                    win=str(minWindow)
-                pick_use=pick_use[0:5]
-                line_z=file_name+" "+pick_use+" "+win+"\n"
-                line_e=file_name_e+"\n"
-                line_n=file_name_n+"\n"
-            
-                myfile.write(line_z)
-                myfile.write(line_e)
-                myfile.write(line_n)
-                print("Completed event directory: ",evDir)
+                if len(win)>=1:
+                    print("filename, win: ",file_name, win)
+                    winFloat=float(win)
+                    print("winFloat: ",winFloat)
+                    if winFloat<minWindow:
+                        win=str(minWindow)
+                    pick_use=pick_use[0:5]
+                    line_z=file_name+" "+pick_use+" "+win+"\n"
+                    line_e=file_name_e+"\n"
+                    line_n=file_name_n+"\n"
+                
+                    myfile.write(line_z)
+                    myfile.write(line_e)
+                    myfile.write(line_n)
+        print("Completed event directory: ",evDir)
         myfile.close()
     else:
         print("Not a directory, ",file1)
