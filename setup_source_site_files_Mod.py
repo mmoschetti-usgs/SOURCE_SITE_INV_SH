@@ -33,7 +33,8 @@ if os.path.exists('fortran_stations.txt'):
 # Import event and station list
 #eventFile=str(cwd+'/event_list_1.csv')
 #eventFile=str(cwd+'/event_list.csv')
-eventFile=str(cwd+'/event_list.csv')
+#eventFile=str(cwd+'/event_list.csv')
+eventFile=str(cwd+'/event_list_test.csv')
 stationFile=str(cwd+'/station_list.csv')
 #stationFile=str(cwd+'/station_list_test.csv')
 parameterFile=str(cwd+'/setup_parameters.csv')
@@ -61,7 +62,15 @@ magfiltlim=df_setup.magfiltlowerlimit[0]
 pick_type=df_setup.PorS[0]
 minWindow=df_setup.windowlength[0]
 outputRate=df_setup.outputSampleRate[0]
-# REMOVE
+#
+if (pick_type == 'S'):
+    print("Using S-wave picks")
+elif (pick_type == 'P'):
+    print("Using P-wave picks")
+else:
+    print("Pick type must be of type P or S")
+    sys.exit()
+
 # Call for sac files from IRIS
 #fdsn_client = Client('IRIS')
 fdsn_client = Client('https://service.iris.edu')
@@ -126,8 +135,12 @@ for ev_num in range(len(df_event.id)):
         use_ind=set(p_indices) & set(indices)
         use_ind_s=set(s_indices) & set(indices)
         # Skip stations that do not have picks
-        if (not use_ind or not use_ind_s):
-            print("event "+event_id+" station "+stast+" has no p or s picks")
+#        if (not use_ind or not use_ind_s):
+        if (not use_ind or not use_ind_s ):
+            if (pick_type == 'S'):
+                print("event "+event_id+" station "+stast+" has no S-wave picks")
+            elif (pick_type == 'P'):
+                print("event "+event_id+" station "+stast+" has no P-wave picks")
         else:
             # Remove response from waveform, output is velocity, detrend and taper
             #print("working on station "+str(st_num)+stast)
@@ -149,14 +162,16 @@ for ev_num in range(len(df_event.id)):
             tr.decimate(decimateVal)
 
             # Get picks in ordinal time and then make them relative to the start time
+# p-picks
             pick_time=picks['Arrival Time'][use_ind]
             lpt=str(list(pick_time))
             pick_ord=date.toordinal(date(int(lpt[2:6]),int(lpt[7:9]),int(lpt[10:12])))+int(lpt[13:15])/24+int(lpt[16:18])/1440+int(lpt[19:21])/86400
-
+# s-picks
+#                pick_time_s=picks['Arrival Time'][use_ind_s]
             pick_time_s=picks['Arrival Time'][use_ind_s]
             lpts=str(list(pick_time_s))
-            pick_ord_s=date.toordinal(date(int(lpts[2:6]),int(lpts[7:9]),int(lpt[10:12])))+int(lpts[13:15])/24+int(lpts[16:18])/1440+int(lpts[19:21])/86400
-
+            pick_ord_s=date.toordinal(date(int(lpts[2:6]),int(lpts[7:9]),int(lpts[10:12])))+int(lpts[13:15])/24+int(lpts[16:18])/1440+int(lpts[19:21])/86400
+#
             evtime=str(tr.stats.starttime)
             evtime_date=date.toordinal(date(int(evtime[0:4]),int(evtime[5:7]),int(evtime[8:10])))+int(evtime[11:13])/24+int(evtime[14:16])/1440+float(evtime[17:26])/86400
 
@@ -347,9 +362,9 @@ for file1 in listdir(dataDir):
                 ind_all=list(map(int,ind_all))
                 ind_all=[int(i) for i in ind_all]
                 # match the picks and use the input from the setup parameters file to decide if you want P or S
+                win=[window[i] for i in ind_all]
                 ppick=[p_pick_time[i] for i in ind_all]
                 spick=[s_pick_time[i] for i in ind_all]
-                win=[window[i] for i in ind_all]
                 if (pick_type=='P'):
                     pick_use=ppick
                 else:
