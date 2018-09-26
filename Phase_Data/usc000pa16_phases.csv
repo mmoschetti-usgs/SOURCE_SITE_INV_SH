@@ -1,0 +1,84 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000pa16
+#time = 2014-04-07 22:45:49.400000
+#location = 6km SSW of Langston, Oklahoma
+#latitude = 35.8915
+#longitude = -97.2726
+#depth = 5.0
+#magnitude = 2.8
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000pa16
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK029.HHZ.00,0.175802,237.461,Pg,2014-04-07 22:45:53.290,manual,0.4,0.0
+GS.OK027.HHZ.00,0.179336,182.862,Pg,2014-04-07 22:45:53.400,manual,0.4,0.0
+GS.OK028.HHZ.00,0.371784,152.408,Pg,2014-04-07 22:45:57.090,manual,0.5,0.0
+GS.OK026.HHZ.00,0.496978,197.09,Pg,2014-04-07 22:45:59.280,automatic,0.3,0.0
+OK.OKCSW.EHZ.--,0.503308,195.573,Pg,2014-04-07 22:45:59.380,automatic,0.3,0.0
+GS.OK025.HHZ.00,0.314253,189.752,Pg,2014-04-07 22:45:55.970,automatic,0.5,0.0
+OK.CROK.HHZ.--,0.839657,316.995,Pg,2014-04-07 22:46:05.420,manual,-0.1,0.057
+OK.FNO.HHZ.01,0.641337,189.445,Pg,2014-04-07 22:46:02.030,automatic,0.3,0.046
+US.WMOK.BHZ.10,1.68695,227.416,Pn,2014-04-07 22:46:19.900,automatic,0.3,0.082
+N4.R32B.BHZ.--,2.77537,335.971,Pg,2014-04-07 22:46:41.840,manual,2.3,0.009
+OK.X37A.BHZ.--,2.02735,129.306,Pn,2014-04-07 22:46:25.070,automatic,0.8,0.061
+N4.T35B.BHZ.--,1.19264,30.7429,Pg,2014-04-07 22:46:11.590,manual,-0.7,0.03
+US.MIAR.BHZ.00,3.3106,112.858,Pn,2014-04-07 22:46:42.900,manual,1.0,0.045
+TA.TUL1.BHZ.--,1.20231,88.667,Pg,2014-04-07 22:46:11.220,automatic,-1.2,0.049
+AG.WHAR.HHZ.00,4.10545,96.9492,Pn,2014-04-07 22:46:53.140,manual,0.3,0.037
+TA.W39A.BHZ.--,2.92823,102.69,Pn,2014-04-07 22:46:37.150,automatic,0.5,0.047
+TA.X40A.BHZ.--,3.89548,109.786,Pn,2014-04-07 22:46:49.260,manual,-0.7,0.04
+TA.ABTX.BHZ.--,3.80491,211.737,Pn,2014-04-07 22:46:48.220,manual,-0.5,0.051
+OK.U32A.BHZ.--,1.48176,289.696,Pn,2014-04-07 22:46:16.470,automatic,-0.3,0.079
+OK.U32A.BHZ.--,1.48176,289.696,Sn,2014-04-07 22:46:36.620,manual,0.1,0.089
+GS.OK029.HH1.00,0.175802,237.461,Sg,2014-04-07 22:45:56.010,manual,0.8,0.105
+GS.OK027.HH2.00,0.179336,182.862,Sg,2014-04-07 22:45:56.130,manual,0.8,0.056
+GS.ADOK.HNZ.--,0.252052,198.559,Pg,2014-04-07 22:45:54.720,manual,0.4,0.0
+GS.OK028.HH2.00,0.371784,152.408,Sg,2014-04-07 22:46:02.450,manual,1.0,0.067
+OK.W35A.EHZ.--,0.805532,156.11,Pg,2014-04-07 22:46:04.490,manual,-0.4,0.044
+N4.Z35B.BHZ.--,2.55451,179.632,Pn,2014-04-07 22:46:31.060,manual,-0.4,0.06
+AG.HHAR.HHZ.00,2.72725,80.806,Pn,2014-04-07 22:46:34.440,manual,0.6,0.045
+N4.U38B.BHZ.--,2.39911,75.9774,Pn,2014-04-07 22:46:29.580,manual,0.2,0.047
+TA.U40A.BHZ.--,3.60742,81.3137,Pn,2014-04-07 22:46:43.530,manual,-2.4,0.0
+N4.R32B.BHZ.--,2.77537,335.971,Pn,2014-04-07 22:46:33.550,manual,-1.0,0.042
+N4.Z38B.BHZ.--,3.23308,143.63,Pn,2014-04-07 22:46:40.430,manual,-0.4,0.048
+US.CBKS.BHZ.00,3.5165,326.79,Pn,2014-04-07 22:46:45.320,manual,0.6,0.039
+N4.S39B.BHZ.--,0.0,85.5386,Pn,2014-04-07 22:46:45.910,manual,-0.6,0.034
+US.AMTX.BHZ.00,3.7392,255.686,Pn,2014-04-07 22:46:46.050,manual,-1.8,0.055
+GS.OK005.HNZ.01,0.245217,164.296,Pg,2014-04-07 22:45:54.620,manual,0.4,0.0
+GS.OK005.HNE.01,0.245217,164.296,Sg,2014-04-07 22:45:58.370,manual,0.9,0.062
+OK.KNG1.EHZ.--,0.418698,305.148,Pg,2014-04-07 22:45:57.870,manual,0.4,0.0
+OK.QUOK.HHZ.--,0.536148,58.437,Pg,2014-04-07 22:45:59.970,manual,0.3,0.0
+OK.W35A.EHE.--,0.805532,156.11,Sg,2014-04-07 22:46:15.610,manual,0.3,0.046
+OK.KAY1.HHZ.--,0.870807,3.19315,Pg,2014-04-07 22:46:05.850,manual,-0.3,0.036
+US.WMOK.BHZ.10,1.68695,227.416,Sn,2014-04-07 22:46:42.040,manual,0.5,0.085
+N4.P38B.BHZ.--,4.76127,37.3698,Pn,2014-04-07 22:47:03.230,manual,1.4,0.025
+AG.LCAR.HHZ.00,4.96508,86.1478,Pn,2014-04-07 22:47:04.960,manual,0.4,0.031
+IU.CCM.BHZ.10,5.28733,64.1,Pn,2014-04-07 22:47:09.780,manual,0.7,0.026

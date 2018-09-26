@@ -1,0 +1,68 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000t998
+#time = 2014-12-22 21:57:31.600000
+#location = 14km ENE of Mooreland, Oklahoma
+#latitude = 36.5040
+#longitude = -99.0618
+#depth = 9.0
+#magnitude = 2.9
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000t998
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.U32A.BHZ.--,0.133455,158.58,Pg,2014-12-22 21:57:34.960,manual,0.3,3.67
+OK.CROK.HHZ.--,0.86888,89.6333,Pg,2014-12-22 21:57:47.890,manual,-0.4,1.65
+GS.KAN14.HHZ.01,0.991699,62.562,Pg,2014-12-22 21:57:49.880,manual,-0.8,1.51
+GS.KAN10.HHZ.01,0.992037,51.1556,Pg,2014-12-22 21:57:49.880,manual,-0.8,1.51
+OK.GC02.EHZ.--,1.02681,69.9008,Pg,2014-12-22 21:57:50.400,manual,-0.9,1.47
+GS.KAN08.HHZ.01,1.13388,50.1684,Pn,2014-12-22 21:57:52.440,manual,-1.2,1.25
+GS.KAN11.HHZ.01,1.15736,52.3997,Pn,2014-12-22 21:57:52.850,manual,-1.2,1.25
+OK.KAY1.HHZ.--,1.51,79.6038,Pn,2014-12-22 21:57:59.440,manual,0.6,1.2
+GS.OK025.HHZ.00,1.67333,122.883,Pn,2014-12-22 21:58:01.570,manual,0.5,1.18
+US.WMOK.BHZ.10,1.77707,172.513,Pn,2014-12-22 21:58:02.960,manual,0.4,1.16
+OK.FNO.HHZ.01,1.83463,132.2,Pn,2014-12-22 21:58:04.650,manual,1.3,1.15
+GS.OK031.HHZ.00,1.87932,106.351,Pn,2014-12-22 21:58:03.980,manual,0.1,1.15
+N4.R32B.BHZ.--,1.93533,8.18406,Pn,2014-12-22 21:58:04.230,manual,-0.5,1.14
+N4.T35B.BHZ.--,2.08989,77.887,Pn,2014-12-22 21:58:08.070,manual,1.2,1.12
+OK.W35A.EHZ.--,2.23095,126.54,Pn,2014-12-22 21:58:09.660,manual,0.9,1.1
+US.CBKS.BHZ.00,2.36751,347.116,Pn,2014-12-22 21:58:12.950,manual,2.3,1.09
+US.AMTX.BHZ.00,2.67541,233.593,Pn,2014-12-22 21:58:15.630,manual,0.7,1.05
+US.KSU1.BHZ.10,3.23925,36.0991,Pn,2014-12-22 21:58:20.980,manual,-1.6,1.0
+OK.X37A.BHZ.--,3.56435,121.326,Pn,2014-12-22 21:58:26.720,manual,-0.4,0.97
+TA.ABTX.BHZ.--,3.90045,187.231,Pn,2014-12-22 21:58:30.920,manual,-0.8,0.94
+TA.T25A.BHZ.--,4.33812,279.995,Pn,2014-12-22 21:58:39.630,manual,1.7,0.9
+TA.W39A.BHZ.--,4.4813,105.373,Pn,2014-12-22 21:58:41.030,manual,1.4,0.89
+N4.S39B.BHZ.--,4.73837,73.8039,Pn,2014-12-22 21:58:44.140,manual,0.9,0.87
+TA.X40A.BHZ.--,5.46422,109.773,Pn,2014-12-22 21:58:52.840,manual,-0.3,0.82
+TA.W41B.BHZ.--,5.69204,101.472,Pn,2014-12-22 21:58:56.820,manual,0.5,0.81
+OK.U32A.BHE.--,0.133455,158.58,Sg,2014-12-22 21:57:37.340,manual,0.6,1.36
+OK.CROK.HHN.--,0.86888,89.6333,Sg,2014-12-22 21:57:59.440,manual,-0.2,1.03
+GS.KAN14.HHE.01,0.991699,62.562,Sg,2014-12-22 21:58:03.670,manual,0.1,0.99

@@ -1,0 +1,73 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10006fau
+#time = 2016-08-19 22:22:13.990000
+#location = 8km WSW of Yukon, Oklahoma
+#latitude = 35.4677
+#longitude = -97.8472
+#depth = 5.0
+#magnitude = 2.7
+#magtype = mb_lg
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10006fau
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+ZD.RH05.EHZ.--,0.311442,216.848,Pg,2016-08-19 22:22:19.490,manual,-0.5,2.83
+OK.CCOK.HHZ.--,0.19134,125.277,Pg,2016-08-19 22:22:17.400,manual,-0.4,3.35
+GS.OK025.HHZ.00,0.430573,74.6164,Pg,2016-08-19 22:22:22.280,manual,0.0,2.45
+ZD.RH09.EHZ.--,0.498924,346.745,Pg,2016-08-19 22:22:23.640,manual,0.0,2.28
+OK.CHOK.HHZ.--,0.647877,81.5015,Pg,2016-08-19 22:22:26.510,manual,0.1,1.98
+OK.HTCH.HHZ.--,0.675673,324.371,Pg,2016-08-19 22:22:27.440,manual,0.5,1.93
+OK.CROK.HHZ.--,1.0407,353.947,Pg,2016-08-19 22:22:33.190,manual,-0.8,1.46
+ZD.KNG1.EHZ.--,0.674547,10.4893,Pg,2016-08-19 22:22:26.890,manual,-0.1,1.93
+OK.CCOK.HHE.--,0.19134,125.277,Sg,2016-08-19 22:22:22.230,manual,1.9,1.33
+ZD.RH05.EHE.--,0.311442,216.848,Sg,2016-08-19 22:22:25.750,manual,1.6,1.26
+OK.BCOK.HHZ.--,0.270531,45.7366,Pg,2016-08-19 22:22:15.950,manual,-3.3,2.99
+OK.BCOK.HHE.--,0.270531,45.7366,Sg,2016-08-19 22:22:24.530,manual,1.7,1.29
+OK.FNO.HHZ.01,0.420608,119.796,Pg,2016-08-19 22:22:22.110,manual,0.0,2.48
+OK.X34A.HHZ.--,0.864783,179.202,Pg,2016-08-19 22:22:30.330,manual,-0.3,1.65
+OK.CSTR.HHZ.--,0.708893,284.746,Pg,2016-08-19 22:22:27.520,manual,-0.1,1.87
+GS.OK034.HHZ.00,1.06963,59.2661,Pg,2016-08-19 22:22:33.870,manual,-0.6,1.43
+OK.DEOK.HHZ.--,1.1605,70.7975,Pg,2016-08-19 22:22:36.290,manual,0.0,1.35
+OK.QUOK.HHZ.--,1.162,52.4898,Pg,2016-08-19 22:22:36.580,manual,0.3,1.35
+GS.OK043.HHZ.00,1.20835,323.155,Pn,2016-08-19 22:22:35.770,manual,-1.7,1.25
+GS.OK040.HHZ.00,1.21497,326.734,Pg,2016-08-19 22:22:35.620,manual,-1.7,1.31
+ZD.RH03.EHZ.--,0.885172,77.635,Pg,2016-08-19 22:22:30.860,manual,-0.1,1.63
+US.WMOK.BHZ.10,1.05641,226.699,Pg,2016-08-19 22:22:33.630,manual,-0.6,1.45
+TA.TUL1.BHZ.--,1.7304,74.6119,Pn,2016-08-19 22:22:44.690,manual,0.0,1.17
+OK.LOOK.HHZ.--,1.57103,159.335,Pn,2016-08-19 22:22:40.220,manual,-2.2,1.19
+GS.KAN13.HHZ.01,1.57069,10.8514,Pn,2016-08-19 22:22:42.560,manual,0.1,1.19
+OK.ELIS.HHZ.--,1.40977,295.481,Pn,2016-08-19 22:22:40.680,manual,0.4,1.22
+OK.BLOK.HHZ.--,1.38806,21.4553,Pn,2016-08-19 22:22:40.380,manual,0.4,1.22
+GS.OK035.HHZ.00,1.42143,330.815,Pn,2016-08-19 22:22:38.460,manual,-2.0,1.21
+N4.T35B.BHZ.--,1.80447,36.3762,Pn,2016-08-19 22:22:46.080,manual,0.4,1.16
+GS.OK030.HHZ.00,0.979774,61.7484,Pg,2016-08-19 22:22:33.090,manual,0.3,1.52
+ZD.RH08.EHZ.--,0.366407,303.95,Pg,2016-08-19 22:22:22.230,manual,1.2,2.64
+ZD.RH04.EHZ.--,1.07429,98.3901,Pg,2016-08-19 22:22:34.150,manual,-0.4,1.43
+OK.RLOK.HHZ.--,2.39618,72.233,Pn,2016-08-19 22:22:53.720,manual,-0.1,0.0

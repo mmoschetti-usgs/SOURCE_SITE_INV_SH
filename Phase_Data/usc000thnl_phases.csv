@@ -1,0 +1,71 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000thnl
+#time = 2015-01-19 11:05:01.200000
+#location = 7km WSW of Pawnee, Oklahoma
+#latitude = 36.3005
+#longitude = -96.8749
+#depth = 5.0
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000thnl
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK028.HHZ.00,0.753204,191.648,Pg,2015-01-19 11:05:15.680,manual,0.0,1.81
+TA.TUL1.BHZ.--,0.959535,113.616,Pg,2015-01-19 11:05:19.600,manual,0.0,1.54
+GS.OK031.HHZ.00,0.347892,175.211,Pg,2015-01-19 11:05:08.280,manual,0.3,2.7
+OK.QUOK.HHZ.--,0.186565,133.626,Pg,2015-01-19 11:05:05.420,manual,0.5,3.37
+GS.OK030.HHZ.00,0.379174,168.755,Pg,2015-01-19 11:05:08.870,manual,0.3,2.6
+GS.OK029.HHZ.00,0.688317,223.239,Pg,2015-01-19 11:05:14.540,manual,0.1,1.91
+GS.OK027.HHZ.00,0.674309,209.555,Pg,2015-01-19 11:05:14.380,manual,0.2,1.93
+GS.OK025.HHZ.00,0.810256,207.762,Pg,2015-01-19 11:05:16.850,manual,0.1,1.72
+OK.BCOK.HHZ.--,0.876103,223.053,Pg,2015-01-19 11:05:18.020,manual,0.0,1.64
+GS.KAN13.HHZ.01,0.860569,325.891,Pg,2015-01-19 11:05:17.720,manual,0.0,1.66
+OK.W35A.EHZ.--,1.14533,179.983,Pg,2015-01-19 11:05:22.280,manual,-0.9,1.37
+GS.KAN01.HHZ.01,1.10866,320.422,Pg,2015-01-19 11:05:22.350,manual,-0.1,1.4
+OK.FNO.HHZ.01,1.1254,202.504,Pg,2015-01-19 11:05:22.180,manual,-0.6,1.38
+US.WMOK.BHZ.10,2.20171,225.475,Pn,2015-01-19 11:05:39.210,manual,0.8,1.11
+N4.T35B.BHZ.--,0.680378,25.3147,Pg,2015-01-19 11:05:14.350,manual,0.1,1.92
+OK.KAY1.HHZ.--,0.53534,329.605,Pg,2015-01-19 11:05:11.700,manual,0.2,2.2
+OK.CROK.HHZ.--,0.917217,283.166,Pg,2015-01-19 11:05:18.970,manual,0.2,1.59
+GS.OK026.HHZ.00,0.999778,208.1,Pg,2015-01-19 11:05:20.050,manual,-0.3,1.5
+GS.KAN14.HHZ.01,1.09324,307.133,Pg,2015-01-19 11:05:22.030,manual,-0.1,1.41
+OK.U32A.BHZ.--,1.71873,273.259,Pn,2015-01-19 11:05:31.730,manual,-0.1,1.17
+N4.U38B.BHZ.--,2.01376,85.3154,Pn,2015-01-19 11:05:37.290,manual,1.4,1.14
+OK.X37A.BHZ.--,2.10298,143.845,Pn,2015-01-19 11:05:38.980,manual,1.9,1.12
+AG.HHAR.HHZ.00,2.37111,89.5773,Pn,2015-01-19 11:05:42.100,manual,1.3,1.09
+OK.QUOK.HHN.--,0.186565,133.626,Sg,2015-01-19 11:05:08.270,manual,0.9,1.33
+GS.OK031.HH1.00,0.347892,175.211,Sg,2015-01-19 11:05:13.250,manual,0.8,1.25
+GS.OK030.HH1.00,0.379174,168.755,Sg,2015-01-19 11:05:14.240,manual,0.8,1.23
+OK.KAY1.HHN.--,0.53534,329.605,Sg,2015-01-19 11:05:18.520,manual,0.1,1.16
+GS.KAN13.HHE.01,0.860569,325.891,Sg,2015-01-19 11:05:28.370,manual,-0.5,1.04
+OK.BCOK.HHE.--,0.876103,223.053,Sg,2015-01-19 11:05:29.390,manual,0.0,1.03
+GS.KAN01.HHE.01,1.10866,320.422,Sg,2015-01-19 11:05:36.510,manual,-0.3,0.96
+OK.FNO.HHN.01,1.1254,202.504,Sg,2015-01-19 11:05:37.070,manual,-0.3,0.95

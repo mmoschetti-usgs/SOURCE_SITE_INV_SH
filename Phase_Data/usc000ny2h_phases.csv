@@ -1,0 +1,69 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000ny2h
+#time = 2014-03-31 21:43:39.500000
+#location = 1km SSE of Stillwater, Oklahoma
+#latitude = 36.1002
+#longitude = -97.0512
+#depth = 5.0
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000ny2h
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK028.HHZ.00,0.538015,180.886,Pg,2014-03-31 21:43:50.040,automatic,0.2,0.0
+US.WMOK.BHZ.10,1.9603,226.606,Pn,2014-03-31 21:44:14.070,automatic,0.6,0.04
+AG.FCAR.HHZ.00,4.00073,91.5548,Pn,2014-03-31 21:44:41.920,manual,0.5,0.034
+AG.HHAR.HHZ.00,2.52318,84.9591,Pn,2014-03-31 21:44:21.420,manual,0.3,0.043
+GS.OK029.HHZ.00,0.446191,227.353,Pg,2014-03-31 21:43:48.260,manual,0.2,0.0
+OK.X37A.BHZ.--,2.03928,137.18,Pn,2014-03-31 21:44:15.260,manual,0.8,0.053
+OK.X34A.HHZ.--,1.6265,203.351,Pn,2014-03-31 21:44:08.620,manual,-0.2,0.035
+N4.T35B.BHZ.--,0.923038,27.9213,Pg,2014-03-31 21:43:57.170,manual,0.0,0.059
+TA.TUL1.BHZ.--,1.03849,100.138,Pg,2014-03-31 21:43:58.350,manual,-1.1,0.15
+GS.OK027.HHZ.00,0.430881,206.036,Pg,2014-03-31 21:43:48.260,manual,0.4,0.0
+N4.S39B.BHZ.--,3.38418,60.9139,Pn,2014-03-31 21:44:34.060,manual,1.1,0.027
+AG.WHAR.HHZ.00,3.95931,100.384,Pn,2014-03-31 21:44:41.200,manual,0.3,0.037
+OK.U32A.BHZ.--,1.60103,280.601,Pn,2014-03-31 21:44:07.900,manual,-0.6,0.076
+US.MIAR.BHZ.00,3.23697,117.62,Pn,2014-03-31 21:44:29.920,manual,-1.0,0.044
+NM.MGMO.BHZ.--,3.98792,73.2919,Pn,2014-03-31 21:44:40.980,manual,-0.3,0.028
+GS.OK025.HHZ.00,0.567962,204.298,Pg,2014-03-31 21:43:50.730,manual,0.3,0.0
+N4.U38B.BHZ.--,2.18043,80.2821,Pn,2014-03-31 21:44:15.810,manual,-0.6,0.044
+OK.W35A.EHZ.--,0.956336,171.291,Pg,2014-03-31 21:43:56.580,manual,-1.3,0.094
+TA.U40A.BHZ.--,3.40341,84.4548,Pn,2014-03-31 21:44:34.030,manual,0.8,0.036
+ZW.AZWR.HHZ.--,3.44205,197.978,Pn,2014-03-31 21:44:31.960,manual,-1.8,0.024
+OK.CROK.HHZ.--,0.854395,298.47,Pg,2014-03-31 21:43:55.470,manual,-0.4,0.203
+OK.FNO.HHZ.01,0.887938,198.82,Pg,2014-03-31 21:43:56.270,manual,-0.3,0.063
+GS.OK029.HH2.00,0.446191,227.353,Sg,2014-03-31 21:43:54.780,manual,0.9,0.119
+GS.OK025.HH1.00,0.567962,204.298,Sg,2014-03-31 21:43:58.640,manual,0.8,0.085
+GS.OK028.HH2.00,0.538015,180.886,Sg,2014-03-31 21:43:57.850,manual,1.0,0.121
+GS.OK026.HHZ.00,0.756985,205.584,Pg,2014-03-31 21:43:53.560,manual,-0.5,0.075
+N4.R32B.BHZ.--,2.66959,330.76,Pn,2014-03-31 21:44:22.310,manual,-0.9,0.049
+N4.R32B.BHZ.--,2.66959,330.76,Pg,2014-03-31 21:44:28.990,manual,1.2,0.023
+TA.X40A.BHZ.--,3.80603,113.78,Pn,2014-03-31 21:44:38.330,manual,-0.4,0.04

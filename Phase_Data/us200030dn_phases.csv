@@ -1,0 +1,66 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us200030dn
+#time = 2015-07-25 09:42:52.300000
+#location = 18km ENE of Mooreland, Oklahoma
+#latitude = 36.5136
+#longitude = -99.0237
+#depth = 1.0
+#magnitude = 2.7
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us200030dn
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.U32A.BHZ.--,0.135032,172.344,Pg,2015-07-25 09:42:55.550,manual,0.6,3.66
+OK.CROK.HHZ.--,0.838177,90.2977,Pg,2015-07-25 09:43:08.570,manual,0.2,2.07
+GS.OK032.HHZ.00,0.715249,65.8701,Pg,2015-07-25 09:43:06.520,manual,0.5,2.43
+GS.KAN17.HHZ.01,1.14101,61.9758,Pg,2015-07-25 09:43:14.050,manual,-0.1,1.48
+GS.KAN09.HHZ.01,1.2875,60.7269,Pn,2015-07-25 09:43:16.630,manual,-0.8,1.24
+OK.BCOK.HHZ.--,1.4296,126.319,Pn,2015-07-25 09:43:19.060,manual,-0.3,1.22
+OK.GC02.EHZ.--,0.994696,69.8344,Pg,2015-07-25 09:43:11.520,manual,0.2,1.96
+GS.KS20.HHZ.00,1.37812,58.3208,Pn,2015-07-25 09:43:18.260,manual,-0.4,1.23
+GS.OK025.HHZ.00,1.65295,123.762,Pn,2015-07-25 09:43:22.500,manual,0.1,1.19
+OK.GORE.HHZ.--,0.907372,72.2707,Pg,2015-07-25 09:43:09.940,manual,0.2,2.02
+OK.BLOK.HHZ.--,1.47553,79.8436,Pn,2015-07-25 09:43:19.920,manual,0.0,1.21
+US.WMOK.BHZ.10,1.78286,173.554,Pn,2015-07-25 09:43:24.440,manual,0.2,1.17
+OK.CCOK.HHZ.--,1.60132,135.723,Pn,2015-07-25 09:43:21.880,manual,0.2,1.2
+OK.FNO.HHZ.01,1.81854,133.096,Pn,2015-07-25 09:43:24.680,manual,0.0,1.17
+GS.KAN10.HHZ.01,0.96219,50.4764,Pg,2015-07-25 09:43:10.900,manual,0.2,1.99
+GS.KAN12.HHZ.01,1.13487,46.1151,Pg,2015-07-25 09:43:13.930,manual,-0.1,1.48
+N4.R32B.BHZ.--,1.92169,7.3418,Pn,2015-07-25 09:43:27.240,manual,1.1,1.15
+GS.KAN05.HHZ.01,1.09841,56.9279,Pg,2015-07-25 09:43:13.420,manual,0.1,1.48
+GS.KAN08.HHZ.01,1.10423,49.5528,Pg,2015-07-25 09:43:13.440,manual,0.0,1.48
+GS.KAN11.HHZ.01,1.12725,51.8565,Pg,2015-07-25 09:43:13.880,manual,0.0,1.48
+GS.KAN13.HHZ.01,1.33768,67.6665,Pn,2015-07-25 09:43:17.460,manual,-0.6,1.23
+GS.OK029.HHZ.00,1.45734,118.94,Pn,2015-07-25 09:43:19.670,manual,0.0,1.22
+GS.OK031.HHZ.00,1.85265,106.925,Pn,2015-07-25 09:43:24.790,manual,-0.3,1.16
+OK.CHOK.HHZ.--,1.85285,120.283,Pn,2015-07-25 09:43:25.200,manual,0.1,1.16
+OK.U32A.BHN.--,0.135032,172.344,Sg,2015-07-25 09:42:57.870,manual,1.2,1.36
+GS.OK032.HH2.00,0.715249,65.8701,Sg,2015-07-25 09:43:16.140,manual,0.9,1.19

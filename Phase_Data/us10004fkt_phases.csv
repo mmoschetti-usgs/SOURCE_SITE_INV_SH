@@ -1,0 +1,69 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10004fkt
+#time = 2016-01-19 14:09:06.600000
+#location = 21km ENE of Mooreland, Oklahoma
+#latitude = 36.5223
+#longitude = -98.9874
+#depth = 3.9
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10004fkt
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.U32A.BHZ.--,0.142962,184.535,Pg,2016-01-19 14:09:09.960,manual,0.5,3.61
+GS.OK035.HHZ.00,0.290416,50.2106,Pg,2016-01-19 14:09:12.290,manual,0.1,2.91
+OK.GORE.HHZ.--,0.876873,72.2513,Pg,2016-01-19 14:09:23.860,manual,0.4,1.64
+GS.KAN11.HHZ.01,1.09894,51.2928,Pg,2016-01-19 14:09:26.540,manual,-1.1,1.41
+N4.R32B.BHZ.--,1.90954,6.52677,Pn,2016-01-19 14:09:36.420,manual,-3.5,1.15
+GS.KAN14.HHZ.01,0.930151,61.9049,Pg,2016-01-19 14:09:24.010,manual,-0.4,1.58
+US.WMOK.BHZ.10,1.78846,174.537,Pn,2016-01-19 14:09:38.060,manual,-0.2,1.17
+OK.CHOK.HHZ.--,1.83211,121.0,Pn,2016-01-19 14:09:39.680,manual,0.9,1.16
+OK.CROK.HHZ.--,0.80903,90.9454,Pg,2016-01-19 14:09:21.910,manual,-0.2,1.73
+GS.KAN10.HHZ.01,0.93418,49.7678,Pg,2016-01-19 14:09:24.090,manual,-0.4,1.57
+GS.KAN16.HHZ.01,1.01989,46.2309,Pg,2016-01-19 14:09:25.470,manual,-0.7,1.48
+GS.KAN05.HHZ.01,1.0692,56.4847,Pg,2016-01-19 14:09:26.820,manual,-0.3,1.43
+GS.KAN12.HHZ.01,1.10786,45.4123,Pg,2016-01-19 14:09:27.220,manual,-0.6,1.4
+GS.KAN17.HHZ.01,1.11113,61.6845,Pg,2016-01-19 14:09:27.030,manual,-0.9,1.4
+GS.KAN01.HHZ.01,1.16958,57.0473,Pn,2016-01-19 14:09:28.310,manual,-1.4,1.25
+GS.KAN13.HHZ.01,1.30734,67.5534,Pn,2016-01-19 14:09:30.960,manual,-0.6,1.23
+OK.BLOK.HHZ.--,1.44522,79.9999,Pn,2016-01-19 14:09:32.630,manual,-0.9,1.21
+OK.BCOK.HHZ.--,1.41139,127.328,Pn,2016-01-19 14:09:32.080,manual,-1.0,1.22
+OK.CCOK.HHZ.--,1.58736,136.719,Pn,2016-01-19 14:09:35.660,manual,0.2,1.19
+GS.OK025.HHZ.00,1.63364,124.607,Pn,2016-01-19 14:09:36.170,manual,0.1,1.19
+OK.OKCFA.HHZ.--,1.66514,131.106,Pn,2016-01-19 14:09:36.340,manual,-0.2,1.18
+OK.FNO.HHZ.01,1.80332,133.953,Pn,2016-01-19 14:09:39.060,manual,0.6,1.16
+OK.QUOK.HHZ.--,1.87322,100.098,Pn,2016-01-19 14:09:40.160,manual,0.8,1.16
+GS.OK030.HHZ.00,1.87793,107.763,Pn,2016-01-19 14:09:40.180,manual,0.7,1.15
+GS.OK034.HHZ.00,1.9076,104.865,Pn,2016-01-19 14:09:40.390,manual,0.6,1.15
+N4.T35B.BHZ.--,2.02746,78.0811,Pn,2016-01-19 14:09:42.500,manual,1.0,1.14
+OK.W35A.HHZ.--,2.19427,127.899,Pn,2016-01-19 14:09:44.670,manual,0.9,1.11
+OK.GC02.EHZ.--,0.964254,69.7417,Pg,2016-01-19 14:09:24.360,manual,-0.7,1.54
+GS.KAN08.HHZ.01,1.07641,48.9167,Pg,2016-01-19 14:09:26.390,manual,-0.9,1.43

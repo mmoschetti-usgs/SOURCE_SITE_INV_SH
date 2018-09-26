@@ -1,0 +1,95 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20003g7y
+#time = 2015-09-04 09:00:02.430000
+#location = 21km E of Anthony, Kansas
+#latitude = 37.1768
+#longitude = -97.7965
+#depth = 5.4
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20003g7y
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN11.HHZ.01,0.0977201,287.39,Pg,2015-09-04 09:00:04.750,manual,0.2,3.9
+GS.KAN05.HHZ.01,0.0911186,221.684,Pg,2015-09-04 09:00:04.550,manual,0.1,3.95
+GS.KAN17.HHZ.01,0.134856,169.159,Pg,2015-09-04 09:00:05.520,manual,0.3,3.66
+GS.KAN12.HHZ.01,0.200882,306.879,Pg,2015-09-04 09:00:06.690,manual,0.3,3.3
+GS.KAN08.HHZ.01,0.147892,289.734,Pg,2015-09-04 09:00:05.750,manual,0.3,3.58
+GS.KAN14.HHZ.01,0.256821,211.286,Pg,2015-09-04 09:00:07.710,manual,0.3,3.04
+GS.KS20.HHZ.00,0.200465,74.655,Pg,2015-09-04 09:00:06.750,manual,0.4,3.3
+GS.KAN10.HHZ.01,0.244441,257.519,Pg,2015-09-04 09:00:07.470,manual,0.3,3.1
+GS.KAN13.HHZ.01,0.302822,122.604,Pg,2015-09-04 09:00:08.540,manual,0.2,2.86
+OK.GORE.HHZ.--,0.408666,197.208,Pg,2015-09-04 09:00:10.610,manual,0.3,2.52
+OK.GC02.EHZ.--,0.328595,188.86,Pg,2015-09-04 09:00:09.020,manual,0.2,2.77
+OK.BLOK.HHZ.--,0.624075,131.557,Pg,2015-09-04 09:00:14.290,manual,-0.1,2.02
+GS.OK032.HHZ.00,0.498432,221.798,Pg,2015-09-04 09:00:12.160,manual,0.1,2.28
+OK.CROK.HHZ.--,0.68737,192.655,Pg,2015-09-04 09:00:15.630,manual,0.0,1.91
+OK.QUOK.HHZ.--,1.33142,138.582,Pn,2015-09-04 09:00:27.110,manual,-0.5,1.23
+GS.OK029.HHZ.00,1.4047,168.596,Pn,2015-09-04 09:00:28.390,manual,-0.2,1.22
+GS.OK031.HHZ.00,1.44417,147.457,Pn,2015-09-04 09:00:29.060,manual,-0.1,1.21
+OK.CHOK.HHZ.--,1.71815,159.577,Pn,2015-09-04 09:00:33.360,manual,0.5,1.17
+GS.OK025.HHZ.00,1.63493,166.78,Pn,2015-09-04 09:00:32.430,manual,0.7,1.18
+OK.OKCSW.EHZ.--,1.79127,170.588,Pn,2015-09-04 09:00:34.710,manual,0.8,1.16
+OK.OKCFA.HHZ.--,1.77989,170.886,Pn,2015-09-04 09:00:34.190,manual,0.4,1.17
+OK.FNO.HHZ.01,1.94196,170.408,Pn,2015-09-04 09:00:36.970,manual,1.0,1.14
+US.CBKS.BHZ.00,2.24108,317.421,Pn,2015-09-04 09:00:40.450,manual,0.3,1.11
+US.WMOK.BHZ.10,2.56137,198.455,Pn,2015-09-04 09:00:44.620,manual,0.1,1.07
+US.KSU1.BHZ.10,2.13686,25.6141,Pn,2015-09-04 09:00:39.190,manual,0.6,1.12
+N4.R32B.BHZ.--,1.43922,330.055,Pn,2015-09-04 09:00:29.050,manual,0.0,1.21
+N4.T35B.BHZ.--,1.06019,103.815,Pg,2015-09-04 09:00:22.180,manual,-0.6,1.44
+OK.X37A.BHZ.--,3.24718,141.949,Pn,2015-09-04 09:00:56.290,manual,2.4,1.0
+NQ.KAN02.HNZ.01,0.0688807,287.656,Pg,2015-09-04 09:00:04.120,manual,0.0,4.11
+N4.S39B.BHZ.--,3.59774,80.444,Pn,2015-09-04 09:00:59.880,manual,1.2,0.97
+GS.KAN06.HHZ.01,0.086653,325.122,Pg,2015-09-04 09:00:04.570,manual,0.2,3.98
+GS.KAN17.HNE.01,0.134856,169.159,Sg,2015-09-04 09:00:07.610,manual,0.6,1.36
+GS.KAN08.HHE.01,0.147892,289.734,Sg,2015-09-04 09:00:08.070,manual,0.6,1.35
+GS.KS21.HHZ.00,0.152786,44.1778,Pg,2015-09-04 09:00:05.790,manual,0.3,3.55
+NQ.KAN15.HNE.01,0.216739,55.4274,Pg,2015-09-04 09:00:07.010,manual,0.3,3.22
+OK.U32A.BHZ.--,1.25262,230.922,Pg,2015-09-04 09:00:25.760,manual,-0.7,1.28
+TA.W39A.BHZ.--,3.80002,120.143,Pn,2015-09-04 09:01:04.710,manual,3.3,0.95
+AG.HHAR.HHZ.00,3.22413,104.92,Pn,2015-09-04 09:00:54.740,manual,1.2,1.0
+TA.U40A.BHZ.--,4.05232,100.17,Pn,2015-09-04 09:01:05.440,manual,0.5,0.93
+TA.KSCO.BHZ.--,4.22789,297.141,Pn,2015-09-04 09:01:08.130,manual,0.7,0.91
+US.MIAR.BHZ.00,4.31722,126.201,Pn,2015-09-04 09:01:11.270,manual,2.7,0.91
+NQ.KAN02.HNN.01,0.0688807,287.656,Sg,2015-09-04 09:00:05.510,manual,0.3,1.4
+GS.KAN05.HNE.01,0.0911186,221.684,Sg,2015-09-04 09:00:06.250,manual,0.5,1.39
+GS.KAN11.HNE.01,0.0977201,287.39,Sg,2015-09-04 09:00:06.390,manual,0.4,1.38
+GS.KS20.HH1.00,0.200465,74.655,Sg,2015-09-04 09:00:09.780,manual,0.7,1.32
+GS.KAN12.HHE.01,0.200882,306.879,Sg,2015-09-04 09:00:09.530,manual,0.4,1.32
+NQ.KAN15.HNE.01,0.216739,55.4274,Sg,2015-09-04 09:00:09.720,manual,0.1,1.31
+GS.KAN10.HNE.01,0.244441,257.519,Sg,2015-09-04 09:00:10.490,manual,0.0,1.3
+GS.KAN14.HNE.01,0.256821,211.286,Sg,2015-09-04 09:00:11.380,manual,0.5,1.29
+GS.KAN13.HHN.01,0.302822,122.604,Sg,2015-09-04 09:00:12.660,manual,0.4,1.27
+OK.GC02.EHE.--,0.328595,188.86,Sg,2015-09-04 09:00:13.740,manual,0.6,1.26
+GS.OK032.HH2.00,0.498432,221.798,Sg,2015-09-04 09:00:18.980,manual,0.5,1.18
+OK.BLOK.HHN.--,0.624075,131.557,Sg,2015-09-04 09:00:23.310,manual,0.8,1.12
+OK.CROK.HHN.--,0.68737,192.655,Sg,2015-09-04 09:00:25.110,manual,0.5,1.1
+N4.T35B.BHN.--,1.06019,103.815,Sg,2015-09-04 09:00:36.500,manual,0.0,0.97

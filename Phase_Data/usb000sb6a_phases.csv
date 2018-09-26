@@ -1,0 +1,53 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000sb6a
+#time = 2014-09-10 17:18:24.500000
+#location = 1km NE of Medford, Oklahoma
+#latitude = 36.8208
+#longitude = -97.7194
+#depth = 3.6
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000sb6a
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.CROK.HHZ.--,0.380253,214.014,Pg,2014-09-10 17:18:32.150,manual,0.3,0.0
+GS.OK027.HHZ.00,1.16124,162.215,Pg,2014-09-10 17:18:46.420,manual,-0.3,0.225
+GS.OK025.HHZ.00,1.27506,165.882,Pn,2014-09-10 17:18:48.500,manual,-0.7,0.123
+GS.OK028.HHZ.00,1.36515,156.857,Pn,2014-09-10 17:18:49.690,manual,-0.7,0.128
+N4.R32B.BHZ.--,1.78228,334.082,Pn,2014-09-10 17:18:55.840,manual,-0.3,0.3
+OK.FNO.HHZ.01,1.58131,170.52,Pn,2014-09-10 17:18:53.350,manual,0.0,0.113
+OK.W35A.EHZ.--,1.8001,157.376,Pn,2014-09-10 17:18:56.810,manual,0.4,0.115
+OK.X34A.HHZ.--,2.21692,182.415,Pn,2014-09-10 17:19:01.630,manual,-0.5,0.105
+US.WMOK.BHZ.10,2.25043,202.86,Pn,2014-09-10 17:19:02.370,manual,-0.2,0.148
+US.KSU1.BHZ.00,2.4395,20.7387,Pn,2014-09-10 17:19:05.060,manual,-0.1,0.15
+N4.U38B.BHZ.--,2.70842,97.082,Pn,2014-09-10 17:19:09.210,manual,0.3,0.169
+OK.X37A.BHZ.--,2.93419,138.672,Pn,2014-09-10 17:19:12.640,manual,0.7,0.113
+GS.OK027.HHZ.00,1.16124,162.215,Sg,2014-09-10 17:19:01.380,manual,-0.4,0.308

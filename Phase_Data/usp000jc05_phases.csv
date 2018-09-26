@@ -1,0 +1,54 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usp000jc05
+#time = 2011-12-09 16:46:50
+#location = Oklahoma
+#latitude = 35.4750
+#longitude = -96.8550
+#depth = 5.0
+#magnitude = 3.0
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usp000jc05
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+IR.OK020.--.--,0.07,344.4,Pg,2011-12-09 16:46:52.070,manual,0.5,1.0
+IR.OK021.--.--,0.17,41.2,Pg,2011-12-09 16:46:54.090,manual,0.7,1.0
+IR.OK022.--.--,0.17,68.2,Pg,2011-12-09 16:46:54.140,manual,0.8,1.0
+IR.OK002.--.--,0.29,285.1,Pg,2011-12-09 16:46:56.190,manual,0.6,1.0
+IR.V35A.--.--,0.29,2.8,Pg,2011-12-09 16:46:56.200,manual,0.6,1.0
+IR.W35A.--.--,0.32,182.8,Pg,2011-12-09 16:46:56.660,manual,0.4,1.0
+IR.W36A.--.--,0.61,122.9,Pg,2011-12-09 16:47:02.140,manual,0.4,1.0
+IR.V36A.--.--,0.81,67.0,Pg,2011-12-09 16:47:05.370,manual,-0.1,1.0
+IR.U35A.--.--,0.9,6.4,Pg,2011-12-09 16:47:06.930,manual,-0.4,1.0
+IR.TUL1.--.--,0.97,63.0,Pg,2011-12-09 16:47:08.290,manual,-0.3,1.0
+IR.X35A.--.--,1.08,185.2,Pg,2011-12-09 16:47:10.100,manual,-0.6,1.0
+IR.W37B.--.--,1.21,105.6,Pg,2011-12-09 16:47:12.970,manual,-0.3,1.0
+IR.X37A.--.--,1.5,125.5,Pn,2011-12-09 16:47:18.180,manual,0.6,1.0
+IR.WMOK.--.--,1.74,245.6,Pn,2011-12-09 16:47:21.320,manual,0.4,1.0

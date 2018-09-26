@@ -1,0 +1,64 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000qs5q
+#time = 2014-05-17 02:04:43.100000
+#location = 3km SSW of Stillwater, Oklahoma
+#latitude = 36.0873
+#longitude = -97.0680
+#depth = 3.4
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000qs5q
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK027.HHZ.00,0.413393,205.115,Pg,2014-05-17 02:04:51.600,manual,0.6,0.0
+GS.OK028.HHZ.00,0.525104,179.413,Pg,2014-05-17 02:04:53.450,automatic,0.3,0.0
+GS.OK026.HHZ.00,0.739528,205.054,Pg,2014-05-17 02:04:56.850,manual,-0.4,0.0
+GS.OK025.HHZ.00,0.550675,203.548,Pg,2014-05-17 02:04:54.160,automatic,0.5,0.0
+OK.W35A.EHZ.--,0.945797,170.348,Pg,2014-05-17 02:05:00.780,automatic,-0.5,0.081
+US.WMOK.BHZ.10,1.94157,226.596,Pn,2014-05-17 02:05:17.780,manual,0.8,0.113
+AG.HHAR.HHZ.00,2.53789,84.6869,Pn,2014-05-17 02:05:27.200,automatic,2.0,0.14
+US.KSU1.BHZ.10,3.03033,6.76513,Pg,2014-05-17 02:05:39.820,automatic,2.2,0.012
+US.MIAR.BHZ.00,3.2431,117.298,Pn,2014-05-17 02:05:35.750,automatic,0.9,0.136
+OK.U32A.BHZ.--,1.5901,281.137,Pn,2014-05-17 02:05:12.420,manual,0.3,0.112
+OK.U32A.BHZ.--,1.5901,281.137,Sn,2014-05-17 02:05:34.370,automatic,1.2,0.123
+N4.U38B.BHZ.--,2.19604,80.0012,Pn,2014-05-17 02:05:21.570,manual,1.1,0.146
+AG.FCAR.HHZ.00,4.014,91.3562,Pg,2014-05-17 02:05:54.350,automatic,-0.1,0.025
+TA.U40A.BHZ.--,3.41822,84.2524,Pg,2014-05-17 02:05:41.950,automatic,-2.3,0.03
+TA.W39A.BHZ.--,2.8187,107.429,Pg,2014-05-17 02:05:34.470,automatic,0.4,0.045
+TA.X40A.BHZ.--,3.81333,113.511,Pg,2014-05-17 02:05:51.720,automatic,0.7,0.03
+N4.R32B.BHZ.--,2.67423,331.139,Sg,2014-05-17 02:06:05.450,automatic,0.6,0.446
+GS.KAN10.HHZ.01,1.32383,321.674,Pn,2014-05-17 02:05:07.990,manual,-0.5,0.1
+GS.OK029.HHZ.00,0.42746,227.377,Pg,2014-05-17 02:04:51.920,manual,0.6,0.0
+GS.OK005.HNZ.01,0.442914,193.082,Pg,2014-05-17 02:04:51.700,manual,0.1,0.0
+GS.ADOK.HNZ.--,0.499286,209.631,Pg,2014-05-17 02:04:51.990,manual,-0.7,0.0
+N4.T35B.BHZ.--,0.940804,28.2765,Pg,2014-05-17 02:05:00.710,manual,-0.4,0.062
+GS.KAN13.HHZ.01,0.980943,340.464,Pg,2014-05-17 02:05:01.220,manual,-0.7,0.101
+TA.TUL1.BHZ.--,1.04973,99.3057,Pg,2014-05-17 02:05:02.270,manual,-1.0,0.146

@@ -1,0 +1,74 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10006qtr
+#time = 2016-09-19 12:05:35.100000
+#location = 33km NW of Fairview, Oklahoma
+#latitude = 36.4497
+#longitude = -98.7739
+#depth = 6.9
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10006qtr
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK038.HHZ.00,0.0382365,41.9286,Pg,2016-09-19 12:05:37.010,manual,0.4,4.36
+OK.NOKA.HHZ.--,0.224233,325.475,Pg,2016-09-19 12:05:39.970,manual,0.4,3.19
+OK.U32A.BHZ.--,0.19643,249.173,Pg,2016-09-19 12:05:39.250,manual,0.2,3.32
+GS.OK035.HHZ.00,0.263116,11.3079,Pg,2016-09-19 12:05:40.800,manual,0.5,3.02
+OK.CROK.HHZ.--,0.639502,84.8411,Pg,2016-09-19 12:05:47.430,manual,0.0,1.99
+ZD.KNG1.EHZ.--,0.927038,109.66,Pg,2016-09-19 12:05:52.370,manual,-0.5,1.58
+OK.CSTR.HHZ.--,0.805376,175.068,Pg,2016-09-19 12:05:50.620,manual,0.0,1.73
+OK.GC02.EHZ.--,0.837531,61.12,Pg,2016-09-19 12:05:50.940,manual,-0.3,1.69
+GS.OK049.HHZ.00,1.18591,91.6277,Pg,2016-09-19 12:05:57.240,manual,-0.6,1.33
+OK.HTCH.HHZ.--,0.560017,140.304,Pg,2016-09-19 12:05:45.870,manual,0.0,2.14
+OK.BLOK.HHZ.--,1.2922,75.6421,Pn,2016-09-19 12:05:59.070,manual,-0.5,1.23
+GS.OK048.HHZ.00,1.47633,90.7541,Pn,2016-09-19 12:06:02.250,manual,0.2,1.2
+GS.OK046.HHZ.00,1.50631,91.4389,Pn,2016-09-19 12:06:02.760,manual,0.3,1.2
+GS.OK051.HHZ.00,1.56289,87.3931,Pn,2016-09-19 12:06:03.520,manual,0.3,1.19
+GS.OK045.HHZ.00,1.49073,89.5274,Pn,2016-09-19 12:06:02.500,manual,0.2,1.2
+GS.OK033.HHZ.00,1.53802,104.703,Pn,2016-09-19 12:06:03.230,manual,0.3,1.2
+GS.OK050.HHZ.00,1.44648,91.6504,Pn,2016-09-19 12:06:01.730,manual,0.1,1.21
+ZD.RH09.EHZ.--,0.805149,127.649,Pg,2016-09-19 12:05:50.430,manual,-0.1,1.73
+US.WMOK.BHZ.10,1.70807,180.188,Pn,2016-09-19 12:06:05.290,manual,0.0,1.17
+GS.OK030.HHZ.00,1.69203,107.338,Pn,2016-09-19 12:06:05.350,manual,0.3,1.17
+GS.OK047.HHZ.00,1.65299,88.7267,Pn,2016-09-19 12:06:05.160,manual,0.7,1.18
+GS.OK031.HHZ.00,1.64148,106.999,Pn,2016-09-19 12:06:04.660,manual,0.3,1.18
+OK.X34A.HHZ.--,1.99802,157.126,Pn,2016-09-19 12:06:10.420,manual,1.2,1.14
+ZD.RH05.EHZ.--,1.3541,155.01,Pn,2016-09-19 12:06:00.060,manual,-0.3,1.22
+GS.OK029.HHZ.00,1.25106,121.006,Pn,2016-09-19 12:05:58.430,manual,-0.5,1.24
+OK.CHOK.HHZ.--,1.64756,122.056,Pn,2016-09-19 12:06:04.520,manual,0.1,1.18
+OK.QUOK.HHZ.--,1.69157,98.8372,Pn,2016-09-19 12:06:05.770,manual,0.8,1.17
+N4.T35B.BHZ.--,1.87696,74.9639,Pn,2016-09-19 12:06:08.320,manual,0.8,1.15
+N4.R32B.BHZ.--,1.96994,1.43517,Pn,2016-09-19 12:06:09.600,manual,0.7,1.14
+GS.OK032.HHZ.00,0.574789,51.8914,Pg,2016-09-19 12:05:46.100,manual,-0.1,2.11
+GS.OK025.HHZ.00,1.45142,126.245,Pn,2016-09-19 12:06:00.970,manual,-0.8,1.21
+GS.PW02.CHZ.--,1.50697,89.9988,Pn,2016-09-19 12:06:02.380,manual,-0.1,1.2
+GS.OK044.HHZ.00,1.59711,92.1706,Pn,2016-09-19 12:06:04.260,manual,0.5,1.19
+GS.OK034.HHZ.00,1.72288,104.138,Pn,2016-09-19 12:06:05.130,manual,-0.3,1.17

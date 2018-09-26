@@ -1,0 +1,59 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usp000hed8
+#time = 2010-06-22 23:27:37.500000
+#location = Oklahoma
+#latitude = 35.5310
+#longitude = -97.2910
+#depth = 4.3
+#magnitude = 2.7
+#magtype = md
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usp000hed8
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+IR.OK001.--.--,0.03,2.3,Pg,2010-06-22 23:27:38.130,manual,-0.4,1.0
+IR.OK006.--.--,0.05,169.3,Pg,2010-06-22 23:27:38.490,manual,-0.3,1.0
+IR.OK003.--.--,0.04,296.6,Pg,2010-06-22 23:27:38.620,manual,0.0,1.0
+IR.OK002.--.--,0.08,76.6,Pg,2010-06-22 23:27:39.380,manual,0.2,1.0
+IR.OK007.--.--,0.11,112.2,Pg,2010-06-22 23:27:39.630,manual,-0.2,1.0
+IR.ADOK.--.--,0.14,331.6,P,2010-06-22 23:27:39.910,manual,-0.4,1.0
+IR.V34A.--.--,0.35,328.7,P,2010-06-22 23:27:43.420,manual,-0.9,1.0
+IR.V35A.--.--,0.44,57.8,Pg,2010-06-22 23:27:45.330,manual,-0.6,1.0
+IR.W34A.--.--,0.49,233.3,P,2010-06-22 23:27:45.730,manual,-1.2,1.0
+IR.W35A.--.--,0.51,137.8,Pg,2010-06-22 23:27:46.720,manual,-0.5,1.0
+IR.V33A.--.--,0.86,289.9,P,2010-06-22 23:27:53.050,manual,-1.0,1.0
+IR.U34A.--.--,0.93,347.7,P,2010-06-22 23:27:53.760,manual,-1.5,1.0
+IR.X34A.--.--,1.03,205.7,Pg,2010-06-22 23:27:56.480,manual,-0.7,1.0
+IR.W33A.--.--,1.03,248.9,P,2010-06-22 23:27:56.660,manual,-0.7,1.0
+IR.X35A.--.--,1.16,166.9,Pg,2010-06-22 23:27:57.950,manual,-1.8,1.0
+IR.X36A.--.--,1.23,140.9,P,2010-06-22 23:27:59.240,manual,-1.8,1.0
+IR.TUL1.--.--,1.28,72.3,Pn,2010-06-22 23:27:59.640,manual,-2.5,1.0
+IR.WMOK.--.--,1.46,237.5,Pn,2010-06-22 23:28:02.960,manual,-1.6,1.0
+IR.W37A.--.--,1.57,103.9,P,2010-06-22 23:28:05.110,manual,-1.1,1.0

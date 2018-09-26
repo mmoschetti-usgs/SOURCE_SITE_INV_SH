@@ -1,0 +1,70 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10002lf8
+#time = 2015-06-22 02:23:35
+#location = 13km NE of Edmond, Oklahoma
+#latitude = 35.7423
+#longitude = -97.3832
+#depth = 6.1
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10002lf8
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.BCOK.HHZ.--,0.202885,245.169,Pg,2015-06-22 02:23:39.320,manual,0.3,3.29
+GS.OK025.HHZ.00,0.165024,167.069,Pg,2015-06-22 02:23:38.810,manual,0.5,3.49
+GS.OK029.HHZ.00,0.0795996,312.922,Pg,2015-06-22 02:23:37.180,manual,0.3,4.03
+OK.CHOK.HHZ.--,0.318464,124.499,Pg,2015-06-22 02:23:41.700,manual,0.5,2.8
+GS.OK030.HHZ.00,0.521043,69.0153,Pg,2015-06-22 02:23:45.320,manual,0.3,2.23
+OK.FNO.HHZ.01,0.484051,181.744,Pg,2015-06-22 02:23:44.620,manual,0.3,2.32
+GS.OK029.HH1.00,0.0795996,312.922,Sg,2015-06-22 02:23:38.650,manual,0.5,1.39
+GS.OK025.HH1.00,0.165024,167.069,Sg,2015-06-22 02:23:41.620,manual,1.0,1.34
+OK.BCOK.HHE.--,0.202885,245.169,Sg,2015-06-22 02:23:42.530,manual,0.8,1.32
+OK.CHOK.HHE.--,0.318464,124.499,Sg,2015-06-22 02:23:46.430,manual,1.0,1.26
+OK.OKCFA.HHE.--,0.330987,189.689,Sg,2015-06-22 02:23:46.830,manual,1.0,1.26
+OK.OKCFA.HHZ.--,0.330987,189.689,Pg,2015-06-22 02:23:41.740,manual,0.3,2.76
+OK.OKCSW.EHE.--,0.339019,187.588,Sg,2015-06-22 02:23:47.130,manual,1.1,1.25
+OK.OKCSW.EHZ.--,0.339019,187.588,Pg,2015-06-22 02:23:41.890,manual,0.3,2.73
+OK.CCOK.HHZ.--,0.444385,210.13,Pg,2015-06-22 02:23:43.550,manual,0.0,2.42
+OK.CCOK.HHE.--,0.444385,210.13,Sg,2015-06-22 02:23:50.300,manual,0.9,1.2
+OK.FNO.HHE.01,0.484051,181.744,Sg,2015-06-22 02:23:51.650,manual,1.0,1.18
+GS.OK031.HH1.00,0.489542,64.3929,Sg,2015-06-22 02:23:51.470,manual,0.6,1.18
+GS.OK031.HHZ.00,0.489542,64.3929,Pg,2015-06-22 02:23:44.740,manual,0.3,2.3
+GS.OK030.HH2.00,0.521043,69.0153,Sg,2015-06-22 02:23:52.380,manual,0.5,1.17
+OK.QUOK.HHZ.--,0.695301,51.7889,Pg,2015-06-22 02:23:48.370,manual,0.0,1.9
+OK.QUOK.HHN.--,0.695301,51.7889,Sg,2015-06-22 02:23:57.980,manual,0.6,1.1
+OK.CROK.HHZ.--,0.902763,327.61,Pg,2015-06-22 02:23:52.180,manual,-0.2,1.61
+OK.BLOK.HHZ.--,1.02528,7.5708,Pg,2015-06-22 02:23:54.230,manual,-0.4,1.48
+OK.X34A.HHZ.--,1.19673,198.047,Pg,2015-06-22 02:23:57.650,manual,-0.3,1.32
+GS.OK032.HHZ.00,1.2526,327.992,Pn,2015-06-22 02:23:57.970,manual,-1.0,1.24
+GS.KAN13.HHZ.01,1.27035,356.583,Pn,2015-06-22 02:23:58.590,manual,-0.6,1.24
+GS.KAN14.HHZ.01,1.29929,339.056,Pn,2015-06-22 02:23:58.890,manual,-0.7,1.23
+N4.T35B.BHZ.--,1.36655,30.7307,Pn,2015-06-22 02:24:00.050,manual,-0.5,1.22
+US.WMOK.BHZ.10,1.52077,229.185,Pn,2015-06-22 02:24:02.630,manual,-0.1,1.2

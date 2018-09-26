@@ -1,0 +1,72 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20004w4d
+#time = 2016-01-31 07:40:11.800000
+#location = 8km E of Edmond, Oklahoma
+#latitude = 35.6619
+#longitude = -97.3890
+#depth = 5.6
+#magnitude = 2.8
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20004w4d
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK031.HHZ.00,0.533128,56.8119,Pg,2016-01-31 07:40:22.340,manual,0.3,2.2
+GS.OK025.HHZ.00,0.0907385,152.673,Pg,2016-01-31 07:40:14.200,manual,0.4,3.95
+GS.OK032.HHZ.00,1.31895,330.009,Pn,2016-01-31 07:40:35.930,manual,-0.8,1.23
+GS.OK025.HH1.00,0.0907385,152.673,Sg,2016-01-31 07:40:15.960,manual,0.8,1.39
+GS.OK001.HNN.01,0.129189,141.099,Sg,2016-01-31 07:40:17.280,manual,1.0,1.36
+GS.OK001.HNZ.01,0.129189,141.099,Pg,2016-01-31 07:40:14.840,manual,0.4,3.69
+GS.OK009.HNE.01,0.0850348,198.962,Sg,2016-01-31 07:40:15.680,manual,0.6,1.39
+GS.OK009.HNZ.01,0.0850348,198.962,Pg,2016-01-31 07:40:14.000,manual,0.3,3.99
+GS.OK005.HNN.01,0.161311,92.424,Sg,2016-01-31 07:40:18.360,manual,1.1,1.35
+GS.OK005.HNZ.01,0.161311,92.424,Pg,2016-01-31 07:40:15.520,manual,0.5,3.51
+GS.OK029.HHZ.00,0.144712,338.271,Pg,2016-01-31 07:40:15.080,manual,0.3,3.6
+GS.OK029.HH2.00,0.144712,338.271,Sg,2016-01-31 07:40:17.650,manual,0.9,1.35
+GS.OK031.HH1.00,0.533128,56.8119,Sg,2016-01-31 07:40:29.730,manual,0.7,1.16
+GS.OK033.HHZ.00,0.528962,43.6834,Pg,2016-01-31 07:40:22.210,manual,0.2,2.21
+GS.OK030.HH2.00,0.558995,61.4862,Sg,2016-01-31 07:40:30.560,manual,0.7,1.15
+GS.OK030.HHZ.00,0.558995,61.4862,Pg,2016-01-31 07:40:22.660,manual,0.1,2.15
+NQ.OK914.HNN.01,0.566087,56.8382,Sg,2016-01-31 07:40:30.940,manual,0.9,1.15
+NQ.OK914.HNZ.01,0.566087,56.8382,Pg,2016-01-31 07:40:22.770,manual,0.1,2.13
+GS.OK034.HHZ.00,0.649869,57.4712,Pg,2016-01-31 07:40:24.030,manual,-0.3,1.97
+GS.OK034.HH2.00,0.649869,57.4712,Sg,2016-01-31 07:40:33.140,manual,0.4,1.11
+TA.TUL1.BHZ.--,1.32199,78.7226,Pn,2016-01-31 07:40:35.350,manual,-1.4,1.23
+TA.TUL1.BHN.--,1.32199,78.7226,Sg,2016-01-31 07:40:53.990,manual,-0.2,0.8
+GS.KAN13.HHZ.01,1.35018,356.982,Pn,2016-01-31 07:40:36.720,manual,-0.5,1.22
+GS.KAN14.HHZ.01,1.37292,340.433,Pn,2016-01-31 07:40:36.930,manual,-0.6,1.22
+US.WMOK.BHZ.10,1.46589,231.435,Pn,2016-01-31 07:40:38.190,manual,-0.6,1.21
+GS.OK035.HHZ.00,1.4939,314.73,Pn,2016-01-31 07:40:38.900,manual,-0.3,1.2
+GS.KAN01.HHZ.01,1.51814,348.771,Pn,2016-01-31 07:40:39.090,manual,-0.4,1.2
+AG.HHAR.HHZ.00,2.86518,76.5187,Pn,2016-01-31 07:40:58.990,manual,1.0,1.04
+US.MIAR.BHZ.00,3.31821,108.51,Pn,2016-01-31 07:41:04.580,manual,0.4,0.99
+AG.WHAR.HHZ.00,4.17863,93.6103,Pn,2016-01-31 07:41:15.690,manual,-0.3,0.92
+TA.W41B.BHZ.--,4.22682,95.1234,Pn,2016-01-31 07:41:16.350,manual,-0.3,0.91
+TA.T25A.BHZ.--,5.85211,286.651,Pn,2016-01-31 07:41:38.110,manual,-1.0,0.81

@@ -1,0 +1,47 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us2013pmc8
+#time = 2013-04-27 20:27:55.400000
+#location = 6km E of Luther, Oklahoma
+#latitude = 35.6640
+#longitude = -97.1290
+#depth = 6.9
+#magnitude = 2.7
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us2013pmc8
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+IR.OK005.--.--,0.05,259.6,Pg,2013-04-27 20:27:56.990,manual,0.0,1.0
+IR.OK023.--.--,0.07,335.9,Pg,2013-04-27 20:27:57.440,manual,0.3,1.0
+IR.OK002.--.--,0.13,205.7,Pg,2013-04-27 20:27:58.500,manual,0.4,1.0
+IR.TUL1.--.--,1.11,76.9,Pg,2013-04-27 20:28:16.310,manual,-0.5,1.0
+IR.WMOK.--.--,1.64,236.1,Pn,2013-04-27 20:28:24.960,manual,0.3,1.0
+IR.X37A.--.--,1.8,126.2,Pn,2013-04-27 20:28:26.980,manual,0.2,1.0
+IR.HHAR.--.--,2.66,75.7,Pn,2013-04-27 20:28:39.320,manual,0.6,1.0

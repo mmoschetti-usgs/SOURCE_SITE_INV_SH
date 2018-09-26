@@ -1,0 +1,67 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20003g9s
+#time = 2015-09-04 06:34:35.200000
+#location = 13km SSE of Alva, Oklahoma
+#latitude = 36.6890
+#longitude = -98.6160
+#depth = 6.0
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20003g9s
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK032.HHZ.00,0.345339,70.5015,Pg,2015-09-04 06:34:42.120,manual,0.2,2.71
+GS.KAN14.HHZ.01,0.588212,62.7778,Pg,2015-09-04 06:34:46.730,manual,0.2,2.09
+OK.CROK.HHZ.--,0.5413,109.676,Pg,2015-09-04 06:34:45.610,manual,0.0,2.18
+GS.KAN12.HHZ.01,0.783316,38.9873,Pg,2015-09-04 06:34:50.320,manual,0.1,1.76
+GS.KAN08.HHZ.01,0.74501,43.7208,Pg,2015-09-04 06:34:49.310,manual,-0.2,1.82
+GS.KAN17.HHZ.01,0.769151,62.3062,Pg,2015-09-04 06:34:50.100,manual,0.1,1.78
+OK.GC02.EHZ.--,0.628644,74.8224,Pg,2015-09-04 06:34:47.410,manual,0.1,2.01
+GS.KAN05.HHZ.01,0.728568,54.6891,Pg,2015-09-04 06:34:49.320,manual,0.1,1.84
+OK.BLOK.HHZ.--,1.12787,85.9485,Pg,2015-09-04 06:34:56.450,manual,-0.4,1.38
+GS.OK029.HHZ.00,1.29387,133.151,Pn,2015-09-04 06:34:59.230,manual,-0.5,1.23
+OK.QUOK.HHZ.--,1.62312,107.989,Pn,2015-09-04 06:35:04.400,manual,0.1,1.19
+GS.OK031.HHZ.00,1.61199,116.574,Pn,2015-09-04 06:35:04.610,manual,0.5,1.19
+GS.OK025.HHZ.00,1.51418,136.521,Pn,2015-09-04 06:35:02.950,manual,0.2,1.2
+OK.CHOK.HHZ.--,1.68851,131.344,Pn,2015-09-04 06:35:05.570,manual,0.4,1.18
+OK.U32A.BHZ.--,0.437909,225.256,Pg,2015-09-04 06:34:43.830,manual,0.2,2.43
+OK.GORE.HHZ.--,0.545911,79.6277,Pg,2015-09-04 06:34:46.250,manual,0.5,2.17
+GS.KAN10.HHZ.01,0.601999,43.7564,Pg,2015-09-04 06:34:46.810,manual,0.0,2.06
+GS.KAN11.HHZ.01,0.763666,47.2789,Pg,2015-09-04 06:34:49.990,manual,0.1,1.79
+GS.KS20.HHZ.00,1.0072,57.2819,Pg,2015-09-04 06:34:54.370,manual,-0.2,1.49
+GS.KAN13.HHZ.01,0.968518,70.1602,Pg,2015-09-04 06:34:53.730,manual,-0.1,1.53
+GS.OK032.HH1.00,0.345339,70.5015,Sg,2015-09-04 06:34:46.540,manual,0.1,1.25
+OK.U32A.BHN.--,0.437909,225.256,Sg,2015-09-04 06:34:50.240,manual,0.8,1.2
+OK.CROK.HHN.--,0.5413,109.676,Sg,2015-09-04 06:34:53.040,manual,0.4,1.16
+GS.KAN14.HHE.01,0.588212,62.7778,Sg,2015-09-04 06:34:53.470,manual,-0.7,1.14
+GS.KAN05.HHE.01,0.728568,54.6891,Sg,2015-09-04 06:34:57.930,manual,-0.7,1.08
+GS.KAN08.HHE.01,0.74501,43.7208,Sg,2015-09-04 06:34:58.030,manual,-1.2,1.08
+GS.KAN17.HHN.01,0.769151,62.3062,Sg,2015-09-04 06:34:58.490,manual,-1.5,1.07

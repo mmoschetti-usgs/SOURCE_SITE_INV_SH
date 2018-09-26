@@ -1,0 +1,46 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usp000hhcd
+#time = 2010-08-02 10:28:02
+#location = Oklahoma
+#latitude = 35.5570
+#longitude = -97.2410
+#depth = 3.0
+#magnitude = 2.8
+#magtype = mblg
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usp000hhcd
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+IR.W34A.--.--,0.54,233.7,Pg,2010-08-02 10:28:11.730,manual,-0.6,1.0
+IR.U34A.--.--,0.91,344.8,Pg,2010-08-02 10:28:18.550,manual,-0.9,1.0
+IR.TUL1.--.--,1.23,72.9,Pg,2010-08-02 10:28:24.120,manual,-1.5,1.0
+IR.WMOK.--.--,1.5,237.5,Pn,2010-08-02 10:28:28.290,manual,-1.6,1.0
+IR.MIAR.--.--,3.17,107.5,Pn,2010-08-02 10:28:52.830,manual,0.0,1.0
+IR.CBKS.--.--,3.81,329.2,Pn,2010-08-02 10:29:03.840,manual,2.2,1.0

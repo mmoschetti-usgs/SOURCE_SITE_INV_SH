@@ -1,0 +1,72 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000mr2r
+#time = 2014-02-14 21:51:55.100000
+#location = 11km SSW of Guthrie, Oklahoma
+#latitude = 35.7779
+#longitude = -97.4717
+#depth = 3.8
+#magnitude = 2.7
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000mr2r
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.BCOK.HHZ.--,0.164814,222.835,Pg,2014-02-14 21:51:58.720,manual,0.4,0.0
+OK.OKCSW.EHZ.--,0.372602,175.763,Pg,2014-02-14 21:52:02.400,manual,0.1,0.0
+GS.OK026.HHZ.00,0.362189,177.376,Pg,2014-02-14 21:52:02.330,manual,0.3,0.0
+GS.OK025.HHZ.00,0.224566,150.942,Pg,2014-02-14 21:51:59.810,manual,0.3,0.0
+OK.FNO.HHZ.01,0.52253,173.66,Pg,2014-02-14 21:52:05.810,manual,0.7,0.0
+OK.CROK.HHZ.--,0.835229,330.422,Pg,2014-02-14 21:52:11.030,automatic,-0.1,0.047
+US.CBKS.BHZ.00,3.52804,329.878,Pg,2014-02-14 21:52:59.650,automatic,1.5,0.007
+OK.FNO.HHN.01,0.52253,173.66,Sg,2014-02-14 21:52:13.000,manual,1.1,0.059
+TA.TUL1.BHZ.--,1.37117,83.9751,Sg,2014-02-14 21:52:38.700,automatic,-0.5,0.063
+TA.U40A.BHZ.--,3.78556,79.8754,Pg,2014-02-14 21:53:03.300,automatic,0.8,0.012
+TA.MSTX.BHZ.--,4.71604,249.045,Pg,2014-02-14 21:53:21.100,manual,2.7,0.012
+OK.OKCSW.EHE.--,0.372602,175.763,Sg,2014-02-14 21:52:07.940,manual,0.8,0.064
+TA.W39A.BHZ.--,3.06478,99.8455,Pg,2014-02-14 21:52:51.370,automatic,1.2,0.017
+GS.OK026.HH1.00,0.362189,177.376,Sg,2014-02-14 21:52:07.640,manual,0.8,0.066
+OK.BCOK.HHE.--,0.164814,222.835,Sg,2014-02-14 21:52:01.300,manual,0.8,0.139
+OK.U32A.BHZ.--,1.37693,296.298,Sn,2014-02-14 21:52:39.420,automatic,-0.5,0.098
+OK.W35A.EHZ.--,0.791708,141.82,Pg,2014-02-14 21:52:09.780,manual,-0.5,0.045
+US.WMOK.BHZ.10,1.49139,226.292,Pn,2014-02-14 21:52:22.270,manual,-0.5,0.124
+TA.TUL1.BHZ.--,1.37117,83.9751,Pn,2014-02-14 21:52:19.280,manual,-1.8,0.108
+OK.U32A.BHZ.--,1.37693,296.298,Pn,2014-02-14 21:52:19.970,manual,-1.2,0.088
+OK.X37A.BHZ.--,2.08958,123.971,Pn,2014-02-14 21:52:31.830,manual,0.9,0.101
+AG.HHAR.HHZ.00,2.90642,78.9978,Pn,2014-02-14 21:52:43.370,manual,1.2,0.076
+TA.W39A.BHZ.--,3.06478,99.8455,Pn,2014-02-14 21:52:44.450,manual,0.1,0.078
+US.CBKS.BHZ.00,3.52804,329.878,Pn,2014-02-14 21:52:50.780,manual,0.0,0.046
+TA.U40A.BHZ.--,3.78556,79.8754,Pn,2014-02-14 21:52:54.460,manual,0.2,0.064
+AG.WHAR.HHZ.00,4.2545,95.0585,Pn,2014-02-14 21:52:59.660,manual,-1.0,0.062
+TA.T25A.BHZ.--,5.75525,285.694,Pn,2014-02-14 21:53:23.250,manual,1.7,0.041
+GS.OK025.HH1.00,0.224566,150.942,Sg,2014-02-14 21:52:03.340,manual,0.9,0.06
+GS.ADOK.HNZ.--,0.14995,146.88,Pg,2014-02-14 21:51:58.280,manual,0.2,0.0
+GS.ADOK.HNE.--,0.14995,146.88,Sg,2014-02-14 21:52:00.820,manual,0.8,0.066
+GS.OK027.HHZ.00,0.166549,113.2,Pg,2014-02-14 21:51:58.700,manual,0.3,0.0
+GS.OK027.HH1.00,0.166549,113.2,Sg,2014-02-14 21:52:01.580,manual,1.0,0.109

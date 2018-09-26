@@ -1,0 +1,65 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20005bwm
+#time = 2016-03-22 22:02:56.600000
+#location = 9km SSW of Langston, Oklahoma
+#latitude = 35.8766
+#longitude = -97.3094
+#depth = 6.3
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20005bwm
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK029.HHZ.00,0.142653,236.015,Pg,2016-03-22 22:02:59.940,manual,0.4,3.61
+OK.QUOK.HHZ.--,0.569404,58.7154,Pg,2016-03-22 22:03:07.690,manual,0.1,2.13
+GS.OK025.HHZ.00,0.295772,184.504,Pg,2016-03-22 22:03:02.870,manual,0.5,2.89
+GS.OK033.HHZ.00,0.344573,60.8158,Pg,2016-03-22 22:03:03.650,manual,0.3,2.71
+OK.W35A.HHZ.--,0.804739,153.713,Pg,2016-03-22 22:03:12.640,manual,0.6,1.73
+GS.OK029.HH1.00,0.142653,236.015,Sg,2016-03-22 22:03:02.180,manual,0.6,1.36
+ZD.KNG1.EHZ.--,0.403883,309.296,Pg,2016-03-22 22:03:04.780,manual,0.4,2.53
+ZD.KNG1.EHN.--,0.403883,309.296,Sg,2016-03-22 22:03:10.390,manual,0.7,1.22
+OK.BCOK.HHZ.--,0.328073,228.11,Pg,2016-03-22 22:03:03.160,manual,0.2,2.77
+OK.BCOK.HHN.--,0.328073,228.11,Sg,2016-03-22 22:03:08.180,manual,0.9,1.26
+GS.OK025.HH2.00,0.295772,184.504,Sg,2016-03-22 22:03:07.370,manual,1.1,1.27
+GS.OK031.HHZ.00,0.389325,78.5543,Pg,2016-03-22 22:03:04.550,manual,0.4,2.57
+OK.CHOK.HHZ.--,0.373992,147.256,Pg,2016-03-22 22:03:04.300,manual,0.4,2.62
+OK.CHOK.HHN.--,0.373992,147.256,Sg,2016-03-22 22:03:09.810,manual,1.0,1.23
+GS.OK030.HHZ.00,0.429777,83.0184,Pg,2016-03-22 22:03:05.250,manual,0.3,2.46
+GS.OK034.HHZ.00,0.501827,74.4183,Pg,2016-03-22 22:03:06.530,manual,0.2,2.27
+OK.CROK.HHZ.--,0.830755,319.181,Pg,2016-03-22 22:03:12.170,manual,-0.4,1.7
+GS.KAN09.HHZ.01,1.28141,348.892,Pn,2016-03-22 22:03:20.270,manual,-0.7,1.23
+N4.T35B.BHZ.--,1.22083,31.5704,Pg,2016-03-22 22:03:19.310,manual,-0.7,1.31
+OK.U32A.BHZ.--,1.45883,290.619,Pn,2016-03-22 22:03:23.120,manual,-0.3,1.21
+OK.U32A.BHZ.--,1.45883,290.619,Sn,2016-03-22 22:03:43.050,manual,0.3,0.79
+OK.X34A.HHZ.--,1.34283,198.75,Pn,2016-03-22 22:03:21.740,manual,-0.1,1.22
+OK.X37A.BHZ.--,2.04129,128.431,Pn,2016-03-22 22:03:32.700,manual,1.3,1.13
+NQ.OK914.HNZ.01,0.420215,76.9257,Pg,2016-03-22 22:03:04.920,manual,0.2,2.48
+OK.OKCSW.EHZ.--,0.481605,192.6,Pg,2016-03-22 22:03:06.230,manual,0.3,2.32

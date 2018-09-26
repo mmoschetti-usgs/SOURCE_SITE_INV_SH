@@ -1,0 +1,62 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = ismpkansas70070298
+#time = 2015-01-27 17:27:59.450000
+#location = Kansas
+#latitude = 37.2698
+#longitude = -97.6270
+#depth = 1.5
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/ismpkansas70070298
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN08.HHZ.01,0.2778,261.1,P,2015-01-27 17:28:05.210,automatic,-0.02,0.14
+GS.KAN11.HHZ.01,0.2372,254.3,P,2015-01-27 17:28:04.450,automatic,-0.01,0.14
+N4.T35B.HHZ.,0.959,111.7,P,2015-01-27 17:28:18.040,automatic,0.29,0.0
+GS.KS21.HHZ.00,0.0332,300.2,P,2015-01-27 17:28:00.530,manual,0.01,0.14
+GS.KS21.HH1.00,0.0332,300.2,S,2015-01-27 17:28:01.270,manual,0.04,0.14
+NQ.KAN15.HNZ.01,0.05262,55.3,P,2015-01-27 17:28:00.900,manual,-0.02,0.14
+GS.KAN06.HHZ.01,0.1861,263.2,P,2015-01-27 17:28:03.460,manual,-0.03,0.14
+GS.KAN06.HHE.01,0.1861,263.2,S,2015-01-27 17:28:06.250,manual,-0.07,0.14
+NQ.KAN02.HNN.01,0.2134,250.2,S,2015-01-27 17:28:07.250,manual,-0.01,0.07
+GS.KAN08.HHE.01,0.2778,261.1,S,2015-01-27 17:28:09.300,manual,0.03,0.07
+GS.KAN13.HHE.01,0.2828,155.2,S,2015-01-27 17:28:09.480,manual,0.16,0.03
+GS.KAN10.HHZ.01,0.4013,248.6,P,2015-01-27 17:28:07.530,manual,-0.02,0.07
+NQ.KAN15.HNN.01,0.05262,55.3,S,2015-01-27 17:28:01.960,manual,-0.04,0.03
+GS.KAN01.HHZ.01,0.1569,222.1,P,2015-01-27 17:28:02.940,manual,0.02,0.14
+GS.KAN01.HHN.01,0.1569,222.1,S,2015-01-27 17:28:05.480,manual,0.1,0.07
+NQ.KAN02.HNZ.01,0.2134,250.2,P,2015-01-27 17:28:04.060,manual,0.02,0.03
+GS.KAN11.HHN.01,0.2372,254.3,S,2015-01-27 17:28:07.920,manual,-0.06,0.14
+GS.KAN13.HHZ.01,0.2828,155.2,P,2015-01-27 17:28:05.300,manual,0.03,0.14
+GS.KAN12.HHZ.01,0.2972,275.3,P,2015-01-27 17:28:05.550,manual,-0.05,0.03
+GS.KAN12.HHN.01,0.2972,275.3,S,2015-01-27 17:28:10.060,manual,0.14,0.14
+GS.KAN14.HHZ.01,0.412,220.6,P,2015-01-27 17:28:07.770,manual,0.04,0.07
+GS.KAN14.HHE.01,0.412,220.6,S,2015-01-27 17:28:13.570,manual,0.07,0.07

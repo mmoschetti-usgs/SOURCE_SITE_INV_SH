@@ -1,0 +1,72 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10001qu7
+#time = 2015-03-26 04:06:43.600000
+#location = 11km E of Alva, Oklahoma
+#latitude = 36.7949
+#longitude = -98.5344
+#depth = 6.0
+#magnitude = 2.8
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10001qu7
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK032.HHZ.00,0.260212,87.9467,Pg,2015-03-26 04:06:48.910,manual,0.2,3.03
+OK.GC02.EHZ.--,0.544411,83.8414,Pg,2015-03-26 04:06:54.130,manual,0.0,2.18
+N4.R32B.BHZ.--,1.63083,355.118,Pn,2015-03-26 04:07:13.440,manual,0.5,1.18
+TA.U40A.BHZ.--,4.59323,93.7698,Pn,2015-03-26 04:07:54.090,manual,0.5,0.88
+US.CBKS.BHZ.00,2.22951,335.065,Pn,2015-03-26 04:07:21.830,manual,0.7,1.11
+GS.KAN10.HHZ.01,0.481031,46.8809,Pg,2015-03-26 04:06:53.270,manual,0.4,2.32
+US.WMOK.BHZ.10,2.06233,185.646,Pn,2015-03-26 04:07:19.530,manual,0.7,1.13
+GS.KAN14.HHZ.01,0.485848,70.4021,Pg,2015-03-26 04:06:53.050,manual,0.1,2.31
+GS.KAN09.HHZ.01,0.808912,64.8267,Pg,2015-03-26 04:06:58.950,manual,-0.2,1.73
+OK.CROK.HHZ.--,0.529381,123.005,Pg,2015-03-26 04:06:53.900,manual,0.1,2.21
+OK.KAY1.HHZ.--,1.06204,91.3382,Pg,2015-03-26 04:07:03.380,manual,-0.6,1.44
+N4.T35B.BHZ.--,1.62668,85.1256,Pn,2015-03-26 04:07:13.220,manual,0.4,1.19
+OK.FNO.HHZ.01,1.78822,148.756,Pn,2015-03-26 04:07:16.600,manual,1.6,1.16
+GS.OK025.HHZ.00,1.5505,141.018,Pn,2015-03-26 04:07:12.460,manual,0.7,1.2
+OK.U32A.BHZ.--,0.559604,222.336,Pg,2015-03-26 04:06:54.390,manual,0.0,2.15
+GS.KAN12.HHZ.01,0.660115,40.3906,Pg,2015-03-26 04:06:55.950,manual,-0.3,1.95
+GS.OK032.HH1.00,0.260212,87.9467,Sg,2015-03-26 04:06:53.040,manual,0.9,1.29
+GS.KAN10.HHN.01,0.481031,46.8809,Sg,2015-03-26 04:06:59.660,manual,0.5,1.18
+GS.KAN14.HHE.01,0.485848,70.4021,Sg,2015-03-26 04:06:59.950,manual,0.6,1.18
+OK.CROK.HHN.--,0.529381,123.005,Sg,2015-03-26 04:07:01.400,manual,0.7,1.16
+OK.GC02.EHN.--,0.544411,83.8414,Sg,2015-03-26 04:07:01.750,manual,0.6,1.16
+GS.KAN05.HHZ.01,0.615917,59.2462,Pg,2015-03-26 04:06:55.240,manual,-0.2,2.03
+GS.KAN05.HHN.01,0.615917,59.2462,Sg,2015-03-26 04:07:04.100,manual,0.6,1.13
+GS.KAN12.HHN.01,0.660115,40.3906,Sg,2015-03-26 04:07:05.260,manual,0.4,1.11
+GS.KAN13.HHZ.01,0.874444,75.2748,Pg,2015-03-26 04:07:00.040,manual,-0.4,1.64
+OK.BCOK.HHZ.--,1.36003,146.359,Pn,2015-03-26 04:07:08.570,manual,-0.6,1.22
+OK.QUOK.HHZ.--,1.59805,112.371,Pn,2015-03-26 04:07:12.780,manual,0.4,1.19
+N4.U38B.BHZ.--,3.35638,94.8273,Pn,2015-03-26 04:07:37.320,manual,0.7,0.99
+AG.HHAR.HHZ.00,3.73503,96.504,Pn,2015-03-26 04:07:42.270,manual,0.5,0.95
+OK.X37A.BHZ.--,3.3869,129.592,Pn,2015-03-26 04:07:37.250,manual,0.3,0.99
+N4.S39B.BHZ.--,4.25362,76.2946,Pn,2015-03-26 04:07:47.790,manual,-1.1,0.91
+US.OGNE.BHZ.00,4.96213,327.699,Pn,2015-03-26 04:07:59.460,manual,0.7,0.86

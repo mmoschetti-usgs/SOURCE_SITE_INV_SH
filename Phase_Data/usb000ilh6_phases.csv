@@ -1,0 +1,56 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000ilh6
+#time = 2013-07-24 11:52:05
+#location = 13km S of Boley, Oklahoma
+#latitude = 35.3730
+#longitude = -96.4810
+#depth = 8.6
+#magnitude = 3.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000ilh6
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+IR.TUL1.--.--,0.78,46.1,Pg,2013-07-24 11:52:19.550,manual,-0.4,1.0
+IR.OK009.--.--,0.8,285.4,Sg,2013-07-24 11:52:30.840,manual,0.1,1.0
+IR.WMOK.--.--,1.99,252.1,Pn,2013-07-24 11:52:40.060,manual,1.2,1.0
+IR.W39A.--.--,2.21,93.8,Pn,2013-07-24 11:52:42.740,manual,0.8,1.0
+IR.HHAR.--.--,2.26,65.6,Pn,2013-07-24 11:52:43.320,manual,0.8,1.0
+IR.MIAR.--.--,2.52,108.3,Pn,2013-07-24 11:52:47.900,manual,1.7,1.0
+IR.X40A.--.--,3.12,105.4,Pn,2013-07-24 11:52:55.730,manual,1.3,1.0
+IR.WLAR.--.--,3.25,120.2,Pn,2013-07-24 11:52:57.250,manual,1.1,1.0
+IR.WHAR.--.--,3.43,90.2,Pn,2013-07-24 11:52:59.500,manual,0.8,1.0
+IR.UALR.--.--,3.45,98.8,Pn,2013-07-24 11:53:00.010,manual,1.1,1.0
+IR.FCAR.--.--,3.59,80.5,Pn,2013-07-24 11:53:01.310,manual,0.5,1.0
+IR.WHTX.--.--,3.47,193.8,Pn,2013-07-24 11:53:01.760,manual,2.5,1.0
+IR.NATX.--.--,3.91,156.6,Pn,2013-07-24 11:53:08.720,manual,3.4,1.0
+IR.AMTX.--.--,4.29,265.0,Pn,2013-07-24 11:53:11.360,manual,0.8,0.0
+IR.CCM.--.--,4.99,56.0,Pn,2013-07-24 11:53:20.310,manual,0.3,0.0
+IR.MSTX.--.--,5.37,256.7,Pn,2013-07-24 11:53:25.620,manual,0.2,0.0

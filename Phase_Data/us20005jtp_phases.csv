@@ -1,0 +1,70 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20005jtp
+#time = 2016-04-19 00:31:24
+#location = 33km NW of Fairview, Oklahoma
+#latitude = 36.4437
+#longitude = -98.7822
+#depth = 7.3
+#magnitude = 2.7
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20005jtp
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK039.HHZ.00,0.122039,120.427,Pg,2016-04-19 00:31:26.970,automatic,0.3,3.74
+GS.OK037.HHZ.00,0.0711873,25.2599,Pg,2016-04-19 00:31:26.330,manual,0.4,4.09
+OK.U32A.BHZ.--,0.188072,250.148,Pg,2016-04-19 00:31:28.070,manual,0.2,3.36
+GS.OK036.HHZ.00,0.136083,62.8626,Pg,2016-04-19 00:31:27.410,manual,0.5,3.65
+GS.OK038.HHZ.00,0.0471743,43.1119,Pg,2016-04-19 00:31:25.010,manual,-0.6,4.28
+GS.OK043.HHZ.00,0.0311818,109.237,Pg,2016-04-19 00:31:25.720,manual,0.2,4.42
+ZD.KNG1.EHZ.--,0.93136,109.169,Pg,2016-04-19 00:31:41.630,automatic,-0.3,1.58
+GS.OK040.HHZ.00,0.0955231,65.791,Pg,2016-04-19 00:31:26.680,manual,0.4,3.92
+GS.OK041.HHZ.00,0.202518,83.275,Pg,2016-04-19 00:31:28.260,manual,0.2,3.29
+GS.OK043.HH1.00,0.0311818,109.237,Sg,2016-04-19 00:31:26.970,manual,0.5,1.42
+GS.OK038.HH1.00,0.0471743,43.1119,Sg,2016-04-19 00:31:26.440,manual,-0.3,1.41
+GS.OK042.HHZ.00,0.0568372,224.402,Pg,2016-04-19 00:31:25.980,manual,0.2,4.21
+GS.OK042.HH1.00,0.0568372,224.402,Sg,2016-04-19 00:31:27.420,manual,0.5,1.41
+GS.OK037.HH1.00,0.0711873,25.2599,Sg,2016-04-19 00:31:28.030,manual,0.8,1.4
+GS.OK040.HH1.00,0.0955231,65.791,Sg,2016-04-19 00:31:28.570,manual,0.7,1.38
+GS.OK039.HH1.00,0.122039,120.427,Sg,2016-04-19 00:31:29.110,manual,0.6,1.37
+GS.OK036.HH1.00,0.136083,62.8626,Sg,2016-04-19 00:31:29.790,manual,0.9,1.36
+OK.U32A.BHE.--,0.188072,250.148,Sg,2016-04-19 00:31:31.400,manual,1.0,1.33
+GS.OK041.HH1.00,0.202518,83.275,Sg,2016-04-19 00:31:31.760,manual,0.9,1.32
+OK.NOKA.HHZ.--,0.225549,327.734,Pg,2016-04-19 00:31:28.900,manual,0.4,3.18
+OK.NOKA.HHE.--,0.225549,327.734,Sg,2016-04-19 00:31:32.600,manual,1.0,1.31
+GS.OK035.HHZ.00,0.270354,12.4452,Pg,2016-04-19 00:31:29.750,manual,0.4,2.99
+GS.OK035.HH1.00,0.270354,12.4452,Sg,2016-04-19 00:31:33.990,manual,1.0,1.29
+OK.HTCH.HHZ.--,0.559756,139.38,Pg,2016-04-19 00:31:34.860,manual,0.1,2.15
+OK.HTCH.HHE.--,0.559756,139.38,Sg,2016-04-19 00:31:42.620,manual,0.5,1.15
+GS.OK032.HHZ.00,0.583752,51.8294,Pg,2016-04-19 00:31:34.910,manual,-0.4,2.1
+GS.OK032.HH1.00,0.583752,51.8294,Sg,2016-04-19 00:31:43.110,manual,0.2,1.14
+OK.ELIS.HHZ.--,0.637729,233.879,Pg,2016-04-19 00:31:36.330,manual,0.0,1.99
+OK.ELIS.HHE.--,0.637729,233.879,Sg,2016-04-19 00:31:45.530,manual,0.9,1.12
+GS.KAN16.HHZ.01,0.969743,36.1988,Pg,2016-04-19 00:31:41.560,manual,-1.1,1.53

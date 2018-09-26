@@ -1,0 +1,65 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10001nlh
+#time = 2015-03-18 19:18:37.500000
+#location = 20km SSE of Medford, Oklahoma
+#latitude = 36.6312
+#longitude = -97.6550
+#depth = 6.2
+#magnitude = 2.7
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10001nlh
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.GC02.EHZ.--,0.27451,323.285,Pg,2015-03-18 19:18:43.220,manual,0.3,2.97
+GS.KAN13.HHZ.01,0.406643,20.4139,Pg,2015-03-18 19:18:45.800,manual,0.4,2.52
+GS.KAN14.HHZ.01,0.408331,322.829,Pg,2015-03-18 19:18:45.670,manual,0.3,2.52
+GS.OK032.HHZ.00,0.478367,291.273,Pg,2015-03-18 19:18:46.430,manual,-0.3,2.33
+GS.KAN09.HHZ.01,0.504803,3.33047,Pg,2015-03-18 19:18:47.500,manual,0.3,2.27
+GS.KAN01.HHZ.01,0.527839,350.943,Pg,2015-03-18 19:18:47.940,manual,0.3,2.21
+OK.CROK.HHZ.--,0.292979,244.572,Sg,2015-03-18 19:18:46.770,manual,-0.3,1.27
+GS.KAN11.HHZ.01,0.60992,340.237,Pg,2015-03-18 19:18:49.440,manual,0.2,2.05
+OK.KAY1.HHZ.--,0.37932,69.6248,Sg,2015-03-18 19:18:49.000,manual,-0.8,1.23
+GS.OK031.HHZ.00,0.944688,135.511,Pg,2015-03-18 19:18:54.800,manual,-0.8,1.56
+GS.OK030.HHZ.00,0.994132,134.661,Pg,2015-03-18 19:18:56.160,manual,-0.4,1.51
+OK.QUOK.HHZ.--,0.891224,120.708,Pg,2015-03-18 19:18:54.370,manual,-0.2,1.62
+GS.KAN10.HHZ.01,0.604959,324.446,Pg,2015-03-18 19:18:49.250,manual,0.1,2.05
+US.KSU1.BHZ.10,2.60067,18.2343,Pn,2015-03-18 19:19:19.670,manual,-0.4,1.07
+US.WMOK.BHZ.10,2.09969,206.207,Pn,2015-03-18 19:19:13.730,manual,0.5,1.12
+N4.T35B.BHZ.--,0.960886,72.4391,Pg,2015-03-18 19:18:55.480,manual,-0.5,1.54
+N4.P38B.BHZ.--,4.41547,46.1527,Pn,2015-03-18 19:19:44.060,manual,-1.0,0.9
+N4.U38B.BHZ.--,2.63991,93.1836,Pn,2015-03-18 19:19:20.410,manual,-0.2,1.06
+N4.N35B.BHZ.--,4.50706,19.8114,Pn,2015-03-18 19:19:46.330,manual,0.1,0.89
+N4.K31B.BHZ.--,6.04389,352.269,Pn,2015-03-18 19:20:07.170,manual,-0.2,0.82
+OK.CROK.HHZ.--,0.292979,244.572,Pg,2015-03-18 19:18:43.390,manual,0.2,2.9
+OK.KAY1.HHZ.--,0.37932,69.6248,Pg,2015-03-18 19:18:44.820,manual,0.0,2.6
+GS.KAN12.HHZ.01,0.719466,337.655,Pg,2015-03-18 19:18:51.110,manual,-0.2,1.86
+N4.R32B.BHZ.--,1.97544,335.168,Pn,2015-03-18 19:19:10.650,manual,-0.9,1.14
+OK.X37A.BHZ.--,2.75922,136.925,Pn,2015-03-18 19:19:22.040,manual,-0.2,1.05

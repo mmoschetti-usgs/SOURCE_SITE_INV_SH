@@ -1,0 +1,68 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000k99s
+#time = 2013-10-09 05:26:21.600000
+#location = 13km NW of Yale, Oklahoma
+#latitude = 36.1856
+#longitude = -96.8205
+#depth = 5.0
+#magnitude = 2.7
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000k99s
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+AG.HHAR.HHZ.00,2.33078,86.7836,Pn,2013-10-09 05:27:01.630,manual,1.0,0.052
+US.CBKS.BHZ.00,3.50186,319.397,Pn,2013-10-09 05:27:21.910,manual,5.2,0.131
+TA.TUL1.BHZ.--,0.877646,107.932,Pg,2013-10-09 05:26:38.350,manual,-0.1,0.166
+IU.CCM.BHZ.10,4.83092,65.6083,Pn,2013-10-09 05:27:36.760,manual,1.8,0.047
+TA.W41B.BHZ.--,3.85683,103.835,Sn,2013-10-09 05:28:09.150,automatic,1.9,0.02
+IU.CCM.BHZ.10,4.83092,65.6083,Sn,2013-10-09 05:28:36.990,manual,5.7,0.026
+OK.U32A.BHZ.--,1.77272,276.911,Pn,2013-10-09 05:26:54.060,manual,1.1,0.15
+TA.TUL1.BHZ.--,0.877646,107.932,Sg,2013-10-09 05:26:49.890,manual,0.1,0.185
+TA.W39A.BHZ.--,2.66158,110.886,Pn,2013-10-09 05:27:07.330,manual,2.2,0.048
+TA.W39A.BHZ.--,2.66158,110.886,Sg,2013-10-09 05:27:43.750,manual,1.0,0.401
+US.WMOK.BHZ.10,2.15563,228.499,Pn,2013-10-09 05:26:58.870,manual,0.6,0.138
+US.MIAR.BHZ.00,3.11545,120.738,Pn,2013-10-09 05:27:12.480,manual,1.1,0.049
+TA.U40A.BHZ.--,3.2101,85.7857,Pn,2013-10-09 05:27:13.620,manual,0.9,0.044
+US.MIAR.BHZ.00,3.11545,120.738,Sn,2013-10-09 05:27:47.580,manual,-1.4,0.034
+TA.U40A.BHZ.--,3.2101,85.7857,Sn,2013-10-09 05:27:52.500,manual,1.1,0.028
+OK.U32A.BHZ.--,1.77272,276.911,Sn,2013-10-09 05:27:17.490,manual,1.6,0.155
+AG.HHAR.HHZ.00,2.33078,86.7836,Sn,2013-10-09 05:27:32.060,manual,2.4,0.043
+TA.X40A.BHZ.--,3.67291,116.307,Pn,2013-10-09 05:27:20.740,manual,1.7,0.042
+AG.WHAR.HHZ.00,3.79298,102.295,Pn,2013-10-09 05:27:22.150,manual,1.4,0.036
+AG.WLAR.HHZ.00,3.93543,128.203,Pn,2013-10-09 05:27:22.260,manual,-0.4,0.048
+TA.W41B.BHZ.--,3.85683,103.835,Pn,2013-10-09 05:27:23.080,manual,1.5,0.036
+AG.FCAR.HHZ.00,3.81757,93.0467,Pn,2013-10-09 05:27:24.890,manual,3.9,0.037
+NM.MGMO.BHZ.--,3.78471,73.854,Pn,2013-10-09 05:27:22.100,manual,1.5,0.048
+NM.PBMO.BHZ.--,5.18353,81.552,Pn,2013-10-09 05:27:41.450,manual,1.6,0.033
+NM.PBMO.BHZ.--,5.18353,81.552,Sn,2013-10-09 05:28:40.360,manual,0.4,0.02
+GS.ADOK.HNZ.--,0.695175,220.17,Pg,2013-10-09 05:26:32.410,manual,-2.5,0.394
+GS.ADOK.HNZ.--,0.695175,220.17,Sg,2013-10-09 05:26:35.060,manual,-8.9,0.37
+TA.MSTX.BHZ.--,5.35763,247.366,Pn,2013-10-09 05:27:42.020,manual,-0.3,0.073

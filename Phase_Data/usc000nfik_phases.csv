@@ -1,0 +1,68 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000nfik
+#time = 2014-03-17 23:10:25.200000
+#location = 15km NNE of Crescent, Oklahoma
+#latitude = 36.0821
+#longitude = -97.5431
+#depth = 4.0
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000nfik
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK029.HHZ.00,0.29375,165.872,Pg,2014-03-17 23:10:31.480,manual,0.6,0.0
+OK.BCOK.HHZ.--,0.427888,187.238,Pg,2014-03-17 23:10:33.790,manual,0.4,0.0
+GS.OK027.HHZ.00,0.425189,150.219,Pg,2014-03-17 23:10:33.980,manual,0.6,0.0
+GS.OK028.HHZ.00,0.650796,142.879,Pg,2014-03-17 23:10:38.030,automatic,0.3,0.087
+OK.CROK.HHZ.--,0.551722,319.985,Pg,2014-03-17 23:10:36.250,manual,0.4,0.0
+GS.OK025.HHZ.00,0.527006,161.494,Pg,2014-03-17 23:10:35.800,manual,0.5,0.0
+US.WMOK.BHZ.10,1.6795,217.368,Pn,2014-03-17 23:10:55.590,manual,0.2,0.127
+OK.X34A.HHZ.--,1.49661,189.183,Pn,2014-03-17 23:10:52.990,manual,0.1,0.106
+TA.TUL1.BHZ.--,1.43037,96.3646,Pn,2014-03-17 23:10:51.590,manual,-0.4,0.106
+TA.TUL1.BHZ.--,1.43037,96.3646,Sn,2014-03-17 23:11:11.800,automatic,0.6,0.127
+N4.T35B.BHZ.--,1.17615,44.6412,Pg,2014-03-17 23:10:47.770,automatic,0.0,0.111
+GS.OK029.HH2.00,0.29375,165.872,Sg,2014-03-17 23:10:35.630,manual,0.9,0.081
+GS.OK027.HH1.00,0.425189,150.219,Sg,2014-03-17 23:10:40.020,manual,1.1,0.08
+OK.BCOK.HHE.--,0.427888,187.238,Sg,2014-03-17 23:10:39.830,manual,0.8,0.109
+GS.OK025.HH2.00,0.527006,161.494,Sg,2014-03-17 23:10:43.130,manual,1.0,0.063
+OK.CROK.HHE.--,0.551722,319.985,Sg,2014-03-17 23:10:43.980,manual,1.0,0.088
+GS.OK026.HHZ.00,0.669536,173.577,Pg,2014-03-17 23:10:37.550,manual,-0.5,0.07
+OK.W35A.EHZ.--,1.07553,149.374,Pg,2014-03-17 23:10:45.360,manual,-0.5,0.038
+OK.U32A.BHZ.--,1.21585,284.559,Pg,2014-03-17 23:10:48.150,manual,-0.4,0.094
+US.WMOK.BHZ.10,1.6795,217.368,Sg,2014-03-17 23:11:18.110,manual,-0.1,0.38
+OK.X37A.BHZ.--,2.31759,129.36,Pn,2014-03-17 23:11:04.570,manual,0.4,0.074
+N4.R32B.BHZ.--,2.51513,338.603,Pn,2014-03-17 23:11:06.490,manual,-0.4,0.069
+AG.HHAR.HHZ.00,2.92166,85.0225,Pn,2014-03-17 23:11:12.910,manual,0.4,0.079
+N4.U38B.BHZ.--,2.57655,81.1137,Pn,2014-03-17 23:11:07.720,manual,0.0,0.086
+US.CBKS.BHZ.00,3.23805,328.027,Pn,2014-03-17 23:11:17.720,manual,0.9,0.063
+US.MIAR.BHZ.00,3.58766,114.141,Pn,2014-03-17 23:11:22.570,manual,1.0,0.062
+TA.U40A.BHZ.--,3.80172,84.4891,Pn,2014-03-17 23:11:23.010,manual,-1.6,0.067
+TA.W41B.BHZ.--,4.40741,100.316,Pn,2014-03-17 23:11:33.580,manual,0.7,0.057

@@ -1,0 +1,53 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000h29v
+#time = 2013-05-19 13:33:06.280000
+#location = 18km SSE of Medford, Oklahoma
+#latitude = 36.6510
+#longitude = -97.6640
+#depth = 6.8
+#magnitude = 2.7
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000h29v
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+IR.OK023.--.--,1.01,156.1,Pg,2013-05-19 13:33:25.180,manual,-0.5,1.0
+IR.OK024.--.--,1.05,151.9,Pg,2013-05-19 13:33:25.830,manual,-0.5,1.0
+IR.TUL1.--.--,1.68,115.5,Pn,2013-05-19 13:33:36.740,manual,0.6,1.0
+IR.WMOK.--.--,2.11,205.8,Pn,2013-05-19 13:33:42.540,manual,0.4,1.0
+IR.X37A.--.--,2.78,137.1,Pn,2013-05-19 13:33:52.220,manual,1.0,1.0
+IR.HHAR.--.--,3.02,95.9,Pn,2013-05-19 13:33:56.020,manual,1.4,1.0
+IR.W39A.--.--,3.47,113.6,Pn,2013-05-19 13:34:01.040,manual,0.3,1.0
+IR.AMTX.--.--,3.71,242.8,Pn,2013-05-19 13:34:04.580,manual,0.4,1.0
+IR.MIAR.--.--,3.94,121.0,Pn,2013-05-19 13:34:07.930,manual,0.8,1.0
+IR.X40A.--.--,4.49,117.3,Pn,2013-05-19 13:34:14.390,manual,-0.4,1.0
+IR.WHAR.--.--,4.57,105.7,Pn,2013-05-19 13:34:15.480,manual,-0.3,1.0
+IR.KSCO.--.--,4.58,302.5,Pn,2013-05-19 13:34:16.680,manual,0.5,1.0
+IR.BGNE.--.--,4.77,355.6,Pn,2013-05-19 13:34:19.400,manual,0.8,1.0

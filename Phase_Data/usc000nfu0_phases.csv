@@ -1,0 +1,55 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000nfu0
+#time = 2014-03-18 15:58:55.400000
+#location = 18km SSE of Medford, Oklahoma
+#latitude = 36.6440
+#longitude = -97.6800
+#depth = 5.0
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000nfu0
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.CROK.HHZ.--,0.281031,240.44,Pg,2014-03-18 15:59:00.850,manual,0.0,0.0
+N4.T35B.BHZ.--,0.976372,73.4951,Pg,2014-03-18 15:59:13.490,manual,-0.6,0.119
+GS.OK027.HHZ.00,0.983824,160.857,Pg,2014-03-18 15:59:14.150,manual,-0.1,0.17
+OK.BCOK.HHZ.--,0.986927,176.655,Pg,2014-03-18 15:59:14.310,manual,0.0,0.153
+OK.U32A.BHZ.--,1.09681,256.467,Pg,2014-03-18 15:59:16.190,manual,-0.3,0.103
+GS.OK028.HHZ.00,1.19112,154.946,Pg,2014-03-18 15:59:18.100,manual,-0.1,0.133
+GS.OK025.HHZ.00,1.09627,165.263,Pg,2014-03-18 15:59:15.880,manual,-0.5,0.143
+OK.FNO.HHZ.01,1.40205,170.633,Pn,2014-03-18 15:59:21.390,manual,-0.2,0.066
+OK.W35A.EHZ.--,1.6255,156.039,Pn,2014-03-18 15:59:24.220,manual,-0.5,0.066
+TA.TUL1.BHZ.--,1.6922,115.074,Pn,2014-03-18 15:59:25.980,manual,0.4,0.062
+OK.X34A.HHZ.--,2.04234,183.535,Pn,2014-03-18 15:59:31.530,manual,1.1,0.054
+US.WMOK.BHZ.10,2.10241,205.547,Pn,2014-03-18 15:59:31.620,manual,0.3,0.048
+OK.CROK.HHN.--,0.281031,240.44,Sg,2014-03-18 15:59:05.820,manual,1.2,0.212
+N4.T35B.BHN.--,0.976372,73.4951,Sg,2014-03-18 15:59:26.500,manual,-0.3,0.143
+GS.OK027.HH2.00,0.983824,160.857,Sg,2014-03-18 15:59:27.060,manual,0.0,0.206

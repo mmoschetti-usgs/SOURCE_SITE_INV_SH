@@ -1,0 +1,69 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000s48i
+#time = 2014-08-19 12:44:28.300000
+#location = 12km N of Edmond, Oklahoma
+#latitude = 35.7681
+#longitude = -97.4660
+#depth = 4.5
+#magnitude = 2.9
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000s48i
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK029.HHZ.00,0.0298366,17.6055,Pg,2014-08-19 12:44:29.710,manual,0.4,0.0
+GS.ADOK.HNZ.--,0.139235,146.282,Pg,2014-08-19 12:44:31.500,manual,0.4,0.0
+GS.OK027.HHZ.00,0.158598,110.615,Pg,2014-08-19 12:44:31.880,manual,0.4,0.0
+OK.BCOK.HHZ.--,0.161108,226.414,Pg,2014-08-19 12:44:31.680,manual,0.2,0.0
+GS.OK009.HNZ.01,0.189673,169.324,Pg,2014-08-19 12:44:32.260,manual,0.2,0.0
+GS.OK025.HHZ.00,0.213768,150.759,Pg,2014-08-19 12:44:32.810,manual,0.3,0.0
+GS.OK005.HNZ.01,0.250619,116.709,Pg,2014-08-19 12:44:33.540,manual,0.4,0.0
+GS.OK026.HHZ.00,0.352233,178.059,Pg,2014-08-19 12:44:35.200,manual,0.1,0.0
+OK.OKCSW.EHZ.--,0.362529,176.383,Pg,2014-08-19 12:44:35.410,manual,0.1,0.0
+GS.OK028.HHZ.00,0.388857,121.967,Pg,2014-08-19 12:44:36.040,manual,0.2,0.0
+OK.FNO.HHZ.01,0.512311,174.058,Pg,2014-08-19 12:44:38.580,manual,0.4,0.0
+OK.QUOK.HHZ.--,0.734881,56.5726,Pg,2014-08-19 12:44:42.070,manual,-0.3,0.075
+OK.W35A.EHZ.--,0.781159,141.647,Pg,2014-08-19 12:44:42.970,manual,-0.3,0.034
+OK.CROK.HHZ.--,0.846021,330.479,Pg,2014-08-19 12:44:44.210,manual,-0.3,0.031
+OK.KAY1.HHZ.--,1.01355,11.6011,Pg,2014-08-19 12:44:47.520,manual,-0.2,0.031
+OK.X34A.HHZ.--,1.20254,194.566,Pg,2014-08-19 12:44:51.060,manual,-0.3,0.025
+GS.KAN13.HHZ.01,1.24234,359.565,Pg,2014-08-19 12:44:51.260,manual,-0.9,0.02
+TA.TUL1.BHZ.--,1.36762,83.5507,Pn,2014-08-19 12:44:52.660,manual,-1.5,0.059
+N4.T35B.BHZ.--,1.38064,33.6318,Pn,2014-08-19 12:44:53.340,manual,-1.0,0.049
+NQ.KAN02.HNZ.01,1.46501,347.0,Pn,2014-08-19 12:44:55.490,manual,0.0,0.032
+GS.KAN11.HHZ.01,1.47962,346.032,Pn,2014-08-19 12:44:56.190,manual,0.5,0.031
+NQ.KAN08.HNZ.01,1.51148,344.535,Pn,2014-08-19 12:44:55.540,manual,-0.6,0.031
+GS.OK029.HH2.00,0.0298366,17.6055,Sg,2014-08-19 12:44:31.050,manual,1.0,0.18
+GS.ADOK.HNN.--,0.139235,146.282,Sg,2014-08-19 12:44:33.900,manual,0.9,0.051
+GS.OK027.HH2.00,0.158598,110.615,Sg,2014-08-19 12:44:34.500,manual,0.9,0.078
+OK.BCOK.HHE.--,0.161108,226.414,Sg,2014-08-19 12:44:34.250,manual,0.6,0.124
+GS.OK009.HNN.01,0.189673,169.324,Sg,2014-08-19 12:44:35.450,manual,0.9,0.052
+GS.OK025.HH2.00,0.213768,150.759,Sg,2014-08-19 12:44:36.170,manual,0.9,0.046
+GS.OK005.HNN.01,0.250619,116.709,Sg,2014-08-19 12:44:37.500,manual,1.0,0.067

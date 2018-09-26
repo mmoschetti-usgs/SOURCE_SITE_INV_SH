@@ -1,0 +1,68 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000tnry
+#time = 2015-02-10 13:21:12.900000
+#location = 9km S of Caldwell, Kansas
+#latitude = 36.9440
+#longitude = -97.6259
+#depth = 5.0
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000tnry
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN13.HHZ.01,0.137096,59.8474,Pg,2015-02-10 13:21:16.110,manual,0.4,3.65
+GS.KAN08.HHZ.01,0.394637,315.749,Pg,2015-02-10 13:21:20.840,manual,0.3,2.56
+N4.T35B.BHZ.--,0.893075,91.4458,Pg,2015-02-10 13:21:29.660,manual,-0.4,1.62
+GS.KAN01.HHZ.01,0.234576,333.041,Pg,2015-02-10 13:21:17.850,manual,0.4,3.14
+GS.KAN11.HHZ.01,0.348174,318.773,Pg,2015-02-10 13:21:19.930,manual,0.3,2.7
+OK.KAY1.HHZ.--,0.377965,118.481,Pg,2015-02-10 13:21:20.380,manual,0.2,2.61
+GS.KAN12.HHZ.01,0.461403,319.976,Pg,2015-02-10 13:21:22.130,manual,0.3,2.37
+OK.QUOK.HHZ.--,1.06806,135.941,Pg,2015-02-10 13:21:32.810,manual,-0.6,1.43
+GS.OK031.HHZ.00,1.1749,147.086,Pg,2015-02-10 13:21:34.950,manual,-0.5,1.34
+GS.OK030.HHZ.00,1.22052,145.943,Pg,2015-02-10 13:21:35.800,manual,-0.5,1.31
+OK.BCOK.HHZ.--,1.28476,179.397,Pn,2015-02-10 13:21:36.240,manual,-1.3,1.24
+GS.KAN13.HHN.01,0.137096,59.8474,Sg,2015-02-10 13:21:17.450,manual,-0.1,1.36
+GS.KAN05.HHE.01,0.256665,309.874,Sg,2015-02-10 13:21:21.820,manual,0.5,1.29
+GS.KAN14.HHN.01,0.270347,272.81,Sg,2015-02-10 13:21:21.980,manual,0.2,1.29
+OK.KAY1.HHN.--,0.377965,118.481,Sg,2015-02-10 13:21:25.490,manual,0.3,1.23
+OK.CROK.HHN.--,0.524155,213.336,Sg,2015-02-10 13:21:29.760,manual,-0.1,1.17
+N4.T35B.BHE.--,0.893075,91.4458,Sg,2015-02-10 13:21:41.430,manual,-0.2,1.03
+OK.QUOK.HHE.--,1.06806,135.941,Sg,2015-02-10 13:21:46.700,manual,-0.5,0.97
+GS.OK031.HH2.00,1.1749,147.086,Sg,2015-02-10 13:21:50.370,manual,-0.3,0.94
+GS.OK025.HHZ.00,1.3799,170.203,Pn,2015-02-10 13:21:38.590,manual,-0.2,1.22
+GS.OK028.HHZ.00,1.45355,161.538,Pn,2015-02-10 13:21:39.790,manual,-0.1,1.21
+N4.U38B.BHZ.--,2.65251,99.9733,Pn,2015-02-10 13:21:56.320,manual,0.0,1.06
+GS.KAN05.HHZ.01,0.256665,309.874,Pg,2015-02-10 13:21:18.220,manual,0.3,3.04
+GS.KAN10.HHZ.01,0.41602,295.651,Pg,2015-02-10 13:21:21.270,manual,0.3,2.49
+OK.CROK.HHZ.--,0.524155,213.336,Pg,2015-02-10 13:21:23.120,manual,0.1,2.22
+GS.KAN14.HHZ.01,0.270347,272.81,Pg,2015-02-10 13:21:18.460,manual,0.3,2.99
+GS.KAN01.HHN.01,0.234576,333.041,Sg,2015-02-10 13:21:20.890,manual,0.3,1.3
+GS.KAN12.HHZ.01,0.461403,319.976,Sg,2015-02-10 13:21:27.860,manual,0.1,1.19

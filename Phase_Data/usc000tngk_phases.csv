@@ -1,0 +1,64 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000tngk
+#time = 2015-02-09 20:25:32.300000
+#location = 10km NW of Helena, Oklahoma
+#latitude = 36.6128
+#longitude = -98.3462
+#depth = 5.8
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000tngk
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+N4.T35B.BHZ.--,1.50376,77.835,Pn,2015-02-09 20:25:59.910,manual,0.1,1.2
+OK.QUOK.HHZ.--,1.39327,107.944,Pn,2015-02-09 20:25:57.960,manual,-0.4,1.22
+OK.U32A.BHZ.--,0.577025,246.397,Pg,2015-02-09 20:25:43.300,manual,-0.1,2.11
+GS.KAN08.HHZ.01,0.682575,26.0317,Pg,2015-02-09 20:25:45.500,manual,0.1,1.92
+GS.KAN11.HHZ.01,0.686256,30.2417,Pg,2015-02-09 20:25:45.710,manual,0.2,1.91
+GS.KAN01.HHZ.01,0.716098,40.9305,Pg,2015-02-09 20:25:46.140,manual,0.1,1.86
+OK.KAY1.HHZ.--,0.923724,80.3408,Pg,2015-02-09 20:25:49.630,manual,-0.4,1.58
+GS.OK027.HHZ.00,1.24397,135.958,Pg,2015-02-09 20:25:55.600,manual,-0.6,1.29
+GS.OK025.HHZ.00,1.31408,141.281,Pn,2015-02-09 20:25:56.290,manual,-0.9,1.23
+GS.OK031.HHZ.00,1.38428,117.951,Pn,2015-02-09 20:25:57.720,manual,-0.5,1.22
+GS.OK030.HHZ.00,1.43577,117.968,Pn,2015-02-09 20:25:58.680,manual,-0.2,1.21
+GS.OK028.HHZ.00,1.47798,134.862,Pn,2015-02-09 20:25:59.280,manual,-0.2,1.21
+GS.KAN05.HHZ.01,0.623972,37.3843,Pg,2015-02-09 20:25:44.270,manual,0.0,2.02
+OK.BCOK.HHZ.--,1.12525,147.768,Pg,2015-02-09 20:25:53.280,manual,-0.6,1.38
+OK.CROK.HHN.--,0.311397,110.163,Sg,2015-02-09 20:25:43.260,manual,0.8,1.26
+GS.KAN14.HHE.01,0.461001,41.7464,Sg,2015-02-09 20:25:48.090,manual,0.9,1.19
+GS.KAN10.HHE.01,0.548063,21.4811,Sg,2015-02-09 20:25:51.010,manual,1.0,1.16
+GS.KAN05.HNN.01,0.623972,37.3843,Sg,2015-02-09 20:25:53.120,manual,0.7,1.12
+GS.KAN11.HNN.01,0.686256,30.2417,Sg,2015-02-09 20:25:55.220,manual,0.8,1.1
+GS.KAN10.HHZ.01,0.548063,21.4811,Pg,2015-02-09 20:25:42.960,manual,0.1,2.17
+US.WMOK.BHZ.10,1.90399,190.835,Pn,2015-02-09 20:26:05.830,manual,0.5,1.15
+OK.CROK.HHZ.--,0.311397,110.163,Pg,2015-02-09 20:25:38.580,manual,0.2,2.83
+GS.KAN13.HHZ.01,0.803209,59.9271,Pg,2015-02-09 20:25:47.510,manual,-0.2,1.73
+GS.KAN14.HHZ.01,0.461001,41.7464,Pg,2015-02-09 20:25:41.460,manual,0.3,2.37

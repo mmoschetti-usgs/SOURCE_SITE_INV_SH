@@ -1,0 +1,66 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000mzgh
+#time = 2014-03-02 14:44:45.600000
+#location = 15km S of McCord, Oklahoma
+#latitude = 36.5418
+#longitude = -97.0677
+#depth = 5.0
+#magnitude = 2.8
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000mzgh
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK029.HHZ.00,0.80697,202.96,Pg,2014-03-02 14:45:00.960,manual,-0.1,0.137
+GS.OK025.HHZ.00,0.983381,192.943,Pg,2014-03-02 14:45:04.180,manual,-0.3,0.115
+OK.BCOK.HHZ.--,0.986176,206.569,Pg,2014-03-02 14:45:04.200,manual,-0.3,0.103
+GS.OK028.HHZ.00,0.978673,179.699,Pg,2014-03-02 14:45:03.690,manual,-0.7,0.137
+OK.OKCSW.EHZ.--,1.17302,194.946,Pg,2014-03-02 14:45:07.300,manual,-0.8,0.088
+GS.OK026.HHZ.00,1.16642,195.588,Pn,2014-03-02 14:45:07.320,manual,-1.3,0.05
+OK.FNO.HHZ.01,1.30997,192.027,Pn,2014-03-02 14:45:09.950,manual,-0.6,0.049
+OK.W35A.EHZ.--,1.39501,173.483,Pn,2014-03-02 14:45:10.620,manual,-1.1,0.055
+US.WMOK.BHZ.10,2.27736,218.284,Pn,2014-03-02 14:45:24.520,manual,0.6,0.041
+OK.X34A.HHZ.--,2.03445,198.072,Pn,2014-03-02 14:45:22.090,manual,1.6,0.041
+AG.HHAR.HHZ.00,2.53619,94.9376,Pn,2014-03-02 14:45:28.340,manual,0.9,0.055
+US.CBKS.BHZ.00,3.10325,317.768,Pn,2014-03-02 14:45:35.850,manual,0.6,0.068
+N4.U38B.BHZ.--,2.16366,91.9092,Pn,2014-03-02 14:45:23.640,manual,1.3,0.059
+US.MIAR.BHZ.00,3.47439,123.954,Pn,2014-03-02 14:45:41.060,manual,0.7,0.049
+TA.TUL1.BHZ.--,1.20879,121.039,Pg,2014-03-02 14:45:07.820,manual,-1.0,0.163
+TA.U40A.BHZ.--,3.40262,91.865,Pn,2014-03-02 14:45:40.660,manual,1.3,0.046
+TA.W39A.BHZ.--,2.98587,115.757,Pn,2014-03-02 14:45:34.120,manual,0.5,0.054
+TA.X40A.BHZ.--,4.01567,119.449,Pn,2014-03-02 14:45:47.630,manual,-0.1,0.044
+N4.S39B.BHZ.--,3.20557,67.9133,Pn,2014-03-02 14:45:38.260,manual,1.6,0.04
+GS.ADOK.HNZ.--,0.921327,195.558,Pg,2014-03-02 14:45:03.050,manual,-0.2,0.122
+N4.T35B.BHZ.--,0.582251,49.9098,Pg,2014-03-02 14:44:56.830,manual,0.0,0.0
+OK.CROK.HHZ.--,0.738538,267.399,Pg,2014-03-02 14:44:59.980,manual,0.2,0.258
+OK.U32A.BHZ.--,1.56725,264.643,Pn,2014-03-02 14:45:14.360,manual,0.2,0.08
+AG.FCAR.HHZ.00,4.04998,97.7745,Pn,2014-03-02 14:45:50.920,manual,2.7,0.042
+TA.W41B.BHZ.--,4.14592,107.801,Pn,2014-03-02 14:45:51.370,manual,1.8,0.043
+TA.ABTX.BHZ.--,4.44835,209.271,Pn,2014-03-02 14:45:54.790,manual,1.0,0.025

@@ -1,0 +1,64 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10001pwl
+#time = 2015-03-21 13:00:00.500000
+#location = 9km SSW of Caldwell, Kansas
+#latitude = 36.9447
+#longitude = -97.6306
+#depth = 6.9
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10001pwl
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN13.HHZ.01,0.140024,60.865,Pg,2015-03-21 13:00:03.790,manual,0.3,3.63
+GS.KAN09.HHZ.01,0.191299,2.94496,Pg,2015-03-21 13:00:04.860,manual,0.5,3.35
+GS.KAN05.HHZ.01,0.253336,310.296,Pg,2015-03-21 13:00:06.000,manual,0.5,3.06
+GS.KAN01.HHZ.01,0.232267,333.789,Pg,2015-03-21 13:00:05.620,manual,0.5,3.15
+GS.KAN10.HHZ.01,0.412325,295.788,Pg,2015-03-21 13:00:08.990,manual,0.5,2.51
+GS.OK032.HHZ.00,0.485737,253.345,Pg,2015-03-21 13:00:10.080,manual,0.2,2.31
+OK.GC02.EHZ.--,0.205794,243.196,Pg,2015-03-21 13:00:04.970,manual,0.3,3.27
+OK.CROK.HHZ.--,0.52268,212.946,Pg,2015-03-21 13:00:10.810,manual,0.2,2.23
+GS.OK029.HHZ.00,1.15453,172.893,Pg,2015-03-21 13:00:22.200,manual,-0.5,1.36
+GS.OK030.HHZ.00,1.22321,145.812,Pn,2015-03-21 13:00:23.550,manual,-0.5,1.24
+GS.OK025.HHZ.00,1.38123,170.052,Pn,2015-03-21 13:00:26.260,manual,0.0,1.22
+US.WMOK.BHZ.10,2.39211,203.333,Pn,2015-03-21 13:00:41.620,manual,1.5,1.09
+N4.T35B.BHZ.--,0.896857,91.4814,Pg,2015-03-21 13:00:17.530,manual,-0.2,1.62
+OK.FNO.HHZ.01,1.69402,173.636,Pn,2015-03-21 13:00:31.600,manual,1.1,1.18
+N4.R32B.BHZ.--,1.70621,330.169,Pn,2015-03-21 13:00:32.280,manual,1.5,1.17
+OK.OKCSW.EHZ.--,1.54392,174.15,Pn,2015-03-21 13:00:29.110,manual,0.6,1.2
+OK.KAY1.HHZ.--,0.381608,118.3,Pg,2015-03-21 13:00:08.170,manual,0.2,2.6
+GS.KAN08.HHZ.01,0.391517,316.07,Pg,2015-03-21 13:00:08.560,manual,0.5,2.57
+GS.KAN12.HHZ.01,0.458454,320.278,Pg,2015-03-21 13:00:09.760,manual,0.4,2.38
+GS.OK031.HHZ.00,1.17754,146.948,Pg,2015-03-21 13:00:22.710,manual,-0.4,1.34
+OK.BCOK.HHZ.--,1.2855,179.227,Pn,2015-03-21 13:00:24.560,manual,-0.3,1.23
+GS.KAN13.HHN.01,0.140024,60.865,Sg,2015-03-21 13:00:06.040,manual,0.6,1.36
+GS.KAN09.HHE.01,0.191299,2.94496,Sg,2015-03-21 13:00:07.770,manual,0.8,1.33
+OK.GC02.EHE.--,0.205794,243.196,Sg,2015-03-21 13:00:07.850,manual,0.4,1.32

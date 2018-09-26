@@ -1,0 +1,68 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10001ldb
+#time = 2015-03-07 02:09:29.200000
+#location = 20km SSE of Medford, Oklahoma
+#latitude = 36.6257
+#longitude = -97.6673
+#depth = 6.8
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10001ldb
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN13.HHZ.01,0.4153,21.4218,Pg,2015-03-07 02:09:37.770,manual,0.5,2.5
+GS.KAN14.HHZ.01,0.406878,324.399,Pg,2015-03-07 02:09:36.980,manual,-0.1,2.52
+OK.GC02.EHZ.--,0.273222,325.63,Pg,2015-03-07 02:09:34.620,manual,0.0,2.98
+OK.QUOK.HHZ.--,0.896982,120.077,Pg,2015-03-07 02:09:46.430,manual,0.0,1.61
+GS.OK031.HHZ.00,0.94777,134.845,Pg,2015-03-07 02:09:47.390,manual,0.0,1.56
+US.WMOK.BHZ.10,2.09041,206.023,Pn,2015-03-07 02:10:04.850,manual,0.1,1.12
+TA.TUL1.BHZ.--,1.67525,114.664,Pn,2015-03-07 02:09:59.480,manual,0.5,1.18
+OK.CROK.HHZ.--,0.281689,244.708,Pg,2015-03-07 02:09:34.780,manual,0.0,2.94
+OK.KAY1.HHZ.--,0.390508,69.3683,Pg,2015-03-07 02:09:36.830,manual,0.0,2.57
+GS.OK032.HHZ.00,0.471218,292.324,Pg,2015-03-07 02:09:38.360,manual,0.0,2.35
+GS.KAN09.HHZ.01,0.510943,4.39503,Pg,2015-03-07 02:09:38.800,manual,-0.3,2.25
+GS.KAN01.HHZ.01,0.531805,352.081,Pg,2015-03-07 02:09:39.190,manual,-0.3,2.21
+GS.KAN10.HHZ.01,0.603773,325.506,Pg,2015-03-07 02:09:40.560,manual,-0.3,2.06
+GS.KS20.HHZ.00,0.609619,8.50802,Pg,2015-03-07 02:09:40.830,manual,-0.1,2.05
+GS.OK029.HHZ.00,0.845046,168.209,Pg,2015-03-07 02:09:45.170,manual,-0.3,1.68
+OK.BCOK.HHZ.--,0.968142,177.203,Pg,2015-03-07 02:09:47.200,manual,-0.6,1.53
+N4.T35B.BHZ.--,0.971976,72.2994,Pg,2015-03-07 02:09:47.120,manual,-0.7,1.53
+OK.U32A.BHZ.--,1.10265,257.522,Pg,2015-03-07 02:09:49.780,manual,-0.6,1.4
+OK.OKCFA.HHZ.--,1.22049,171.692,Pn,2015-03-07 02:09:51.710,manual,-1.0,1.24
+OK.OKCSW.EHZ.--,1.23176,171.252,Pn,2015-03-07 02:09:51.630,manual,-1.3,1.24
+OK.FNO.HHZ.01,1.38239,170.935,Pn,2015-03-07 02:09:54.820,manual,-0.1,1.22
+N4.R32B.BHZ.--,1.97629,335.487,Pn,2015-03-07 02:10:03.780,manual,0.6,1.14
+N4.U38B.BHZ.--,2.64949,93.046,Pn,2015-03-07 02:10:11.920,manual,-0.5,1.06
+US.CBKS.BHZ.00,2.73241,323.706,Pn,2015-03-07 02:10:14.180,manual,0.6,1.05
+OK.X37A.BHZ.--,2.76199,136.69,Pn,2015-03-07 02:10:14.740,manual,0.8,1.05
+N4.S39B.BHZ.--,3.62983,71.6646,Pn,2015-03-07 02:10:25.560,manual,-0.3,0.96
+TA.U40A.BHZ.--,3.88812,92.5306,Pn,2015-03-07 02:10:29.910,manual,0.5,0.94
+N4.P38B.BHZ.--,4.42641,46.1828,Pn,2015-03-07 02:10:36.670,manual,-0.1,0.9

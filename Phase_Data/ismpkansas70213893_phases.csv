@@ -1,0 +1,74 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = ismpkansas70213893
+#time = 2016-11-25 02:15:16.560000
+#location = 13km ESE of Harper, Kansas
+#latitude = 37.2572
+#longitude = -97.8818
+#depth = 2.9
+#magnitude = 2.4
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/ismpkansas70213893
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KS20.HH2.00,0.2628,95.9,S,2016-11-25 02:15:25.670,automatic,0.07,0.0
+GS.KS21.HH1.00,0.177,80.4,S,2016-11-25 02:15:22.900,automatic,0.04,0.0
+OK.BLOK.HHN.,0.7284,132.8,S,2016-11-25 02:15:40.320,automatic,-0.13,0.0
+OK.BLOK.HHZ.,0.7284,132.8,P,2016-11-25 02:15:30.990,automatic,0.3,0.0
+OK.U32A.BHN.,1.255,225.9,S,2016-11-25 02:15:59.350,automatic,2.69,0.0
+US.KSU1.BH2.00,2.096,28.1,S,2016-11-25 02:16:22.400,automatic,0.77,0.0
+GS.KAN06.HHZ.01,0.02067,116.4,P,2016-11-25 02:15:17.430,manual,0.0,0.24
+GS.KAN06.HHN.01,0.02067,116.4,S,2016-11-25 02:15:18.020,manual,0.05,0.02
+NQ.KAN02.HNZ.02,0.05914,177.8,P,2016-11-25 02:15:18.150,manual,-0.01,0.12
+NQ.KAN02.HNE.02,0.05914,177.8,S,2016-11-25 02:15:19.350,manual,0.13,0.02
+GS.KAN08.HHZ.01,0.07734,246.8,P,2016-11-25 02:15:18.570,manual,0.1,0.12
+GS.KAN08.HHN.01,0.07734,246.8,S,2016-11-25 02:15:19.830,manual,0.08,0.02
+GS.KAN12.HHZ.01,0.101,293.5,P,2016-11-25 02:15:18.930,manual,-0.01,0.12
+GS.KAN12.HHE.01,0.101,293.5,S,2016-11-25 02:15:20.620,manual,0.09,0.06
+GS.KAN01.HHZ.01,0.1426,136.6,P,2016-11-25 02:15:19.700,manual,0.04,0.24
+GS.KAN01.HHN.01,0.1426,136.6,S,2016-11-25 02:15:21.830,manual,0.05,0.06
+GS.KAN05.HHZ.01,0.1484,177.1,P,2016-11-25 02:15:19.840,manual,0.03,0.24
+GS.KAN05.HHN.01,0.1484,177.1,S,2016-11-25 02:15:22.270,manual,0.21,0.06
+GS.KAN10.HHZ.01,0.2164,231.9,P,2016-11-25 02:15:21.140,manual,0.06,0.12
+GS.KAN10.HHN.01,0.2164,231.9,S,2016-11-25 02:15:24.380,manual,0.22,0.02
+GS.KAN17.HHZ.01,0.2324,156.3,P,2016-11-25 02:15:21.390,manual,0.0,0.24
+GS.KAN17.HHN.01,0.2324,156.3,S,2016-11-25 02:15:24.860,manual,0.16,0.02
+GS.KAN14.HHZ.01,0.3067,192.2,P,2016-11-25 02:15:22.810,manual,0.04,0.12
+GS.KAN14.HHN.01,0.3067,192.2,S,2016-11-25 02:15:27.290,manual,0.29,0.02
+GS.KAN13.HHZ.01,0.4046,127.1,P,2016-11-25 02:15:24.510,manual,-0.08,0.12
+GS.KAN13.HHN.01,0.4046,127.1,S,2016-11-25 02:15:30.120,manual,0.1,0.06
+OK.GC02.EHZ.,0.4053,177.5,P,2016-11-25 02:15:24.610,manual,-0.04,0.12
+OK.GC02.EHE.,0.4053,177.5,S,2016-11-25 02:15:30.690,manual,0.58,0.0
+GS.OK032.HHZ.00,0.5234,210.2,P,2016-11-25 02:15:26.810,manual,-0.08,0.23
+GS.OK032.HH1.00,0.5234,210.2,S,2016-11-25 02:15:34.090,manual,0.23,0.02
+OK.CROK.HHZ.,0.7554,186.2,P,2016-11-25 02:15:31.160,manual,0.04,0.02
+N4.T35B.HHZ.,1.147,106.9,P,2016-11-25 02:15:38.120,manual,0.02,0.0
+N4.T35B.HHE.,1.147,106.9,S,2016-11-25 02:15:53.160,manual,-0.11,0.0
+N4.R32B.HHZ.,1.336,330.9,P,2016-11-25 02:15:41.580,manual,0.06,0.0

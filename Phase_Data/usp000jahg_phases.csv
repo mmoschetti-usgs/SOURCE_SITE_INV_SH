@@ -1,0 +1,48 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usp000jahg
+#time = 2011-11-07 17:09:52
+#location = Oklahoma
+#latitude = 35.5060
+#longitude = -96.7980
+#depth = 5.0
+#magnitude = 3.2
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usp000jahg
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+IR.TUL1.--.--,0.91,63.4,Pg,2011-11-07 17:10:08.390,manual,-1.1,1.0
+IR.WMOK.--.--,1.8,245.3,Pn,2011-11-07 17:10:23.100,manual,-0.6,1.0
+IR.MIAR.--.--,2.81,109.0,Pn,2011-11-07 17:10:38.070,manual,0.4,1.0
+IR.CBKS.--.--,4.05,325.5,Pn,2011-11-07 17:10:51.960,manual,-2.7,1.0
+IR.ABTX.--.--,3.72,220.2,Pn,2011-11-07 17:10:52.170,manual,2.0,1.0
+IR.JCT.--.--,5.61,207.6,Pn,2011-11-07 17:11:14.200,manual,-2.0,1.0
+IR.CCM.--.--,5.13,58.6,Pg,2011-11-07 17:11:27.340,manual,-3.0,1.0
+IR.KSU1.--.--,3.59,2.3,Sn,2011-11-07 17:11:28.660,manual,-2.5,1.0

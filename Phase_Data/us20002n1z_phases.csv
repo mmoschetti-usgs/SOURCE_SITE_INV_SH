@@ -1,0 +1,64 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20002n1z
+#time = 2015-06-08 18:43:13.800000
+#location = 7km ENE of Edmond, Oklahoma
+#latitude = 35.6760
+#longitude = -97.3954
+#depth = 5.0
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20002n1z
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.BCOK.HHZ.--,0.175233,263.753,Pg,2015-06-08 18:43:17.600,manual,0.3,3.43
+GS.OK029.HHZ.00,0.129714,338.105,Pg,2015-06-08 18:43:16.450,manual,0.0,3.69
+GS.OK030.HHZ.00,0.557057,63.01,Pg,2015-06-08 18:43:24.550,manual,0.0,2.15
+OK.CHOK.HHZ.--,0.295368,112.742,Pg,2015-06-08 18:43:19.960,manual,0.4,2.89
+GS.OK031.HHZ.00,0.52999,58.3895,Pg,2015-06-08 18:43:24.190,manual,0.2,2.21
+OK.QUOK.HHZ.--,0.745437,48.2566,Pg,2015-06-08 18:43:28.130,manual,0.0,1.82
+OK.FNO.HHZ.01,0.417699,180.651,Pg,2015-06-08 18:43:21.850,manual,0.0,2.49
+GS.OK025.HHZ.00,0.105646,153.661,Pg,2015-06-08 18:43:16.410,manual,0.4,3.85
+OK.CROK.HHZ.--,0.954312,330.235,Pg,2015-06-08 18:43:31.870,manual,-0.2,1.55
+US.WMOK.BHZ.10,1.47066,230.876,Pn,2015-06-08 18:43:40.250,manual,-0.7,1.21
+GS.OK009.HNZ.01,0.0971125,193.344,Pg,2015-06-08 18:43:16.240,manual,0.4,3.9
+OK.X34A.HHZ.--,1.13081,198.6,Pg,2015-06-08 18:43:35.550,manual,0.1,1.38
+OK.GC02.EHZ.--,1.23163,342.403,Pg,2015-06-08 18:43:36.670,manual,-0.8,1.3
+GS.OK032.HHZ.00,1.30416,329.895,Pn,2015-06-08 18:43:37.870,manual,-0.8,1.23
+GS.KAN13.HHZ.01,1.33586,357.17,Pn,2015-06-08 18:43:38.720,manual,-0.4,1.23
+N4.T35B.BHZ.--,1.42872,29.7103,Pn,2015-06-08 18:43:39.970,manual,-0.5,1.21
+GS.KAN08.HHZ.01,1.61566,343.481,Pn,2015-06-08 18:43:42.840,manual,-0.2,1.19
+GS.OK009.HNE.01,0.0971125,193.344,Sg,2015-06-08 18:43:18.110,manual,0.8,1.38
+GS.OK025.HH2.00,0.105646,153.661,Sg,2015-06-08 18:43:18.440,manual,0.9,1.38
+OK.BCOK.HHN.--,0.175233,263.753,Sg,2015-06-08 18:43:20.530,manual,0.9,1.34
+OK.OKCFA.HHE.--,0.264106,189.973,Sg,2015-06-08 18:43:23.370,manual,0.9,1.29
+OK.OKCSW.EHE.--,0.272133,187.348,Sg,2015-06-08 18:43:23.610,manual,0.9,1.28
+OK.FNO.HHE.01,0.417699,180.651,Sg,2015-06-08 18:43:28.320,manual,1.0,1.21
+GS.KAN10.HHZ.01,1.55097,338.863,Pn,2015-06-08 18:43:42.130,manual,0.0,1.2

@@ -1,0 +1,70 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10001rck
+#time = 2015-03-25 21:59:31.700000
+#location = 17km S of Perry, Oklahoma
+#latitude = 36.1362
+#longitude = -97.2758
+#depth = 5.0
+#magnitude = 2.8
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10001rck
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK029.HHZ.00,0.368718,203.259,Pg,2015-03-25 21:59:39.130,manual,0.3,2.64
+OK.BCOK.HHZ.--,0.549789,209.604,Pg,2015-03-25 21:59:42.450,manual,0.2,2.17
+OK.QUOK.HHZ.--,0.460873,85.4615,Pg,2015-03-25 21:59:40.840,manual,0.3,2.37
+GS.OK025.HHZ.00,0.556212,185.221,Pg,2015-03-25 21:59:42.580,manual,0.2,2.15
+OK.CROK.HHZ.--,0.679564,302.972,Pg,2015-03-25 21:59:44.800,manual,0.0,1.92
+OK.FNO.HHZ.01,0.88282,186.676,Pg,2015-03-25 21:59:49.010,manual,0.4,1.63
+OK.OKCSW.EHZ.--,0.740969,190.302,Pg,2015-03-25 21:59:45.960,manual,0.0,1.82
+OK.OKCFA.HHZ.--,0.733391,191.279,Pg,2015-03-25 21:59:45.850,manual,0.1,1.84
+GS.OK032.HHZ.00,1.0057,311.767,Pg,2015-03-25 21:59:50.580,manual,-0.4,1.5
+OK.GC02.EHZ.--,0.854944,326.789,Pg,2015-03-25 21:59:47.960,manual,-0.2,1.67
+OK.KAY1.HHZ.--,0.62735,4.67015,Pg,2015-03-25 21:59:43.810,manual,0.1,2.01
+GS.KAN13.HHZ.01,0.889958,349.532,Pg,2015-03-25 21:59:48.710,manual,-0.1,1.62
+US.WMOK.BHZ.10,1.85917,221.812,Pn,2015-03-25 22:00:04.620,manual,0.4,1.16
+N4.T35B.BHZ.--,0.992265,38.097,Pg,2015-03-25 21:59:50.570,manual,-0.2,1.51
+OK.X37A.BHZ.--,2.19206,134.204,Pn,2015-03-25 22:00:09.660,manual,0.9,1.11
+N4.U38B.BHZ.--,2.35448,81.7627,Pn,2015-03-25 22:00:11.390,manual,0.3,1.09
+N4.S39B.BHZ.--,3.52754,62.7281,Pn,2015-03-25 22:00:28.550,manual,1.4,0.97
+N4.P38B.BHZ.--,4.57126,39.2477,Pn,2015-03-25 22:00:42.600,manual,1.1,0.89
+TA.MSTX.BHZ.--,4.99977,245.988,Pn,2015-03-25 22:00:47.450,manual,-0.1,0.85
+GS.OK029.HH2.00,0.368718,203.259,Sg,2015-03-25 21:59:44.400,manual,0.7,1.24
+GS.OK031.HHZ.00,0.398299,117.178,Pg,2015-03-25 21:59:39.760,manual,0.4,2.55
+GS.OK031.HH1.00,0.398299,117.178,Sg,2015-03-25 21:59:45.350,manual,0.8,1.22
+OK.QUOK.HHE.--,0.460873,85.4615,Sg,2015-03-25 21:59:47.160,manual,0.6,1.19
+OK.CROK.HHN.--,0.679564,302.972,Sg,2015-03-25 21:59:54.230,manual,0.6,1.1
+OK.OKCFA.HHE.--,0.733391,191.279,Sg,2015-03-25 21:59:56.050,manual,0.7,1.08
+GS.KAN09.HHZ.01,1.03527,344.67,Pg,2015-03-25 21:59:51.380,manual,-0.2,1.47
+OK.U32A.BHZ.--,1.41568,280.385,Pn,2015-03-25 21:59:57.680,manual,-0.5,1.22
+TA.U40A.BHZ.--,3.58129,85.1779,Pn,2015-03-25 22:00:28.210,manual,0.3,0.97
+AG.WHAR.HHZ.00,4.14467,100.29,Pn,2015-03-25 22:00:34.980,manual,-0.7,0.92
+AG.FCAR.HHZ.00,4.18358,91.8488,Pn,2015-03-25 22:00:36.170,manual,0.0,0.92

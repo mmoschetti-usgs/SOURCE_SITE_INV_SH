@@ -1,0 +1,64 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10002lcz
+#time = 2015-06-21 22:24:42.900000
+#location = 2km ESE of Pawnee, Oklahoma
+#latitude = 36.3306
+#longitude = -96.7788
+#depth = 5.2
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10002lcz
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.QUOK.HHZ.--,0.168871,160.17,Pg,2015-06-21 22:24:46.690,manual,0.4,3.46
+GS.OK031.HHZ.00,0.379873,187.4,Pg,2015-06-21 22:24:50.610,manual,0.4,2.6
+GS.OK030.HHZ.00,0.40199,180.578,Pg,2015-06-21 22:24:50.880,manual,0.2,2.53
+OK.BLOK.HHZ.--,0.554578,320.829,Pg,2015-06-21 22:24:53.870,manual,0.3,2.16
+GS.OK025.HHZ.00,0.874729,211.401,Pg,2015-06-21 22:24:59.580,manual,-0.1,1.64
+OK.CHOK.HHZ.--,0.801365,196.705,Pg,2015-06-21 22:24:58.210,manual,-0.1,1.74
+AG.HHAR.HHZ.00,2.29348,90.3709,Pn,2015-06-21 22:25:21.400,manual,0.1,1.1
+N4.T35B.BHZ.--,0.622646,20.0928,Pg,2015-06-21 22:24:54.900,manual,0.0,2.02
+N4.U38B.BHZ.--,1.93411,86.0724,Pn,2015-06-21 22:25:16.970,manual,0.6,1.15
+N4.T35B.BHN.--,0.622646,20.0928,Sg,2015-06-21 22:25:03.340,manual,0.4,1.13
+OK.BCOK.HHZ.--,0.951746,225.287,Pg,2015-06-21 22:25:00.940,manual,-0.2,1.55
+OK.QUOK.HHE.--,0.168871,160.17,Sg,2015-06-21 22:24:49.330,manual,0.8,1.34
+NQ.OK915.HNZ.01,0.376255,179.234,Pg,2015-06-21 22:24:50.450,manual,0.3,2.61
+NQ.OK915.HNN.01,0.376255,179.234,Sg,2015-06-21 22:24:55.910,manual,0.8,1.23
+GS.OK031.HH2.00,0.379873,187.4,Sg,2015-06-21 22:24:55.920,manual,0.7,1.23
+GS.OK030.HH2.00,0.40199,180.578,Sg,2015-06-21 22:24:56.730,manual,0.8,1.22
+OK.BLOK.HHN.--,0.554578,320.829,Sg,2015-06-21 22:25:01.240,manual,0.5,1.15
+GS.OK029.HHZ.00,0.764235,225.99,Pg,2015-06-21 22:24:57.620,manual,0.0,1.79
+OK.CCOK.HHZ.--,1.20511,216.518,Pg,2015-06-21 22:25:05.820,manual,-0.2,1.32
+GS.KAN08.HHZ.01,1.30993,313.415,Pn,2015-06-21 22:25:07.710,manual,-0.1,1.23
+OK.X34A.HHZ.--,1.92824,206.801,Pn,2015-06-21 22:25:16.590,manual,0.3,1.15
+OK.X37A.BHZ.--,2.08304,146.113,Pn,2015-06-21 22:25:19.070,manual,0.7,1.13
+N4.S39B.BHZ.--,3.08148,62.8261,Pn,2015-06-21 22:25:33.170,manual,1.1,1.02
+OK.LOOK.HHZ.--,2.35591,188.137,Pn,2015-06-21 22:25:23.630,manual,1.5,1.09

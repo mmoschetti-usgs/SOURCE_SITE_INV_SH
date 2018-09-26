@@ -1,0 +1,70 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20003j7c
+#time = 2015-09-12 13:12:31.400000
+#location = 15km S of Conway Springs, Kansas
+#latitude = 37.2505
+#longitude = -97.6077
+#depth = 2.2
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20003j7c
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KS20.HHZ.00,0.0474042,115.961,Pg,2015-09-12 13:12:32.740,manual,0.3,4.28
+GS.KS21.HNZ.20,0.0569024,309.178,Pg,2015-09-12 13:12:32.930,manual,0.4,4.2
+NQ.KAN15.HNZ.01,0.0565785,29.5538,Pg,2015-09-12 13:12:32.890,manual,0.3,4.21
+GS.KAN17.HHZ.01,0.241251,211.402,Pg,2015-09-12 13:12:36.360,manual,0.3,3.11
+GS.KAN05.HHZ.01,0.254411,236.25,Pg,2015-09-12 13:12:36.540,manual,0.2,3.05
+GS.KAN11.HHZ.01,0.247938,259.772,Pg,2015-09-12 13:12:36.460,manual,0.3,3.08
+GS.KAN13.HHZ.01,0.258887,156.32,Pg,2015-09-12 13:12:36.570,manual,0.2,3.03
+GS.KAN12.HHZ.01,0.314847,278.67,Pg,2015-09-12 13:12:37.630,manual,0.2,2.89
+GS.KAN14.HHZ.01,0.408205,224.204,Pg,2015-09-12 13:12:39.550,manual,0.3,2.76
+OK.GC02.EHZ.--,0.446343,206.917,Pg,2015-09-12 13:12:39.980,manual,0.0,2.7
+OK.BLOK.HHZ.--,0.581314,147.145,Pg,2015-09-12 13:12:42.500,manual,-0.1,2.1
+OK.QUOK.HHZ.--,1.29715,145.858,Pn,2015-09-12 13:12:55.450,manual,-1.0,1.24
+N4.T35B.BHZ.--,0.937681,110.515,Pg,2015-09-12 13:12:48.890,manual,-0.5,1.57
+OK.CROK.HHZ.--,0.803032,202.146,Pg,2015-09-12 13:12:46.570,manual,-0.2,1.73
+NQ.KAN15.HNE.01,0.0565785,29.5538,Sg,2015-09-12 13:12:33.880,manual,0.5,1.41
+GS.KS20.HH2.00,0.0474042,115.961,Sg,2015-09-12 13:12:33.650,manual,0.6,1.41
+GS.KS21.HN2.20,0.0569024,309.178,Sg,2015-09-12 13:12:33.990,manual,0.6,1.41
+NQ.KAN02.HNZ.01,0.22265,256.39,Pg,2015-09-12 13:12:36.030,manual,0.3,3.19
+GS.KAN17.HHN.01,0.241251,211.402,Sg,2015-09-12 13:12:39.900,manual,0.7,1.3
+GS.KAN11.HHN.01,0.247938,259.772,Sg,2015-09-12 13:12:40.180,manual,0.8,1.3
+GS.KAN13.HHE.01,0.258887,156.32,Sg,2015-09-12 13:12:40.350,manual,0.6,1.29
+OK.GORE.HHZ.--,0.537699,210.447,Pg,2015-09-12 13:12:41.710,manual,0.0,2.19
+GS.OK032.HHZ.00,0.656846,227.432,Pg,2015-09-12 13:12:44.060,manual,0.1,1.96
+GS.OK031.HHZ.00,1.43497,154.239,Pn,2015-09-12 13:12:57.800,manual,-0.6,1.22
+GS.OK029.HHZ.00,1.45623,175.106,Pn,2015-09-12 13:12:58.180,manual,-0.5,1.21
+GS.OK025.HHZ.00,1.68021,172.478,Pn,2015-09-12 13:13:01.650,manual,-0.1,1.18
+OK.CHOK.HHZ.--,1.74267,165.186,Pn,2015-09-12 13:13:02.500,manual,-0.1,1.17
+TA.U40A.BHZ.--,3.91832,101.732,Pn,2015-09-12 13:13:32.570,manual,0.1,0.94
+GS.KAN06.HHZ.01,0.200225,269.362,Pg,2015-09-12 13:12:35.590,manual,0.3,3.3
+GS.OK032.HH2.00,0.656846,227.432,Sg,2015-09-12 13:12:52.680,manual,0.2,0.0

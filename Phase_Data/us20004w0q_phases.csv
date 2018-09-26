@@ -1,0 +1,55 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20004w0q
+#time = 2016-01-30 08:47:56.800000
+#location = 15km SW of Perry, Oklahoma
+#latitude = 36.1977
+#longitude = -97.4165
+#depth = 7.0
+#magnitude = 2.7
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20004w0q
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK029.HHZ.00,0.40147,184.461,Pg,2016-01-30 08:48:04.770,manual,0.2,2.54
+GS.OK033.HHZ.00,0.416375,111.416,Pg,2016-01-30 08:48:05.100,manual,0.2,2.49
+GS.OK030.HHZ.00,0.579089,117.531,Pg,2016-01-30 08:48:08.120,manual,0.2,2.11
+GS.OK031.HHZ.00,0.527614,117.387,Pg,2016-01-30 08:48:07.160,manual,0.2,2.21
+GS.OK034.HHZ.00,0.599492,107.979,Pg,2016-01-30 08:48:08.500,manual,0.1,2.07
+GS.OK025.HHZ.00,0.618595,174.055,Pg,2016-01-30 08:48:08.820,manual,0.1,2.03
+GS.KAN13.HHZ.01,0.815098,356.549,Pg,2016-01-30 08:48:12.330,manual,-0.1,1.72
+GS.KAN14.HHZ.01,0.876061,330.02,Pg,2016-01-30 08:48:13.360,manual,-0.3,1.64
+GS.KAN17.HHZ.01,0.890007,341.752,Pg,2016-01-30 08:48:13.540,manual,-0.4,1.62
+GS.KAN01.HHZ.01,0.99279,344.0,Pg,2016-01-30 08:48:15.360,manual,-0.5,1.51
+GS.KAN06.HHZ.01,1.10681,341.413,Pg,2016-01-30 08:48:17.540,manual,-0.5,1.4
+US.WMOK.BHZ.10,1.83343,217.796,Pn,2016-01-30 08:48:29.390,manual,0.7,1.16
+AG.HHAR.HHZ.00,2.81163,87.2582,Pn,2016-01-30 08:48:41.660,manual,-0.4,1.04
+TA.TUL1.BHZ.--,1.34731,101.807,Pn,2016-01-30 08:48:21.200,manual,-0.8,1.22
+GS.KAN11.HHZ.01,1.08265,338.508,Pg,2016-01-30 08:48:17.170,manual,-0.4,1.42

@@ -1,0 +1,73 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000su03
+#time = 2014-11-04 07:44:51
+#location = 1km SSW of Choctaw, Oklahoma
+#latitude = 35.4859
+#longitude = -97.2730
+#depth = 7.3
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000su03
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK025.HHZ.00,0.108742,330.892,Pg,2014-11-04 07:44:53.900,manual,0.4,0.0
+OK.OKCSW.EHZ.--,0.1568,239.275,Pg,2014-11-04 07:44:54.120,manual,-0.2,0.0
+GS.OK028.HHZ.00,0.18821,66.4434,Pg,2014-11-04 07:44:55.340,manual,0.5,0.0
+OK.BCOK.HHZ.--,0.322813,301.964,Pg,2014-11-04 07:44:57.700,manual,0.4,0.0
+OK.FNO.HHZ.01,0.25091,204.717,Pg,2014-11-04 07:44:56.600,manual,0.6,0.0
+OK.W35A.EHZ.--,0.465539,135.456,Pg,2014-11-04 07:45:00.230,manual,0.2,0.0
+GS.OK031.HHZ.00,0.584805,37.0127,Pg,2014-11-04 07:45:02.150,manual,-0.1,0.0
+US.WMOK.BHZ.10,1.44386,239.313,Pn,2014-11-04 07:45:15.870,manual,-1.7,0.047
+N4.T35B.BHZ.--,1.55444,23.1058,Pn,2014-11-04 07:45:19.200,manual,0.1,0.045
+OK.U32A.BHZ.--,1.66212,302.949,Pn,2014-11-04 07:45:21.310,manual,0.7,0.063
+OK.X37A.BHZ.--,1.79871,119.277,Pn,2014-11-04 07:45:23.070,manual,0.7,0.022
+GS.OK026.HHZ.00,0.161795,244.241,Pg,2014-11-04 07:44:54.860,manual,0.5,0.0
+GS.OK029.HHZ.00,0.343609,334.51,Pg,2014-11-04 07:44:58.280,manual,0.6,0.0
+GS.OK030.HHZ.00,0.594096,41.9375,Pg,2014-11-04 07:45:02.330,manual,-0.1,0.0
+GS.KAN13.HHZ.01,1.53285,353.861,Pn,2014-11-04 07:45:18.870,manual,0.1,0.057
+GS.OK001.HNN.01,0.0762306,349.839,Sg,2014-11-04 07:44:54.930,manual,0.6,0.098
+GS.OK025.HH1.00,0.108742,330.892,Sg,2014-11-04 07:44:55.980,manual,0.8,0.075
+OK.OKCSW.EHE.--,0.1568,239.275,Sg,2014-11-04 07:44:57.200,manual,0.7,0.077
+GS.OK026.HH1.00,0.161795,244.241,Sg,2014-11-04 07:44:57.600,manual,1.0,0.073
+N4.S39B.BHZ.--,3.86617,54.1453,Pn,2014-11-04 07:45:50.690,manual,-0.2,0.021
+AG.WHAR.HHZ.00,4.07658,91.3025,Pn,2014-11-04 07:45:53.920,manual,0.2,0.015
+GS.OK028.HH2.00,0.18821,66.4434,Sg,2014-11-04 07:44:58.370,manual,0.9,0.107
+OK.BCOK.HHN.--,0.322813,301.964,Sg,2014-11-04 07:45:02.440,manual,0.8,0.073
+GS.OK029.HH2.00,0.343609,334.51,Sg,2014-11-04 07:45:03.120,manual,0.9,0.068
+OK.W35A.EHN.--,0.465539,135.456,Sg,2014-11-04 07:45:06.870,manual,0.7,0.101
+GS.OK031.HH1.00,0.584805,37.0127,Sg,2014-11-04 07:45:10.140,manual,0.2,0.048
+GS.OK030.HH2.00,0.594096,41.9375,Sg,2014-11-04 07:45:10.750,manual,0.5,0.049
+OK.X34A.HHZ.--,0.99512,207.639,Pg,2014-11-04 07:45:09.920,manual,-0.2,0.031
+OK.CROK.HHZ.--,1.16853,330.671,Pg,2014-11-04 07:45:12.800,manual,-0.6,0.034
+TA.TUL1.BHZ.--,1.27778,70.2093,Pn,2014-11-04 07:45:14.600,manual,-0.7,0.031
+AG.HHAR.HHZ.00,2.82062,72.6701,Pn,2014-11-04 07:45:36.060,manual,-0.4,0.022
+GS.OK001.HNZ.01,0.0762306,349.839,Pg,2014-11-04 07:44:53.290,manual,0.3,0.0
+US.MIAR.BHZ.00,3.17563,106.118,Pn,2014-11-04 07:45:42.060,manual,0.7,0.017

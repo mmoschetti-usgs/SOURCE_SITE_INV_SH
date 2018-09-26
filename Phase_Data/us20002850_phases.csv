@@ -1,0 +1,65 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20002850
+#time = 2015-04-21 14:53:30.700000
+#location = 8km N of Meeker, Oklahoma
+#latitude = 35.5779
+#longitude = -96.9000
+#depth = 5.6
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20002850
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK030.HHZ.00,0.361715,15.1138,Pg,2015-04-21 14:53:38.120,manual,0.4,2.66
+GS.OK025.HHZ.00,0.356966,270.64,Pg,2015-04-21 14:53:37.940,manual,0.3,2.67
+GS.OK031.HHZ.00,0.377655,7.51778,Pg,2015-04-21 14:53:38.260,manual,0.2,2.61
+OK.QUOK.HHZ.--,0.612424,14.6949,Pg,2015-04-21 14:53:42.620,manual,0.1,2.04
+GS.OK029.HHZ.00,0.501675,295.947,Pg,2015-04-21 14:53:40.510,manual,0.1,2.27
+OK.BCOK.HHZ.--,0.583238,277.954,Pg,2015-04-21 14:53:41.900,manual,0.0,2.1
+OK.FNO.HHZ.01,0.519466,232.149,Pg,2015-04-21 14:53:41.530,manual,0.8,2.23
+N4.T35B.BHZ.--,1.37192,13.1046,Pn,2015-04-21 14:53:55.480,manual,-1.0,1.22
+OK.X37A.BHZ.--,1.59523,127.754,Pn,2015-04-21 14:53:59.570,manual,0.1,1.19
+GS.OK012.HNZ.01,0.0744393,180.503,Pg,2015-04-21 14:53:32.610,manual,0.2,4.07
+NQ.OK915.HNZ.01,0.38895,15.4124,Pg,2015-04-21 14:53:38.690,manual,0.5,2.57
+OK.OKCSW.EHZ.--,0.471527,248.76,Pg,2015-04-21 14:53:39.930,manual,0.1,2.35
+OK.OKCFA.HHZ.--,0.478292,250.331,Pg,2015-04-21 14:53:40.040,manual,0.1,2.33
+OK.CROK.HHZ.--,1.27527,316.805,Pn,2015-04-21 14:53:54.300,manual,-0.8,1.24
+GS.KAN13.HHZ.01,1.50623,342.117,Pn,2015-04-21 14:53:57.140,manual,-1.2,1.2
+GS.KAN14.HHZ.01,1.6222,328.338,Pn,2015-04-21 14:53:59.980,manual,0.1,1.19
+GS.OK032.HHZ.00,1.61871,319.477,Pn,2015-04-21 14:53:59.870,manual,0.0,1.19
+US.WMOK.BHZ.10,1.75412,242.004,Pn,2015-04-21 14:54:01.800,manual,0.1,1.17
+GS.KS20.HHZ.00,1.73092,342.438,Pn,2015-04-21 14:54:00.640,manual,-0.8,1.17
+OK.U32A.BHZ.--,1.88277,295.756,Pn,2015-04-21 14:54:04.250,manual,0.7,1.15
+GS.OK012.HNE.01,0.0744393,180.503,Sg,2015-04-21 14:53:33.450,manual,-0.2,1.4
+OK.OKCSW.EHE.--,0.471527,248.76,Sg,2015-04-21 14:53:45.830,manual,-0.1,1.19
+OK.OKCFA.HHE.--,0.478292,250.331,Sg,2015-04-21 14:53:46.620,manual,0.5,1.19
+OK.QUOK.HHZ.--,0.612424,14.6949,Sg,2015-04-21 14:53:50.700,manual,0.3,1.13
+OK.KAY1.HHN.--,1.20905,348.032,Sg,2015-04-21 14:54:09.440,manual,-0.1,0.93

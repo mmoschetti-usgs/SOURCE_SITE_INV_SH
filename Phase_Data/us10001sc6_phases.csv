@@ -1,0 +1,68 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10001sc6
+#time = 2015-03-29 22:23:14.800000
+#location = 23km E of Cherokee, Oklahoma
+#latitude = 36.7157
+#longitude = -98.0957
+#depth = 5.2
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10001sc6
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK032.HHZ.00,0.127344,313.704,Pg,2015-03-29 22:23:17.860,manual,0.4,3.71
+OK.CROK.HHZ.--,0.229154,156.742,Pg,2015-03-29 22:23:19.640,manual,0.3,3.16
+OK.GC02.EHZ.--,0.233028,54.362,Pg,2015-03-29 22:23:19.830,manual,0.5,3.15
+GS.OK029.HHZ.00,1.05335,150.358,Pg,2015-03-29 22:23:34.530,manual,-0.5,1.45
+GS.OK031.HHZ.00,1.26834,126.499,Pn,2015-03-29 22:23:38.320,manual,-0.8,1.24
+GS.OK025.HHZ.00,1.2877,151.331,Pn,2015-03-29 22:23:38.700,manual,-0.7,1.23
+OK.QUOK.HHZ.--,1.24383,115.482,Pg,2015-03-29 22:23:38.040,manual,-0.6,1.29
+GS.OK030.HHZ.00,1.31937,126.191,Pn,2015-03-29 22:23:39.170,manual,-0.7,1.23
+OK.QUOK.HHZ.--,1.24383,115.482,Sg,2015-03-29 22:23:54.440,manual,-0.3,0.92
+N4.T35B.BHZ.--,1.28663,80.5782,Pn,2015-03-29 22:23:38.770,manual,-0.7,1.23
+N4.R32B.BHZ.--,1.77259,344.174,Pn,2015-03-29 22:23:46.180,manual,0.0,1.17
+GS.OK032.HH2.00,0.127344,313.704,Sg,2015-03-29 22:23:20.020,manual,0.8,1.37
+OK.CROK.HHE.--,0.229154,156.742,Sg,2015-03-29 22:23:23.090,manual,0.7,1.31
+OK.GC02.EHN.--,0.233028,54.362,Sg,2015-03-29 22:23:23.460,manual,1.0,1.31
+GS.KAN10.HHZ.01,0.407033,0.067812,Pg,2015-03-29 22:23:22.900,manual,0.2,2.52
+GS.KAN10.HHE.01,0.407033,0.067812,Sg,2015-03-29 22:23:28.860,manual,0.9,1.22
+GS.KAN11.HHZ.01,0.510725,16.5678,Pg,2015-03-29 22:23:24.590,manual,0.0,2.25
+GS.KAN11.HHN.01,0.510725,16.5678,Sg,2015-03-29 22:23:32.020,manual,0.7,1.17
+GS.KAN08.HHZ.01,0.519743,11.0499,Pg,2015-03-29 22:23:24.400,manual,-0.4,2.23
+GS.KAN08.HHE.01,0.519743,11.0499,Sg,2015-03-29 22:23:32.310,manual,0.7,1.17
+GS.KAN13.HHZ.01,0.577549,58.91,Pg,2015-03-29 22:23:25.640,manual,-0.3,2.11
+GS.KAN12.HHZ.01,0.58586,7.64234,Pg,2015-03-29 22:23:26.000,manual,-0.1,2.09
+GS.KAN12.HHE.01,0.58586,7.64234,Sg,2015-03-29 22:23:34.470,manual,0.8,1.14
+OK.KAY1.HHZ.--,0.711255,85.9542,Pg,2015-03-29 22:23:28.440,manual,0.0,1.87
+OK.KAY1.HHN.--,0.711255,85.9542,Sg,2015-03-29 22:23:37.810,manual,0.1,1.09
+OK.U32A.BHZ.--,0.802809,245.565,Pg,2015-03-29 22:23:30.030,manual,-0.2,1.73
+OK.U32A.BHE.--,0.802809,245.565,Sg,2015-03-29 22:23:41.220,manual,0.6,1.06
+OK.X37A.BHZ.--,3.06981,132.92,Pn,2015-03-29 22:24:03.890,manual,0.0,1.02

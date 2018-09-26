@@ -1,0 +1,66 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us200026gb
+#time = 2015-04-14 14:32:06.800000
+#location = 4km WNW of Prague, Oklahoma
+#latitude = 35.4953
+#longitude = -96.7376
+#depth = 5.0
+#magnitude = 2.8
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us200026gb
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK030.HHZ.00,0.4332,355.035,Pg,2015-04-14 14:32:15.560,manual,0.4,2.45
+GS.OK029.HHZ.00,0.657044,297.439,Pg,2015-04-14 14:32:19.610,manual,0.2,1.96
+GS.OK031.HHZ.00,0.464217,349.781,Pg,2015-04-14 14:32:16.110,manual,0.4,2.37
+N4.U38B.BHZ.--,2.12775,63.0328,Pn,2015-04-14 14:32:42.700,manual,-0.3,1.12
+NQ.OK914.HNZ.01,0.477614,353.446,Pg,2015-04-14 14:32:16.040,manual,0.0,2.33
+OK.OKCFA.HHZ.--,0.588188,262.407,Pg,2015-04-14 14:32:18.200,manual,0.1,2.09
+GS.OK025.HHZ.00,0.497011,280.093,Pg,2015-04-14 14:32:16.440,manual,0.1,2.28
+OK.QUOK.HHZ.--,0.675086,2.03329,Pg,2015-04-14 14:32:19.640,manual,-0.1,1.93
+OK.BCOK.HHZ.--,0.728614,283.023,Pg,2015-04-14 14:32:20.390,manual,-0.4,1.84
+OK.OKCSW.EHZ.--,0.57882,261.298,Pg,2015-04-14 14:32:18.020,manual,0.1,2.11
+OK.CROK.HHZ.--,1.42655,315.282,Pn,2015-04-14 14:32:33.050,manual,-0.3,1.21
+TA.W39A.BHZ.--,2.43289,96.1944,Pn,2015-04-14 14:32:47.480,manual,0.3,1.09
+GS.OK012.HNZ.01,0.133404,273.478,Pg,2015-04-14 14:32:09.850,manual,0.3,3.67
+OK.FNO.HHZ.01,0.591962,246.552,Pg,2015-04-14 14:32:19.000,manual,0.8,2.08
+OK.KAY1.HHZ.--,1.32185,343.242,Pn,2015-04-14 14:32:31.110,manual,-0.8,1.23
+N4.T35B.BHZ.--,1.42969,7.26906,Pn,2015-04-14 14:32:32.620,manual,-0.8,1.21
+OK.X37A.BHZ.--,1.44015,128.488,Pn,2015-04-14 14:32:33.470,manual,-0.1,1.21
+GS.KAN13.HHZ.01,1.62839,338.662,Pn,2015-04-14 14:32:36.300,manual,0.1,1.19
+TA.U40A.BHZ.--,3.26722,73.6208,Pn,2015-04-14 14:32:58.660,manual,0.0,1.0
+N4.S39B.BHZ.--,3.51457,50.4263,Pn,2015-04-14 14:33:02.180,manual,0.1,0.97
+OK.U32A.BHZ.--,2.03795,296.315,Pn,2015-04-14 14:32:41.910,manual,0.1,1.13
+GS.OK030.HH2.00,0.4332,355.035,Sg,2015-04-14 14:32:21.580,manual,0.8,1.21
+NQ.OK915.HNE.01,0.4582,356.447,Sg,2015-04-14 14:32:22.490,manual,0.9,1.19
+GS.OK025.HH2.00,0.497011,280.093,Sg,2015-04-14 14:32:23.610,manual,0.8,1.18
+OK.OKCSW.EHE.--,0.57882,261.298,Sg,2015-04-14 14:32:26.030,manual,0.6,1.14
+OK.OKCFA.HHE.--,0.588188,262.407,Sg,2015-04-14 14:32:26.280,manual,0.5,1.14

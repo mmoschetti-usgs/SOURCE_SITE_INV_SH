@@ -1,0 +1,69 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000krgb
+#time = 2013-11-02 10:41:09
+#location = 8km N of Spencer, Oklahoma
+#latitude = 35.5980
+#longitude = -97.3750
+#depth = 5.0
+#magnitude = 2.9
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000krgb
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.FNO.HHZ.01,0.340516,183.61,Pg,2013-11-02 10:41:15.840,manual,0.2,0.0
+OK.X34A.HHZ.--,1.06312,200.799,Pg,2013-11-02 10:41:29.530,manual,0.1,0.066
+GS.OK009.HNZ.01,0.0424467,246.898,Pg,2013-11-02 10:41:10.410,manual,0.2,0.0
+OK.U32A.BHZ.--,1.53228,301.07,Pn,2013-11-02 10:41:36.940,manual,-0.1,0.036
+GS.OK001.HNZ.01,0.078825,117.821,Pg,2013-11-02 10:41:11.280,manual,0.5,0.0
+GS.OK005.HNZ.01,0.160216,69.1913,Pg,2013-11-02 10:41:12.890,manual,0.7,0.0
+GS.OK005.HNZ.01,0.160216,69.1913,Sg,2013-11-02 10:41:15.190,manual,0.8,0.118
+GS.ADOK.HNZ.--,0.0539768,3.37227,Pg,2013-11-02 10:41:10.970,manual,0.6,0.0
+US.WMOK.BHZ.10,1.4362,233.715,Pn,2013-11-02 10:41:34.850,manual,-0.9,0.028
+US.WMOK.BHZ.10,1.4362,233.715,Sn,2013-11-02 10:41:53.930,manual,-1.1,0.036
+TA.TUL1.BHZ.--,1.32485,75.9295,Sn,2013-11-02 10:41:51.480,manual,-0.7,0.041
+OK.U32A.BHZ.--,1.53228,301.07,Sn,2013-11-02 10:41:57.680,manual,0.3,0.045
+AG.HHAR.HHZ.00,2.86967,75.2367,Pn,2013-11-02 10:41:55.580,manual,0.1,0.022
+US.AMTX.BHZ.00,3.59554,259.817,Pn,2013-11-02 10:42:04.870,manual,-0.6,0.018
+TA.X40A.BHZ.--,3.88673,105.251,Pn,2013-11-02 10:42:09.480,manual,0.1,0.019
+TA.WHTX.BHZ.--,3.59805,181.098,Pn,2013-11-02 10:42:05.180,manual,-0.2,0.023
+US.CBKS.BHZ.00,3.72289,330.271,Pn,2013-11-02 10:42:06.990,manual,-0.2,0.026
+AG.WHAR.HHZ.00,4.16369,92.7542,Pn,2013-11-02 10:42:13.420,manual,0.2,0.0
+TA.TUL1.BHZ.--,1.32485,75.9295,Pn,2013-11-02 10:41:33.040,manual,-1.1,0.03
+US.MIAR.BHZ.00,3.28764,107.529,Sn,2013-11-02 10:42:41.660,manual,1.0,0.015
+TA.W39A.BHZ.--,2.96093,96.7423,Pn,2013-11-02 10:41:57.070,manual,0.4,0.022
+TA.ABTX.BHZ.--,3.51295,213.03,Pn,2013-11-02 10:42:03.860,manual,-0.4,0.019
+TA.U40A.BHZ.--,3.74435,77.0192,Pn,2013-11-02 10:42:07.210,manual,-0.2,0.018
+US.MIAR.BHZ.00,3.28764,107.529,Pn,2013-11-02 10:42:02.250,manual,1.1,0.022
+TA.W39A.BHZ.--,2.96093,96.7423,Sn,2013-11-02 10:42:32.930,manual,0.4,0.017
+TA.W41B.BHZ.--,4.21022,94.2828,Pn,2013-11-02 10:42:14.140,manual,0.3,0.0
+NM.UALR.BHZ.--,4.20224,99.8078,Pn,2013-11-02 10:42:13.620,manual,-0.1,0.0
+AG.FCAR.HHZ.00,4.28104,84.5661,Pn,2013-11-02 10:42:15.520,manual,0.7,0.0
+US.OGNE.BHZ.00,6.47397,326.941,Pn,2013-11-02 10:42:44.430,manual,-0.6,0.0

@@ -1,0 +1,73 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000syjp
+#time = 2014-11-21 12:54:58.800000
+#location = 15km ESE of Medford, Oklahoma
+#latitude = 36.7567
+#longitude = -97.5737
+#depth = 5.1
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000syjp
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.GC02.EHZ.--,0.248207,292.495,Pg,2014-11-21 12:55:04.060,manual,0.4,0.0
+GS.KAN05.HHZ.01,0.424986,325.827,Pg,2014-11-21 12:55:07.360,manual,0.4,0.0
+GS.KAN01.HHZ.01,0.422864,339.506,Pg,2014-11-21 12:55:07.390,manual,0.4,0.0
+GS.KAN08.HHZ.01,0.566755,325.986,Pg,2014-11-21 12:55:09.980,manual,0.3,0.0
+OK.CROK.HHZ.--,0.41457,232.773,Pg,2014-11-21 12:55:07.050,manual,0.2,0.0
+GS.KAN10.HHZ.01,0.555469,311.388,Pg,2014-11-21 12:55:09.810,manual,0.3,0.0
+GS.KAN11.HHZ.01,0.524468,328.87,Pg,2014-11-21 12:55:09.320,manual,0.4,0.0
+GS.KS20.HHZ.00,0.47237,1.87865,Pg,2014-11-21 12:55:08.250,manual,0.3,0.0
+GS.KAN12.HHZ.01,0.63763,327.95,Pg,2014-11-21 12:55:11.240,manual,0.2,0.044
+OK.QUOK.HHZ.--,0.910066,129.673,Pg,2014-11-21 12:55:16.110,manual,-0.2,0.04
+GS.OK030.HHZ.00,1.04452,142.135,Pg,2014-11-21 12:55:18.610,manual,-0.2,0.032
+GS.OK028.HHZ.00,1.26311,160.687,Pg,2014-11-21 12:55:22.220,manual,-0.8,0.025
+GS.OK029.HHZ.00,0.962944,174.244,Pg,2014-11-21 12:55:17.040,manual,-0.2,0.043
+GS.OK025.HHZ.00,1.18859,170.693,Pg,2014-11-21 12:55:21.150,manual,-0.4,0.029
+OK.U32A.BHZ.--,1.20945,252.291,Pg,2014-11-21 12:55:21.320,manual,-0.7,0.037
+N4.T35B.BHZ.--,0.866598,79.0965,Pg,2014-11-21 12:55:15.370,manual,-0.1,0.056
+OK.GC02.EHN.--,0.248207,292.495,Sg,2014-11-21 12:55:07.730,manual,0.8,0.097
+GS.KAN13.HHN.01,0.267027,16.7066,Sg,2014-11-21 12:55:08.460,manual,0.9,0.084
+GS.KAN13.HHZ.01,0.267027,16.7066,Pg,2014-11-21 12:55:04.520,manual,0.5,0.0
+OK.KAY1.HHE.--,0.290376,88.71,Sg,2014-11-21 12:55:08.960,manual,0.7,0.121
+OK.KAY1.HHZ.--,0.290376,88.71,Pg,2014-11-21 12:55:04.900,manual,0.5,0.0
+GS.KAN09.HHE.01,0.38037,354.623,Sg,2014-11-21 12:55:12.070,manual,0.9,0.055
+GS.KAN09.HHZ.01,0.38037,354.623,Pg,2014-11-21 12:55:06.580,manual,0.4,0.0
+OK.CROK.HHN.--,0.41457,232.773,Sg,2014-11-21 12:55:12.960,manual,0.7,0.124
+GS.KS20.HH2.00,0.47237,1.87865,Sg,2014-11-21 12:55:14.890,manual,0.8,0.055
+GS.KAN10.HHN.01,0.555469,311.388,Sg,2014-11-21 12:55:17.560,manual,0.8,0.046
+N4.T35B.BHN.--,0.866598,79.0965,Sg,2014-11-21 12:55:26.800,manual,0.1,0.062
+OK.QUOK.HHN.--,0.910066,129.673,Sg,2014-11-21 12:55:28.130,manual,0.1,0.046
+GS.OK029.HH2.00,0.962944,174.244,Sg,2014-11-21 12:55:29.990,manual,0.2,0.051
+GS.OK031.HHZ.00,0.997404,143.302,Pg,2014-11-21 12:55:17.740,manual,-0.2,0.034
+GS.OK031.HH2.00,0.997404,143.302,Sg,2014-11-21 12:55:30.800,manual,-0.1,0.042
+GS.OK028.HH1.00,1.26311,160.687,Sg,2014-11-21 12:55:39.520,manual,0.1,0.036
+OK.FNO.HHZ.01,1.50268,174.608,Pn,2014-11-21 12:55:26.390,manual,0.0,0.186

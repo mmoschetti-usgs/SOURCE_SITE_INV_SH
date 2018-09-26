@@ -1,0 +1,65 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000s5ey
+#time = 2014-08-22 10:22:33.600000
+#location = 18km ENE of Mooreland, Oklahoma
+#latitude = 36.5116
+#longitude = -99.0216
+#depth = 5.0
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000s5ey
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+US.WMOK.BHZ.10,1.78069,173.602,Pn,2014-08-22 10:23:04.970,manual,-0.1,0.078
+GS.OK027.HHZ.00,1.61777,119.039,Pn,2014-08-22 10:23:03.010,manual,0.2,0.045
+GS.OK028.HHZ.00,1.85031,120.258,Pn,2014-08-22 10:23:06.430,manual,0.4,0.043
+OK.FNO.HHZ.01,1.81594,133.087,Pn,2014-08-22 10:23:06.100,manual,0.6,0.053
+OK.KNG1.EHZ.--,1.13586,109.073,Sg,2014-08-22 10:23:10.390,automatic,0.3,0.14
+N4.R32B.BHZ.--,1.92346,7.28554,Pn,2014-08-22 10:23:07.370,manual,0.3,0.105
+GS.OK029.HH1.00,1.4549,118.904,Sn,2014-08-22 10:23:20.560,manual,0.5,0.063
+OK.BCOK.HHE.--,1.42706,126.296,Sn,2014-08-22 10:23:19.310,manual,0.0,0.072
+OK.KNG1.EHN.--,1.13586,109.073,Sn,2014-08-22 10:23:10.580,manual,-1.6,0.068
+GS.KAN11.HHZ.01,1.12715,51.7249,Pg,2014-08-22 10:22:56.280,manual,1.1,0.12
+GS.KAN11.HHE.01,1.12715,51.7249,Sg,2014-08-22 10:23:09.600,manual,-0.2,0.161
+GS.KAN10.HHE.01,0.96216,50.322,Sg,2014-08-22 10:23:04.750,manual,0.2,0.183
+OK.CROK.HHZ.--,0.836479,90.1629,Pg,2014-08-22 10:22:49.650,manual,0.0,0.124
+GS.KAN10.HHZ.01,0.96216,50.322,Pg,2014-08-22 10:22:51.890,manual,-0.2,0.153
+GS.KAN12.HHZ.01,1.13504,45.9846,Pg,2014-08-22 10:22:55.180,manual,-0.2,0.132
+OK.KNG1.EHZ.--,1.13586,109.073,Pg,2014-08-22 10:22:54.490,manual,-0.9,0.103
+GS.KAN13.HHZ.01,1.33688,67.5611,Pn,2014-08-22 10:22:57.280,manual,-1.6,0.05
+OK.BCOK.HHZ.--,1.42706,126.296,Pn,2014-08-22 10:22:59.710,manual,-0.5,0.052
+GS.OK029.HHZ.00,1.4549,118.904,Pn,2014-08-22 10:23:00.640,manual,0.1,0.046
+GS.ADOK.HNZ.--,1.58848,122.196,Pn,2014-08-22 10:23:02.380,manual,0.0,0.047
+GS.OK025.HHZ.00,1.65043,123.738,Pn,2014-08-22 10:23:03.350,manual,0.1,0.048
+GS.OK026.HHZ.00,1.67909,130.193,Pn,2014-08-22 10:23:03.640,manual,0.0,0.052
+OK.QUOK.HHZ.--,1.89854,99.6144,Pn,2014-08-22 10:23:05.840,manual,-0.8,0.033
+N4.T35B.BHZ.--,2.05663,77.9284,Pn,2014-08-22 10:23:09.500,manual,0.6,0.036
+OK.CROK.HHN.--,0.836479,90.1629,Sg,2014-08-22 10:22:59.880,manual,-0.6,0.133

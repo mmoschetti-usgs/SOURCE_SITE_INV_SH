@@ -1,0 +1,59 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000tcyb
+#time = 2015-01-02 07:27:57
+#location = 11km SW of Caldwell, Kansas
+#latitude = 36.9701
+#longitude = -97.7070
+#depth = 4.0
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000tcyb
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK031.HHZ.00,1.23275,145.161,Pg,2015-01-02 07:28:20.060,manual,-0.6,1.3
+OK.U32A.BHZ.--,1.19597,240.859,Pg,2015-01-02 07:28:19.330,manual,-0.6,1.32
+GS.KAN13.HHZ.01,0.18842,76.8263,Pg,2015-01-02 07:28:01.140,manual,0.5,3.36
+GS.KAN10.HHZ.01,0.346211,296.365,Pg,2015-01-02 07:28:04.210,manual,0.5,2.71
+GS.KAN11.HHZ.01,0.287502,325.047,Pg,2015-01-02 07:28:03.170,manual,0.6,2.92
+GS.KAN12.HHZ.01,0.401018,324.643,Pg,2015-01-02 07:28:05.250,manual,0.5,2.54
+GS.OK025.HHZ.00,1.4179,167.747,Pn,2015-01-02 07:28:23.220,manual,-0.4,1.22
+GS.OK026.HHZ.00,1.56533,172.334,Pn,2015-01-02 07:28:25.110,manual,-0.5,1.2
+OK.W35A.EHZ.--,1.93498,159.352,Pn,2015-01-02 07:28:30.330,manual,-0.4,1.15
+N4.T35B.BHZ.--,0.958976,92.8568,Pg,2015-01-02 07:28:15.250,manual,-0.1,1.83
+GS.KAN13.HHE.01,0.18842,76.8263,Sg,2015-01-02 07:28:03.940,manual,0.8,1.33
+GS.KAN14.HHE.01,0.205471,266.372,Sg,2015-01-02 07:28:04.370,manual,0.6,1.32
+GS.KAN11.HHN.01,0.287502,325.047,Sg,2015-01-02 07:28:07.310,manual,1.0,1.28
+N4.T35B.BHN.--,0.958976,92.8568,Sg,2015-01-02 07:28:27.980,manual,0.1,1.01
+OK.QUOK.HHN.--,1.13233,134.448,Sg,2015-01-02 07:28:33.170,manual,-0.2,0.95
+GS.KAN08.HHZ.01,0.331845,320.597,Pg,2015-01-02 07:28:03.990,manual,0.6,2.76
+OK.QUOK.HHZ.--,1.13233,134.448,Pg,2015-01-02 07:28:18.230,manual,-0.5,1.38
+GS.OK030.HHZ.00,1.2791,144.138,Pg,2015-01-02 07:28:20.710,manual,-0.8,1.26
+N4.R32B.BHZ.--,1.65425,331.524,Pn,2015-01-02 07:28:26.790,manual,-0.1,1.18

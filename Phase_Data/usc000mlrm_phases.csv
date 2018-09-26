@@ -1,0 +1,69 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000mlrm
+#time = 2014-02-09 21:25:26.260000
+#location = 8km NNW of Spencer, Oklahoma
+#latitude = 35.5956
+#longitude = -97.4002
+#depth = 6.7
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000mlrm
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.OKCSW.EHZ.--,0.192174,189.247,Pg,2014-02-09 21:25:30.310,manual,0.2,0.0
+GS.OK026.HHZ.00,0.184691,193.088,Pg,2014-02-09 21:25:30.200,manual,0.2,0.0
+OK.FNO.HHZ.01,0.33745,180.139,Pg,2014-02-09 21:25:33.420,manual,0.6,0.0
+GS.OK025.HHZ.00,0.0528006,105.885,Pg,2014-02-09 21:25:28.080,manual,0.2,0.0
+OK.W35A.EHZ.--,0.616322,135.656,Pg,2014-02-09 21:25:37.940,manual,-0.2,0.0
+OK.CROK.HHZ.--,1.02292,332.654,Pg,2014-02-09 21:25:45.360,manual,-0.5,0.035
+US.WMOK.BHZ.10,1.41826,233.288,Pn,2014-02-09 21:25:51.590,manual,-0.9,0.026
+OK.X37A.BHZ.--,1.94321,120.525,Pn,2014-02-09 21:25:59.500,manual,-0.2,0.028
+GS.ADOK.HNZ.--,0.0610669,22.8345,Pg,2014-02-09 21:25:28.080,manual,0.1,0.0
+TA.TUL1.BHZ.--,1.34536,76.0286,Pn,2014-02-09 21:25:50.170,manual,-1.3,0.034
+GS.OK009.HNZ.01,0.023364,232.361,Pg,2014-02-09 21:25:27.400,manual,-0.2,0.0
+OK.U32A.BHZ.--,1.51598,301.533,Pn,2014-02-09 21:25:53.670,manual,-0.2,0.02
+GS.OK001.HNZ.01,0.0965838,110.849,Pg,2014-02-09 21:25:28.740,manual,0.3,0.0
+GS.OK001.HNE.01,0.0965838,110.849,Sg,2014-02-09 21:25:30.700,manual,0.7,0.085
+TA.U40A.BHZ.--,3.7649,77.0392,Pn,2014-02-09 21:26:24.740,manual,-0.1,0.02
+AG.WHAR.HHZ.00,4.18409,92.6933,Pn,2014-02-09 21:26:31.100,manual,0.6,0.019
+TA.W41B.BHZ.--,4.23052,94.2151,Pn,2014-02-09 21:26:31.120,manual,0.0,0.019
+OK.U32A.BHZ.--,1.51598,301.533,Sn,2014-02-09 21:26:14.390,manual,0.5,0.024
+OK.X37A.BHZ.--,1.94321,120.525,Sg,2014-02-09 21:26:27.950,manual,1.5,0.0
+US.MIAR.BHZ.00,3.30651,107.368,Pn,2014-02-09 21:26:19.710,manual,1.2,0.022
+GS.OK009.HNN.01,0.023364,232.361,Sg,2014-02-09 21:25:28.440,manual,0.0,0.103
+GS.ADOK.HNE.--,0.0610669,22.8345,Sg,2014-02-09 21:25:29.690,manual,0.5,0.098
+GS.OK025.HH2.00,0.0528006,105.885,Sg,2014-02-09 21:25:29.460,manual,0.5,0.082
+GS.OK026.HH2.00,0.184691,193.088,Sg,2014-02-09 21:25:33.150,manual,0.6,0.081
+OK.OKCSW.EHE.--,0.192174,189.247,Sg,2014-02-09 21:25:33.400,manual,0.6,0.078
+OK.FNO.HHE.01,0.33745,180.139,Sg,2014-02-09 21:25:38.690,manual,1.4,0.066
+OK.W35A.EHN.--,0.616322,135.656,Sg,2014-02-09 21:25:46.560,manual,0.4,0.06
+OK.CROK.HHN.--,1.02292,332.654,Sg,2014-02-09 21:25:59.060,manual,-0.1,0.044
+ZW.AZDA.EHZ.01,2.61947,182.854,Pn,2014-02-09 21:26:09.610,manual,0.6,0.02

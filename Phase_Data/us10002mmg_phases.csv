@@ -1,0 +1,68 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10002mmg
+#time = 2015-06-30 16:05:43
+#location = 4km ESE of Cherokee, Oklahoma
+#latitude = 36.7315
+#longitude = -98.3131
+#depth = 5.6
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10002mmg
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK032.HHZ.00,0.109581,48.7822,Pg,2015-06-30 16:05:45.630,manual,0.3,3.82
+GS.KAN13.HHZ.01,0.726333,67.0009,Pg,2015-06-30 16:05:56.500,manual,-0.5,1.85
+GS.KAN17.HHZ.01,0.539068,54.4697,Pg,2015-06-30 16:05:53.430,manual,0.1,2.19
+OK.CROK.HHE.--,0.348711,130.377,Sg,2015-06-30 16:05:54.810,manual,0.5,1.25
+OK.BLOK.HHZ.--,0.882489,87.7854,Pg,2015-06-30 16:05:59.650,manual,-0.3,1.63
+OK.QUOK.HHZ.--,1.40967,112.883,Pn,2015-06-30 16:06:08.990,manual,-0.2,1.22
+N4.T35B.BHZ.--,1.45698,82.1919,Pn,2015-06-30 16:06:09.680,manual,-0.2,1.21
+OK.GORE.HHZ.--,0.298852,79.4812,Pg,2015-06-30 16:05:49.210,manual,0.4,2.88
+OK.CROK.HHZ.--,0.348711,130.377,Pg,2015-06-30 16:05:50.010,manual,0.2,2.7
+GS.KAN10.HHZ.01,0.428489,23.9944,Pg,2015-06-30 16:05:51.600,manual,0.3,2.46
+GS.KAN05.HHZ.01,0.5162,43.0522,Pg,2015-06-30 16:05:53.090,manual,0.1,2.24
+GS.KAN08.HHZ.01,0.565152,28.9017,Pg,2015-06-30 16:05:53.910,manual,0.0,2.13
+GS.KAN12.HHZ.01,0.618596,23.9668,Pg,2015-06-30 16:05:55.000,manual,0.1,2.03
+OK.U32A.BHZ.--,0.656172,237.835,Pg,2015-06-30 16:05:55.590,manual,0.0,1.96
+GS.KAN09.HHZ.01,0.687762,53.8347,Pg,2015-06-30 16:05:56.170,manual,0.0,1.91
+GS.KS20.HHZ.00,0.785163,50.4764,Pg,2015-06-30 16:05:57.840,manual,-0.2,1.76
+GS.OK029.HHZ.00,1.16255,143.118,Pg,2015-06-30 16:06:04.790,manual,-0.5,1.35
+OK.BCOK.HHZ.--,1.21431,151.833,Pg,2015-06-30 16:06:05.270,manual,-1.0,1.31
+GS.OK025.HHZ.00,1.39312,145.204,Pn,2015-06-30 16:06:08.430,manual,-0.5,1.22
+GS.OK032.HH2.00,0.109581,48.7822,Sg,2015-06-30 16:05:47.620,manual,0.7,1.38
+GS.OK031.HHZ.00,1.42116,122.696,Pn,2015-06-30 16:06:09.260,manual,-0.1,1.21
+OK.OKCFA.HHZ.--,1.48744,151.755,Pn,2015-06-30 16:06:10.050,manual,-0.2,1.2
+OK.CHOK.HHZ.--,1.54618,138.688,Pn,2015-06-30 16:06:11.120,manual,0.0,1.2
+OK.FNO.HHZ.01,1.64641,153.042,Pn,2015-06-30 16:06:12.360,manual,-0.1,1.18
+OK.W35A.HHZ.--,1.96079,143.038,Pn,2015-06-30 16:06:16.830,manual,0.1,1.14
+US.WMOK.BHZ.10,2.02535,190.963,Pn,2015-06-30 16:06:17.670,manual,0.0,1.13
+N4.U38B.BHZ.--,3.17427,94.0963,Pn,2015-06-30 16:06:33.640,manual,0.2,1.01
+OK.X37A.BHZ.--,3.21036,130.878,Pn,2015-06-30 16:06:33.770,manual,-0.1,1.0

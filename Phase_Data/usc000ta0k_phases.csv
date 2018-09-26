@@ -1,0 +1,75 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000ta0k
+#time = 2014-12-25 00:45:20.900000
+#location = 10km NW of Helena, Oklahoma
+#latitude = 36.6235
+#longitude = -98.3455
+#depth = 4.9
+#magnitude = 2.8
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000ta0k
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.CROK.HHZ.--,0.314714,112.024,Pg,2014-12-25 00:45:27.290,manual,0.3,2.82
+GS.KAN14.HHZ.01,0.452707,42.5935,Pg,2014-12-25 00:45:30.010,manual,0.4,2.4
+OK.GC02.EHZ.--,0.451816,59.6125,Pg,2014-12-25 00:45:29.870,manual,0.3,2.4
+GS.KAN11.HHZ.01,0.676763,30.6562,Pg,2014-12-25 00:45:34.150,manual,0.2,1.93
+GS.KAN08.HHZ.01,0.672744,26.3881,Pg,2014-12-25 00:45:34.000,manual,0.2,1.93
+GS.KAN12.HHZ.01,0.727947,22.3756,Pg,2014-12-25 00:45:35.030,manual,0.1,1.84
+GS.OK025.HHZ.00,1.32208,141.59,Pn,2014-12-25 00:45:45.130,manual,-0.9,1.23
+GS.OK030.HHZ.00,1.44031,118.355,Pn,2014-12-25 00:45:47.350,manual,-0.3,1.21
+GS.OK031.HHZ.00,1.38882,118.351,Pn,2014-12-25 00:45:46.490,manual,-0.5,1.22
+OK.BCOK.HHZ.--,1.134,148.08,Pg,2014-12-25 00:45:42.020,manual,-0.6,1.38
+OK.OKCSW.EHZ.--,1.42077,148.545,Pn,2014-12-25 00:45:47.010,manual,-0.4,1.22
+OK.FNO.HHZ.01,1.56381,150.381,Pn,2014-12-25 00:45:49.390,manual,0.0,1.2
+US.WMOK.BHZ.10,1.91458,190.792,Pn,2014-12-25 00:45:54.670,manual,0.5,1.15
+OK.W35A.EHZ.--,1.89227,140.426,Pn,2014-12-25 00:45:54.240,manual,0.4,1.15
+N4.T35B.BHZ.--,1.501,78.2293,Pn,2014-12-25 00:45:48.590,manual,0.1,1.2
+US.AMTX.BHZ.00,3.2205,238.367,Pn,2014-12-25 00:46:13.250,manual,1.0,1.0
+N4.U38B.BHZ.--,3.19443,92.117,Pn,2014-12-25 00:46:12.900,manual,1.1,1.01
+OK.X37A.BHZ.--,3.16106,129.074,Pn,2014-12-25 00:46:11.730,manual,0.4,1.01
+TA.W39A.BHZ.--,3.96705,109.692,Pn,2014-12-25 00:46:22.860,manual,0.5,0.93
+TA.MSTX.BHZ.--,4.48515,235.12,Pn,2014-12-25 00:46:30.690,manual,1.0,0.89
+TA.U40A.BHZ.--,4.43323,91.8116,Pn,2014-12-25 00:46:30.250,manual,1.4,0.9
+OK.GC02.EHN.--,0.451816,59.6125,Sg,2014-12-25 00:45:36.370,manual,0.9,1.2
+GS.KAN10.HHZ.01,0.537929,21.842,Pg,2014-12-25 00:45:31.590,manual,0.3,2.19
+OK.U32A.BHZ.--,0.581897,245.456,Pg,2014-12-25 00:45:32.190,manual,0.1,2.1
+OK.U32A.BHN.--,0.581897,245.456,Sg,2014-12-25 00:45:40.440,manual,0.8,1.14
+GS.KAN13.HHZ.01,0.797419,60.5713,Pg,2014-12-25 00:45:35.970,manual,-0.2,1.74
+GS.KAN13.HHN.01,0.797419,60.5713,Sg,2014-12-25 00:45:47.020,manual,0.5,1.06
+OK.BCOK.HHN.--,1.134,148.08,Sg,2014-12-25 00:45:57.340,manual,0.0,0.95
+GS.OK025.HH2.00,1.32208,141.59,Sg,2014-12-25 00:46:03.340,manual,-0.1,0.9
+GS.OK026.HHZ.00,1.40677,148.723,Pn,2014-12-25 00:45:46.560,manual,-0.7,1.22
+N4.R32B.BHZ.--,1.81922,350.917,Pn,2014-12-25 00:45:54.080,manual,1.2,1.16
+US.CBKS.BHZ.00,2.44945,333.641,Pn,2014-12-25 00:46:02.850,manual,1.3,1.08
+US.MIAR.BHZ.00,4.40489,116.673,Pn,2014-12-25 00:46:28.900,manual,0.5,0.9
+TA.T25A.BHZ.--,4.8895,277.853,Pn,2014-12-25 00:46:35.740,manual,0.4,0.86
+AG.WHAR.HHZ.00,5.08977,103.36,Pn,2014-12-25 00:46:38.650,manual,0.8,0.85

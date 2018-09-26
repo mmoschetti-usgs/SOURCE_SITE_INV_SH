@@ -1,0 +1,70 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000nzje
+#time = 2014-04-01 03:29:20.860000
+#location = 20km N of Crescent, Oklahoma
+#latitude = 36.1399
+#longitude = -97.6125
+#depth = 2.5
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000nzje
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK029.HHZ.00,0.365657,159.489,Pg,2014-04-01 03:29:28.250,manual,0.4,0.0
+OK.OKCSW.EHZ.--,0.746439,168.99,Pg,2014-04-01 03:29:34.550,manual,-0.6,0.055
+GS.OK025.HHZ.00,0.600573,158.116,Pg,2014-04-01 03:29:31.970,manual,-0.4,0.0
+GS.OK027.HHZ.00,0.503575,147.89,Pg,2014-04-01 03:29:30.640,manual,0.1,0.0
+GS.OK026.HHZ.00,0.73482,169.684,Pg,2014-04-01 03:29:34.720,manual,-0.2,0.0
+GS.OK028.HHZ.00,0.730777,142.056,Pg,2014-04-01 03:29:34.820,manual,-0.1,0.0
+OK.FNO.HHZ.01,0.897231,168.887,Pg,2014-04-01 03:29:37.650,manual,-0.4,0.044
+OK.W35A.EHZ.--,1.15396,148.393,Pg,2014-04-01 03:29:42.140,manual,-0.8,0.026
+OK.X34A.HHZ.--,1.54596,186.746,Pn,2014-04-01 03:29:49.340,manual,0.0,0.136
+US.WMOK.BHZ.10,1.69314,214.631,Pn,2014-04-01 03:29:51.140,manual,-0.3,0.173
+AG.HHAR.HHZ.00,2.97328,86.1823,Pn,2014-04-01 03:30:08.780,manual,-0.2,0.101
+N4.T35B.BHZ.--,1.17733,48.5214,Pg,2014-04-01 03:29:43.270,manual,-0.2,0.179
+N4.U38B.BHZ.--,2.62397,82.5063,Pn,2014-04-01 03:30:04.050,manual,-0.2,0.11
+TA.TUL1.BHZ.--,1.49348,98.2847,Pn,2014-04-01 03:29:48.130,manual,-0.5,0.13
+OK.U32A.BHZ.--,1.14773,282.435,Pg,2014-04-01 03:29:42.290,manual,-0.6,0.138
+GS.OK029.HH2.00,0.365657,159.489,Sg,2014-04-01 03:29:33.590,manual,1.0,0.055
+OK.CROK.HHZ.--,0.471444,320.664,Pg,2014-04-01 03:29:29.840,manual,-0.1,0.0
+OK.CROK.HHN.--,0.471444,320.664,Sg,2014-04-01 03:29:36.770,manual,0.7,0.075
+GS.OK027.HH1.00,0.503575,147.89,Sg,2014-04-01 03:29:38.080,manual,1.0,0.057
+GS.ADOK.HNE.--,0.52484,158.0,Sg,2014-04-01 03:29:38.730,manual,1.0,0.051
+GS.ADOK.HNZ.--,0.52484,158.0,Pg,2014-04-01 03:29:30.440,manual,-0.5,0.0
+GS.OK025.HH2.00,0.600573,158.116,Sg,2014-04-01 03:29:41.210,manual,1.0,0.045
+GS.OK028.HH1.00,0.730777,142.056,Sg,2014-04-01 03:29:45.180,manual,0.8,0.06
+GS.OK026.HH2.00,0.73482,169.684,Sg,2014-04-01 03:29:45.030,manual,0.5,0.057
+OK.OKCSW.EHN.--,0.746439,168.99,Sg,2014-04-01 03:29:45.710,manual,0.9,0.055
+OK.FNO.HHE.01,0.897231,168.887,Sg,2014-04-01 03:29:50.650,manual,0.9,0.05
+OK.W35A.EHZ.--,1.15396,148.393,Sn,2014-04-01 03:29:59.920,manual,-0.4,0.138
+N4.T35B.BHZ.--,1.17733,48.5214,Sn,2014-04-01 03:30:00.260,manual,-0.7,0.211
+US.WMOK.BHZ.10,1.69314,214.631,Sn,2014-04-01 03:30:13.070,manual,-0.6,0.188
+N4.R32B.BHZ.--,2.44111,339.295,Pn,2014-04-01 03:30:01.310,manual,-0.4,0.081

@@ -1,0 +1,72 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000rdbi
+#time = 2014-06-10 15:29:48.400000
+#location = 8km NNE of Edmond, Oklahoma
+#latitude = 35.7160
+#longitude = -97.4273
+#depth = 5.3
+#magnitude = 2.7
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000rdbi
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK029.HHZ.00,0.0835025,344.411,Pg,2014-06-10 15:29:50.510,manual,0.2,0.0
+GS.OK025.HHZ.00,0.153038,151.564,Pg,2014-06-10 15:29:51.770,manual,0.3,0.0
+GS.OK027.HHZ.00,0.11701,91.9118,Pg,2014-06-10 15:29:51.100,manual,0.3,0.0
+GS.OK028.HHZ.00,0.335738,117.304,Pg,2014-06-10 15:29:55.170,manual,0.3,0.0
+GS.OK026.HHZ.00,0.300685,183.754,Pg,2014-06-10 15:29:54.300,manual,0.1,0.0
+OK.BCOK.HHZ.--,0.159539,248.283,Pg,2014-06-10 15:29:51.650,manual,0.0,0.0
+OK.FNO.HHZ.01,0.458082,177.327,Pg,2014-06-10 15:29:57.590,manual,0.4,0.0
+OK.QUOK.HHZ.--,0.739727,51.8859,Pg,2014-06-10 15:30:02.510,manual,-0.1,0.084
+OK.KNG1.EHZ.--,0.469004,332.423,Pg,2014-06-10 15:29:57.500,manual,0.1,0.0
+OK.W35A.EHZ.--,0.72089,141.069,Pg,2014-06-10 15:30:01.850,manual,-0.4,0.041
+OK.X37A.BHZ.--,2.02534,123.12,Pn,2014-06-10 15:30:23.120,manual,0.0,0.044
+N4.T35B.BHZ.--,1.40755,31.4148,Pn,2014-06-10 15:30:14.020,manual,-0.7,0.044
+OK.X34A.HHZ.--,1.16096,196.739,Pg,2014-06-10 15:30:10.320,manual,-0.3,0.034
+GS.ADOK.HNZ.--,0.0785577,144.365,Pg,2014-06-10 15:29:50.380,manual,0.2,0.0
+GS.OK001.HNZ.01,0.191021,143.972,Pg,2014-06-10 15:29:52.160,manual,0.0,0.0
+OK.OKCSW.EHZ.--,0.309944,181.617,Pg,2014-06-10 15:29:54.470,manual,0.0,0.0
+OK.CROK.HHZ.--,0.906777,330.388,Pg,2014-06-10 15:30:05.660,manual,-0.1,0.033
+OK.KAY1.HHZ.--,1.05894,9.38839,Pg,2014-06-10 15:30:08.200,manual,-0.5,0.036
+GS.KAN13.HHZ.01,1.29493,358.211,Pn,2014-06-10 15:30:12.400,manual,-0.7,0.036
+OK.U32A.BHZ.--,1.43723,297.893,Pn,2014-06-10 15:30:14.540,manual,-0.6,0.037
+US.WMOK.BHZ.10,1.47647,229.02,Pn,2014-06-10 15:30:15.060,manual,-0.6,0.053
+GS.KAN10.HHZ.01,1.50441,339.218,Pn,2014-06-10 15:30:16.100,manual,0.1,0.031
+GS.KAN11.HHZ.01,1.53778,345.384,Pn,2014-06-10 15:30:16.510,manual,0.0,0.032
+N4.U38B.BHZ.--,2.56743,72.7785,Pn,2014-06-10 15:30:30.950,manual,0.3,0.04
+AG.HHAR.HHZ.00,2.88352,77.6831,Pn,2014-06-10 15:30:35.150,manual,0.2,0.038
+TA.W39A.BHZ.--,3.0191,98.8349,Pn,2014-06-10 15:30:36.790,manual,0.0,0.037
+US.MIAR.BHZ.00,3.36517,109.19,Pn,2014-06-10 15:30:41.640,manual,0.1,0.034
+TA.ABTX.BHZ.--,3.58987,211.407,Pn,2014-06-10 15:30:42.720,manual,-2.0,0.034
+TA.U40A.BHZ.--,3.76144,78.8799,Pn,2014-06-10 15:30:46.770,manual,-0.3,0.032
+N4.S39B.BHZ.--,3.8422,57.9258,Pn,2014-06-10 15:30:48.020,manual,-0.1,0.03
+TA.X40A.BHZ.--,3.9601,106.7,Pn,2014-06-10 15:30:50.190,manual,0.4,0.031
+AG.WHAR.HHZ.00,4.21346,94.2927,Pn,2014-06-10 15:30:52.940,manual,-0.3,0.03

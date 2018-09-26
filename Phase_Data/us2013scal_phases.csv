@@ -1,0 +1,47 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us2013scal
+#time = 2013-07-01 15:14:39.750000
+#location = 21km NNE of Enid, Oklahoma
+#latitude = 36.5860
+#longitude = -97.8260
+#depth = 5.0
+#magnitude = 2.7
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us2013scal
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+IR.U32A.--.--,0.97,258.1,Pg,2013-07-01 15:14:57.590,manual,-0.8,1.0
+IR.TUL1.--.--,1.78,111.7,Pn,2013-07-01 15:15:11.890,manual,0.7,1.0
+IR.WMOK.--.--,2.0,203.1,Pn,2013-07-01 15:15:14.470,manual,0.2,1.0
+IR.X37A.--.--,2.82,134.2,Pn,2013-07-01 15:15:27.120,manual,1.6,1.0
+IR.HHAR.--.--,3.15,94.4,Pn,2013-07-01 15:15:29.480,manual,-0.5,1.0
+IR.AMTX.--.--,3.57,242.7,Pg,2013-07-01 15:15:43.260,manual,-0.1,1.0
+IR.W39A.--.--,3.56,111.7,Pg,2013-07-01 15:15:45.890,manual,2.6,1.0

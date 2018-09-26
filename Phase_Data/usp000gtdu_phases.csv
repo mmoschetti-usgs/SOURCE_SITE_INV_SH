@@ -1,0 +1,61 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usp000gtdu
+#time = 2009-02-03 10:23:10.010000
+#location = 22km NW of Coalgate, Oklahoma
+#latitude = 34.5890
+#longitude = -96.3400
+#depth = 5.0
+#magnitude = 3.1
+#magtype = mblg
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usp000gtdu
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+IR.RFTA.--.--,1.6,190.6,Pg,2009-02-03 10:23:40.910,manual,2.0,1.0
+IR.WMOK.--.--,2.02,274.9,Pn,2009-02-03 10:23:45.230,manual,0.5,1.0
+IR.MIAR.--.--,2.28,90.3,Pn,2009-02-03 10:23:50.260,manual,1.9,1.0
+IR.NATX.--.--,3.15,153.0,Pn,2009-02-03 10:23:59.120,manual,-1.2,1.0
+IR.UALR.--.--,3.3,85.6,Pg,2009-02-03 10:24:10.350,manual,-2.9,0.0
+IR.AMTX.--.--,4.41,275.3,Pn,2009-02-03 10:24:17.960,manual,0.3,1.0
+IR.KSU1.--.--,4.51,357.3,Pn,2009-02-03 10:24:18.850,manual,-0.1,1.0
+IR.HBAR.--.--,4.76,76.7,Pn,2009-02-03 10:24:19.930,manual,-2.5,1.0
+IR.HKT.--.--,4.64,174.6,Pn,2009-02-03 10:24:19.990,manual,-0.8,1.0
+IR.CBKS.--.--,5.02,328.1,Pn,2009-02-03 10:24:25.060,manual,-1.0,1.0
+IR.JCT.--.--,5.03,216.5,Pn,2009-02-03 10:24:25.210,manual,-1.0,1.0
+IR.WVT.--.--,7.12,75.1,Pn,2009-02-03 10:24:56.240,manual,1.4,1.0
+IR.OGNE.--.--,7.78,326.3,Pn,2009-02-03 10:25:04.560,manual,0.6,1.0
+IR.SDCO.--.--,8.05,295.7,Pn,2009-02-03 10:25:08.150,manual,0.3,1.0
+IR.SLM.--.--,6.36,48.8,Pg,2009-02-03 10:25:08.380,manual,-3.4,0.0
+IR.MNTX.--.--,8.11,251.7,Pn,2009-02-03 10:25:09.010,manual,0.5,1.0
+IR.ANMO.--.--,8.34,275.4,Pn,2009-02-03 10:25:11.010,manual,-0.7,1.0
+IR.BNM.--.--,8.52,270.0,Pn,2009-02-03 10:25:14.020,manual,-0.2,1.0
+IR.ECSD.--.--,9.13,358.7,Pn,2009-02-03 10:25:17.890,manual,-4.6,0.0
+IR.SCIA.--.--,7.71,17.7,Pg,2009-02-03 10:25:33.130,manual,-4.5,0.0
+IR.USIN.--.--,7.77,61.8,Pg,2009-02-03 10:25:36.580,manual,-2.3,0.0

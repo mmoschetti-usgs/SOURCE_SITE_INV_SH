@@ -1,0 +1,68 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10001qpz
+#time = 2015-03-25 18:34:04.400000
+#location = 10km ENE of Helena, Oklahoma
+#latitude = 36.5947
+#longitude = -98.1632
+#depth = 5.9
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10001qpz
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK032.HHZ.00,0.212114,349.711,Pg,2015-03-25 18:34:08.940,manual,0.3,3.24
+OK.CROK.HHZ.--,0.170384,121.761,Pg,2015-03-25 18:34:08.120,manual,0.3,3.46
+GS.KAN14.HHZ.01,0.395539,23.9185,Pg,2015-03-25 18:34:12.260,manual,0.2,2.55
+OK.GC02.EHZ.--,0.353829,43.4922,Pg,2015-03-25 18:34:11.590,manual,0.3,2.68
+GS.KAN10.HHZ.01,0.530614,5.8878,Pg,2015-03-25 18:34:14.720,manual,0.1,2.21
+GS.KAN09.HHZ.01,0.694955,38.799,Pg,2015-03-25 18:34:17.580,manual,-0.2,1.9
+OK.QUOK.HHZ.--,1.24796,109.354,Pn,2015-03-25 18:34:27.620,manual,-0.8,1.24
+US.WMOK.BHZ.10,1.91978,195.364,Pn,2015-03-25 18:34:37.670,manual,0.0,1.15
+N4.T35B.BHZ.--,1.36443,75.9051,Pn,2015-03-25 18:34:29.510,manual,-0.5,1.22
+GS.KAN08.HHZ.01,0.649361,13.6727,Pg,2015-03-25 18:34:15.600,manual,-1.3,1.97
+GS.KAN11.HHZ.01,0.642187,18.1011,Pg,2015-03-25 18:34:15.400,manual,-1.4,1.99
+GS.KAN13.HHZ.01,0.690539,52.6054,Pg,2015-03-25 18:34:17.590,manual,-0.1,1.9
+OK.U32A.BHZ.--,0.708821,252.612,Pg,2015-03-25 18:34:17.960,manual,-0.1,1.87
+GS.KAN12.HHZ.01,0.713756,10.6362,Pg,2015-03-25 18:34:18.170,manual,0.0,1.87
+OK.KAY1.HHZ.--,0.782692,77.3461,Pg,2015-03-25 18:34:19.190,manual,-0.2,1.76
+GS.OK029.HHZ.00,0.981118,144.061,Pg,2015-03-25 18:34:22.960,manual,-0.3,1.52
+OK.BCOK.HHZ.--,1.03793,154.239,Pg,2015-03-25 18:34:23.660,manual,-0.7,1.46
+GS.OK025.HHZ.00,1.21242,146.296,Pg,2015-03-25 18:34:26.170,manual,-1.5,1.31
+GS.OK031.HHZ.00,1.24692,120.504,Pg,2015-03-25 18:34:27.420,manual,-0.9,1.29
+GS.KAN14.HHE.01,0.395539,23.9185,Sg,2015-03-25 18:34:17.730,manual,0.5,1.22
+GS.KAN10.HHE.01,0.530614,5.8878,Sg,2015-03-25 18:34:21.600,manual,0.1,1.16
+GS.KAN11.HHN.01,0.642187,18.1011,Sg,2015-03-25 18:34:25.360,manual,0.2,1.12
+GS.KAN08.HHZ.01,0.649361,13.6727,Sg,2015-03-25 18:34:25.610,manual,0.3,1.11
+GS.KAN09.HHZ.01,0.694955,38.799,Sg,2015-03-25 18:34:26.430,manual,-0.4,1.1
+GS.KAN12.HHE.01,0.713756,10.6362,Sg,2015-03-25 18:34:27.470,manual,0.1,1.09
+GS.OK030.HHZ.00,1.29838,120.427,Pn,2015-03-25 18:34:28.050,manual,-1.0,1.23
+OK.OKCSW.EHZ.--,1.32441,153.426,Pn,2015-03-25 18:34:28.710,manual,-0.8,1.23
+OK.FNO.HHZ.01,1.47081,154.91,Pn,2015-03-25 18:34:31.350,manual,-0.1,1.21

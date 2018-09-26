@@ -1,0 +1,72 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10004xs5
+#time = 2016-03-15 13:21:36.800000
+#location = 22km ENE of Mooreland, Oklahoma
+#latitude = 36.5271
+#longitude = -98.9753
+#depth = 5.6
+#magnitude = 2.8
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10004xs5
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.NOKA.HHZ.--,0.11293,18.008,Pg,2016-03-15 13:21:39.510,manual,0.3,3.8
+GS.OK042.HHZ.00,0.169641,136.851,Pg,2016-03-15 13:21:40.410,manual,0.2,3.46
+GS.OK037.HHZ.00,0.186885,95.7235,Pg,2016-03-15 13:21:40.820,manual,0.3,3.37
+GS.OK039.HHZ.00,0.298467,118.994,Pg,2016-03-15 13:21:42.770,manual,0.2,2.88
+GS.OK043.HHZ.00,0.207341,116.741,Pg,2016-03-15 13:21:41.140,manual,0.2,3.27
+GS.OK036.HHZ.00,0.277461,94.2922,Pg,2016-03-15 13:21:42.430,manual,0.2,2.96
+OK.U32A.BHZ.--,0.1488,188.138,Pg,2016-03-15 13:21:40.020,manual,0.2,3.58
+GS.OK040.HHZ.00,0.246657,100.213,Pg,2016-03-15 13:21:41.900,manual,0.3,3.09
+GS.OK035.HHZ.00,0.279878,49.6952,Pg,2016-03-15 13:21:42.340,manual,0.1,2.95
+GS.OK038.HHZ.00,0.194054,104.497,Pg,2016-03-15 13:21:41.060,manual,0.4,3.33
+GS.OK041.HHZ.00,0.361621,99.3836,Pg,2016-03-15 13:21:43.810,manual,0.0,2.66
+GS.OK032.HHZ.00,0.674173,65.5904,Pg,2016-03-15 13:21:47.820,manual,-1.9,1.93
+OK.CROK.HHZ.--,0.799385,91.3074,Pg,2016-03-15 13:21:51.880,manual,-0.3,1.74
+GS.KAN10.HHZ.01,0.923654,49.6116,Pg,2016-03-15 13:21:51.370,manual,-3.2,1.58
+OK.GORE.HHZ.--,0.866138,72.3639,Pg,2016-03-15 13:21:52.280,manual,-1.1,1.65
+OK.GC02.EHZ.--,0.953458,69.8163,Pg,2016-03-15 13:21:53.430,manual,-1.7,1.55
+ZD.KNG1.EHZ.--,1.106,110.489,Pn,2016-03-15 13:21:57.350,manual,-1.5,1.26
+GS.KAN09.HHZ.01,1.24692,60.4204,Pn,2016-03-15 13:21:57.740,manual,-3.0,1.24
+OK.BLOK.HHZ.--,1.4348,80.1279,Pn,2016-03-15 13:22:01.030,manual,-2.3,1.21
+OK.BCOK.HHZ.--,1.40659,127.73,Pn,2016-03-15 13:22:01.380,manual,-1.6,1.22
+OK.CCOK.HHZ.--,1.58421,137.101,Pn,2016-03-15 13:22:03.620,manual,-1.8,1.19
+OK.CHOK.HHZ.--,1.82626,121.293,Pn,2016-03-15 13:22:07.140,manual,-1.6,1.16
+GS.OK034.HHZ.00,1.89943,105.087,Pn,2016-03-15 13:22:08.280,manual,-1.4,1.15
+N4.T35B.BHZ.--,2.01694,78.1643,Pn,2016-03-15 13:22:09.000,manual,-2.3,1.13
+OK.W35A.HHZ.--,2.18955,128.162,Pn,2016-03-15 13:22:12.260,manual,-1.4,1.11
+OK.X37A.BHZ.--,3.51728,122.288,Pn,2016-03-15 13:22:28.930,manual,-3.0,0.97
+OK.U32A.BHE.--,0.1488,188.138,Sg,2016-03-15 13:21:42.340,manual,0.5,1.35
+GS.OK035.HH1.00,0.279878,49.6952,Sg,2016-03-15 13:21:46.690,manual,0.7,1.28
+GS.OK037.HH2.00,0.186885,95.7235,Sg,2016-03-15 13:21:43.780,manual,0.7,1.33
+GS.OK043.HH1.00,0.207341,116.741,Sg,2016-03-15 13:21:44.580,manual,0.9,1.32
+GS.OK036.HH1.00,0.277461,94.2922,Sg,2016-03-15 13:21:46.810,manual,0.9,1.28
+GS.OK041.HH2.00,0.361621,99.3836,Sg,2016-03-15 13:21:49.400,manual,0.8,1.24

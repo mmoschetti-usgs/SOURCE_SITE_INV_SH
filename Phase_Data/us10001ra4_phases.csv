@@ -1,0 +1,72 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10001ra4
+#time = 2015-03-23 23:07:26.700000
+#location = 19km N of Crescent, Oklahoma
+#latitude = 36.1260
+#longitude = -97.5683
+#depth = 3.1
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10001ra4
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK029.HHZ.00,0.341337,164.331,Pg,2015-03-23 23:07:33.640,manual,0.4,2.73
+OK.BCOK.HHZ.--,0.469487,184.078,Pg,2015-03-23 23:07:36.060,manual,0.3,2.35
+OK.CROK.HHZ.--,0.505205,318.547,Pg,2015-03-23 23:07:36.890,manual,0.5,2.27
+GS.OK025.HHZ.00,0.575053,160.937,Pg,2015-03-23 23:07:37.980,manual,0.2,2.11
+OK.OKCSW.EHZ.--,0.726722,171.578,Pg,2015-03-23 23:07:40.360,manual,-0.3,2.12
+OK.OKCFA.HHZ.--,0.71552,172.331,Pg,2015-03-23 23:07:40.010,manual,-0.4,2.13
+GS.KAN14.HHZ.01,0.887997,339.143,Pg,2015-03-23 23:07:43.890,automatic,0.2,1.63
+GS.KAN08.HHZ.01,1.14525,343.704,Pg,2015-03-23 23:07:48.470,manual,-0.2,1.37
+GS.OK030.HHZ.00,0.665972,107.046,Pg,2015-03-23 23:07:40.440,manual,1.0,2.16
+OK.QUOK.HHZ.--,0.69777,86.0236,Pg,2015-03-23 23:07:40.080,manual,0.0,2.14
+OK.GC02.EHZ.--,0.761165,342.123,Pg,2015-03-23 23:07:41.350,automatic,0.1,2.1
+OK.FNO.HHZ.01,0.877329,171.032,Pg,2015-03-23 23:07:43.110,manual,-0.4,1.64
+GS.OK032.HHZ.00,0.851764,322.767,Pg,2015-03-23 23:07:42.620,manual,-0.4,1.67
+GS.KAN09.HHZ.01,1.00893,357.73,Pg,2015-03-23 23:07:45.770,manual,-0.3,1.49
+US.WMOK.BHZ.10,1.70248,215.912,Pn,2015-03-23 23:07:57.250,automatic,-0.1,1.18
+N4.T35B.BHZ.--,1.1602,46.8638,Pg,2015-03-23 23:07:48.650,automatic,-0.3,1.35
+GS.OK029.HH2.00,0.341337,164.331,Sg,2015-03-23 23:07:38.600,manual,0.9,1.25
+OK.BCOK.HHN.--,0.469487,184.078,Sg,2015-03-23 23:07:42.680,manual,0.9,1.19
+OK.CROK.HHN.--,0.505205,318.547,Sg,2015-03-23 23:07:43.940,manual,1.0,1.17
+GS.OK025.HH1.00,0.575053,160.937,Sg,2015-03-23 23:07:46.080,manual,0.9,1.14
+GS.OK031.HHZ.00,0.615671,106.06,Pg,2015-03-23 23:07:38.810,manual,0.3,2.03
+GS.OK031.HH1.00,0.615671,106.06,Sg,2015-03-23 23:07:47.180,manual,0.7,1.13
+NQ.OK914.HNZ.01,0.637821,103.828,Pg,2015-03-23 23:07:37.970,manual,-1.0,1.99
+OK.KAY1.HHZ.--,0.697292,24.2115,Pg,2015-03-23 23:07:39.380,manual,-0.7,2.14
+GS.KAN13.HHZ.01,0.888151,4.67841,Pg,2015-03-23 23:07:43.040,manual,-0.7,1.63
+GS.KAN05.HHZ.01,1.01072,346.087,Pg,2015-03-23 23:07:45.530,manual,-0.6,1.49
+GS.KAN11.HHZ.01,1.11302,345.671,Pg,2015-03-23 23:07:47.490,manual,-0.6,1.39
+GS.KAN10.HHZ.01,1.082,337.098,Pg,2015-03-23 23:07:47.580,manual,0.1,1.42
+GS.KAN01.HHZ.01,1.0368,351.549,Pg,2015-03-23 23:07:45.750,manual,-0.8,1.46
+US.KSU1.BHZ.10,3.06576,14.0906,Pn,2015-03-23 23:08:15.870,manual,-0.2,1.02
+GS.KAN12.HHZ.01,1.21906,343.674,Pg,2015-03-23 23:07:49.390,manual,-0.7,1.31
+OK.U32A.BHZ.--,1.18568,282.743,Pg,2015-03-23 23:07:48.740,manual,-0.7,1.33

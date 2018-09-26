@@ -1,0 +1,105 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000nwi0
+#time = 2014-03-30 03:55:33.500000
+#location = 20km NNW of Crescent, Oklahoma
+#latitude = 36.1288
+#longitude = -97.6438
+#depth = 5.0
+#magnitude = 3.5
+#magtype = mwr
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000nwi0
+#us_Mwr_mrr = -66940000000000
+#us_Mwr_mtt = 200980000000000
+#us_Mwr_mpp = -134030000000000
+#us_Mwr_mrt = 42300000000000
+#us_Mwr_mrp = -92780000000000
+#us_Mwr_mtp = 39790000000000
+#us_Mwr_np1_strike = 43.8
+#us_Mwr_np1_dip = 60.35
+#us_Mwr_np1_rake = -158.46
+#us_Mwr_np2_strike = 302.75
+#us_Mwr_np2_dip = 71.39
+#us_Mwr_np2_rake = -31.46
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK029.HHZ.00,0.365208,155.135,Pg,2014-03-30 03:55:40.790,manual,0.2,0.0
+OK.CROK.HHZ.--,0.464711,323.929,Pg,2014-03-30 03:55:42.890,manual,0.4,0.0
+OK.OKCSW.EHZ.--,0.740899,166.884,Pg,2014-03-30 03:55:47.720,manual,0.0,0.062
+GS.OK027.HHZ.00,0.508398,144.789,Pg,2014-03-30 03:55:43.450,manual,0.2,0.0
+GS.OK025.HHZ.00,0.600377,155.46,Pg,2014-03-30 03:55:45.210,manual,0.2,0.0
+GS.OK028.HHZ.00,0.738109,139.958,Pg,2014-03-30 03:55:47.620,manual,-0.1,0.054
+US.WMOK.BHZ.10,1.66969,214.113,Pn,2014-03-30 03:56:03.320,manual,-0.1,0.067
+US.AMTX.BHZ.00,3.5199,250.515,Pn,2014-03-30 03:56:30.050,manual,1.1,0.051
+US.MIAR.BHZ.00,3.68114,114.225,Pn,2014-03-30 03:56:32.000,manual,0.9,0.023
+AG.HHAR.HHZ.00,2.99931,85.9852,Pn,2014-03-30 03:56:21.990,manual,0.3,0.039
+N4.R32B.BHZ.--,2.44267,339.924,Pn,2014-03-30 03:56:15.720,manual,1.6,0.021
+NM.MGMO.BHZ.--,4.44193,75.0893,Pn,2014-03-30 03:56:42.040,manual,0.5,0.032
+N4.S39B.BHZ.--,3.79772,64.4771,Pn,2014-03-30 03:56:33.300,manual,0.6,0.038
+N4.U38B.BHZ.--,2.65055,82.322,Pn,2014-03-30 03:56:17.400,manual,0.5,0.043
+AG.WLAR.HHZ.00,4.44908,121.864,Pn,2014-03-30 03:56:42.530,manual,0.9,0.017
+N4.T35B.BHZ.--,1.20368,48.9067,Pg,2014-03-30 03:55:56.070,manual,-0.5,0.125
+TA.W39A.BHZ.--,3.27774,105.364,Pn,2014-03-30 03:56:26.070,manual,0.6,0.028
+N4.R40B.BHZ.--,4.80256,61.6949,Pn,2014-03-30 03:56:46.870,manual,0.4,0.032
+TA.WHTX.BHZ.--,4.13002,177.785,Pn,2014-03-30 03:56:37.770,manual,0.5,0.022
+TA.MSTX.BHZ.--,4.72627,244.38,Pn,2014-03-30 03:56:45.920,manual,0.4,0.041
+OK.U32A.BHZ.--,1.12549,283.245,Pg,2014-03-30 03:55:54.050,automatic,-1.0,0.088
+GS.OK029.HH2.00,0.365208,155.135,Sg,2014-03-30 03:55:46.050,manual,0.7,0.062
+OK.CROK.HHN.--,0.464711,323.929,Sg,2014-03-30 03:55:49.500,manual,1.0,0.059
+GS.OK027.HH2.00,0.508398,144.789,Sg,2014-03-30 03:55:50.640,manual,0.7,0.057
+GS.OK026.HHZ.00,0.728959,167.55,Pg,2014-03-30 03:55:47.450,manual,-0.1,0.064
+OK.FNO.HHZ.01,0.891657,167.134,Pg,2014-03-30 03:55:50.630,manual,0.0,0.049
+OK.W35A.EHZ.--,1.15813,147.02,Pg,2014-03-30 03:55:54.800,manual,-0.9,0.026
+TA.TUL1.BHZ.--,1.51702,97.7146,Pn,2014-03-30 03:56:00.760,manual,-0.6,0.047
+AG.WHAR.HHZ.00,4.43697,99.3005,Pn,2014-03-30 03:56:41.310,manual,-0.1,0.025
+TA.U40A.BHZ.--,3.87877,85.2301,Pn,2014-03-30 03:56:34.250,manual,0.4,0.033
+N4.Z38B.BHZ.--,3.60384,141.805,Pn,2014-03-30 03:56:30.030,manual,0.0,0.016
+N4.237B.BHZ.--,4.38954,159.171,Pn,2014-03-30 03:56:40.720,manual,-0.1,0.015
+TA.X40A.BHZ.--,4.26036,111.201,Pn,2014-03-30 03:56:39.850,manual,0.8,0.021
+GS.ADOK.HNZ.--,0.524792,154.963,Pg,2014-03-30 03:55:43.830,manual,0.2,0.0
+GS.OK025.HH2.00,0.600377,155.46,Sg,2014-03-30 03:55:53.650,manual,0.8,0.052
+GS.OK028.HH2.00,0.738109,139.958,Sg,2014-03-30 03:55:57.800,manual,0.5,0.053
+OK.OKCSW.EHE.--,0.740899,166.884,Sg,2014-03-30 03:55:58.240,manual,0.9,0.061
+OK.W35A.EHE.--,1.15813,147.02,Sg,2014-03-30 03:56:11.160,manual,0.4,0.036
+N4.T35B.BHN.--,1.20368,48.9067,Sg,2014-03-30 03:56:11.980,manual,-0.2,0.176
+ZW.AZDA.EHZ.01,3.14923,178.646,Pn,2014-03-30 03:56:25.140,manual,1.4,0.028
+US.CBKS.BHZ.00,3.15563,328.774,Pn,2014-03-30 03:56:24.830,manual,0.9,0.018
+TA.ABTX.BHZ.--,3.86747,205.882,Pn,2014-03-30 03:56:34.440,manual,0.8,0.038
+AG.FCAR.HHZ.00,4.48115,91.4221,Pn,2014-03-30 03:56:42.060,manual,0.0,0.028
+NM.UALR.BHZ.--,4.53299,105.783,Pn,2014-03-30 03:56:43.740,manual,1.0,0.022
+TA.W41B.BHZ.--,4.49608,100.655,Pn,2014-03-30 03:56:42.750,manual,0.5,0.024
+N4.P38B.BHZ.--,4.77041,41.7453,Pn,2014-03-30 03:56:47.120,manual,1.1,0.03
+N4.N35B.BHZ.--,4.97889,17.7681,Pn,2014-03-30 03:56:48.940,manual,0.0,0.0
+TA.Z41A.BHZ.--,4.90951,124.284,Pn,2014-03-30 03:56:48.690,manual,0.8,0.0
+TA.KSCO.BHZ.--,4.89352,307.504,Pn,2014-03-30 03:56:48.680,manual,0.8,0.018
+CN.ULM.BHZ.--,14.1733,4.63997,Pn,2014-03-30 03:58:48.930,manual,-5.9,0.0
+IM.TXAR.SHZ.FB,8.46243,218.515,Pg,2014-03-30 03:58:07.330,manual,6.8,0.0
+IM.PDAR.SHZ.FB,11.3418,309.387,Pn,2014-03-30 03:58:15.790,manual,-0.6,0.0
+IM.TKL.BHZ.--,11.2622,88.2981,Pn,2014-03-30 03:58:14.520,manual,-0.6,0.0

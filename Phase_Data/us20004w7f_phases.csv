@@ -1,0 +1,68 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20004w7f
+#time = 2016-01-31 23:23:45.600000
+#location = 4km ESE of Fairview, Oklahoma
+#latitude = 36.2521
+#longitude = -98.4287
+#depth = 6.4
+#magnitude = 2.7
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20004w7f
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK032.HHZ.00,0.578001,17.6458,Pg,2016-01-31 23:23:56.760,manual,0.0,2.11
+GS.KAN14.HHZ.01,0.796921,27.9112,Pg,2016-01-31 23:24:00.750,manual,-0.2,1.74
+GS.KAN17.HHZ.01,0.953881,33.8401,Pg,2016-01-31 23:24:03.360,manual,-0.6,1.55
+GS.KAN10.HHZ.01,0.910108,17.0365,Pg,2016-01-31 23:24:02.930,manual,-0.1,1.6
+GS.KAN08.HHZ.01,1.03991,20.5729,Pg,2016-01-31 23:24:05.130,manual,-0.4,1.46
+GS.KAN13.HHZ.01,1.07778,44.927,Pg,2016-01-31 23:24:05.810,manual,-0.5,1.43
+GS.KAN11.HHZ.01,1.0382,23.3515,Pg,2016-01-31 23:24:05.170,manual,-0.4,1.46
+GS.KAN01.HHZ.01,1.04826,30.6929,Pg,2016-01-31 23:24:05.270,manual,-0.4,1.45
+GS.KAN05.HHZ.01,0.964781,27.4548,Pg,2016-01-31 23:24:03.800,manual,-0.3,1.54
+GS.KAN12.HHZ.01,1.09911,18.21,Pg,2016-01-31 23:24:06.250,manual,-0.4,1.41
+GS.OK033.HHZ.00,1.22404,99.309,Pn,2016-01-31 23:24:08.520,manual,-0.6,1.24
+GS.OK030.HHZ.00,1.37105,103.168,Pn,2016-01-31 23:24:10.730,manual,-0.4,1.22
+US.WMOK.BHZ.00,1.53792,190.867,Pn,2016-01-31 23:24:13.180,manual,-0.3,1.2
+GS.OK034.HHZ.00,1.40959,99.3543,Pn,2016-01-31 23:24:11.300,manual,-0.4,1.21
+TA.TUL1.BHZ.--,2.16294,98.2922,Pn,2016-01-31 23:24:21.750,manual,-0.3,1.12
+GS.KAN14.HNE.01,0.796921,27.9112,Sg,2016-01-31 23:24:11.690,manual,0.4,1.06
+GS.OK035.HH2.00,0.508418,333.631,Sg,2016-01-31 23:24:02.930,manual,0.9,1.17
+GS.KAN16.HHZ.01,1.01466,16.6401,Pg,2016-01-31 23:24:04.610,manual,-0.5,1.49
+GS.KAN06.HHZ.01,1.09437,24.5638,Pg,2016-01-31 23:24:05.980,manual,-0.6,1.41
+US.KSU1.BHZ.10,3.1891,26.3599,Pn,2016-01-31 23:24:35.950,manual,-0.2,1.0
+US.AMTX.BHZ.00,2.98202,243.705,Pn,2016-01-31 23:24:34.120,manual,0.7,1.02
+GS.OK035.HH1.00,0.508418,333.631,Pg,2016-01-31 23:23:55.490,manual,0.1,2.26
+GS.OK032.HH2.00,0.578001,17.6458,Sg,2016-01-31 23:24:04.890,manual,0.6,1.14
+GS.KAN10.HHE.01,0.910108,17.0365,Sg,2016-01-31 23:24:15.420,manual,0.5,1.02
+GS.OK029.HHZ.00,0.91091,119.647,Pg,2016-01-31 23:24:02.930,manual,-0.2,1.6
+GS.OK025.HHZ.00,1.1101,126.776,Pg,2016-01-31 23:24:06.610,manual,-0.3,1.4
+GS.OK031.HHZ.00,1.32143,102.581,Pn,2016-01-31 23:24:09.630,manual,-0.9,1.23
+US.CBKS.BHZ.00,2.76084,338.259,Pg,2016-01-31 23:24:38.040,manual,2.8,0.64

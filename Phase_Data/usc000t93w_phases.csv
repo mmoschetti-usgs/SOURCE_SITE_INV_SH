@@ -1,0 +1,62 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000t93w
+#time = 2014-12-20 05:20:26.200000
+#location = 24km ENE of Cherokee, Oklahoma
+#latitude = 36.8696
+#longitude = -98.1218
+#depth = 5.0
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000t93w
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN14.HHZ.01,0.154192,55.5873,Pg,2014-12-20 05:20:29.780,manual,0.5,3.55
+GS.KAN10.HHZ.01,0.254327,4.81387,Pg,2014-12-20 05:20:31.600,manual,0.4,3.05
+GS.KAN08.HHZ.01,0.376329,18.6667,Pg,2014-12-20 05:20:33.910,manual,0.4,2.61
+OK.GC02.EHZ.--,0.211071,94.8305,Pg,2014-12-20 05:20:30.670,manual,0.3,3.25
+GS.KAN11.HHZ.01,0.374942,26.3589,Pg,2014-12-20 05:20:33.990,manual,0.5,2.62
+OK.CROK.HHZ.--,0.380804,162.972,Pg,2014-12-20 05:20:33.710,manual,0.2,2.6
+GS.KAN13.HHZ.01,0.535424,74.3125,Pg,2014-12-20 05:20:36.780,manual,0.3,2.2
+GS.KAN12.HHZ.01,0.438338,13.0163,Pg,2014-12-20 05:20:35.020,manual,0.4,2.43
+GS.OK031.HHZ.00,1.38101,131.094,Pn,2014-12-20 05:20:51.440,manual,-0.7,1.22
+OK.BCOK.HHZ.--,1.27933,160.957,Pn,2014-12-20 05:20:50.000,manual,-0.7,1.24
+GS.OK030.HHZ.00,1.43132,130.647,Pn,2014-12-20 05:20:51.980,manual,-0.9,1.21
+GS.OK025.HHZ.00,1.43359,153.527,Pn,2014-12-20 05:20:52.600,manual,-0.3,1.21
+US.WMOK.BHZ.10,2.19352,194.327,Pn,2014-12-20 05:21:03.970,manual,0.6,1.11
+OK.W35A.EHZ.--,1.98945,149.08,Pn,2014-12-20 05:21:01.180,manual,0.7,1.14
+N4.T35B.BHZ.--,1.29146,87.4529,Pn,2014-12-20 05:20:50.270,manual,-0.7,1.23
+OK.U32A.BHZ.--,0.860213,235.609,Pg,2014-12-20 05:20:42.630,manual,-0.1,1.66
+N4.R32B.BHZ.--,1.61925,343.389,Pn,2014-12-20 05:20:55.980,manual,0.5,1.19
+OK.X37A.BHZ.--,3.19125,134.666,Pn,2014-12-20 05:21:17.700,manual,0.7,1.01
+N4.U38B.BHZ.--,3.03476,97.0147,Pn,2014-12-20 05:21:15.380,manual,0.5,1.02
+GS.KAN14.HHE.01,0.154192,55.5873,Sg,2014-12-20 05:20:32.260,manual,0.9,1.35
+OK.GC02.EHE.--,0.211071,94.8305,Sg,2014-12-20 05:20:33.900,manual,0.7,1.32
+OK.CROK.HHN.--,0.380804,162.972,Sg,2014-12-20 05:20:39.010,manual,0.5,1.23

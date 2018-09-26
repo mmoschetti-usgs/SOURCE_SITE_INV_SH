@@ -1,0 +1,55 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usp000h5kf
+#time = 2010-01-01 18:45:51.600000
+#location = Oklahoma
+#latitude = 35.6350
+#longitude = -97.1850
+#depth = 5.0
+#magnitude = 2.8
+#magtype = mblg
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usp000h5kf
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+IR.PCO.--.--,1.07,8.8,P,2010-01-01 18:45:51.000,manual,-21.1,0.0
+IR.TUL1.--.--,1.16,76.0,Pg,2010-01-01 18:46:13.590,manual,-0.3,1.0
+IR.WMOK.--.--,1.58,236.1,Pn,2010-01-01 18:46:20.180,manual,-0.2,1.0
+IR.MIAR.--.--,3.15,109.1,Pn,2010-01-01 18:46:42.320,manual,0.4,1.0
+IR.KSU1.--.--,3.49,7.4,Pn,2010-01-01 18:46:45.730,manual,-0.8,1.0
+IR.ABTX.--.--,3.63,214.9,Pn,2010-01-01 18:46:50.180,manual,1.7,0.0
+IR.WHTX.--.--,3.64,183.6,Pn,2010-01-01 18:46:52.850,manual,4.2,0.0
+IR.UALR.--.--,4.06,100.8,Pn,2010-01-01 18:46:57.540,manual,3.2,0.0
+IR.KSCO.--.--,5.49,309.5,Pn,2010-01-01 18:47:10.240,manual,-3.9,0.0
+IR.JCT.--.--,5.59,203.9,Pn,2010-01-01 18:47:15.500,manual,0.0,0.0
+IR.MSTX.--.--,4.89,251.7,Pg,2010-01-01 18:47:18.750,manual,-6.5,0.0
+IR.ECSD.--.--,8.1,2.9,Pn,2010-01-01 18:47:50.820,manual,1.0,1.0
+IR.OGNE.--.--,6.53,325.7,Pg,2010-01-01 18:47:55.450,manual,-1.2,0.0
+IR.GDL2.--.--,6.88,242.2,Sg,2010-01-01 18:49:28.780,manual,-3.8,0.0
+IR.BNM.--.--,7.9,261.9,Sg,2010-01-01 18:50:02.540,manual,-2.7,0.0

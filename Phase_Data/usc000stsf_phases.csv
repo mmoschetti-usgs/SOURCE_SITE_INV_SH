@@ -1,0 +1,68 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000stsf
+#time = 2014-11-02 05:46:17.200000
+#location = 15km SE of Cherokee, Oklahoma
+#latitude = 36.6770
+#longitude = -98.2171
+#depth = 5.0
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000stsf
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN14.HHZ.01,0.345789,36.0599,Pg,2014-11-02 05:46:24.450,manual,0.6,0.0
+OK.CROK.HHZ.--,0.254849,132.365,Pg,2014-11-02 05:46:22.500,manual,0.3,0.0
+OK.KNG1.EHZ.--,0.687439,142.102,Pg,2014-11-02 05:46:30.330,manual,-0.1,0.108
+GS.OK029.HHZ.00,1.07314,144.73,Pg,2014-11-02 05:46:37.300,manual,-0.5,0.059
+GS.OK027.HHZ.00,1.22375,141.623,Pg,2014-11-02 05:46:40.010,manual,-0.7,0.05
+OK.BCOK.HHZ.--,1.13075,154.038,Pg,2014-11-02 05:46:38.130,manual,-0.8,0.049
+GS.OK025.HHZ.00,1.30485,146.682,Pn,2014-11-02 05:46:41.300,manual,-0.8,0.033
+GS.OK028.HHZ.00,1.45451,139.618,Pn,2014-11-02 05:46:43.910,manual,-0.2,0.034
+GS.OK031.HHZ.00,1.32685,122.579,Pn,2014-11-02 05:46:42.020,manual,-0.4,0.04
+GS.OK030.HHZ.00,1.37822,122.427,Pn,2014-11-02 05:46:42.720,manual,-0.4,0.039
+OK.FNO.HHZ.01,1.56359,154.716,Pn,2014-11-02 05:46:45.640,manual,0.0,0.029
+N4.T35B.BHZ.--,1.38939,79.5958,Pn,2014-11-02 05:46:42.920,manual,-0.4,0.045
+OK.X34A.HHZ.--,2.09502,171.29,Pn,2014-11-02 05:46:53.270,manual,0.3,0.024
+GS.KAN08.HHZ.01,0.583038,19.6976,Pg,2014-11-02 05:46:28.970,manual,0.6,0.0
+GS.KAN10.HHZ.01,0.456262,12.3405,Pg,2014-11-02 05:46:26.500,manual,0.5,0.0
+GS.KAN12.HHZ.01,0.643612,15.7519,Pg,2014-11-02 05:46:30.040,manual,0.5,0.08
+GS.KAN09.HHZ.01,0.663583,46.1474,Pg,2014-11-02 05:46:29.090,manual,-0.9,0.106
+OK.U32A.BHZ.--,0.698022,245.061,Pg,2014-11-02 05:46:30.530,manual,-0.1,0.122
+GS.OK026.HHZ.00,1.40367,153.537,Pn,2014-11-02 05:46:42.800,manual,-0.7,0.031
+OK.OKCSW.EHZ.--,1.41727,153.313,Pn,2014-11-02 05:46:42.900,manual,-0.7,0.031
+OK.W35A.EHZ.--,1.87117,143.982,Pn,2014-11-02 05:46:50.140,manual,0.3,0.03
+US.WMOK.BHZ.10,1.98853,193.501,Pn,2014-11-02 05:46:51.940,manual,0.4,0.024
+TA.TUL1.BHZ.--,2.10327,110.608,Pn,2014-11-02 05:46:52.830,manual,-0.2,0.036
+OK.CROK.HHN.--,0.254849,132.365,Sg,2014-11-02 05:46:26.570,manual,1.0,0.157
+GS.KAN14.HNN.01,0.345789,36.0599,Sg,2014-11-02 05:46:29.660,manual,1.2,0.107
+GS.KAN10.HNE.01,0.456262,12.3405,Sg,2014-11-02 05:46:33.310,manual,1.4,0.08
+GS.KAN05.HNE.01,0.511845,32.5839,Sg,2014-11-02 05:46:34.560,manual,0.8,0.091
+GS.KAN08.HNE.01,0.583038,19.6976,Sg,2014-11-02 05:46:37.100,manual,1.1,0.076

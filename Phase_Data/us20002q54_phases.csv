@@ -1,0 +1,71 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20002q54
+#time = 2015-06-15 13:23:50.370000
+#location = 0km NW of Pawnee, Oklahoma
+#latitude = 36.3420
+#longitude = -96.8110
+#depth = 3.5
+#magnitude = 2.4
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20002q54
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.QUOK.HHZ.--,0.189517,153.912,Pg,2015-06-15 13:23:54.510,manual,0.4,3.36
+GS.OK030.HHZ.00,0.413931,176.943,Pg,2015-06-15 13:23:58.670,manual,0.3,2.5
+OK.BLOK.HHZ.--,0.529495,322.213,Pg,2015-06-15 13:24:00.800,manual,0.3,2.34
+OK.CHOK.HHZ.--,0.805285,194.681,Pg,2015-06-15 13:24:05.740,manual,-0.1,1.73
+N4.T35B.BHZ.--,0.621535,22.6854,Pg,2015-06-15 13:24:02.420,manual,0.1,2.02
+GS.OK029.HHZ.00,0.753902,223.976,Pg,2015-06-15 13:24:04.970,manual,0.1,1.8
+OK.QUOK.HHN.--,0.189517,153.912,Sg,2015-06-15 13:23:57.220,manual,0.7,1.33
+GS.OK031.HHZ.00,0.388765,183.363,Pg,2015-06-15 13:23:58.140,manual,0.3,2.57
+GS.OK031.HH2.00,0.388765,183.363,Sg,2015-06-15 13:24:03.520,manual,0.6,1.23
+GS.OK030.HH2.00,0.413931,176.943,Sg,2015-06-15 13:24:04.410,manual,0.7,1.22
+OK.BLOK.HHN.--,0.529495,322.213,Sg,2015-06-15 13:24:07.910,manual,0.5,1.16
+N4.T35B.BHN.--,0.621535,22.6854,Sg,2015-06-15 13:24:10.470,manual,0.1,1.13
+GS.OK029.HH2.00,0.753902,223.976,Sg,2015-06-15 13:24:15.180,manual,0.6,1.08
+OK.CHOK.HHN.--,0.805285,194.681,Sg,2015-06-15 13:24:16.770,manual,0.5,1.06
+GS.KAN13.HHZ.01,0.857737,321.519,Pg,2015-06-15 13:24:06.800,manual,0.0,1.66
+GS.OK025.HHZ.00,0.871351,209.533,Pg,2015-06-15 13:24:06.860,manual,-0.2,1.65
+GS.OK025.HH2.00,0.871351,209.533,Sg,2015-06-15 13:24:19.130,manual,0.7,1.03
+OK.BCOK.HHZ.--,0.941649,223.663,Pg,2015-06-15 13:24:07.970,manual,-0.5,1.56
+OK.BCOK.HHN.--,0.941649,223.663,Sg,2015-06-15 13:24:21.250,manual,0.6,1.01
+OK.CROK.HHZ.--,0.959435,280.091,Pg,2015-06-15 13:24:08.760,manual,0.0,1.54
+OK.GC02.EHN.--,0.98523,301.384,Sg,2015-06-15 13:24:22.160,manual,0.1,1.0
+OK.GC02.EHZ.--,0.98523,301.384,Pg,2015-06-15 13:24:09.180,manual,-0.1,1.52
+GS.KAN09.HHZ.01,1.02406,320.95,Pg,2015-06-15 13:24:10.050,manual,0.0,1.48
+GS.KAN17.HHZ.01,1.03863,312.713,Pg,2015-06-15 13:24:10.040,manual,-0.2,1.46
+GS.KS20.HHZ.00,1.0682,326.262,Pg,2015-06-15 13:24:10.800,manual,-0.1,1.43
+GS.KS20.HH2.00,1.0682,326.262,Sg,2015-06-15 13:24:24.620,manual,-0.1,0.97
+GS.KAN14.HHZ.01,1.11122,303.86,Pg,2015-06-15 13:24:11.650,manual,0.0,1.4
+GS.KAN05.HHZ.01,1.14562,312.218,Pg,2015-06-15 13:24:11.810,manual,-0.5,1.37
+OK.FNO.HHZ.01,1.18385,204.081,Pn,2015-06-15 13:24:12.310,manual,-1.4,1.25
+OK.CCOK.HHZ.--,1.1991,215.178,Pn,2015-06-15 13:24:11.600,manual,-2.3,1.25
+AG.WHAR.HHZ.00,3.82184,104.609,Pn,2015-06-15 13:24:49.990,manual,0.1,0.95

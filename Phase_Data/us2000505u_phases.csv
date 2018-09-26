@@ -1,0 +1,69 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us2000505u
+#time = 2016-02-14 16:58:27.800000
+#location = 24km S of Anthony, Kansas
+#latitude = 36.9304
+#longitude = -98.0265
+#depth = 5.6
+#magnitude = 2.9
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us2000505u
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+US.KSU1.BHZ.10,2.43885,26.8837,Pn,2016-02-14 16:59:08.400,manual,0.3,1.08
+OK.CROK.HHE.--,0.426287,175.327,Sg,2016-02-14 16:58:42.230,manual,0.6,1.21
+GS.OK032.HH1.00,0.194214,229.466,Sg,2016-02-14 16:58:34.900,manual,0.6,1.33
+GS.KAN14.HNE.01,0.0572914,62.6005,Sg,2016-02-14 16:58:30.890,manual,0.5,1.41
+GS.KAN17.HNN.01,0.2383,61.4812,Sg,2016-02-14 16:58:36.320,manual,0.7,1.3
+OK.BLOK.HHZ.--,0.672668,104.349,Pg,2016-02-14 16:58:40.560,manual,-0.2,1.93
+N4.T35B.BHZ.--,1.21382,90.2141,Pn,2016-02-14 16:58:50.690,manual,-0.6,1.24
+N4.R32B.BHZ.--,1.58548,340.173,Pn,2016-02-14 16:58:56.740,manual,0.3,1.19
+N4.U38B.BHZ.--,2.9672,98.4147,Pn,2016-02-14 16:59:14.780,manual,-0.6,1.03
+GS.KAN14.HHZ.01,0.0572914,62.6005,Pg,2016-02-14 16:58:29.770,manual,0.4,4.2
+OK.GC02.EHZ.--,0.15526,120.428,Pg,2016-02-14 16:58:31.320,manual,0.4,3.54
+GS.KAN05.HHZ.01,0.21649,34.7087,Pg,2016-02-14 16:58:32.560,manual,0.5,3.22
+OK.GORE.HHZ.--,0.157935,156.197,Pg,2016-02-14 16:58:31.400,manual,0.4,3.52
+GS.KAN17.HHZ.01,0.2383,61.4812,Pg,2016-02-14 16:58:32.920,manual,0.4,3.12
+GS.KAN10.HHZ.01,0.200407,344.121,Pg,2016-02-14 16:58:32.320,manual,0.5,3.3
+GS.OK032.HHZ.00,0.194214,229.466,Pg,2016-02-14 16:58:32.010,manual,0.4,3.33
+GS.KAN11.HHZ.01,0.289606,18.1841,Pg,2016-02-14 16:58:34.080,manual,0.6,2.91
+GS.KAN01.HHZ.01,0.308793,43.7971,Pg,2016-02-14 16:58:34.190,manual,0.4,2.84
+GS.KAN08.HHZ.01,0.299073,8.53292,Pg,2016-02-14 16:58:34.240,manual,0.6,2.88
+GS.KAN16.HHZ.01,0.296233,354.092,Pg,2016-02-14 16:58:34.080,manual,0.5,2.89
+GS.KAN06.HHZ.01,0.344271,22.9027,Pg,2016-02-14 16:58:34.990,manual,0.5,2.72
+GS.KAN12.HHZ.01,0.367031,3.54962,Pg,2016-02-14 16:58:35.430,manual,0.5,2.64
+GS.KAN13.HHZ.01,0.447083,79.2215,Pg,2016-02-14 16:58:36.730,manual,0.3,2.41
+OK.CROK.HHZ.--,0.426287,175.327,Pg,2016-02-14 16:58:36.320,manual,0.3,2.47
+GS.OK035.HHZ.00,0.591398,248.18,Pg,2016-02-14 16:58:39.270,manual,0.1,2.08
+N4.Z35B.BHZ.--,3.64677,169.764,Pn,2016-02-14 16:59:23.680,manual,-1.0,0.96
+N4.S39B.BHZ.--,3.8261,77.1377,Pn,2016-02-14 16:59:27.430,manual,0.3,0.95
+TA.W39A.BHZ.--,3.84806,115.465,Pn,2016-02-14 16:59:26.960,manual,-0.5,0.94
+GS.OK034.HHZ.00,1.40141,130.551,Pn,2016-02-14 16:58:53.420,manual,-0.5,1.22

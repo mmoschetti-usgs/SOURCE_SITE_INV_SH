@@ -1,0 +1,70 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20002epv
+#time = 2015-05-09 06:44:42.200000
+#location = 7km WSW of Cherokee, Oklahoma
+#latitude = 36.7354
+#longitude = -98.4344
+#depth = 8.0
+#magnitude = 2.7
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20002epv
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK032.HHZ.00,0.192384,69.1491,Pg,2015-05-09 06:44:46.310,manual,0.1,3.34
+GS.KAN10.HHZ.01,0.47326,34.9623,Pg,2015-05-09 06:44:51.760,manual,0.4,2.34
+GS.KAN14.HHZ.01,0.43798,59.5584,Pg,2015-05-09 06:44:50.880,manual,0.2,2.43
+GS.KAN16.HHZ.01,0.571875,31.0659,Pg,2015-05-09 06:44:53.140,manual,-0.1,2.12
+GS.KAN08.HHZ.01,0.615001,36.9821,Pg,2015-05-09 06:44:54.190,manual,0.1,2.04
+GS.KAN17.HHZ.01,0.618969,59.9456,Pg,2015-05-09 06:44:54.270,manual,0.1,2.03
+GS.KAN11.HHZ.01,0.628334,41.4643,Pg,2015-05-09 06:44:54.350,manual,0.0,2.01
+OK.CROK.HHZ.--,0.429731,122.264,Pg,2015-05-09 06:44:50.820,manual,0.3,2.46
+GS.KAN12.HHZ.01,0.660811,31.7787,Pg,2015-05-09 06:44:55.110,manual,0.2,1.95
+OK.GC02.EHZ.--,0.475738,75.7303,Pg,2015-05-09 06:44:51.510,manual,0.1,2.34
+GS.KAN13.HHZ.01,0.815553,69.8601,Pg,2015-05-09 06:44:57.730,manual,-0.2,1.72
+GS.KAN09.HHZ.01,0.766503,58.3038,Pg,2015-05-09 06:44:56.870,manual,-0.1,1.79
+OK.BCOK.HHZ.--,1.26658,147.957,Pn,2015-05-09 06:45:05.660,manual,-0.5,1.23
+OK.QUOK.HHZ.--,1.50137,111.504,Pn,2015-05-09 06:45:09.670,manual,0.2,1.2
+GS.OK025.HHZ.00,1.45406,142.067,Pn,2015-05-09 06:45:08.610,manual,-0.2,1.21
+GS.OK029.HHZ.00,1.22652,139.514,Pn,2015-05-09 06:45:04.880,manual,-0.8,1.24
+OK.U32A.BHZ.--,0.578433,232.285,Pg,2015-05-09 06:44:53.220,manual,-0.2,2.11
+GS.OK032.HH2.00,0.192384,69.1491,Sg,2015-05-09 06:44:49.250,manual,0.4,1.33
+OK.CROK.HHN.--,0.429731,122.264,Sg,2015-05-09 06:44:56.830,manual,0.6,1.21
+GS.KAN14.HHN.01,0.43798,59.5584,Sg,2015-05-09 06:44:56.940,manual,0.5,1.2
+GS.KAN10.HHE.01,0.47326,34.9623,Sg,2015-05-09 06:44:58.250,manual,0.6,1.19
+OK.GC02.EHE.--,0.475738,75.7303,Sg,2015-05-09 06:44:58.260,manual,0.6,1.19
+OK.U32A.BHN.--,0.578433,232.285,Sg,2015-05-09 06:45:01.580,manual,0.6,1.14
+GS.KAN08.HHE.01,0.615001,36.9821,Sg,2015-05-09 06:45:02.740,manual,0.6,1.13
+GS.KAN17.HHE.01,0.618969,59.9456,Sg,2015-05-09 06:45:02.670,manual,0.4,1.13
+GS.KAN11.HNE.01,0.628334,41.4643,Sg,2015-05-09 06:45:03.080,manual,0.5,1.12
+GS.KAN01.HHZ.01,0.683263,52.1634,Pg,2015-05-09 06:44:54.800,manual,-0.6,1.91
+GS.KAN01.HHN.01,0.683263,52.1634,Sg,2015-05-09 06:45:04.630,manual,0.3,1.1
+GS.KAN09.HHN.01,0.766503,58.3038,Sg,2015-05-09 06:45:07.230,manual,0.3,1.07
+OK.KAY1.HHZ.--,0.982028,88.0446,Pg,2015-05-09 06:45:00.730,manual,-0.3,1.52

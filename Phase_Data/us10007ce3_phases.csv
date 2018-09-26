@@ -1,0 +1,97 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10007ce3
+#time = 2016-11-25 21:59:35.300000
+#location = 23km ENE of Mooreland, Oklahoma
+#latitude = 36.5334
+#longitude = -98.9712
+#depth = 5.8
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10007ce3
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK035.HHZ.00,0.273301,50.2548,Pg,2016-11-25 21:59:41.200,manual,0.6,2.98
+GS.OK038.HHZ.00,0.192552,106.558,Pg,2016-11-25 21:59:39.680,manual,0.5,3.34
+OK.CROK.HHZ.--,0.796249,91.7677,Pg,2016-11-25 21:59:50.520,manual,-0.1,1.74
+Y7.PW15.EHZ.--,1.57855,91.7655,Pn,2016-11-25 22:00:04.190,manual,0.4,1.19
+GS.OK046.HHZ.00,1.66918,94.0571,Pn,2016-11-25 22:00:05.410,manual,0.4,1.18
+GS.OK050.HHZ.00,1.60967,94.3486,Pn,2016-11-25 22:00:04.520,manual,0.3,1.19
+US.WMOK.BHZ.10,1.7983,174.994,Pn,2016-11-25 22:00:07.150,automatic,0.3,1.16
+GS.OK045.HHZ.00,1.65113,92.3605,Pn,2016-11-25 22:00:05.090,manual,0.3,1.18
+US.CBKS.BHZ.00,2.35643,345.282,Pn,2016-11-25 22:00:15.950,manual,1.4,1.09
+GS.OK025.HHZ.00,1.62927,125.198,Pn,2016-11-25 22:00:03.810,manual,-0.7,1.18
+OK.CROK.HHN.--,0.796249,91.7677,Sg,2016-11-25 22:00:01.210,manual,0.3,1.06
+OK.HTCH.HHE.--,0.729167,134.772,Sg,2016-11-25 21:59:59.420,manual,0.6,1.08
+GS.OK032.HH1.00,0.668578,65.9666,Sg,2016-11-25 21:59:57.410,manual,0.6,1.11
+GS.OK035.HH1.00,0.273301,50.2548,Sg,2016-11-25 21:59:45.370,manual,1.1,1.28
+GS.OK038.HH1.00,0.192552,106.558,Sg,2016-11-25 21:59:42.790,manual,1.1,1.33
+OK.U32A.BHZ.--,0.155512,189.018,Pg,2016-11-25 21:59:38.880,manual,0.4,3.54
+OK.ELIS.HHZ.--,0.590343,217.823,Pg,2016-11-25 21:59:47.100,manual,0.4,2.08
+OK.HTCH.HHZ.--,0.729167,134.772,Pg,2016-11-25 21:59:49.360,manual,0.1,1.84
+GS.OK032.HHZ.00,0.668578,65.9666,Pg,2016-11-25 21:59:48.380,manual,0.2,1.94
+OK.CSTR.HHZ.--,0.91499,165.445,Pg,2016-11-25 21:59:52.560,manual,-0.3,1.59
+GS.KAN14.HHZ.01,0.913432,62.1423,Pg,2016-11-25 21:59:52.730,manual,-0.1,1.6
+GS.KAN10.HHZ.01,0.917064,49.7795,Pg,2016-11-25 21:59:52.580,manual,-0.3,1.59
+ZD.RH08.EHZ.--,1.0527,144.503,Pg,2016-11-25 21:59:54.720,manual,-0.8,1.45
+OK.GC02.EHZ.--,0.948197,70.1065,Pg,2016-11-25 21:59:53.040,manual,-0.5,1.56
+GS.KAN05.HHZ.01,1.0522,56.6051,Pg,2016-11-25 21:59:55.410,manual,-0.1,1.45
+GS.KAN08.HHZ.01,1.0593,48.9144,Pg,2016-11-25 21:59:55.170,manual,-0.5,1.44
+ZD.RH11.EHZ.--,1.42704,100.507,Pn,2016-11-25 22:00:01.480,manual,-0.2,1.21
+GS.KAN13.HHZ.01,1.29106,67.7964,Pn,2016-11-25 21:59:59.230,manual,-0.6,1.23
+OK.BLOK.HHZ.--,1.43048,80.3558,Pn,2016-11-25 22:00:01.800,manual,0.0,1.21
+Y7.PW14.EHZ.--,1.64369,96.0785,Pn,2016-11-25 22:00:05.110,manual,0.4,1.18
+GS.OK048.HHZ.00,1.63836,93.4909,Pn,2016-11-25 22:00:05.120,manual,0.5,1.18
+ZD.RH07.EHZ.--,1.60766,111.6,Pn,2016-11-25 22:00:04.460,manual,0.3,1.19
+GS.KAN12.HHZ.01,1.09079,45.3554,Pg,2016-11-25 21:59:56.060,manual,-0.2,1.41
+GS.KAN17.HHZ.01,1.0944,61.8809,Pg,2016-11-25 21:59:55.790,manual,-0.5,1.41
+ZD.KNG1.EHZ.--,1.10513,110.857,Pg,2016-11-25 21:59:55.560,manual,-0.9,1.4
+GS.KAN01.HHZ.01,1.15261,57.1664,Pg,2016-11-25 21:59:56.780,manual,-0.6,1.36
+GS.KS20.HHZ.00,1.33177,58.1207,Pn,2016-11-25 22:00:00.710,manual,0.3,1.23
+OK.BCOK.HHZ.--,1.40784,128.018,Pn,2016-11-25 22:00:01.380,manual,-0.1,1.22
+GS.OK029.HHZ.00,1.43041,120.484,Pn,2016-11-25 22:00:01.610,manual,-0.2,1.21
+OK.CCOK.HHZ.--,1.58658,137.345,Pn,2016-11-25 22:00:04.090,manual,0.2,1.19
+GS.OK033.HHZ.00,1.71345,105.944,Pn,2016-11-25 22:00:05.760,manual,0.1,1.17
+GS.OK051.HHZ.00,1.72023,90.302,Pn,2016-11-25 22:00:06.220,manual,0.5,1.17
+OK.QUOK.HHZ.--,1.86237,100.513,Pn,2016-11-25 22:00:07.600,manual,-0.1,1.15
+GS.OK034.HHZ.00,1.89789,105.298,Pn,2016-11-25 22:00:08.520,manual,0.3,1.15
+GS.OK052.HHZ.00,1.83336,106.444,Pn,2016-11-25 22:00:07.500,manual,0.2,1.16
+GS.OK031.HHZ.00,1.81823,107.94,Pn,2016-11-25 22:00:07.290,manual,0.2,1.16
+N4.T35B.BHZ.--,2.01242,78.3226,Pn,2016-11-25 22:00:11.250,manual,1.5,1.13
+N4.R32B.BHZ.--,1.89709,6.18311,Pn,2016-11-25 22:00:08.580,manual,0.4,1.15
+OK.FNO.HHZ.01,1.8017,134.504,Pn,2016-11-25 22:00:06.270,manual,-0.6,1.16
+OK.CHOK.HHZ.--,1.82671,121.518,Pn,2016-11-25 22:00:06.430,manual,-0.8,1.16
+GS.OK053.HHZ.00,1.83884,105.718,Pn,2016-11-25 22:00:07.430,manual,0.1,1.16
+GS.OK030.HHZ.00,1.86894,108.218,Pn,2016-11-25 22:00:06.410,manual,-1.4,1.15
+OK.DEOK.HHZ.--,2.11583,108.279,Pn,2016-11-25 22:00:11.280,manual,0.1,1.12
+OK.X34A.HHZ.--,2.13993,153.96,Pn,2016-11-25 22:00:11.940,manual,0.4,1.12
+TA.TUL1.BHZ.--,0.0,84.4469,Pg,2016-11-25 22:00:24.830,manual,-1.1,0.0
+US.AMTX.BHZ.00,2.75164,234.056,Pn,2016-11-25 22:00:22.970,manual,3.0,0.0
+OK.U32A.BHE.--,0.155512,189.018,Sg,2016-11-25 21:59:41.340,manual,0.7,1.35

@@ -1,0 +1,95 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10001qz5
+#time = 2015-03-23 03:21:23.800000
+#location = 14km NW of Pawnee, Oklahoma
+#latitude = 36.4189
+#longitude = -96.9352
+#depth = 5.4
+#magnitude = 2.9
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10001qz5
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.QUOK.HHZ.--,0.307733,143.316,Pg,2015-03-23 03:21:30.330,manual,0.5,2.84
+GS.OK030.HHZ.00,0.50517,165.921,Pg,2015-03-23 03:21:33.840,manual,0.3,2.27
+OK.CROK.HHZ.--,0.849331,276.098,Pg,2015-03-23 03:21:40.020,manual,-0.1,1.67
+GS.OK025.HHZ.00,0.897549,201.453,Pg,2015-03-23 03:21:40.870,manual,-0.2,1.61
+GS.OK032.HHZ.00,1.09558,290.905,Pg,2015-03-23 03:21:44.410,manual,-0.4,1.41
+OK.GC02.EHZ.--,0.859807,300.418,Pg,2015-03-23 03:21:40.210,manual,-0.1,1.66
+OK.OKCSW.EHZ.--,1.09052,202.128,Pg,2015-03-23 03:21:44.060,manual,-0.7,1.41
+N4.T35B.BHZ.--,0.601813,34.3131,Pg,2015-03-23 03:21:35.720,manual,0.3,2.06
+OK.U32A.BHZ.--,1.66744,269.262,Pn,2015-03-23 03:21:54.170,manual,0.5,1.18
+OK.QUOK.HHE.--,0.307733,143.316,Sg,2015-03-23 03:21:34.430,manual,0.6,1.27
+OK.KAY1.HHN.--,0.409185,327.071,Sg,2015-03-23 03:21:37.630,manual,0.6,1.22
+OK.KAY1.HHZ.--,0.409185,327.071,Pg,2015-03-23 03:21:32.170,manual,0.5,2.51
+NQ.OK914.HNN.01,0.459454,166.689,Sg,2015-03-23 03:21:39.250,manual,0.6,1.19
+NQ.OK914.HNZ.01,0.459454,166.689,Pg,2015-03-23 03:21:33.100,manual,0.4,2.38
+GS.OK031.HH2.00,0.471301,170.477,Sg,2015-03-23 03:21:39.700,manual,0.7,1.19
+GS.OK031.HHZ.00,0.471301,170.477,Pg,2015-03-23 03:21:33.260,manual,0.4,2.35
+NQ.OK915.HNE.01,0.482616,164.135,Sg,2015-03-23 03:21:40.090,manual,0.7,1.18
+NQ.OK915.HNZ.01,0.482616,164.135,Pg,2015-03-23 03:21:33.470,manual,0.4,2.32
+GS.OK030.HH1.00,0.50517,165.921,Sg,2015-03-23 03:21:40.690,manual,0.6,1.17
+N4.T35B.BHN.--,0.601813,34.3131,Sg,2015-03-23 03:21:43.590,manual,0.4,1.13
+GS.KAN13.HHZ.01,0.735906,323.831,Pg,2015-03-23 03:21:38.090,manual,0.2,1.83
+GS.KAN13.HHE.01,0.735906,323.831,Sg,2015-03-23 03:21:47.920,manual,0.4,1.08
+GS.OK029.HHZ.00,0.750174,214.278,Pg,2015-03-23 03:21:38.140,manual,-0.1,1.81
+OK.GC02.EHN.--,0.859807,300.418,Sg,2015-03-23 03:21:51.670,manual,0.2,1.04
+GS.KAN09.HHN.01,0.901771,322.745,Sg,2015-03-23 03:21:53.000,manual,0.2,1.02
+GS.KAN09.HHZ.01,0.901771,322.745,Pg,2015-03-23 03:21:41.120,manual,0.0,1.61
+GS.OK012.HNZ.01,0.914101,178.24,Pg,2015-03-23 03:21:41.050,manual,-0.3,1.59
+OK.BCOK.HHZ.--,0.936493,215.889,Pg,2015-03-23 03:21:41.570,manual,-0.2,1.57
+GS.KAN14.HHZ.01,0.985259,303.323,Pg,2015-03-23 03:21:42.400,manual,-0.3,1.52
+GS.KAN01.HHZ.01,0.987311,318.192,Pg,2015-03-23 03:21:42.620,manual,-0.1,1.51
+GS.KAN01.HHE.01,0.987311,318.192,Sg,2015-03-23 03:21:55.780,manual,0.2,1.0
+GS.KAN05.HHZ.01,1.01986,312.731,Pg,2015-03-23 03:21:42.780,manual,-0.6,1.48
+GS.KAN05.HHN.01,1.01986,312.731,Sg,2015-03-23 03:21:56.630,manual,0.0,0.99
+OK.OKCFA.HHE.--,1.0856,202.856,Sg,2015-03-23 03:21:59.140,manual,0.4,0.97
+OK.OKCFA.HHZ.--,1.0856,202.856,Pg,2015-03-23 03:21:44.060,manual,-0.6,1.42
+OK.OKCSW.EHE.--,1.09052,202.128,Sg,2015-03-23 03:21:59.310,manual,0.4,0.96
+GS.OK032.HH2.00,1.09558,290.905,Sg,2015-03-23 03:21:58.900,manual,-0.1,0.96
+GS.KAN11.HHZ.01,1.11053,315.316,Pg,2015-03-23 03:21:44.610,manual,-0.5,1.4
+GS.KAN08.HHZ.01,1.15788,314.442,Pg,2015-03-23 03:21:45.750,manual,-0.3,1.36
+GS.KAN10.HHZ.01,1.16701,307.402,Pg,2015-03-23 03:21:45.810,manual,-0.4,1.35
+OK.FNO.HHZ.01,1.2193,198.228,Pg,2015-03-23 03:21:46.680,manual,-0.5,1.31
+OK.X37A.BHZ.--,2.2273,144.592,Pn,2015-03-23 03:22:02.240,manual,0.9,1.11
+US.WMOK.BHZ.10,2.25302,222.429,Pn,2015-03-23 03:22:02.600,manual,0.9,1.11
+AG.HHAR.HHZ.00,2.42179,92.3453,Pn,2015-03-23 03:22:05.450,manual,1.4,1.09
+N4.Z35B.BHZ.--,3.09183,184.939,Pn,2015-03-23 03:22:14.110,manual,0.9,1.01
+TA.U40A.BHZ.--,3.29395,89.8751,Pn,2015-03-23 03:22:17.000,manual,1.0,0.99
+US.MIAR.BHZ.00,3.31753,123.309,Pn,2015-03-23 03:22:17.440,manual,1.1,0.99
+N4.Z38B.BHZ.--,3.53603,152.464,Pn,2015-03-23 03:22:20.830,manual,1.5,0.97
+NM.MGMO.BHZ.--,3.81699,77.5274,Pn,2015-03-23 03:22:24.170,manual,1.0,0.95
+TA.X40A.BHZ.--,3.86271,118.725,Pn,2015-03-23 03:22:25.070,manual,1.3,0.94
+AG.WHAR.HHZ.00,3.93846,105.248,Pn,2015-03-23 03:22:25.980,manual,1.1,0.94
+N4.R40B.BHZ.--,4.1611,61.918,Pn,2015-03-23 03:22:29.180,manual,1.3,0.92
+TA.WHTX.BHZ.--,4.43762,185.731,Pn,2015-03-23 03:22:31.740,manual,0.0,0.9
+N4.T42B.BHZ.--,4.73294,80.8556,Pn,2015-03-23 03:22:37.860,manual,2.1,0.87
+US.ECSD.BHZ.10,7.3104,1.82916,Pn,2015-03-23 03:23:12.170,manual,1.0,0.88

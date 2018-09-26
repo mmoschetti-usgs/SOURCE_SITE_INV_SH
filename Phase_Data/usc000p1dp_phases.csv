@@ -1,0 +1,57 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000p1dp
+#time = 2014-04-02 18:33:02.300000
+#location = 13km NW of Chandler, Oklahoma
+#latitude = 35.7936
+#longitude = -96.9712
+#depth = 4.3
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000p1dp
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK027.HHZ.00,0.266833,252.325,Pg,2014-04-02 18:33:07.690,manual,0.2,0.0
+GS.OK029.HHZ.00,0.393248,270.578,Pg,2014-04-02 18:33:10.180,manual,0.3,0.0
+GS.OK025.HHZ.00,0.366158,234.72,Pg,2014-04-02 18:33:09.680,manual,0.3,0.0
+OK.FNO.HHZ.01,0.63974,213.373,Pg,2014-04-02 18:33:14.320,manual,-0.3,0.155
+US.WMOK.BHZ.10,1.81709,235.099,Pn,2014-04-02 18:33:34.980,manual,0.6,0.173
+N4.U38B.BHZ.--,2.19035,72.13,Pn,2014-04-02 18:33:37.840,manual,-1.7,0.122
+GS.ADOK.HNZ.--,0.354753,246.646,Pg,2014-04-02 18:33:09.480,manual,0.3,0.0
+TA.TUL1.BHZ.--,0.965113,82.7185,Pg,2014-04-02 18:33:20.130,manual,-0.7,0.071
+OK.W35A.EHZ.--,0.644336,172.936,Pg,2014-04-02 18:33:17.080,manual,2.4,0.278
+OK.CROK.HHZ.--,1.08384,311.197,Pg,2014-04-02 18:33:22.850,manual,-0.3,0.131
+N4.T35B.BHZ.--,1.18009,18.1758,Pg,2014-04-02 18:33:24.150,manual,-0.8,0.094
+OK.X34A.HHZ.--,1.38329,210.913,Pn,2014-04-02 18:33:28.110,manual,-0.3,0.196
+OK.U32A.BHZ.--,1.74528,290.169,Pn,2014-04-02 18:33:32.310,manual,-1.1,0.192
+AG.HHAR.HHZ.00,2.50456,77.89,Pn,2014-04-02 18:33:45.150,manual,1.3,0.115
+N4.T35B.BHZ.--,1.18009,18.1758,Sg,2014-04-02 18:33:40.620,manual,0.4,0.131
+OK.CROK.HHZ.--,1.08384,311.197,Sg,2014-04-02 18:33:37.560,manual,0.4,0.17
+TA.TUL1.BHZ.--,0.965113,82.7185,Sg,2014-04-02 18:33:33.700,manual,0.3,0.086

@@ -1,0 +1,64 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000tbw9
+#time = 2015-01-03 04:34:00
+#location = 16km W of Helena, Oklahoma
+#latitude = 36.5228
+#longitude = -98.4514
+#depth = 5.0
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000tbw9
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+US.WMOK.BHZ.10,1.8011,188.662,Pn,2015-01-03 04:34:31.520,manual,-0.2,1.16
+N4.T35B.BHZ.--,1.60704,75.2798,Pn,2015-01-03 04:34:28.820,manual,-0.2,1.19
+GS.KAN10.HHZ.01,0.66423,25.3877,Pg,2015-01-03 04:34:12.450,manual,-0.3,1.95
+GS.KAN13.HHZ.01,0.922204,57.6754,Pg,2015-01-03 04:34:17.080,manual,-0.6,1.59
+OK.QUOK.HHZ.--,1.45052,103.473,Pn,2015-01-03 04:34:26.260,manual,-0.6,1.21
+GS.KAN11.HHZ.01,0.806981,32.1669,Pg,2015-01-03 04:34:15.030,manual,-0.5,1.73
+GS.OK030.HHZ.00,1.47332,113.273,Pn,2015-01-03 04:34:27.030,manual,-0.2,1.21
+OK.W35A.EHZ.--,1.87368,136.393,Pn,2015-01-03 04:34:32.840,manual,0.1,1.15
+N4.U38B.BHZ.--,3.27759,90.2455,LR,2015-01-03 04:35:43.400,automatic,0.0,0.0
+OK.X37A.BHZ.--,3.1667,126.628,LR,2015-01-03 04:35:40.950,automatic,0.0,0.0
+GS.OK025.HHZ.00,1.30279,135.834,Pn,2015-01-03 04:34:23.610,manual,-1.3,1.23
+GS.OK026.HHZ.00,1.37091,143.426,Pn,2015-01-03 04:34:24.550,manual,-1.3,1.22
+GS.OK031.HHZ.00,1.42204,113.088,Pn,2015-01-03 04:34:25.710,manual,-0.8,1.22
+US.KSU1.BHZ.10,2.95829,28.9854,Pn,2015-01-03 04:34:47.300,manual,-0.3,1.03
+US.AMTX.BHZ.00,3.09545,239.058,Pn,2015-01-03 04:34:50.260,manual,0.7,1.01
+OK.X37A.BHZ.--,3.1667,126.628,Pn,2015-01-03 04:34:50.620,manual,0.1,1.01
+N4.U38B.BHZ.--,3.27759,90.2455,Pn,2015-01-03 04:34:52.450,manual,0.4,1.0
+TA.ABTX.BHZ.--,4.01189,194.529,Pn,2015-01-03 04:35:01.940,manual,-0.2,0.93
+N4.S39B.BHZ.--,4.26214,72.5889,Pn,2015-01-03 04:35:05.230,manual,-0.3,0.91
+US.MIAR.BHZ.00,4.43785,114.96,Pn,2015-01-03 04:35:08.870,manual,0.9,0.9
+GS.KAN08.HHZ.01,0.801278,28.5974,Pg,2015-01-03 04:34:14.770,manual,-0.6,1.74
+GS.KAN14.HHZ.01,0.584418,42.0219,Pg,2015-01-03 04:34:10.930,manual,-0.3,2.1
+GS.KAN12.HHZ.01,0.854282,25.0394,Pg,2015-01-03 04:34:15.930,manual,-0.5,1.67
+N4.R32B.BHZ.--,1.90757,353.861,Pn,2015-01-03 04:34:34.070,manual,0.8,1.15

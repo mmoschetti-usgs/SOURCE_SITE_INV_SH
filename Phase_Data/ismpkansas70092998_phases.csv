@@ -1,0 +1,70 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = ismpkansas70092998
+#time = 2015-04-12 08:37:56.760000
+#location = Kansas
+#latitude = 37.2007
+#longitude = -97.9040
+#depth = 7.2
+#magnitude = 2.9
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/ismpkansas70092998
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN01.HHZ.01,0.1251,112.2,P,2015-04-12 08:37:59.720,automatic,0.03,0.11
+GS.KAN05.HHZ.01,0.09528,164.6,P,2015-04-12 08:37:59.220,automatic,0.02,0.11
+GS.KAN06.HHZ.01,0.05954,37.4,P,2015-04-12 08:37:58.650,automatic,-0.01,0.11
+GS.KAN09.HHZ.01,0.2371,105.8,P,2015-04-12 08:38:01.690,automatic,-0.03,0.11
+GS.KAN10.HHZ.01,0.171,243.1,P,2015-04-12 08:38:00.520,automatic,-0.01,0.11
+GS.KAN11.HHZ.01,0.009118,305.6,P,2015-04-12 08:37:58.190,automatic,-0.01,0.11
+GS.KAN12.HHZ.01,0.1223,322.3,P,2015-04-12 08:37:59.690,automatic,0.01,0.11
+GS.KAN13.HHZ.01,0.3889,118.9,P,2015-04-12 08:38:04.440,automatic,-0.03,0.11
+GS.KAN14.HHZ.01,0.2479,190.9,P,2015-04-12 08:38:01.900,automatic,-0.02,0.11
+GS.OK032.HHZ.00,0.4659,211.7,P,2015-04-12 08:38:05.900,automatic,0.01,0.11
+OK.GC02.EHZ.,0.3503,174.2,P,2015-04-12 08:38:03.770,automatic,-0.04,0.02
+GS.KAN11.HHN.01,0.009118,305.6,S,2015-04-12 08:37:59.210,manual,0.01,0.11
+NQ.KAN02.HNZ.01,0.02042,98.5,P,2015-04-12 08:37:58.250,manual,-0.04,0.11
+NQ.KAN02.HNN.01,0.02042,98.5,S,2015-04-12 08:37:59.280,manual,-0.04,0.11
+GS.KAN08.HHZ.01,0.05944,296.0,P,2015-04-12 08:37:58.680,manual,0.01,0.11
+GS.KAN08.HHN.01,0.05944,296.0,S,2015-04-12 08:38:00.010,manual,0.02,0.11
+GS.KAN06.HHN.01,0.05954,37.4,S,2015-04-12 08:37:59.930,manual,-0.02,0.11
+GS.KAN05.HHN.01,0.09528,164.6,S,2015-04-12 08:38:00.910,manual,0.0,0.11
+GS.KAN12.HHE.01,0.1223,322.3,S,2015-04-12 08:38:01.760,manual,0.04,0.11
+GS.KAN01.HHN.01,0.1251,112.2,S,2015-04-12 08:38:01.780,manual,0.06,0.11
+GS.KAN10.HHE.01,0.171,243.1,S,2015-04-12 08:38:03.110,manual,-0.02,0.11
+GS.KAN09.HHN.01,0.2371,105.8,S,2015-04-12 08:38:05.240,manual,0.08,0.11
+GS.KAN14.HHN.01,0.2479,190.9,S,2015-04-12 08:38:05.510,manual,0.02,0.11
+NQ.KAN15.HNZ.01,0.2823,69.4,P,2015-04-12 08:38:02.490,manual,-0.08,0.11
+NQ.KAN15.HNN.01,0.2823,69.4,S,2015-04-12 08:38:06.650,manual,0.08,0.05
+OK.GC02.EHE.,0.3503,174.2,S,2015-04-12 08:38:08.710,manual,0.01,0.05
+GS.KAN13.HHN.01,0.3889,118.9,S,2015-04-12 08:38:09.910,manual,0.05,0.11
+GS.OK032.HH1.00,0.4659,211.7,S,2015-04-12 08:38:12.330,manual,-0.02,0.11
+N4.T35B.HHZ.,1.149,104.4,P,2015-04-12 08:38:18.200,manual,0.09,0.0
+N4.T35B.HHE.,1.149,104.4,S,2015-04-12 08:38:33.410,manual,0.11,0.0

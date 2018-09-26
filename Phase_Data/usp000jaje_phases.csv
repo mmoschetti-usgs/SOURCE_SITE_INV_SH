@@ -1,0 +1,46 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usp000jaje
+#time = 2011-11-08 03:05:07
+#location = Oklahoma
+#latitude = 35.5200
+#longitude = -96.7860
+#depth = 5.0
+#magnitude = 3.1
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usp000jaje
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+IR.TUL1.--.--,0.9,64.0,Pg,2011-11-08 03:05:24.020,manual,-0.2,1.0
+IR.MIAR.--.--,2.81,109.3,Pn,2011-11-08 03:05:54.230,manual,1.6,1.0
+IR.ABTX.--.--,3.74,220.2,Pn,2011-11-08 03:06:06.870,manual,1.5,1.0
+IR.KSU1.--.--,3.58,2.2,Pg,2011-11-08 03:06:11.840,manual,-3.7,1.0
+IR.WHTX.--.--,3.56,189.2,Pg,2011-11-08 03:06:12.490,manual,-2.8,1.0
+IR.KSCO.--.--,5.82,308.5,Pn,2011-11-08 03:06:35.220,manual,1.2,1.0

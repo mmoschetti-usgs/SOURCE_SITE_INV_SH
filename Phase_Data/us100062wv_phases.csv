@@ -1,0 +1,66 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us100062wv
+#time = 2016-07-12 14:55:05.800000
+#location = 12km W of Cherokee, Oklahoma
+#latitude = 36.7741
+#longitude = -98.4964
+#depth = 5.0
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us100062wv
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK035.HHZ.00,0.18353,249.062,Pg,2016-07-12 14:55:09.870,manual,0.4,3.39
+GS.OK040.HHZ.00,0.323887,206.244,Pg,2016-07-12 14:55:12.480,manual,0.4,2.79
+GS.OK038.HHZ.00,0.355411,213.878,Pg,2016-07-12 14:55:12.850,manual,0.2,2.68
+GS.OK043.HHZ.00,0.394799,210.613,Pg,2016-07-12 14:55:13.710,manual,0.3,2.56
+OK.GC02.EHZ.--,0.516853,81.2133,Pg,2016-07-12 14:55:15.880,manual,0.1,2.24
+OK.CROK.HHZ.--,0.492489,122.937,Pg,2016-07-12 14:55:15.500,manual,0.2,2.3
+GS.OK032.HHZ.00,0.231494,82.558,Pg,2016-07-12 14:55:10.770,manual,0.4,3.15
+GS.OK031.HHZ.00,1.56866,120.994,Pn,2016-07-12 14:55:33.640,manual,-0.6,1.19
+OK.QUOK.HHZ.--,1.56195,112.116,Pn,2016-07-12 14:55:33.740,manual,-0.4,1.2
+OK.NOKA.HHZ.--,0.376629,248.451,Pg,2016-07-12 14:55:13.400,manual,0.3,2.61
+OK.GORE.HHZ.--,0.441163,88.345,Pg,2016-07-12 14:55:14.510,manual,0.2,2.43
+OK.HTCH.HHZ.--,0.766939,170.035,Pg,2016-07-12 14:55:20.440,manual,-0.1,1.79
+ZD.KNG1.EHZ.--,0.909507,134.53,Pg,2016-07-12 14:55:23.110,manual,-0.1,1.6
+OK.BLOK.HHZ.--,1.02904,90.3667,Pg,2016-07-12 14:55:25.020,manual,-0.5,1.47
+GS.OK029.HHZ.00,1.28829,138.909,Pn,2016-07-12 14:55:29.600,manual,-0.8,1.23
+OK.BCOK.HHZ.--,1.32593,146.983,Pn,2016-07-12 14:55:30.800,manual,-0.1,1.23
+GS.OK033.HHZ.00,1.45268,119.622,Pn,2016-07-12 14:55:32.140,manual,-0.5,1.21
+GS.OK025.HHZ.00,1.51521,141.444,Pn,2016-07-12 14:55:33.270,manual,-0.3,1.2
+GS.OK034.HHZ.00,1.62826,117.386,Pn,2016-07-12 14:55:34.490,manual,-0.6,1.19
+OK.DEOK.HHZ.--,1.8624,119.345,Pn,2016-07-12 14:55:37.940,manual,-0.3,1.15
+OK.FNO.HHZ.01,1.75472,149.279,Pn,2016-07-12 14:55:36.360,manual,-0.5,1.17
+US.WMOK.BHZ.10,2.04494,186.576,Pn,2016-07-12 14:55:40.710,manual,-0.1,1.13
+GS.OK035.HH1.00,0.18353,249.062,Sg,2016-07-12 14:55:12.720,manual,0.8,1.33
+GS.OK032.HH1.00,0.231494,82.558,Sg,2016-07-12 14:55:14.170,manual,0.8,1.31
+GS.OK040.HH2.00,0.323887,206.244,Sg,2016-07-12 14:55:17.290,manual,1.0,1.26
+GS.OK038.HH1.00,0.355411,213.878,Sg,2016-07-12 14:55:18.450,manual,1.1,1.24

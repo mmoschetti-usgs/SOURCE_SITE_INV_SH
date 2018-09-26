@@ -1,0 +1,71 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000jurv
+#time = 2013-09-15 05:58:13.900000
+#location = 10km SSW of Boley, Oklahoma
+#latitude = 35.4085
+#longitude = -96.5427
+#depth = 4.9
+#magnitude = 3.1
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000jurv
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+US.WMOK.BHZ.10,1.95374,250.62,Pn,2013-09-15 05:58:48.920,manual,1.2,0.14
+AG.HHAR.HHZ.00,2.28709,66.8398,Pn,2013-09-15 05:58:53.340,manual,1.0,0.0
+US.MIAR.BHZ.00,2.58339,108.615,Pn,2013-09-15 05:58:58.250,manual,1.9,0.056
+TA.TUL1.BHZ.--,0.790334,50.4604,Pg,2013-09-15 05:58:29.310,manual,0.2,0.467
+GS.ADOK.HNZ.--,0.718036,290.018,Pg,2013-09-15 05:58:26.640,manual,-1.1,0.083
+TA.W39A.BHZ.--,2.26632,94.5697,Pn,2013-09-15 05:58:53.120,manual,1.1,0.074
+AG.WHAR.HHZ.00,3.47901,90.7157,Pn,2013-09-15 05:59:09.800,automatic,1.1,0.063
+AG.CCAR.HHZ.00,4.20395,109.357,Pn,2013-09-15 05:59:19.510,manual,0.9,0.0
+AG.WLAR.HHZ.00,3.31098,120.239,Pn,2013-09-15 05:59:06.410,manual,0.0,0.048
+NM.UALR.BHZ.--,3.50122,99.1854,Pn,2013-09-15 05:59:09.300,manual,0.3,0.0
+TA.U40A.BHZ.--,3.14144,71.404,Pn,2013-09-15 05:59:05.000,manual,0.9,0.103
+US.NATX.BHZ.00,3.96343,156.127,Pn,2013-09-15 05:59:15.110,manual,-0.3,0.0
+TA.Z41A.BHZ.--,3.7652,123.667,Pn,2013-09-15 05:59:12.930,manual,0.3,0.0
+TA.W41B.BHZ.--,3.5209,92.5737,Sn,2013-09-15 05:59:53.340,manual,2.0,0.0
+TA.ABTX.BHZ.--,3.7873,223.712,Pn,2013-09-15 05:59:13.240,manual,0.3,0.0
+TA.X40A.BHZ.--,3.18181,105.72,Pn,2013-09-15 05:59:05.910,manual,1.3,0.051
+AG.FCAR.HHZ.00,3.63041,81.1114,Sn,2013-09-15 05:59:54.440,manual,0.4,0.0
+AG.WLAR.HHZ.00,3.31098,120.239,Sn,2013-09-15 05:59:43.070,manual,-3.0,0.029
+TA.U40A.BHZ.--,3.14144,71.404,Sn,2013-09-15 05:59:42.520,manual,0.5,0.071
+GS.OK011.HNZ.01,0.139669,303.266,Pg,2013-09-15 05:58:16.070,manual,-0.7,0.0
+TA.WHTX.BHZ.--,3.4923,192.849,Pn,2013-09-15 05:59:09.590,manual,0.7,0.13
+AG.HHAR.HHZ.00,2.28709,66.8398,Sn,2013-09-15 05:59:21.740,manual,0.8,0.119
+TA.W39A.BHZ.--,2.26632,94.5697,Sn,2013-09-15 05:59:21.050,manual,0.7,0.06
+OK.U32A.BHZ.--,2.219,296.607,Sn,2013-09-15 05:59:19.850,manual,0.6,0.103
+GS.OK005.HNZ.01,0.583209,295.121,Sg,2013-09-15 05:58:28.160,manual,-4.5,0.095
+GS.OK001.HNZ.01,0.628195,284.244,Sg,2013-09-15 05:58:32.850,manual,-1.3,0.086
+GS.OK001.HNZ.01,0.628195,284.244,Pg,2013-09-15 05:58:24.920,manual,-1.1,0.0
+GS.OK005.HNZ.01,0.583209,295.121,Pg,2013-09-15 05:58:24.880,manual,-0.2,0.0
+GS.OK012.HNZ.01,0.307273,288.033,Pg,2013-09-15 05:58:18.670,manual,-1.2,0.0
+OK.U32A.BHZ.--,2.219,296.607,Pn,2013-09-15 05:58:51.520,manual,0.1,0.122
+US.WMOK.BHZ.10,1.95374,250.62,Sn,2013-09-15 05:59:15.310,manual,2.6,0.138

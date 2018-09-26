@@ -1,0 +1,62 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us100072xy
+#time = 2016-10-29 10:30:09
+#location = 6km N of Coalgate, Oklahoma
+#latitude = 34.5957
+#longitude = -96.2317
+#depth = 4.5
+#magnitude = 2.8
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us100072xy
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.X37A.BHZ.--,0.709844,90.2792,Pg,2016-10-29 10:30:23.500,manual,0.9,2.04
+OK.FNO.HHZ.01,1.16586,304.822,Pg,2016-10-29 10:30:31.120,manual,-0.2,1.35
+GS.OK025.HHZ.00,1.33771,317.618,Pn,2016-10-29 10:30:34.150,manual,-0.2,1.23
+OK.CHOK.HHZ.--,1.17926,324.999,Pg,2016-10-29 10:30:31.320,manual,-0.3,1.34
+OK.DEOK.HHZ.--,1.26318,350.126,Pg,2016-10-29 10:30:32.790,manual,-0.4,1.27
+OK.OKCSW.EHZ.--,1.27805,309.553,Pg,2016-10-29 10:30:33.260,manual,-0.2,1.26
+GS.OK031.HHZ.00,1.44264,340.024,Pn,2016-10-29 10:30:35.560,manual,-0.2,0.0
+OK.QUOK.HHZ.--,1.61963,346.233,Pn,2016-10-29 10:30:38.360,manual,0.1,0.0
+GS.OK034.HHZ.00,1.46524,344.547,Pn,2016-10-29 10:30:36.050,manual,0.0,0.0
+GS.OK048.HHZ.00,1.9071,342.471,Pn,2016-10-29 10:30:42.040,manual,-0.1,0.0
+TA.TUL1.BHZ.--,1.36021,15.2179,Pn,2016-10-29 10:30:34.630,manual,0.0,1.22
+ZD.RH03.EHZ.--,1.14841,336.875,Pg,2016-10-29 10:30:30.830,manual,-0.2,1.36
+ZD.RH07.EHZ.--,1.51715,331.294,Pn,2016-10-29 10:30:36.790,manual,0.0,0.0
+OK.BCOK.HHZ.--,1.54777,313.545,Pn,2016-10-29 10:30:37.070,manual,-0.2,0.0
+N4.Z35B.BHZ.--,1.52054,214.22,Pn,2016-10-29 10:30:36.620,manual,-0.2,0.0
+OK.LOOK.HHZ.--,0.98922,232.797,Pg,2016-10-29 10:30:28.400,manual,0.4,1.51
+ZD.RH03.EHE.--,1.14841,336.875,Sg,2016-10-29 10:30:46.320,manual,0.4,0.95
+OK.FNO.HHN.01,1.16586,304.822,Sg,2016-10-29 10:30:46.770,manual,0.3,0.94
+OK.CHOK.HHN.--,1.17926,324.999,Sg,2016-10-29 10:30:47.570,manual,0.7,0.94
+OK.OKCSW.EHN.--,1.27805,309.553,Sg,2016-10-29 10:30:50.400,manual,0.3,0.91
+ZD.RH04.EHZ.--,0.752475,339.904,Pg,2016-10-29 10:30:23.530,manual,0.1,1.81
+GS.PW02.CHZ.--,1.91579,343.531,Pn,2016-10-29 10:30:42.380,manual,0.1,0.0

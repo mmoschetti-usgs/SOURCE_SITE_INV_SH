@@ -1,0 +1,66 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10006350
+#time = 2016-07-09 08:52:26.100000
+#location = 7km W of Buffalo, Oklahoma
+#latitude = 36.8383
+#longitude = -99.7198
+#depth = 2.2
+#magnitude = 2.7
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10006350
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.NOKA.HHZ.--,0.664751,107.564,Pg,2016-07-09 08:52:38.900,manual,0.6,2.43
+OK.U32A.BHE.--,0.737433,128.17,Sg,2016-07-09 08:52:50.680,manual,1.1,1.08
+GS.KAN05.HHZ.01,1.50394,79.1111,Pg,2016-07-09 08:52:53.860,manual,0.8,1.77
+GS.KAN14.HHZ.01,1.41326,84.6723,Pg,2016-07-09 08:52:52.460,manual,0.9,1.84
+GS.OK035.HHZ.00,0.821369,98.7935,Pg,2016-07-09 08:52:41.750,manual,0.6,2.25
+OK.HTCH.HHZ.--,1.38676,125.813,Pg,2016-07-09 08:52:52.000,manual,0.9,1.86
+US.WMOK.BHZ.10,2.23061,159.708,Pn,2016-07-09 08:53:03.260,manual,-0.4,1.11
+N4.R32B.BHZ.--,1.77265,26.5509,Pn,2016-07-09 08:52:57.810,manual,0.3,1.17
+OK.U32A.BHZ.--,0.737433,128.17,Pg,2016-07-09 08:52:40.090,manual,0.4,2.35
+GS.OK038.HHZ.00,0.864367,114.277,Pg,2016-07-09 08:52:42.680,manual,0.7,2.21
+GS.OK043.HHZ.00,0.881595,116.992,Pg,2016-07-09 08:52:42.300,manual,0.0,2.19
+GS.OK040.HHZ.00,0.912596,112.56,Pg,2016-07-09 08:52:43.030,manual,0.2,2.16
+GS.OK032.HHZ.00,1.21167,91.1761,Pg,2016-07-09 08:52:48.460,manual,0.4,2.01
+GS.KAN10.HHZ.01,1.33178,77.17,Pg,2016-07-09 08:52:51.020,manual,0.9,1.9
+GS.KAN16.HHZ.01,1.37972,73.2315,Pg,2016-07-09 08:52:51.820,manual,0.9,1.87
+GS.KAN12.HHZ.01,1.45142,71.078,Pg,2016-07-09 08:52:53.040,manual,0.8,1.81
+OK.GORE.HHZ.--,1.4236,91.5861,Pg,2016-07-09 08:52:52.370,manual,0.7,1.83
+GS.KAN08.HHZ.01,1.4522,73.9914,Pg,2016-07-09 08:52:53.130,manual,0.9,1.81
+OK.GC02.EHZ.--,1.49227,88.9363,Pg,2016-07-09 08:52:53.940,manual,1.0,1.78
+OK.NOKA.HHN.--,0.664751,107.564,Sg,2016-07-09 08:52:48.720,manual,1.4,1.11
+OK.ELIS.HHZ.--,0.808922,162.404,Pg,2016-07-09 08:52:41.780,manual,0.8,2.27
+GS.OK035.HH1.00,0.821369,98.7935,Sg,2016-07-09 08:52:53.310,manual,1.0,1.05
+GS.OK038.HH2.00,0.864367,114.277,Sg,2016-07-09 08:52:54.560,manual,0.9,1.04
+GS.OK043.HH2.00,0.881595,116.992,Sg,2016-07-09 08:52:54.890,manual,0.7,1.03
+GS.OK040.HH1.00,0.912596,112.56,Sg,2016-07-09 08:52:55.910,manual,0.8,1.02
+GS.OK032.HH1.00,1.21167,91.1761,Sg,2016-07-09 08:53:05.160,manual,1.1,1.12

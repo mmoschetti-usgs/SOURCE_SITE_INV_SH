@@ -1,0 +1,63 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000pk4k
+#time = 2014-04-12 21:34:25.900000
+#location = 12km SSW of Guthrie, Oklahoma
+#latitude = 35.7766
+#longitude = -97.4855
+#depth = 7.0
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000pk4k
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK029.HHZ.00,0.0318913,51.2498,Pg,2014-04-12 21:34:27.630,manual,0.3,0.0
+GS.OK025.HHZ.00,0.229117,148.324,Pg,2014-04-12 21:34:30.790,automatic,0.3,0.0
+GS.OK027.HHZ.00,0.176436,111.37,Pg,2014-04-12 21:34:30.020,manual,0.5,0.0
+GS.OK026.HHZ.00,0.361582,175.583,Pg,2014-04-12 21:34:33.410,automatic,0.5,0.0
+OK.OKCSW.EHZ.--,0.372308,174.018,Pg,2014-04-12 21:34:33.430,automatic,0.3,0.0
+OK.FNO.HHZ.01,0.522601,172.414,Pg,2014-04-12 21:34:36.280,automatic,0.3,0.0
+OK.W35A.EHZ.--,0.797679,141.121,Pg,2014-04-12 21:34:40.850,automatic,-0.4,0.06
+US.WMOK.BHZ.10,1.4824,226.021,Pn,2014-04-12 21:34:53.000,automatic,0.0,0.038
+OK.X37A.BHZ.--,2.09817,123.763,Pn,2014-04-12 21:35:01.830,manual,0.4,0.057
+GS.OK029.HH1.00,0.0318913,51.2498,Sg,2014-04-12 21:34:28.800,manual,0.5,0.166
+GS.ADOK.HNZ.--,0.155321,143.142,Pg,2014-04-12 21:34:29.470,manual,0.3,0.0
+GS.ADOK.HNE.--,0.155321,143.142,Sg,2014-04-12 21:34:31.460,manual,0.1,0.078
+OK.BCOK.HHZ.--,0.156409,220.136,Pg,2014-04-12 21:34:29.430,manual,0.3,0.0
+OK.BCOK.HHE.--,0.156409,220.136,Sg,2014-04-12 21:34:31.990,manual,0.7,0.161
+OK.BCOK.HHN.--,0.156409,220.136,Pg,2014-04-12 21:34:32.740,manual,0.0,0.0
+GS.OK027.HH1.00,0.176436,111.37,Sg,2014-04-12 21:34:32.890,manual,0.9,0.105
+OK.QUOK.HHZ.--,0.743605,57.7795,Pg,2014-04-12 21:34:40.120,manual,-0.1,0.096
+OK.CROK.HHZ.--,0.830885,331.13,Pg,2014-04-12 21:34:41.850,manual,0.0,0.061
+OK.KAY1.HHZ.--,1.00857,12.5687,Pg,2014-04-12 21:34:45.020,manual,-0.2,0.045
+OK.X34A.HHZ.--,1.20689,193.725,Pg,2014-04-12 21:34:49.000,manual,-0.1,0.035
+OK.U32A.BHZ.--,1.36746,296.547,Pn,2014-04-12 21:34:50.790,manual,-0.7,0.027
+TA.TUL1.BHZ.--,1.38246,83.9624,Pn,2014-04-12 21:34:50.300,manual,-1.3,0.071
+N4.T35B.BHZ.--,1.38247,34.362,Pn,2014-04-12 21:34:51.230,manual,-0.4,0.051

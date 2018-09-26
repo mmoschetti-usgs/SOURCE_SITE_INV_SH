@@ -1,0 +1,61 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000nlu3
+#time = 2014-03-23 06:18:36.890000
+#location = 13km ENE of Anthony, Kansas
+#latitude = 37.2106
+#longitude = -97.8982
+#depth = 7.3
+#magnitude = 2.7
+#magtype = mb_lg
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000nlu3
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+US.CBKS.BHZ.00,2.16159,318.338,Pn,2014-03-23 06:19:13.090,manual,-0.2,0.037
+N4.T35B.BHN.--,1.14718,104.424,Sg,2014-03-23 06:19:13.240,manual,-0.6,0.089
+TA.W39A.BHZ.--,3.88721,119.912,Pn,2014-03-23 06:19:36.640,manual,-0.4,0.0
+OK.U32A.BHZ.--,1.21336,227.203,Pg,2014-03-23 06:18:59.580,manual,-0.6,0.123
+N4.T35B.BHZ.--,1.14718,104.424,Pg,2014-03-23 06:18:58.240,manual,-0.7,0.066
+NQ.KAN01.HNZ.01,0.124792,117.135,Pg,2014-03-23 06:18:39.520,manual,-0.1,0.0
+NQ.KAN02.HNZ.01,0.0202056,129.588,Pg,2014-03-23 06:18:38.090,manual,-0.2,0.0
+NQ.KAN01.HNN.01,0.124792,117.135,Sg,2014-03-23 06:18:41.520,manual,0.0,0.118
+NQ.KAN03.HNZ.01,0.182007,80.144,Pg,2014-03-23 06:18:40.770,manual,0.2,0.0
+US.WMOK.BHZ.10,2.56921,196.438,Pn,2014-03-23 06:19:19.100,manual,0.2,0.059
+OK.OKCSW.EHZ.--,1.83939,168.204,Pn,2014-03-23 06:19:09.130,manual,0.3,0.073
+GS.OK026.HHZ.00,1.82764,168.479,Pn,2014-03-23 06:19:09.090,manual,0.4,0.073
+GS.OK027.HHZ.00,1.57554,161.488,Pn,2014-03-23 06:19:05.420,manual,0.2,0.077
+OK.BCOK.HHZ.--,1.5682,171.37,Pn,2014-03-23 06:19:05.410,manual,0.3,0.077
+GS.OK025.HHZ.00,1.68789,164.298,Pn,2014-03-23 06:19:07.180,manual,0.4,0.075
+GS.OK028.HHZ.00,1.77927,157.448,Pn,2014-03-23 06:19:08.200,manual,0.2,0.073
+GS.OK029.HHZ.00,1.45569,165.664,Pn,2014-03-23 06:19:03.530,manual,0.0,0.079
+N4.R32B.BHZ.--,1.37046,332.23,Pn,2014-03-23 06:19:02.060,manual,-0.4,0.057
+TA.TUL1.BHZ.--,2.13527,126.792,Pn,2014-03-23 06:19:12.580,manual,-0.3,0.067
+OK.CROK.HHZ.--,0.707865,185.565,Pg,2014-03-23 06:18:49.550,manual,-1.0,0.261
+NQ.KAN03.HNE.01,0.182007,80.144,Sg,2014-03-23 06:18:43.470,manual,0.3,0.172

@@ -1,0 +1,59 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20005lj1
+#time = 2016-04-25 08:37:38.500000
+#location = 7km ENE of Harrah, Oklahoma
+#latitude = 35.5252
+#longitude = -97.0906
+#depth = 6.8
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20005lj1
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.CHOK.HHZ.--,0.0430581,33.6939,Pg,2016-04-25 08:37:40.260,manual,0.2,4.32
+GS.OK025.HHZ.00,0.209224,285.534,Pg,2016-04-25 08:37:43.030,manual,0.3,3.26
+OK.FNO.HHZ.01,0.368509,223.613,Pg,2016-04-25 08:37:45.850,manual,0.2,2.64
+GS.OK029.HHZ.00,0.401681,312.498,Pg,2016-04-25 08:37:46.600,manual,0.3,2.54
+OK.BCOK.HHZ.--,0.442653,287.394,Pg,2016-04-25 08:37:47.120,manual,0.0,2.42
+GS.OK030.HHZ.00,0.472974,31.767,Pg,2016-04-25 08:37:47.420,manual,-0.2,2.34
+GS.OK031.HHZ.00,0.473467,25.5296,Pg,2016-04-25 08:37:47.740,manual,0.1,2.34
+OK.CCOK.HHZ.--,0.491376,250.168,Pg,2016-04-25 08:37:48.050,manual,0.1,2.3
+OK.QUOK.HHZ.--,0.715831,25.6243,Pg,2016-04-25 08:37:52.310,manual,0.0,1.86
+OK.X34A.HHZ.--,1.10485,213.644,Pg,2016-04-25 08:37:59.170,manual,-0.5,1.4
+TA.TUL1.BHZ.--,1.12454,69.6351,Pg,2016-04-25 08:37:59.160,manual,-0.9,1.38
+OK.BLOK.HHZ.--,1.23696,355.367,Pn,2016-04-25 08:38:01.500,manual,-0.7,1.24
+N4.T35B.BHZ.--,1.4649,18.4587,Pn,2016-04-25 08:38:05.160,manual,-0.2,1.21
+US.WMOK.BHZ.10,1.59245,240.934,Pn,2016-04-25 08:38:07.230,manual,0.2,1.19
+OK.X37A.BHZ.--,1.69157,123.011,Pn,2016-04-25 08:38:09.230,manual,0.8,1.17
+GS.ADOK.HNZ.--,0.261301,299.042,Pg,2016-04-25 08:37:43.910,manual,0.3,3.02
+GS.OK025.HH1.00,0.209224,285.534,Sg,2016-04-25 08:37:46.060,manual,0.5,1.32
+OK.FNO.HHN.01,0.368509,223.613,Sg,2016-04-25 08:37:51.330,manual,0.8,1.24
+OK.CCOK.HHN.--,0.491376,250.168,Sg,2016-04-25 08:37:55.140,manual,0.7,1.18

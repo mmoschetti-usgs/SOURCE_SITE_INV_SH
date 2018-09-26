@@ -1,0 +1,96 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us200063r3
+#time = 2016-06-11 00:21:38.900000
+#location = 7km ENE of Hennessey, Oklahoma
+#latitude = 36.1332
+#longitude = -97.8173
+#depth = 5.7
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us200063r3
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.HTCH.HHZ.--,0.433315,254.643,Pg,2016-06-11 00:21:47.410,manual,0.1,2.45
+GS.OK029.HHZ.00,0.44638,138.699,Pg,2016-06-11 00:21:47.820,manual,0.3,2.41
+OK.CROK.HHZ.--,0.394269,340.158,Pg,2016-06-11 00:21:46.860,manual,0.3,2.56
+OK.BCOK.HHZ.--,0.504595,160.385,Pg,2016-06-11 00:21:48.730,manual,0.1,2.27
+GS.OK025.HHZ.00,0.67467,144.604,Pg,2016-06-11 00:21:51.990,manual,0.1,1.93
+OK.GORE.HHZ.--,0.659453,350.908,Pg,2016-06-11 00:21:51.580,manual,0.0,1.96
+GS.OK034.HHZ.00,0.902868,97.4883,Pg,2016-06-11 00:21:56.170,manual,-0.1,1.61
+OK.GC02.EHZ.--,0.717685,357.29,Pg,2016-06-11 00:21:52.690,manual,0.0,1.86
+OK.QUOK.HHZ.--,0.898596,87.2417,Pg,2016-06-11 00:21:56.050,automatic,-0.1,1.61
+GS.OK032.HHZ.00,0.740486,334.781,Pg,2016-06-11 00:21:53.140,automatic,0.0,1.82
+OK.CHOK.HHZ.--,0.838538,132.685,Pg,2016-06-11 00:21:54.900,automatic,-0.1,1.69
+GS.OK030.HHZ.00,0.862439,103.445,Pg,2016-06-11 00:21:55.380,automatic,-0.1,1.66
+OK.FNO.HHZ.01,0.937244,158.694,Pg,2016-06-11 00:21:56.730,manual,-0.2,1.57
+OK.ELIS.HHZ.--,1.29812,267.48,Pn,2016-06-11 00:22:03.410,automatic,-0.2,1.23
+US.WMOK.BHZ.10,1.59909,209.751,Pn,2016-06-11 00:22:07.870,automatic,0.2,1.19
+GS.OK038.HHZ.00,0.822614,295.016,Pg,2016-06-11 00:21:53.900,manual,-0.8,1.71
+GS.OK031.HHZ.00,0.81289,102.485,Pg,2016-06-11 00:21:54.000,manual,-0.5,1.72
+OK.X34A.HHZ.--,1.52883,180.473,Pn,2016-06-11 00:22:07.810,manual,1.1,1.2
+GS.OK030.HHZ.00,0.862439,103.445,Sg,2016-06-11 00:22:07.510,manual,0.9,1.04
+OK.U32A.BHZ.--,0.988125,284.753,Pg,2016-06-11 00:21:57.770,manual,-0.1,1.51
+GS.OK040.HHZ.00,0.775081,297.014,Pg,2016-06-11 00:21:53.550,manual,-0.2,1.77
+OK.X37A.BHZ.--,2.52377,126.904,Pn,2016-06-11 00:22:21.330,manual,1.0,1.07
+N4.T35B.BHZ.--,1.31006,52.9941,Pn,2016-06-11 00:22:03.250,automatic,-0.5,1.23
+OK.LOOK.HHZ.--,2.19891,166.062,Pg,2016-06-11 00:22:18.350,manual,-2.7,0.4
+N4.U38B.BHZ.--,2.78923,82.6968,Pg,2016-06-11 00:22:31.600,manual,-0.6,0.36
+N4.S39B.BHZ.--,3.92306,65.3169,Pg,2016-06-11 00:22:49.900,manual,-4.0,0.0
+TA.U40A.BHZ.--,4.0184,85.3582,Pg,2016-06-11 00:22:51.080,manual,-4.7,0.0
+OK.CCOK.HHZ.--,0.785751,170.346,Pg,2016-06-11 00:21:53.960,manual,0.0,1.76
+OK.OKCFA.HHZ.--,0.775697,157.337,Pg,2016-06-11 00:21:53.920,manual,0.1,1.77
+OK.BLOK.HHZ.--,0.792403,37.6186,Pg,2016-06-11 00:21:54.080,manual,0.0,1.75
+ZD.KNG1.EHZ.--,0.0986017,90.4862,Pg,2016-06-11 00:21:41.270,manual,0.2,3.89
+ZD.KNG1.EHN.--,0.0986017,90.4862,Sg,2016-06-11 00:21:43.230,manual,0.7,1.38
+OK.CROK.HHE.--,0.394269,340.158,Sg,2016-06-11 00:21:52.580,manual,0.9,1.22
+OK.HTCH.HHE.--,0.433315,254.643,Sg,2016-06-11 00:21:53.740,manual,0.8,1.21
+GS.OK029.HH1.00,0.44638,138.699,Sg,2016-06-11 00:21:54.240,manual,0.9,1.2
+OK.BCOK.HHE.--,0.504595,160.385,Sg,2016-06-11 00:21:56.020,manual,0.8,1.17
+GS.ADOK.HNZ.--,0.601529,142.834,Pg,2016-06-11 00:21:50.660,manual,0.2,2.06
+GS.OK033.HHZ.00,0.717544,96.8352,Pg,2016-06-11 00:21:52.680,manual,0.0,1.86
+OK.OKCSW.EHZ.--,0.788938,156.874,Pg,2016-06-11 00:21:54.030,manual,0.0,1.75
+GS.OK043.HHZ.00,0.807745,292.045,Pg,2016-06-11 00:21:54.190,manual,-0.2,1.73
+GS.KAN14.HHZ.01,0.830304,351.92,Pg,2016-06-11 00:21:54.610,manual,-0.2,1.7
+GS.KAN17.HHZ.01,0.910094,2.64538,Pg,2016-06-11 00:21:56.420,manual,0.1,1.6
+GS.OK035.HHZ.00,0.920536,308.828,Pg,2016-06-11 00:21:56.280,manual,-0.3,1.59
+GS.KAN13.HHZ.01,0.919522,17.1896,Pg,2016-06-11 00:21:56.540,manual,0.0,1.59
+GS.KAN05.HHZ.01,0.974497,357.414,Pg,2016-06-11 00:21:57.020,manual,-0.6,1.53
+GS.KAN10.HHZ.01,1.01331,347.342,Pg,2016-06-11 00:21:57.590,manual,-0.8,1.49
+GS.KAN01.HHZ.01,1.01929,2.61912,Pg,2016-06-11 00:21:55.790,manual,-2.7,1.48
+OK.NOKA.HHZ.--,1.0293,299.424,Pg,2016-06-11 00:21:58.140,manual,-0.5,1.47
+GS.KAN08.HHZ.01,1.09834,353.591,Pg,2016-06-11 00:21:59.740,manual,-0.2,1.41
+GS.KAN16.HHZ.01,1.10827,349.736,Pg,2016-06-11 00:21:59.700,manual,-0.5,1.4
+OK.DEOK.HHZ.--,1.1083,104.775,Pg,2016-06-11 00:21:59.650,manual,-0.5,1.4
+GS.KAN06.HHZ.01,1.11313,358.303,Pg,2016-06-11 00:21:59.870,manual,-0.4,1.39
+GS.KS20.HHZ.00,1.1146,10.8559,Pg,2016-06-11 00:22:00.030,manual,-0.3,1.39
+GS.KAN12.HHZ.01,1.17098,352.931,Pg,2016-06-11 00:22:00.570,manual,-0.8,1.34
+OK.RLOK.HHZ.--,2.25868,88.3062,Pn,2016-06-11 00:22:18.650,manual,1.9,1.1
+N4.R32B.BHZ.--,2.39376,342.942,Pn,2016-06-11 00:22:18.450,manual,-0.2,1.09

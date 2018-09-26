@@ -1,0 +1,59 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000p8uw
+#time = 2014-04-07 13:02:01.800000
+#location = 13km WNW of Pawnee, Oklahoma
+#latitude = 36.3794
+#longitude = -96.9498
+#depth = 5.0
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000p8uw
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.W35A.EHZ.--,1.2256,177.114,Pg,2014-04-07 13:02:24.040,manual,-1.3,0.095
+N4.T35B.BHZ.--,0.641135,33.1878,Pg,2014-04-07 13:02:14.520,manual,0.4,0.143
+OK.X34A.HHZ.--,1.91511,202.354,Pn,2014-04-07 13:02:35.480,manual,0.4,0.041
+GS.OK027.HHZ.00,0.718848,202.204,Pg,2014-04-07 13:02:15.640,manual,0.0,0.125
+GS.OK028.HHZ.00,0.821582,186.359,Pg,2014-04-07 13:02:17.200,manual,-0.4,0.135
+GS.OK029.HHZ.00,0.711076,215.274,Pg,2014-04-07 13:02:15.510,manual,0.1,0.129
+GS.OK025.HHZ.00,0.856559,201.675,Pg,2014-04-07 13:02:18.170,manual,-0.1,0.101
+US.WMOK.BHZ.10,2.21605,222.883,Pn,2014-04-07 13:02:40.070,manual,0.8,0.042
+AG.HHAR.HHZ.00,2.43227,91.398,Pn,2014-04-07 13:02:43.780,manual,1.6,0.072
+TA.TUL1.BHZ.--,1.04757,116.195,Pg,2014-04-07 13:02:21.640,manual,-0.3,0.242
+N4.U38B.BHZ.--,2.06925,87.581,Pn,2014-04-07 13:02:38.840,manual,1.6,0.075
+OK.CROK.HHZ.--,0.842777,278.84,Pg,2014-04-07 13:02:17.930,manual,0.0,0.299
+N4.T35B.BHN.--,0.641135,33.1878,Sg,2014-04-07 13:02:22.980,manual,0.5,0.127
+GS.OK027.HH2.00,0.718848,202.204,Sg,2014-04-07 13:02:25.210,manual,0.3,0.121
+OK.FNO.HHZ.01,1.17817,198.275,Pg,2014-04-07 13:02:23.440,manual,-1.0,0.068
+OK.U32A.BHZ.--,1.65562,270.612,Pn,2014-04-07 13:02:32.190,manual,0.6,0.091
+N4.R32B.BHZ.--,2.47511,326.013,Pn,2014-04-07 13:02:44.240,manual,1.4,0.075
+TA.W39A.BHZ.--,2.83169,113.713,Pn,2014-04-07 13:02:47.720,manual,0.0,0.075
+TA.U40A.BHZ.--,3.30605,89.1845,Pn,2014-04-07 13:02:55.940,manual,1.7,0.059

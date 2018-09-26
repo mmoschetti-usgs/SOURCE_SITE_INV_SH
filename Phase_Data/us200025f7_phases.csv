@@ -1,0 +1,68 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us200025f7
+#time = 2015-04-09 19:06:36.900000
+#location = 9km W of Medford, Oklahoma
+#latitude = 36.8033
+#longitude = -97.8397
+#depth = 5.4
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us200025f7
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN14.HHZ.01,0.182337,327.203,Pg,2015-04-09 19:06:41.120,manual,0.6,3.39
+OK.GC02.EHZ.--,0.0506903,341.648,Pg,2015-04-09 19:06:38.740,manual,0.5,4.26
+GS.OK032.HHZ.00,0.297535,270.207,Pg,2015-04-09 19:06:43.150,manual,0.5,2.88
+OK.CROK.HHZ.--,0.319638,201.237,Pg,2015-04-09 19:06:43.530,manual,0.4,2.8
+OK.KAY1.HHZ.--,0.505405,94.4108,Pg,2015-04-09 19:06:46.650,manual,0.0,2.27
+OK.QUOK.HHZ.--,1.10882,124.326,Pg,2015-04-09 19:06:58.140,manual,0.0,1.4
+GS.OK025.HHZ.00,1.28546,161.444,Pn,2015-04-09 19:07:00.850,manual,-0.6,1.23
+US.WMOK.BHZ.10,2.19841,200.646,Pn,2015-04-09 19:07:14.230,manual,0.2,1.11
+OK.U32A.BHZ.--,1.02617,246.005,Pg,2015-04-09 19:06:56.420,manual,-0.2,1.48
+OK.X34A.HHZ.--,2.19755,179.847,Pn,2015-04-09 19:07:13.710,manual,-0.3,1.11
+AG.HHAR.HHZ.00,3.18307,98.2416,Pn,2015-04-09 19:07:27.220,manual,-0.4,1.01
+N4.T35B.BHZ.--,1.07087,83.5618,Pg,2015-04-09 19:06:57.270,manual,-0.2,1.43
+N4.U38B.BHZ.--,2.80225,96.4138,Pn,2015-04-09 19:07:21.480,manual,-0.9,1.04
+N4.R32B.BHZ.--,1.75827,337.089,Pg,2015-04-09 19:07:09.280,manual,-0.4,0.84
+N4.S39B.BHZ.--,3.71144,74.8302,Pn,2015-04-09 19:07:35.210,manual,0.4,0.96
+OK.FNO.HHZ.01,1.58308,166.896,Pn,2015-04-09 19:07:05.210,manual,-0.4,1.19
+N4.R32B.BHZ.--,1.75827,337.089,Pn,2015-04-09 19:07:07.530,manual,-0.5,1.17
+OK.BCOK.HHN.--,1.15932,170.685,Pg,2015-04-09 19:06:58.900,manual,-0.2,1.35
+GS.OK031.HHZ.00,1.1713,136.121,Pg,2015-04-09 19:06:59.020,manual,-0.3,1.34
+GS.KAN05.HHN.01,0.305844,355.112,Pg,2015-04-09 19:06:43.010,manual,0.2,2.85
+GS.KAN01.HHZ.01,0.35537,10.4528,Pg,2015-04-09 19:06:43.770,manual,0.0,2.68
+GS.KAN13.HHZ.01,0.357645,54.0916,Pg,2015-04-09 19:06:43.930,manual,0.1,2.67
+GS.KAN10.HHZ.01,0.379461,327.455,Pg,2015-04-09 19:06:44.870,manual,0.6,2.6
+GS.KAN11.HHZ.01,0.406245,351.683,Pg,2015-04-09 19:06:45.420,manual,0.7,2.52
+GS.KAN08.HHZ.01,0.435463,346.084,Pg,2015-04-09 19:06:46.000,manual,0.7,2.44
+GS.KAN14.HHE.01,0.182337,327.203,Sg,2015-04-09 19:06:43.940,manual,1.0,1.33
+GS.OK032.HH1.00,0.297535,270.207,Sg,2015-04-09 19:06:47.540,manual,0.9,1.27
+OK.CROK.HHE.--,0.319638,201.237,Sg,2015-04-09 19:06:47.850,manual,0.5,1.26

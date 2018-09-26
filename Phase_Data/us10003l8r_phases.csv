@@ -1,0 +1,66 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10003l8r
+#time = 2015-10-03 13:45:57.700000
+#location = 3km ENE of Choctaw, Oklahoma
+#latitude = 35.5092
+#longitude = -97.2372
+#depth = 6.2
+#magnitude = 2.7
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10003l8r
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.CHOK.HHZ.--,0.152521,70.1007,Pg,2015-10-03 13:46:01.130,manual,0.3,3.56
+OK.OKCSW.EHZ.--,0.193858,237.799,Pg,2015-10-03 13:46:01.880,manual,0.3,3.33
+OK.FNO.HHZ.01,0.284745,208.123,Pg,2015-10-03 13:46:03.570,manual,0.3,2.93
+GS.OK029.HHZ.00,0.337158,328.337,Pg,2015-10-03 13:46:04.600,manual,0.3,2.74
+OK.OKCFA.HHZ.--,0.198381,241.879,Pg,2015-10-03 13:46:02.010,manual,0.3,3.31
+OK.BCOK.HHZ.--,0.337128,295.993,Pg,2015-10-03 13:46:04.560,manual,0.3,2.74
+GS.OK030.HHZ.00,0.55731,41.3221,Pg,2015-10-03 13:46:08.280,manual,-0.2,2.15
+OK.CCOK.HHZ.--,0.374359,246.155,Pg,2015-10-03 13:46:05.170,manual,0.2,2.62
+GS.OK031.HHZ.00,0.54873,36.0596,Pg,2015-10-03 13:46:08.070,manual,-0.2,2.17
+GS.OK025.HHZ.00,0.109045,311.17,Pg,2015-10-03 13:46:00.290,manual,0.2,3.82
+OK.QUOK.HHZ.--,0.788363,32.8977,Pg,2015-10-03 13:46:12.290,manual,-0.6,1.75
+OK.X34A.HHZ.--,1.02938,208.5,Pg,2015-10-03 13:46:17.620,manual,0.2,1.47
+OK.CROK.HHZ.--,1.16315,328.876,Pg,2015-10-03 13:46:19.400,manual,-0.6,1.35
+US.WMOK.BHZ.10,1.48086,239.137,Pn,2015-10-03 13:46:24.380,manual,-0.4,1.2
+OK.GC02.EHZ.--,1.43105,339.581,Pn,2015-10-03 13:46:23.670,manual,-0.5,1.21
+TA.TUL1.BHZ.--,1.24248,70.783,Pn,2015-10-03 13:46:19.920,manual,-1.6,1.24
+GS.OK005.HNZ.01,0.150157,14.478,Pg,2015-10-03 13:46:01.240,manual,0.5,3.57
+GS.OK001.HNZ.01,0.0670907,320.537,Pg,2015-10-03 13:45:59.700,manual,0.3,4.12
+OK.FNO.HHE.01,0.284745,208.123,Sg,2015-10-03 13:46:07.980,manual,0.9,1.28
+N4.T35B.BHZ.--,1.52169,22.4587,Pn,2015-10-03 13:46:25.050,manual,-0.3,1.2
+OK.X37A.BHZ.--,1.78493,120.407,Pn,2015-10-03 13:46:29.600,manual,0.6,1.16
+OK.U32A.BHZ.--,1.67436,301.759,Pn,2015-10-03 13:46:27.670,manual,0.2,1.18
+GS.KAN13.HHZ.01,1.51318,352.688,Pn,2015-10-03 13:46:25.760,manual,0.5,1.2
+OK.LOOK.HHZ.--,1.51394,178.201,Pn,2015-10-03 13:46:25.580,manual,0.3,1.2
+OK.CHOK.HHN.--,0.152521,70.1007,Sg,2015-10-03 13:46:03.890,manual,1.0,1.35
+OK.OKCFA.HHN.--,0.198381,241.879,Sg,2015-10-03 13:46:05.230,manual,0.9,1.32

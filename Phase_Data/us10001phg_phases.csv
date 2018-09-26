@@ -1,0 +1,69 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10001phg
+#time = 2015-03-21 19:03:11.600000
+#location = 21km ENE of Mooreland, Oklahoma
+#latitude = 36.5168
+#longitude = -98.9813
+#depth = 5.0
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10001phg
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.U32A.BHZ.--,0.13798,186.752,Pg,2015-03-21 19:03:14.720,manual,0.3,3.64
+OK.BCOK.HHZ.--,1.40416,127.275,Pn,2015-03-21 19:03:37.320,manual,-0.5,1.22
+OK.GC02.EHZ.--,0.961572,69.3372,Pg,2015-03-21 19:03:29.730,manual,-0.3,1.54
+OK.QUOK.HHZ.--,1.86743,99.9618,Pn,2015-03-21 19:03:44.430,manual,0.2,1.15
+GS.OK030.HHZ.00,1.87158,107.652,Pn,2015-03-21 19:03:44.490,manual,0.2,1.15
+N4.R32B.BHZ.--,1.91444,6.36576,Pn,2015-03-21 19:03:45.290,manual,0.4,1.15
+N4.T35B.BHZ.--,2.0238,77.904,Pn,2015-03-21 19:03:47.110,manual,0.7,1.13
+N4.U38B.BHZ.--,3.70445,89.8275,Pn,2015-03-21 19:04:10.180,manual,0.7,0.96
+US.AMTX.BHZ.00,2.73534,234.231,Pn,2015-03-21 19:03:57.540,manual,1.3,1.05
+US.WMOK.BHZ.10,1.78253,174.681,Pn,2015-03-21 19:03:42.880,manual,-0.2,1.17
+GS.KAN10.HHZ.01,0.934006,49.3198,Pg,2015-03-21 19:03:29.120,manual,-0.4,1.57
+GS.KAN08.HHZ.01,1.07635,48.5284,Pg,2015-03-21 19:03:31.640,manual,-0.6,1.43
+OK.CROK.HHZ.--,0.804047,90.5637,Pg,2015-03-21 19:03:26.900,manual,-0.1,1.73
+GS.KAN09.HHZ.01,1.25621,60.1179,Pg,2015-03-21 19:03:34.950,manual,-0.7,1.28
+TA.MSTX.BHZ.--,4.01039,231.79,Pn,2015-03-21 19:04:13.940,manual,0.1,0.93
+OK.X37A.BHZ.--,3.51589,122.101,Pn,2015-03-21 19:04:05.940,manual,-1.0,0.97
+GS.OK029.HHZ.00,1.42913,119.74,Pn,2015-03-21 19:03:37.980,manual,-0.2,1.21
+GS.OK031.HHZ.00,1.82096,107.359,Pn,2015-03-21 19:03:43.980,manual,0.4,1.16
+OK.FNO.HHZ.01,1.79597,133.94,Pn,2015-03-21 19:03:44.090,manual,0.8,1.16
+OK.U32A.BHE.--,0.13798,186.752,Sg,2015-03-21 19:03:17.130,manual,0.8,1.36
+GS.OK032.HHZ.00,0.682859,64.969,Pg,2015-03-21 19:03:24.750,manual,0.0,1.92
+OK.CROK.HHN.--,0.804047,90.5637,Sg,2015-03-21 19:03:38.080,manual,0.6,1.06
+GS.KAN10.HHN.01,0.934006,49.3198,Sg,2015-03-21 19:03:41.900,manual,0.3,1.01
+GS.KAN11.HHZ.01,1.09857,50.9129,Pg,2015-03-21 19:03:31.950,manual,-0.7,1.41
+GS.KAN12.HHZ.01,1.10824,45.0356,Pg,2015-03-21 19:03:32.200,manual,-0.7,1.4
+GS.KAN01.HHZ.01,1.16847,56.6941,Pg,2015-03-21 19:03:33.480,manual,-0.5,1.35
+OK.KAY1.HHZ.--,1.44391,79.687,Pn,2015-03-21 19:03:38.580,manual,0.2,1.21
+US.CBKS.BHZ.00,2.37042,345.568,Pn,2015-03-21 19:03:52.430,manual,1.2,1.09
+US.MIAR.BHZ.00,4.82633,112.459,Pn,2015-03-21 19:04:24.240,manual,-0.7,0.87

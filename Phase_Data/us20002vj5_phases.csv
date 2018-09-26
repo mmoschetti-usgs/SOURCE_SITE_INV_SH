@@ -1,0 +1,76 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20002vj5
+#time = 2015-07-05 01:01:28.100000
+#location = 7km SW of Pawnee, Oklahoma
+#latitude = 36.2893
+#longitude = -96.8654
+#depth = 4.0
+#magnitude = 2.8
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20002vj5
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.QUOK.HHZ.--,0.173321,132.708,Pg,2015-07-05 01:01:32.070,manual,0.6,3.44
+GS.OK031.HHZ.00,0.336181,176.361,Pg,2015-07-05 01:01:35.120,manual,0.5,2.74
+GS.OK025.HHZ.00,0.80403,208.623,Pg,2015-07-05 01:01:43.350,manual,-0.2,1.73
+GS.OK029.HHZ.00,0.68556,224.352,Pg,2015-07-05 01:01:41.080,manual,-0.2,1.91
+OK.CHOK.HHZ.--,0.743854,192.4,Pg,2015-07-05 01:01:41.930,manual,-0.4,1.82
+OK.CROK.HHZ.--,0.92728,283.736,Pg,2015-07-05 01:01:45.710,manual,-0.2,1.58
+OK.BLOK.HHZ.--,0.54822,329.196,Sg,2015-07-05 01:01:46.290,automatic,0.5,1.16
+OK.BCOK.HHZ.--,0.873275,223.927,Pg,2015-07-05 01:01:45.470,manual,0.6,1.64
+OK.OKCSW.EHZ.--,0.997089,207.979,Pg,2015-07-05 01:01:46.690,manual,-0.5,1.5
+OK.OKCFA.HHZ.--,0.993606,208.8,Pg,2015-07-05 01:01:47.240,manual,0.1,1.51
+OK.FNO.HHZ.01,1.11807,203.092,Pg,2015-07-05 01:01:49.450,manual,-0.1,1.39
+GS.OK032.HHZ.00,1.19864,295.764,Pg,2015-07-05 01:01:50.110,manual,-1.0,1.32
+OK.X34A.HHZ.--,1.86045,205.399,Pn,2015-07-05 01:02:01.080,manual,0.4,1.16
+AG.HHAR.HHZ.00,2.36355,89.3107,Pn,2015-07-05 01:02:08.270,manual,0.7,1.09
+N4.T35B.BHZ.--,0.6873,24.3436,Pg,2015-07-05 01:01:41.110,manual,-0.2,1.91
+N4.U38B.BHZ.--,2.00706,84.9853,Pn,2015-07-05 01:02:03.100,manual,0.4,1.14
+OK.U32A.BHZ.--,1.72706,273.62,Sg,2015-07-05 01:02:22.070,manual,-0.3,1.49
+US.MIAR.BHZ.00,3.20031,121.971,Lg,2015-07-05 01:03:13.000,automatic,0.2,0.0
+AG.WHAR.HHZ.00,3.8516,103.656,LR,2015-07-05 01:03:29.760,automatic,0.0,0.0
+TA.X40A.BHZ.--,3.75208,117.45,LR,2015-07-05 01:03:26.350,automatic,0.0,0.0
+GS.KAN13.HHZ.01,0.874127,325.891,Pg,2015-07-05 01:01:44.430,manual,-0.4,1.64
+OK.GORE.HHZ.--,1.00213,299.943,Pg,2015-07-05 01:01:46.610,manual,-0.7,1.5
+GS.KAN17.HHZ.01,1.04424,316.439,Pg,2015-07-05 01:01:48.210,manual,0.1,1.46
+GS.KAN05.HHZ.01,1.15044,315.598,Pg,2015-07-05 01:01:49.720,manual,-0.4,1.36
+GS.KAN08.HHZ.01,1.28977,316.831,Pg,2015-07-05 01:01:51.640,manual,-1.2,1.25
+OK.U32A.BHZ.--,1.72706,273.62,Pn,2015-07-05 01:01:59.250,manual,0.4,1.17
+OK.X37A.BHZ.--,2.08943,143.84,Pn,2015-07-05 01:02:04.230,manual,0.4,1.13
+US.WMOK.BHZ.10,2.19939,225.828,Pn,2015-07-05 01:02:05.750,manual,0.4,1.11
+N4.R32B.BHZ.--,2.58777,325.924,Pn,2015-07-05 01:02:11.350,manual,0.7,1.07
+TA.W39A.BHZ.--,2.73366,112.614,Pn,2015-07-05 01:02:13.360,manual,0.7,1.05
+N4.S39B.BHZ.--,3.16253,62.69,Pn,2015-07-05 01:02:19.260,manual,0.7,1.01
+US.MIAR.BHZ.00,3.20031,121.971,Pn,2015-07-05 01:02:19.240,manual,0.2,1.01
+TA.U40A.BHZ.--,3.24041,87.6297,Pn,2015-07-05 01:02:19.000,manual,-0.6,1.0
+TA.X40A.BHZ.--,3.75208,117.45,Pn,2015-07-05 01:02:26.570,manual,-0.1,0.95
+AG.WHAR.HHZ.00,3.8516,103.656,Pn,2015-07-05 01:02:28.460,manual,0.5,0.95
+AG.FCAR.HHZ.00,3.86063,94.5233,Pn,2015-07-05 01:02:28.850,manual,0.7,0.94

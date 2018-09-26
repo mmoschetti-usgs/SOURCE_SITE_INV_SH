@@ -1,0 +1,50 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us2000645y
+#time = 2016-06-13 07:37:39.300000
+#location = 33km NW of Fairview, Oklahoma
+#latitude = 36.4737
+#longitude = -98.7537
+#depth = 0.3
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us2000645y
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK040.HHZ.00,0.0648077,81.8339,Pg,2016-06-13 07:37:41.360,manual,0.8,4.14
+GS.OK043.HHZ.00,0.0407362,170.884,Pg,2016-06-13 07:37:40.770,manual,0.7,4.34
+GS.OK038.HHZ.00,0.0102969,64.1529,Pg,2016-06-13 07:37:39.500,manual,-0.1,4.61
+OK.GORE.HHZ.--,0.719652,64.1301,Pg,2016-06-13 07:37:52.660,manual,-0.4,2.43
+OK.NOKA.HHZ.--,0.215423,318.289,Pg,2016-06-13 07:37:44.040,manual,0.6,3.23
+OK.U32A.BHZ.--,0.220792,244.873,Pg,2016-06-13 07:37:44.050,manual,0.5,3.2
+GS.OK038.HH1.00,0.0102969,64.1529,Sg,2016-06-13 07:37:40.310,manual,0.5,1.44
+GS.OK043.HH2.00,0.0407362,170.884,Sg,2016-06-13 07:37:41.880,manual,1.2,1.42
+GS.OK040.HH1.00,0.0648077,81.8339,Sg,2016-06-13 07:37:42.830,manual,1.4,1.4
+OK.U32A.BHN.--,0.220792,244.873,Sg,2016-06-13 07:37:48.010,manual,1.6,1.31

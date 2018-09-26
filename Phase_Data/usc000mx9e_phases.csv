@@ -1,0 +1,63 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000mx9e
+#time = 2014-02-24 11:22:46
+#location = 5km NNE of Spencer, Oklahoma
+#latitude = 35.5680
+#longitude = -97.3480
+#depth = 5.0
+#magnitude = 2.7
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000mx9e
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.OKCSW.EHZ.--,0.178004,204.397,Pg,2014-02-24 11:22:49.750,manual,0.2,0.0
+GS.ADOK.HNZ.--,0.0859044,347.349,Pg,2014-02-24 11:22:48.160,manual,0.3,0.0
+GS.OK025.HHZ.00,0.0154486,32.2075,Pg,2014-02-24 11:22:47.020,manual,0.0,0.0
+GS.OK027.HHZ.00,0.152964,20.0368,Pg,2014-02-24 11:22:49.420,manual,0.3,0.0
+GS.OK026.HHZ.00,0.17417,209.007,Pg,2014-02-24 11:22:49.640,manual,0.2,0.0
+GS.OK028.HHZ.00,0.233766,91.6046,Pg,2014-02-24 11:22:50.890,manual,0.3,0.0
+OK.BCOK.HHZ.--,0.230575,292.648,Pg,2014-02-24 11:22:50.680,manual,0.2,0.0
+GS.OK029.HHZ.00,0.244144,339.147,Pg,2014-02-24 11:22:51.000,manual,0.2,0.0
+OK.FNO.HHZ.01,0.312941,187.997,Pg,2014-02-24 11:22:52.680,manual,0.6,0.0
+OK.W35A.EHZ.--,0.567,136.818,Pg,2014-02-24 11:22:56.760,manual,-0.1,0.0
+OK.X34A.HHZ.--,1.04343,202.528,Pg,2014-02-24 11:23:05.920,manual,-0.1,0.029
+OK.CROK.HHZ.--,1.06722,331.334,Pg,2014-02-24 11:23:05.900,manual,-0.6,0.032
+TA.TUL1.BHZ.--,1.31122,74.4428,Pn,2014-02-24 11:23:09.510,manual,-1.5,0.042
+US.WMOK.BHZ.10,1.43671,235.213,Pn,2014-02-24 11:23:11.810,manual,-0.9,0.031
+OK.U32A.BHZ.--,1.56665,301.607,Pn,2014-02-24 11:23:14.170,manual,-0.4,0.04
+GS.OK025.HH2.00,0.0154486,32.2075,Sg,2014-02-24 11:22:47.910,manual,0.3,0.139
+GS.ADOK.HNE.--,0.0859044,347.349,Sg,2014-02-24 11:22:49.930,manual,0.8,0.071
+GS.OK027.HH2.00,0.152964,20.0368,Sg,2014-02-24 11:22:52.120,manual,1.0,0.06
+OK.OKCSW.EHN.--,0.178004,204.397,Sg,2014-02-24 11:22:52.730,manual,0.8,0.084
+OK.BCOK.HHE.--,0.230575,292.648,Sg,2014-02-24 11:22:54.380,manual,0.8,0.107
+GS.OK028.HH1.00,0.233766,91.6046,Sg,2014-02-24 11:22:54.700,manual,1.0,0.114
+GS.OK029.HH2.00,0.244144,339.147,Sg,2014-02-24 11:22:54.920,manual,0.9,0.063
+OK.FNO.HHE.01,0.312941,187.997,Sg,2014-02-24 11:22:57.530,manual,1.3,0.065

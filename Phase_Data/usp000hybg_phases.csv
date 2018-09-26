@@ -1,0 +1,48 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usp000hybg
+#time = 2011-03-23 00:41:16
+#location = Oklahoma
+#latitude = 35.5710
+#longitude = -97.0730
+#depth = 3.2
+#magnitude = 2.8
+#magtype = md
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usp000hybg
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+IR.V34A.--.--,0.45,306.1,Pg,2011-03-23 00:41:24.850,manual,0.2,1.0
+IR.W34A.--.--,0.66,239.9,Pg,2011-03-23 00:41:28.700,manual,0.0,1.0
+IR.U34A.--.--,0.94,336.7,Pg,2011-03-23 00:41:33.920,manual,-0.2,1.0
+IR.TUL1.--.--,1.1,71.6,Pg,2011-03-23 00:41:35.940,manual,-1.1,1.0
+IR.WMOK.--.--,1.63,239.8,Pn,2011-03-23 00:41:44.860,manual,-0.7,1.0
+IR.ABTX.--.--,3.63,216.7,Pg,2011-03-23 00:42:22.640,manual,-3.0,1.0
+IR.MIAR.--.--,3.05,108.6,Sn,2011-03-23 00:42:41.600,manual,-0.4,1.0
+IR.KSU1.--.--,3.54,5.8,Sg,2011-03-23 00:43:07.140,manual,-2.7,1.0

@@ -1,0 +1,57 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usp000jfma
+#time = 2012-02-29 22:20:42
+#location = Oklahoma
+#latitude = 35.7250
+#longitude = -97.1680
+#depth = 4.9
+#magnitude = 3.0
+#magtype = mblg
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usp000jfma
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+IR.OK005.--.--,0.07,194.8,Pg,2012-02-29 22:20:43.580,manual,-0.1,1.0
+IR.OK002.--.--,0.18,187.5,Pg,2012-02-29 22:20:45.900,manual,0.4,1.0
+IR.OK020.--.--,0.3,128.2,Pg,2012-02-29 22:20:47.950,manual,0.1,1.0
+IR.OK021.--.--,0.39,108.4,Pg,2012-02-29 22:20:49.560,manual,0.1,1.0
+IR.OK022.--.--,0.45,114.5,Pg,2012-02-29 22:20:50.680,manual,0.0,1.0
+IR.TUL1.--.--,1.13,80.2,Pg,2012-02-29 22:21:02.310,manual,-1.4,1.0
+IR.WMOK.--.--,1.65,233.7,Pn,2012-02-29 22:21:11.170,manual,-0.5,1.0
+IR.HHAR.--.--,2.68,77.1,Pn,2012-02-29 22:21:26.150,manual,0.4,1.0
+IR.MIAR.--.--,3.17,110.7,Pn,2012-02-29 22:21:32.840,manual,0.3,1.0
+IR.KSU1.--.--,3.4,7.4,Pn,2012-02-29 22:21:35.530,manual,-0.2,1.0
+IR.CBKS.--.--,3.7,327.2,Pn,2012-02-29 22:21:40.800,manual,0.9,1.0
+IR.AMTX.--.--,3.78,258.5,Pn,2012-02-29 22:21:41.280,manual,0.2,1.0
+IR.ABTX.--.--,3.71,214.3,Pn,2012-02-29 22:21:41.320,manual,1.3,1.0
+IR.X301.--.--,3.92,95.7,Pn,2012-02-29 22:21:43.370,manual,0.5,1.0
+IR.WHAR.--.--,4.0,94.8,Pn,2012-02-29 22:21:44.410,manual,0.4,1.0
+IR.MSTX.--.--,4.93,250.8,Pn,2012-02-29 22:21:57.020,manual,0.2,1.0
+IR.JCT.--.--,5.68,203.6,Pn,2012-02-29 22:22:04.260,manual,-2.8,1.0

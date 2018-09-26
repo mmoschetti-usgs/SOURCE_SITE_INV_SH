@@ -1,0 +1,71 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20002w7b
+#time = 2015-07-08 23:10:08.580000
+#location = 29km SSE of Coldwater, Kansas
+#latitude = 37.0101
+#longitude = -99.2459
+#depth = 5.0
+#magnitude = 2.7
+#magtype = mb_lg
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20002w7b
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+US.CBKS.BHZ.00,1.84237,347.969,Pn,2015-07-08 23:10:40.940,manual,0.1,1.16
+OK.U32A.BHZ.--,0.659343,162.587,Pg,2015-07-08 23:10:20.490,manual,-0.8,1.95
+GS.OK032.HHZ.00,0.855153,103.622,Pg,2015-07-08 23:10:24.940,manual,0.0,1.67
+OK.CROK.HHZ.--,1.13245,116.072,Pg,2015-07-08 23:10:29.870,manual,-0.4,1.38
+OK.GORE.HHZ.--,1.065,101.755,Pg,2015-07-08 23:10:29.170,manual,0.2,1.44
+GS.KAN10.HHZ.01,0.927425,82.6432,Pg,2015-07-08 23:10:26.370,manual,0.0,1.58
+GS.KAN08.HHZ.01,1.04182,77.6388,Pg,2015-07-08 23:10:28.470,manual,-0.1,1.46
+GS.KAN11.HHZ.01,1.08313,79.1978,Pg,2015-07-08 23:10:29.270,manual,-0.1,1.42
+GS.KAN05.HHZ.01,1.1032,84.4734,Pg,2015-07-08 23:10:29.610,manual,-0.1,1.4
+OK.GC02.EHZ.--,1.12205,97.6935,Pg,2015-07-08 23:10:29.780,manual,-0.3,1.39
+GS.KAN17.HHZ.01,1.18578,87.9141,Pg,2015-07-08 23:10:31.090,manual,-0.2,1.33
+GS.KAN09.HHZ.01,1.30781,83.9914,Pn,2015-07-08 23:10:33.450,manual,0.0,1.23
+N4.R32B.BHZ.--,1.47238,16.5779,Pn,2015-07-08 23:10:35.230,manual,-0.5,1.21
+OK.U32A.BHN.--,0.659343,162.587,Sg,2015-07-08 23:10:30.260,manual,0.4,1.11
+GS.KS20.HHZ.00,1.36976,80.2821,Pn,2015-07-08 23:10:34.180,manual,-0.1,1.22
+GS.KAN13.HHZ.01,1.41527,89.3547,Pn,2015-07-08 23:10:35.050,manual,0.1,1.22
+OK.BLOK.HHZ.--,1.64721,98.0848,Pn,2015-07-08 23:10:38.990,manual,0.9,1.18
+GS.OK029.HHZ.00,1.88525,129.434,Pn,2015-07-08 23:10:40.580,manual,-0.8,1.15
+OK.BCOK.HHZ.--,1.88957,135.138,Pn,2015-07-08 23:10:41.410,manual,0.0,1.15
+OK.CCOK.HHZ.--,2.09191,141.59,Pn,2015-07-08 23:10:44.370,manual,0.2,1.13
+GS.OK025.HHZ.00,2.09984,132.207,Pn,2015-07-08 23:10:44.720,manual,0.4,1.12
+OK.QUOK.HHZ.--,2.20733,111.524,Pn,2015-07-08 23:10:45.640,manual,-0.2,1.11
+OK.CHOK.HHZ.--,2.28168,128.676,Pn,2015-07-08 23:10:47.350,manual,0.5,1.1
+OK.FNO.HHZ.01,2.29974,138.963,Pn,2015-07-08 23:10:47.170,manual,0.1,1.1
+US.WMOK.BHZ.10,2.29863,170.403,Pn,2015-07-08 23:10:47.120,manual,0.1,1.1
+OK.LOV7.HHZ.--,3.40996,151.18,Pn,2015-07-08 23:11:03.150,manual,0.9,0.98
+OK.LOOK.HHZ.--,3.45052,150.153,Pn,2015-07-08 23:11:02.880,manual,0.0,0.98
+US.OGNE.BHZ.00,4.48929,331.931,Pn,2015-07-08 23:11:17.990,manual,0.8,0.89
+GS.OK031.HHZ.00,2.20795,117.819,Pn,2015-07-08 23:10:46.050,manual,0.3,1.11
+OK.X34A.HHZ.--,2.66426,154.041,Pn,2015-07-08 23:10:52.910,manual,0.8,1.06
+TA.KSCO.BHZ.--,3.33503,307.828,Pn,2015-07-08 23:11:00.820,manual,-0.6,0.99

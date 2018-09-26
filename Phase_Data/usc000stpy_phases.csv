@@ -1,0 +1,68 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000stpy
+#time = 2014-11-03 08:09:23.900000
+#location = 4km NNW of Medford, Oklahoma
+#latitude = 36.8457
+#longitude = -97.7557
+#depth = 5.0
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000stpy
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN14.HHZ.01,0.199772,303.778,Pg,2014-11-03 08:09:28.420,manual,0.6,0.0
+GS.KAN09.HHZ.01,0.310032,20.7419,Pg,2014-11-03 08:09:30.420,manual,0.5,0.0
+OK.CROK.HHZ.--,0.386445,208.343,Pg,2014-11-03 08:09:31.540,manual,0.2,0.0
+OK.KNG1.EHZ.--,0.713633,176.084,Pg,2014-11-03 08:09:37.560,manual,0.0,0.058
+GS.OK025.HHZ.00,1.30645,164.888,Pn,2014-11-03 08:09:48.240,manual,-0.6,0.025
+OK.OKCSW.EHZ.--,1.46006,169.76,Pn,2014-11-03 08:09:50.620,manual,-0.3,0.024
+OK.FNO.HHZ.01,1.61081,169.622,Pn,2014-11-03 08:09:52.510,manual,-0.5,0.024
+GS.OK026.HHZ.00,1.44855,170.118,Pn,2014-11-03 08:09:49.820,manual,-1.0,0.025
+N4.T35B.BHZ.--,0.999766,85.591,Pg,2014-11-03 08:09:42.810,manual,-0.3,0.058
+TA.TUL1.BHZ.--,1.83921,119.912,Pn,2014-11-03 08:09:55.240,manual,-0.9,0.027
+N4.R32B.BHZ.--,1.74726,334.563,Pn,2014-11-03 08:09:54.850,manual,-0.1,0.035
+GS.KAN14.HHN.01,0.199772,303.778,Sg,2014-11-03 08:09:31.390,manual,0.9,0.102
+GS.KAN13.HHZ.01,0.278279,53.0674,Pg,2014-11-03 08:09:29.770,manual,0.5,0.0
+GS.KAN13.HHN.01,0.278279,53.0674,Sg,2014-11-03 08:09:33.750,manual,0.8,0.106
+GS.KAN05.HHZ.01,0.278526,340.448,Pg,2014-11-03 08:09:29.280,manual,0.0,0.0
+GS.KAN05.HHE.01,0.278526,340.448,Sg,2014-11-03 08:09:34.000,manual,1.0,0.073
+GS.KAN09.HHE.01,0.310032,20.7419,Sg,2014-11-03 08:09:34.990,manual,1.0,0.079
+OK.CROK.HHE.--,0.386445,208.343,Sg,2014-11-03 08:09:36.970,manual,0.6,0.084
+GS.KAN10.HHZ.01,0.388256,315.677,Pg,2014-11-03 08:09:31.760,manual,0.4,0.0
+GS.KAN10.HHE.01,0.388256,315.677,Sg,2014-11-03 08:09:37.370,manual,0.9,0.081
+N4.T35B.BHE.--,0.999766,85.591,Sg,2014-11-03 08:09:55.720,manual,-0.3,0.071
+GS.OK029.HHZ.00,1.07479,166.848,Pg,2014-11-03 08:09:44.000,manual,-0.5,0.034
+GS.OK029.HH1.00,1.07479,166.848,Sg,2014-11-03 08:09:58.350,manual,-0.1,0.044
+OK.U32A.BHZ.--,1.10501,245.471,Pg,2014-11-03 08:09:44.630,manual,-0.5,0.048
+OK.U32A.BHN.--,1.10501,245.471,Sg,2014-11-03 08:09:59.670,manual,0.2,0.063
+OK.BCOK.HHZ.--,1.19246,174.261,Pg,2014-11-03 08:09:46.220,manual,-0.6,0.029
+OK.BCOK.HHN.--,1.19246,174.261,Sg,2014-11-03 08:10:02.350,manual,0.1,0.041
+GS.OK028.HHZ.00,1.39955,156.139,Pn,2014-11-03 08:09:49.750,manual,-0.3,0.025

@@ -1,0 +1,76 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = ismpkansas70208058
+#time = 2016-09-20 16:01:08.610000
+#location = 4km WSW of Harper, Kansas
+#latitude = 37.2772
+#longitude = -98.0727
+#depth = 5.8
+#magnitude = 2.4
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/ismpkansas70208058
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN05.HHN.01,0.2322,136.5,S,2016-09-20 16:01:17.510,automatic,0.68,0.0
+GS.KAN05.HHZ.01,0.2322,136.5,P,2016-09-20 16:01:16.950,automatic,3.47,0.0
+GS.KAN16.HHZ.01,0.05185,173.0,P,2016-09-20 16:01:10.210,manual,-0.04,0.21
+GS.KAN16.HHE.01,0.05185,173.0,S,2016-09-20 16:01:11.190,manual,-0.18,0.05
+GS.KAN12.HHZ.01,0.06288,71.2,P,2016-09-20 16:01:10.480,manual,0.03,0.21
+GS.KAN12.HHE.01,0.06288,71.2,S,2016-09-20 16:01:11.690,manual,0.02,0.02
+GS.KAN08.HHZ.01,0.09552,121.9,P,2016-09-20 16:01:10.970,manual,-0.01,0.21
+GS.KAN08.HHE.01,0.09552,121.9,S,2016-09-20 16:01:12.430,manual,-0.12,0.02
+GS.KAN10.HHZ.01,0.1544,186.6,P,2016-09-20 16:01:12.060,manual,0.03,0.21
+GS.KAN10.HHN.01,0.1544,186.6,S,2016-09-20 16:01:14.470,manual,0.13,0.05
+GS.KAN06.HHZ.01,0.1733,99.6,P,2016-09-20 16:01:12.400,manual,0.03,0.21
+GS.KAN06.HHN.01,0.1733,99.6,S,2016-09-20 16:01:15.020,manual,0.12,0.02
+NQ.KAN02.HNZ.02,0.1737,117.1,P,2016-09-20 16:01:12.460,manual,0.04,0.11
+NQ.KAN02.HNN.02,0.1737,117.1,S,2016-09-20 16:01:15.060,manual,0.07,0.05
+GS.KAN01.HHZ.01,0.2792,116.3,P,2016-09-20 16:01:14.360,manual,0.04,0.21
+GS.KAN01.HHN.01,0.2792,116.3,S,2016-09-20 16:01:18.270,manual,0.05,0.05
+GS.KAN14.HHZ.01,0.3316,164.7,P,2016-09-20 16:01:15.350,manual,0.03,0.21
+GS.KAN14.HHE.01,0.3316,164.7,S,2016-09-20 16:01:20.140,manual,0.26,0.05
+GS.KAN17.HHZ.01,0.3386,133.4,P,2016-09-20 16:01:15.740,manual,0.28,0.0
+GS.KAN17.HHN.01,0.3386,133.4,S,2016-09-20 16:01:20.180,manual,0.02,0.05
+GS.KAN09.HHZ.01,0.3891,111.2,P,2016-09-20 16:01:16.350,manual,-0.05,0.21
+GS.KAN09.HHN.01,0.3891,111.2,S,2016-09-20 16:01:21.810,manual,0.11,0.02
+GS.KS20.HHZ.00,0.4163,96.4,P,2016-09-20 16:01:16.880,manual,-0.04,0.21
+GS.KS20.HH2.00,0.4163,96.4,S,2016-09-20 16:01:22.590,manual,0.04,0.05
+OK.GC02.EHZ.,0.4578,158.2,P,2016-09-20 16:01:17.620,manual,-0.07,0.11
+OK.GC02.EHE.,0.4578,158.2,S,2016-09-20 16:01:23.910,manual,0.05,0.02
+GS.OK032.HHZ.00,0.4852,193.1,P,2016-09-20 16:01:18.140,manual,-0.06,0.11
+GS.OK032.HH1.00,0.4852,193.1,S,2016-09-20 16:01:25.110,manual,0.38,0.0
+OK.CROK.HHZ.,0.7743,174.7,P,2016-09-20 16:01:23.350,manual,-0.01,0.06
+OK.BLOK.HHZ.,0.8585,126.8,P,2016-09-20 16:01:24.920,manual,0.0,0.0
+OK.BLOK.HHE.,0.8585,126.8,S,2016-09-20 16:01:36.280,manual,-0.13,0.0
+OK.U32A.BHZ.,1.165,219.9,P,2016-09-20 16:01:30.600,manual,0.25,0.0
+N4.R32B.HHZ.,1.25,336.4,P,2016-09-20 16:01:32.110,manual,0.23,0.0
+N4.R32B.HHN.,1.25,336.4,S,2016-09-20 16:01:48.740,manual,0.19,0.0
+N4.T35B.HHZ.,1.299,105.7,P,2016-09-20 16:01:32.830,manual,0.11,0.0
+N4.T35B.HHE.,1.299,105.7,S,2016-09-20 16:01:49.790,manual,-0.03,0.0

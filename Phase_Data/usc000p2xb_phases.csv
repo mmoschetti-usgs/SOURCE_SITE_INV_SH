@@ -1,0 +1,68 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000p2xb
+#time = 2014-04-02 23:17:11.500000
+#location = 20km N of Crescent, Oklahoma
+#latitude = 36.1387
+#longitude = -97.6260
+#depth = 5.0
+#magnitude = 2.7
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000p2xb
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK027.HHZ.00,0.508463,146.768,Pg,2014-04-02 23:17:21.690,manual,0.4,0.0
+OK.CROK.HHZ.--,0.465537,321.79,Pg,2014-04-02 23:17:21.000,automatic,0.5,0.0
+GS.OK025.HHZ.00,0.603626,157.104,Pg,2014-04-02 23:17:23.420,automatic,0.3,0.0
+OK.OKCSW.EHZ.--,0.747429,168.142,Pg,2014-04-02 23:17:26.060,automatic,0.2,0.092
+GS.OK026.HHZ.00,0.735679,168.822,Pg,2014-04-02 23:17:25.780,manual,0.2,0.096
+OK.FNO.HHZ.01,0.898227,168.18,Pg,2014-04-02 23:17:28.890,manual,0.2,0.073
+GS.OK028.HHZ.00,0.736609,141.321,Pg,2014-04-02 23:17:25.830,manual,0.2,0.069
+OK.W35A.EHZ.--,1.15871,147.893,Pg,2014-04-02 23:17:32.920,automatic,-0.8,0.034
+OK.X34A.HHZ.--,1.54352,186.34,Pn,2014-04-02 23:17:40.690,automatic,1.0,0.061
+US.WMOK.BHZ.10,1.68597,214.34,Pn,2014-04-02 23:17:42.620,automatic,1.0,0.093
+AG.HHAR.HHZ.00,2.98426,86.1654,Pn,2014-04-02 23:18:00.900,manual,1.4,0.059
+TA.TUL1.BHZ.--,1.50412,98.1716,Pn,2014-04-02 23:17:38.850,automatic,-0.3,0.069
+N4.T35B.BHZ.--,1.18633,48.8195,Pg,2014-04-02 23:17:34.300,automatic,0.0,0.198
+N4.U38B.BHZ.--,2.63496,82.5035,Pn,2014-04-02 23:17:55.890,manual,1.2,0.066
+TA.U40A.BHZ.--,3.8636,85.3687,Pn,2014-04-02 23:18:11.680,manual,0.1,0.05
+GS.OK029.HH2.00,0.368516,157.824,Pg,2014-04-02 23:17:17.650,manual,-1.0,0.0
+GS.OK029.HH2.00,0.368516,157.824,Sg,2014-04-02 23:17:24.280,manual,0.8,0.087
+OK.CROK.HHN.--,0.465537,321.79,Sg,2014-04-02 23:17:27.460,manual,0.9,0.08
+GS.OK027.HH2.00,0.508463,146.768,Sg,2014-04-02 23:17:28.750,manual,0.8,0.072
+GS.OK028.HH2.00,0.736609,141.321,Sg,2014-04-02 23:17:35.870,manual,0.7,0.067
+OK.U32A.BHN.--,1.13732,282.604,Sn,2014-04-02 23:17:48.870,manual,-1.3,0.125
+OK.U32A.BHZ.--,1.13732,282.604,Pg,2014-04-02 23:17:32.690,manual,-0.6,0.132
+OK.X37A.BHZ.--,2.40531,129.338,Pn,2014-04-02 23:17:52.280,manual,0.8,0.03
+N4.R32B.BHZ.--,2.43839,339.537,Pn,2014-04-02 23:17:51.530,manual,-0.5,0.025
+US.MIAR.BHZ.00,3.67209,114.468,Pn,2014-04-02 23:18:09.420,manual,0.5,0.032
+AG.WHAR.HHZ.00,4.42437,99.4671,Pn,2014-04-02 23:18:19.760,manual,0.5,0.037
+N4.R40B.BHZ.--,4.78519,61.7277,Sn,2014-04-02 23:19:18.930,manual,-1.1,0.031
+N4.R40B.BHZ.--,4.78519,61.7277,Pn,2014-04-02 23:18:24.310,manual,0.1,0.049

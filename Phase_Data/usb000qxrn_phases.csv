@@ -1,0 +1,73 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000qxrn
+#time = 2014-05-21 02:20:14.100000
+#location = Oklahoma
+#latitude = 36.6048
+#longitude = -97.8245
+#depth = 5.0
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000qxrn
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN10.HHZ.01,0.561358,337.338,Pg,2014-05-21 02:20:24.260,manual,-0.6,0.0
+GS.OK029.HHZ.00,0.860162,159.554,Pg,2014-05-21 02:20:30.520,manual,-0.1,0.086
+GS.OK025.HHZ.00,1.09496,158.76,Pg,2014-05-21 02:20:34.790,manual,-0.3,0.061
+GS.OK027.HHZ.00,0.99268,153.675,Pg,2014-05-21 02:20:33.100,manual,0.0,0.065
+GS.OK028.HHZ.00,1.21114,149.086,Pn,2014-05-21 02:20:36.070,manual,-1.6,0.037
+US.KSU1.BHZ.10,2.67102,20.7353,Pn,2014-05-21 02:20:57.620,manual,-0.2,0.045
+TA.TUL1.BHZ.--,1.78298,112.268,Pn,2014-05-21 02:20:44.910,manual,-0.7,0.034
+AG.HHAR.HHZ.00,3.14855,94.716,Pn,2014-05-21 02:21:03.940,manual,-0.4,0.034
+OK.X37A.BHZ.--,2.83565,134.45,Pn,2014-05-21 02:20:59.670,manual,-0.4,0.023
+N4.U38B.BHZ.--,2.77484,92.3859,Pn,2014-05-21 02:20:58.970,manual,-0.3,0.037
+GS.KAN10.HHZ.01,0.561358,337.338,Sg,2014-05-21 02:20:32.940,manual,0.7,0.112
+GS.OK029.HHZ.00,0.860162,159.554,Sg,2014-05-21 02:20:41.930,manual,0.2,0.095
+OK.U32A.BHZ.--,0.974681,257.013,Pg,2014-05-21 02:20:32.620,manual,-0.2,0.188
+OK.U32A.BHZ.--,0.974681,257.013,Sg,2014-05-21 02:20:45.380,manual,-0.1,0.227
+GS.OK027.HHZ.00,0.99268,153.675,Sg,2014-05-21 02:20:45.770,manual,-0.3,0.079
+GS.OK025.HHZ.00,1.09496,158.76,Sg,2014-05-21 02:20:49.030,manual,-0.3,0.08
+GS.OK028.HHZ.00,1.21114,149.086,Sg,2014-05-21 02:20:52.650,manual,-0.4,0.066
+TA.TUL1.BHZ.--,1.78298,112.268,Sg,2014-05-21 02:21:11.070,manual,1.2,0.308
+N4.R32B.BHZ.--,1.94663,339.036,Pn,2014-05-21 02:20:47.340,manual,-0.5,0.036
+N4.R32B.BHZ.--,1.94663,339.036,Sn,2014-05-21 02:21:12.110,manual,-0.6,0.037
+US.WMOK.BHZ.10,2.01897,202.962,Pn,2014-05-21 02:20:49.240,manual,0.4,0.076
+US.KSU1.BHZ.10,2.67102,20.7353,Sn,2014-05-21 02:21:30.460,manual,-0.1,0.039
+US.CBKS.BHZ.00,2.67669,326.057,Pn,2014-05-21 02:20:57.710,manual,-0.2,0.031
+US.CBKS.BHZ.00,2.67669,326.057,Sn,2014-05-21 02:21:30.050,manual,-0.7,0.025
+N4.U38B.BHZ.--,2.77484,92.3859,Sn,2014-05-21 02:21:32.890,manual,-0.2,0.032
+AG.HHAR.HHZ.00,3.14855,94.716,Sn,2014-05-21 02:21:43.470,manual,1.1,0.026
+TA.U40A.BHZ.--,4.01366,92.0616,Pn,2014-05-21 02:21:15.620,manual,-0.6,0.029
+TA.U40A.BHZ.--,4.01366,92.0616,Sn,2014-05-21 02:22:03.240,manual,-0.4,0.019
+US.MIAR.BHZ.00,4.02611,119.436,Pn,2014-05-21 02:21:16.420,manual,0.0,0.02
+US.MIAR.BHZ.00,4.02611,119.436,Sn,2014-05-21 02:22:03.910,manual,0.0,0.012
+N4.P38B.BHZ.--,4.53264,47.0051,Pn,2014-05-21 02:21:23.480,manual,0.1,0.036
+AG.WHAR.HHZ.00,4.67852,104.645,Pn,2014-05-21 02:21:25.390,manual,0.0,0.022
+AG.WHAR.HHZ.00,4.67852,104.645,Sn,2014-05-21 02:22:19.960,manual,-0.1,0.013

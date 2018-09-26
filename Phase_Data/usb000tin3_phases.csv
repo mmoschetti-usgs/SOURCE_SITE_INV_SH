@@ -1,0 +1,69 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000tin3
+#time = 2015-01-27 16:02:56
+#location = 20km S of Medford, Oklahoma
+#latitude = 36.6275
+#longitude = -97.7068
+#depth = 5.0
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000tin3
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.CROK.HHZ.--,0.25418,241.255,Pg,2015-01-27 16:03:01.180,manual,0.2,3.05
+GS.KAN14.HHZ.01,0.387708,328.041,Pg,2015-01-27 16:03:03.600,manual,0.1,2.58
+GS.KAN01.HHZ.01,0.526571,355.457,Pg,2015-01-27 16:03:06.240,manual,0.1,2.22
+GS.KAN13.HHZ.01,0.426306,25.4661,Pg,2015-01-27 16:03:04.430,manual,0.2,2.47
+GS.KAN10.HHZ.01,0.584834,327.949,Pg,2015-01-27 16:03:07.220,manual,0.0,2.09
+NQ.KAN02.HNZ.01,0.585562,346.443,Pg,2015-01-27 16:03:07.310,manual,0.0,2.09
+GS.KAN11.HHZ.01,0.600658,344.069,Pg,2015-01-27 16:03:07.260,manual,-0.3,2.06
+GS.KAN08.HHZ.01,0.634409,340.593,Pg,2015-01-27 16:03:07.890,manual,-0.3,2.0
+GS.KAN12.HHZ.01,0.708155,340.857,Pg,2015-01-27 16:03:09.020,manual,-0.6,1.87
+GS.OK029.HHZ.00,0.853854,166.123,Pg,2015-01-27 16:03:12.130,manual,-0.3,1.67
+OK.QUOK.HHZ.--,0.925496,119.164,Pg,2015-01-27 16:03:13.530,manual,-0.2,1.58
+GS.OK031.HHZ.00,0.971801,133.575,Pg,2015-01-27 16:03:14.320,manual,-0.3,1.53
+OK.BCOK.HHZ.--,0.972006,175.314,Pg,2015-01-27 16:03:14.300,manual,-0.3,1.53
+GS.OK027.HHZ.00,0.975678,159.328,Pg,2015-01-27 16:03:14.440,manual,-0.3,1.53
+N4.T35B.BHZ.--,1.00177,72.9265,Pg,2015-01-27 16:03:15.100,manual,-0.1,1.5
+NQ.OK915.HNZ.01,1.01091,131.426,Pg,2015-01-27 16:03:15.210,manual,-0.2,1.49
+GS.OK030.HHZ.00,1.02168,132.84,Pg,2015-01-27 16:03:15.360,manual,-0.2,1.48
+OK.U32A.BHZ.--,1.07205,257.037,Pg,2015-01-27 16:03:16.330,manual,-0.2,1.43
+GS.OK025.HHZ.00,1.08612,163.926,Pg,2015-01-27 16:03:16.460,manual,-0.4,1.42
+GS.OK028.HHZ.00,1.18563,153.649,Pg,2015-01-27 16:03:18.090,manual,-0.6,1.33
+OK.CROK.HHN.--,0.25418,241.255,Sg,2015-01-27 16:03:04.380,manual,0.1,1.29
+GS.KAN14.HHZ.01,0.387708,328.041,Sg,2015-01-27 16:03:08.380,manual,-0.2,1.23
+GS.KAN13.HHE.01,0.426306,25.4661,Sg,2015-01-27 16:03:09.620,manual,-0.2,1.21
+GS.KAN01.HHE.01,0.526571,355.457,Sg,2015-01-27 16:03:13.140,manual,0.2,1.16
+GS.KAN08.HHE.01,0.634409,340.593,Sg,2015-01-27 16:03:16.590,manual,0.2,1.12
+GS.KAN12.HHZ.01,0.708155,340.857,Sg,2015-01-27 16:03:18.740,manual,-0.1,1.09
+OK.QUOK.HHN.--,0.925496,119.164,Sg,2015-01-27 16:03:25.640,manual,-0.1,1.02
+OK.OKCSW.EHZ.--,1.23876,169.789,Pg,2015-01-27 16:03:19.210,manual,-0.5,1.29
+US.WMOK.BHZ.10,2.0783,205.191,Pn,2015-01-27 16:03:31.710,manual,0.2,1.13

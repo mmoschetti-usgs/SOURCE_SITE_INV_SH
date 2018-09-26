@@ -1,0 +1,68 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000n0ww
+#time = 2014-03-04 16:39:38.200000
+#location = 14km NW of Chandler, Oklahoma
+#latitude = 35.7987
+#longitude = -96.9847
+#depth = 4.7
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000n0ww
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK028.HHZ.00,0.245169,194.778,Pg,2014-03-04 16:39:43.350,manual,0.4,0.0
+GS.OK025.HHZ.00,0.360289,233.043,Pg,2014-03-04 16:39:45.510,manual,0.3,0.0
+GS.OK027.HHZ.00,0.258048,250.5,Pg,2014-03-04 16:39:43.590,manual,0.4,0.0
+OK.BCOK.HHZ.--,0.527587,254.603,Pg,2014-03-04 16:39:48.530,manual,0.2,0.0
+OK.W35A.EHZ.--,0.650818,172.024,Pg,2014-03-04 16:39:50.450,manual,-0.3,0.173
+OK.FNO.HHZ.01,0.638065,212.291,Pg,2014-03-04 16:39:50.780,manual,0.3,0.083
+GS.OK029.HHZ.00,0.382252,269.824,Pg,2014-03-04 16:39:45.910,manual,0.3,0.0
+OK.CROK.HHZ.--,1.07223,311.371,Pg,2014-03-04 16:39:58.490,manual,-0.3,0.104
+OK.X34A.HHZ.--,1.38207,210.406,Pn,2014-03-04 16:40:03.490,manual,-0.7,0.127
+AG.HHAR.HHZ.00,2.51423,78.0479,Pn,2014-03-04 16:40:18.580,manual,-1.2,0.061
+TA.TUL1.BHZ.--,0.975378,83.0889,Pg,2014-03-04 16:39:56.220,manual,-0.7,0.067
+N4.U38B.BHZ.--,2.19925,72.336,Pn,2014-03-04 16:40:15.280,manual,-0.2,0.064
+N4.T35B.BHZ.--,1.17874,18.752,Pg,2014-03-04 16:40:00.220,manual,-0.6,0.052
+GS.ADOK.HNZ.--,0.34681,245.147,Pg,2014-03-04 16:39:45.280,manual,0.4,0.0
+OK.OKCSW.EHZ.--,0.538879,223.407,Pg,2014-03-04 16:39:48.650,manual,0.1,0.0
+GS.OK026.HHZ.00,0.539427,224.966,Pg,2014-03-04 16:39:48.090,manual,-0.5,0.0
+OK.U32A.BHZ.--,1.73322,290.128,Pn,2014-03-04 16:40:09.390,manual,0.3,0.141
+TA.W39A.BHZ.--,2.67991,102.034,Pn,2014-03-04 16:40:21.610,manual,-0.4,0.068
+TA.U40A.BHZ.--,3.39234,79.3472,Pn,2014-03-04 16:40:31.890,manual,0.0,0.052
+N4.S39B.BHZ.--,3.49513,56.2122,Pn,2014-03-04 16:40:34.250,manual,1.0,0.05
+AG.WHAR.HHZ.00,3.86248,96.1809,Pn,2014-03-04 16:40:38.020,manual,-0.3,0.052
+TA.ABTX.BHZ.--,3.85749,215.579,Pn,2014-03-04 16:40:38.450,manual,0.2,0.076
+TA.W41B.BHZ.--,3.91525,97.785,Pn,2014-03-04 16:40:39.710,manual,0.7,0.052
+AG.FCAR.HHZ.00,3.94983,87.2555,Pn,2014-03-04 16:40:39.040,manual,-0.5,0.048
+US.AMTX.BHZ.00,3.9459,257.99,Pn,2014-03-04 16:40:38.010,manual,-1.5,0.083
+GS.OK027.HH1.00,0.258048,250.5,Sg,2014-03-04 16:39:47.590,manual,1.0,0.082
+GS.OK028.HH1.00,0.245169,194.778,Sg,2014-03-04 16:39:46.980,manual,0.8,0.148
+OK.X37A.BHZ.--,1.78947,131.936,Pn,2014-03-04 16:40:09.680,manual,-0.1,0.099

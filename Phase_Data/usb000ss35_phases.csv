@@ -1,0 +1,59 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000ss35
+#time = 2014-10-31 09:23:29.900000
+#location = 14km ENE of Mooreland, Oklahoma
+#latitude = 36.4933
+#longitude = -99.0533
+#depth = 7.9
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000ss35
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+US.WMOK.BHZ.10,1.7656,172.694,Pn,2014-10-31 09:24:00.710,manual,-0.1,0.166
+OK.FNO.HHZ.01,1.82238,132.101,Pn,2014-10-31 09:24:01.470,manual,-0.1,0.108
+OK.U32A.BHZ.--,0.121038,159.757,Pg,2014-10-31 09:23:32.850,manual,0.2,0.0
+OK.W35A.EHZ.--,2.2191,126.429,Pn,2014-10-31 09:24:07.890,manual,0.9,0.093
+OK.KNG1.EHE.--,1.15432,107.783,Sg,2014-10-31 09:24:07.200,manual,0.2,0.137
+N4.R32B.BHZ.--,1.94494,7.94471,Pn,2014-10-31 09:24:02.460,manual,-0.8,0.059
+OK.U32A.BHE.--,0.121038,159.757,Sg,2014-10-31 09:23:35.190,manual,0.7,0.217
+OK.CROK.HHZ.--,0.862166,88.9258,Pg,2014-10-31 09:23:46.050,manual,-0.4,0.203
+GS.KAN14.HHZ.01,0.990621,61.8364,Pg,2014-10-31 09:23:48.410,manual,-0.5,0.229
+GS.KAN14.HHN.01,0.990621,61.8364,Sg,2014-10-31 09:24:01.270,manual,-0.5,0.279
+OK.KNG1.EHZ.--,1.15432,107.783,Pg,2014-10-31 09:23:51.720,manual,-0.3,0.1
+GS.KAN09.HHZ.01,1.31822,60.4484,Pn,2014-10-31 09:23:55.010,manual,0.4,0.082
+OK.BCOK.HHZ.--,1.43714,125.088,Pn,2014-10-31 09:23:56.730,manual,0.5,0.11
+GS.KAN13.HHZ.01,1.36748,67.2438,Pn,2014-10-31 09:23:55.070,manual,-0.2,0.082
+GS.OK029.HHZ.00,1.46871,117.781,Pn,2014-10-31 09:23:56.540,manual,-0.2,0.102
+GS.OK025.HHZ.00,1.66179,122.707,Pn,2014-10-31 09:23:59.320,manual,0.0,0.102
+GS.OK028.HHZ.00,1.8634,119.359,Pn,2014-10-31 09:24:02.520,manual,0.4,0.094
+N4.T35B.BHZ.--,2.08547,77.5659,Pn,2014-10-31 09:24:06.270,manual,1.1,0.071
+US.CBKS.BHZ.00,2.37945,347.018,Pn,2014-10-31 09:24:09.800,manual,0.5,0.051

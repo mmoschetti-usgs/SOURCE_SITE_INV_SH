@@ -1,0 +1,72 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10003jrx
+#time = 2015-10-02 07:02:11.400000
+#location = 13km SSW of Tonkawa, Oklahoma
+#latitude = 36.5699
+#longitude = -97.3886
+#depth = 1.3
+#magnitude = 2.8
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10003jrx
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.BLOK.HHZ.--,0.236031,36.2047,Pg,2015-10-02 07:02:16.730,manual,0.8,3.31
+GS.KAN13.HHZ.01,0.447911,350.828,Pg,2015-10-02 07:02:20.510,manual,0.5,2.41
+OK.CROK.HHZ.--,0.483433,262.441,Pg,2015-10-02 07:02:21.050,manual,0.4,2.32
+GS.KAN09.HHZ.01,0.594397,342.012,Pg,2015-10-02 07:02:23.090,manual,0.3,2.08
+GS.KAN14.HHZ.01,0.601558,310.107,Pg,2015-10-02 07:02:23.320,manual,0.4,2.06
+GS.KAN01.HHZ.01,0.653777,333.086,Pg,2015-10-02 07:02:24.130,manual,0.2,1.97
+OK.QUOK.HHZ.--,0.678162,125.703,Pg,2015-10-02 07:02:24.690,manual,0.3,1.92
+GS.OK032.HHZ.00,0.700619,289.708,Pg,2015-10-02 07:02:24.890,manual,0.1,1.89
+OK.GC02.EHZ.--,0.471423,306.738,Pg,2015-10-02 07:02:20.730,manual,0.3,2.35
+GS.KAN10.HHZ.01,0.791506,314.485,Pg,2015-10-02 07:02:26.910,manual,0.3,1.75
+GS.OK030.HHZ.00,0.805991,142.479,Pg,2015-10-02 07:02:27.100,manual,0.2,1.73
+GS.OK031.HHZ.00,0.759032,144.027,Pg,2015-10-02 07:02:26.110,manual,0.2,1.8
+GS.KAN06.HHZ.01,0.774589,331.041,Pg,2015-10-02 07:02:26.770,manual,0.5,1.77
+OK.BCOK.HHZ.--,0.928667,191.16,Pg,2015-10-02 07:02:29.400,manual,0.2,1.58
+GS.KAN11.HHZ.01,0.76161,326.63,Pg,2015-10-02 07:02:26.160,manual,0.2,1.79
+GS.OK025.HHZ.00,0.987601,177.601,Pg,2015-10-02 07:02:30.350,manual,0.0,1.51
+GS.OK029.HHZ.00,0.773574,183.995,Pg,2015-10-02 07:02:26.520,manual,0.3,1.78
+GS.KAN05.HHZ.01,0.663074,324.327,Pg,2015-10-02 07:02:24.080,manual,0.0,1.95
+OK.CHOK.HHZ.--,1.04104,165.146,Pg,2015-10-02 07:02:31.230,manual,-0.1,1.46
+OK.OKCFA.HHZ.--,1.15331,182.549,Pg,2015-10-02 07:02:33.430,manual,-0.1,1.36
+OK.OKCSW.EHZ.--,1.16265,181.989,Pg,2015-10-02 07:02:33.520,manual,-0.1,1.35
+OK.CCOK.HHZ.--,1.22985,190.242,Pg,2015-10-02 07:02:34.850,manual,-0.1,1.34
+TA.TUL1.BHZ.--,1.4489,116.542,Pn,2015-10-02 07:02:38.290,manual,-0.4,1.22
+OK.U32A.BHZ.--,1.31375,262.164,Pn,2015-10-02 07:02:36.320,manual,-0.5,1.24
+OK.BLOK.HHE.--,0.236031,36.2047,Sg,2015-10-02 07:02:20.370,manual,1.4,1.31
+GS.KAN13.HHE.01,0.447911,350.828,Sg,2015-10-02 07:02:26.880,manual,1.1,1.2
+GS.KAN17.HHZ.01,0.561397,327.578,Pg,2015-10-02 07:02:22.730,manual,0.6,2.14
+GS.KAN17.HHE.01,0.561397,327.578,Sg,2015-10-02 07:02:30.300,manual,0.9,1.15
+GS.KAN09.HHE.01,0.594397,342.012,Sg,2015-10-02 07:02:31.390,manual,0.9,1.14
+GS.KAN01.HHE.01,0.653777,333.086,Sg,2015-10-02 07:02:33.170,manual,0.8,1.11
+GS.KAN05.HHE.01,0.663074,324.327,Sg,2015-10-02 07:02:33.400,manual,0.7,1.11
+OK.QUOK.HHN.--,0.678162,125.703,Sg,2015-10-02 07:02:33.690,manual,0.5,1.1

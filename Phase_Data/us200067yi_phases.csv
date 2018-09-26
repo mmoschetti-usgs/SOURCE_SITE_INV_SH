@@ -1,0 +1,63 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us200067yi
+#time = 2016-06-29 14:15:16.900000
+#location = 13km ESE of Chickasha, Oklahoma
+#latitude = 35.0083
+#longitude = -97.7950
+#depth = 5.4
+#magnitude = 3.0
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us200067yi
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.FNO.HHZ.01,0.407367,52.2907,Pg,2016-06-29 14:15:25.090,manual,0.6,2.52
+OK.CCOK.HHZ.--,0.365849,18.0794,Pg,2016-06-29 14:15:24.460,manual,0.7,2.64
+OK.BCOK.HHZ.--,0.664524,13.1543,Pg,2016-06-29 14:15:29.660,manual,0.5,1.95
+US.WMOK.BHZ.10,0.854173,251.872,Pg,2016-06-29 14:15:32.680,manual,0.2,2.26
+OK.CHOK.HHZ.--,0.815169,47.2092,Pg,2016-06-29 14:15:32.430,manual,0.6,2.31
+OK.HTCH.HHZ.--,1.09801,336.608,Pg,2016-06-29 14:15:37.550,manual,0.8,2.01
+GS.OK031.HHZ.00,1.22364,39.3333,Pg,2016-06-29 14:15:39.470,manual,0.6,1.9
+GS.OK029.HHZ.00,0.834172,19.3566,Pg,2016-06-29 14:15:32.680,manual,0.5,2.29
+GS.OK030.HHZ.00,1.2341,41.6843,Pg,2016-06-29 14:15:39.880,manual,0.8,1.89
+OK.LOOK.HHZ.--,1.13359,153.206,Pg,2016-06-29 14:15:38.340,manual,1.0,1.98
+OK.QUOK.HHZ.--,1.46005,37.0425,Pg,2016-06-29 14:15:43.510,manual,0.5,1.73
+GS.OK038.HHZ.00,1.6568,332.56,Pn,2016-06-29 14:15:45.990,manual,-0.3,1.18
+OK.CROK.HHZ.--,1.50103,354.195,Pg,2016-06-29 14:15:44.190,manual,0.5,1.7
+OK.GC02.EHZ.--,1.84006,358.386,Pn,2016-06-29 14:15:49.480,manual,0.7,1.16
+N4.Z35B.BHZ.--,1.7325,164.814,Pn,2016-06-29 14:15:47.270,manual,-0.1,1.17
+TA.TUL1.BHZ.--,1.86655,60.5916,Pn,2016-06-29 14:15:49.990,manual,0.8,1.15
+OK.X34A.HHZ.--,0.407516,184.366,Pg,2016-06-29 14:15:25.710,manual,1.2,2.52
+OK.OKCFA.HHZ.--,0.494019,34.6175,Pg,2016-06-29 14:15:26.600,manual,0.5,2.29
+OK.OKCFA.HHE.--,0.494019,34.6175,Sg,2016-06-29 14:15:33.450,manual,0.7,1.18
+OK.CCOK.HHE.--,0.365849,18.0794,Sg,2016-06-29 14:15:29.360,manual,0.6,1.24
+OK.FNO.HHE.01,0.407367,52.2907,Sg,2016-06-29 14:15:29.640,manual,-0.4,1.22
+GS.OK029.HH2.00,0.834172,19.3566,Sg,2016-06-29 14:15:44.230,manual,1.0,1.18
+OK.DEOK.HHZ.--,1.34707,51.4528,Pg,2016-06-29 14:15:41.270,manual,0.3,1.81

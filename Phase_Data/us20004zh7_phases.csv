@@ -1,0 +1,72 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20004zh7
+#time = 2016-02-11 13:18:24.400000
+#location = 19km ENE of Mooreland, Oklahoma
+#latitude = 36.5113
+#longitude = -99.0049
+#depth = 3.6
+#magnitude = 3.0
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20004zh7
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.U32A.BHZ.--,0.131565,178.772,Pg,2016-02-11 13:18:27.720,manual,0.7,3.68
+GS.OK035.HHZ.00,0.308277,50.3094,Pg,2016-02-11 13:18:30.860,manual,0.5,2.84
+OK.BCOK.HHZ.--,1.41605,126.618,Pn,2016-02-11 13:18:50.710,manual,-0.2,1.22
+US.WMOK.BHZ.10,1.77894,174.041,Pn,2016-02-11 13:18:56.380,manual,0.5,1.17
+OK.CCOK.HHZ.--,1.58914,136.067,Pn,2016-02-11 13:18:53.740,manual,0.4,1.19
+OK.CHOK.HHZ.--,1.83862,120.47,Pn,2016-02-11 13:18:57.300,manual,0.6,1.16
+OK.GC02.EHZ.--,0.981298,69.415,Pg,2016-02-11 13:18:43.230,manual,0.0,1.52
+GS.KAN17.HHE.01,1.12876,61.523,Sg,2016-02-11 13:19:00.900,manual,0.2,0.95
+OK.CROK.HHZ.--,0.823023,90.1546,Pg,2016-02-11 13:18:40.240,manual,0.1,1.71
+GS.KAN14.HHZ.01,0.947765,61.7104,Pg,2016-02-11 13:18:42.500,manual,-0.1,1.56
+OK.GORE.HHZ.--,0.89367,71.8462,Pg,2016-02-11 13:18:41.370,manual,-0.2,1.62
+GS.KAN10.HHZ.01,0.952036,49.8011,Pg,2016-02-11 13:18:43.330,manual,0.7,1.55
+GS.KAN16.HHZ.01,1.03767,46.3213,Pg,2016-02-11 13:18:43.950,manual,-0.3,1.46
+GS.KAN08.HHZ.01,1.09426,48.9582,Pg,2016-02-11 13:18:45.070,manual,-0.3,1.41
+GS.KAN11.HHZ.01,1.11681,51.2952,Pg,2016-02-11 13:18:45.430,manual,-0.4,1.39
+GS.KAN17.HHZ.01,1.12876,61.523,Pg,2016-02-11 13:18:45.810,manual,-0.2,1.38
+ZD.KNG1.EHZ.--,1.12306,109.293,Pg,2016-02-11 13:18:45.720,manual,-0.2,1.39
+GS.KAN06.HHZ.01,1.17705,50.9974,Pg,2016-02-11 13:18:46.400,manual,-0.6,1.34
+GS.KAN01.HHZ.01,1.18739,56.9625,Pg,2016-02-11 13:18:46.860,manual,-0.3,1.33
+GS.KAN13.HHZ.01,1.32457,67.337,Pn,2016-02-11 13:18:49.220,manual,-0.5,1.23
+OK.BLOK.HHZ.--,1.46104,79.6616,Pn,2016-02-11 13:18:52.010,manual,0.5,1.21
+GS.OK029.HHZ.00,1.44299,119.162,Pn,2016-02-11 13:18:51.690,manual,0.4,1.21
+GS.OK025.HHZ.00,1.63909,124.001,Pn,2016-02-11 13:18:54.490,manual,0.5,1.19
+OK.OKCFA.HHZ.--,1.66864,130.494,Pn,2016-02-11 13:18:54.900,manual,0.5,1.18
+OK.OKCSW.EHZ.--,1.68331,130.497,Pn,2016-02-11 13:18:53.910,manual,-0.7,1.18
+OK.FNO.HHZ.01,1.80593,133.382,Pn,2016-02-11 13:18:57.120,manual,0.8,1.16
+GS.OK035.HH1.00,0.308277,50.3094,Sg,2016-02-11 13:18:35.450,manual,1.1,1.27
+OK.CROK.HHN.--,0.823023,90.1546,Sg,2016-02-11 13:18:51.520,manual,0.7,1.05
+GS.KAN08.HHN.01,1.09426,48.9582,Sg,2016-02-11 13:18:59.760,manual,0.2,0.96
+GS.KAN12.HNE.01,1.12561,45.5078,Sg,2016-02-11 13:19:01.020,manual,0.4,0.95
+ZD.KNG1.EHE.--,1.12306,109.293,Sg,2016-02-11 13:19:01.360,manual,0.9,0.96
+GS.KAN12.HHZ.01,1.12561,45.5078,Pg,2016-02-11 13:18:44.600,manual,-1.4,1.38

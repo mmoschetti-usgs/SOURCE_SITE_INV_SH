@@ -1,0 +1,97 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000pelz
+#time = 2014-04-10 16:53:47.300000
+#location = 14km WSW of Pawnee, Oklahoma
+#latitude = 36.2888
+#longitude = -96.9510
+#depth = 8.0
+#magnitude = 3.1
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000pelz
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.QUOK.HHZ.--,0.228752,120.737,Pg,2014-04-10 16:53:52.270,manual,0.4,0.0
+GS.OK029.HHZ.00,0.638774,219.891,Pg,2014-04-10 16:53:59.540,manual,-0.1,0.066
+OK.CROK.HHZ.--,0.86038,284.809,Pg,2014-04-10 16:54:03.670,manual,-0.2,0.074
+N4.T35B.BHZ.--,0.718982,29.3047,Pg,2014-04-10 16:54:01.320,manual,0.2,0.057
+GS.OK027.HHZ.00,0.635643,205.204,Pg,2014-04-10 16:53:59.520,manual,0.0,0.06
+OK.QUOK.HHE.--,0.228752,120.737,Sg,2014-04-10 16:53:55.420,manual,0.4,0.127
+GS.OK027.HH1.00,0.635643,205.204,Sg,2014-04-10 16:54:08.040,manual,0.2,0.053
+GS.OK029.HH2.00,0.638774,219.891,Sg,2014-04-10 16:54:07.880,manual,-0.1,0.059
+GS.ADOK.HNZ.--,0.72107,208.327,Pg,2014-04-10 16:54:00.900,manual,-0.3,0.052
+GS.ADOK.HNN.--,0.72107,208.327,Sg,2014-04-10 16:54:10.850,manual,0.3,0.051
+GS.OK001.HNE.01,0.776399,200.824,Sg,2014-04-10 16:54:12.960,manual,0.6,0.047
+OK.KAY1.HHZ.--,0.517648,336.096,Pg,2014-04-10 16:53:57.570,manual,0.2,0.0
+GS.OK025.HHZ.00,0.772861,204.084,Pg,2014-04-10 16:54:01.970,manual,-0.2,0.047
+GS.OK026.HHZ.00,0.961778,205.151,Pg,2014-04-10 16:54:04.930,manual,-0.9,0.035
+OK.W35A.EHZ.--,1.13536,176.835,Pg,2014-04-10 16:54:07.740,manual,-1.4,0.03
+OK.FNO.HHZ.01,1.09236,199.713,Pg,2014-04-10 16:54:07.330,manual,-0.9,0.029
+TA.TUL1.BHZ.--,1.01181,111.571,Pg,2014-04-10 16:54:06.240,manual,-0.5,0.058
+OK.X34A.HHZ.--,1.83143,203.401,Pn,2014-04-10 16:54:19.070,manual,0.0,0.051
+US.WMOK.BHZ.10,2.15,224.502,Pn,2014-04-10 16:54:24.740,manual,1.3,0.048
+OK.X37A.BHZ.--,2.13059,142.281,Pn,2014-04-10 16:54:24.390,manual,1.2,0.055
+US.MIAR.BHZ.00,3.25893,121.27,Pn,2014-04-10 16:54:38.610,manual,-0.1,0.044
+N4.U38B.BHZ.--,2.076,85.0885,Pn,2014-04-10 16:54:23.910,manual,1.5,0.053
+TA.W39A.BHZ.--,2.79744,112.01,Pn,2014-04-10 16:54:35.210,manual,2.9,0.048
+TA.U40A.BHZ.--,3.30953,87.6204,Pn,2014-04-10 16:54:40.620,manual,1.2,0.041
+N4.S39B.BHZ.--,0.0,85.6893,Pn,2014-04-10 16:54:39.750,manual,1.5,0.038
+TA.X40A.BHZ.--,3.81337,116.915,Pn,2014-04-10 16:54:47.210,manual,0.9,0.04
+GS.OK025.HH2.00,0.772861,204.084,Sg,2014-04-10 16:54:12.550,manual,0.3,0.048
+GS.OK026.HH2.00,0.961778,205.151,Sg,2014-04-10 16:54:18.460,manual,0.2,0.042
+OK.OKCSW.EHZ.--,0.966151,204.318,Pg,2014-04-10 16:54:04.680,manual,-1.2,0.035
+OK.OKCSW.EHE.--,0.966151,204.318,Sg,2014-04-10 16:54:18.460,manual,0.0,0.042
+OK.W35A.EHE.--,1.13536,176.835,Sg,2014-04-10 16:54:23.440,manual,-0.4,0.041
+OK.KAY1.HHN.--,0.517648,336.096,Sg,2014-04-10 16:54:04.480,manual,0.4,0.085
+OK.FNO.HHN.01,1.09236,199.713,Sg,2014-04-10 16:54:22.540,manual,0.1,0.038
+TA.TUL1.BHE.--,1.01181,111.571,Sg,2014-04-10 16:54:19.580,manual,-0.3,0.072
+N4.T35B.BHE.--,0.718982,29.3047,Sg,2014-04-10 16:54:10.600,manual,0.1,0.055
+OK.CROK.HHN.--,0.86038,284.809,Sg,2014-04-10 16:54:14.850,manual,-0.2,0.082
+NQ.KAN05.HNE.01,1.10263,318.134,Pn,2014-04-10 16:54:07.910,manual,-1.2,0.057
+NQ.KAN03.HNN.01,1.11397,328.829,Pn,2014-04-10 16:54:08.400,manual,-0.8,0.055
+OK.U32A.BHZ.--,1.65808,273.737,Pn,2014-04-10 16:54:16.550,manual,-0.2,0.054
+N4.Z35B.BHZ.--,2.96137,184.9,Pn,2014-04-10 16:54:35.170,manual,0.6,0.042
+US.AMTX.BHZ.00,4.10164,251.403,Pn,2014-04-10 16:54:50.770,manual,0.4,0.033
+IU.CCM.BHZ.10,4.88632,67.1388,Pn,2014-04-10 16:55:00.020,manual,-1.0,0.029
+N4.P38B.BHZ.--,4.28827,38.0179,Pn,2014-04-10 16:54:53.990,manual,1.1,0.028
+N4.P40B.BHZ.--,5.04904,48.6732,Pn,2014-04-10 16:55:02.630,manual,-0.7,0.025
+TA.MSTX.BHZ.--,5.30174,245.827,Pn,2014-04-10 16:55:05.270,manual,-1.6,0.027
+TA.ABTX.BHZ.--,4.27916,212.089,Pn,2014-04-10 16:54:54.430,manual,1.7,0.031
+N4.237B.BHZ.--,4.3802,167.182,Pn,2014-04-10 16:54:54.000,manual,-0.1,0.033
+N4.N35B.BHZ.--,4.67911,12.2576,Pn,2014-04-10 16:54:57.440,manual,-0.8,0.024
+TA.KSCO.BHZ.--,5.26009,302.81,Pn,2014-04-10 16:55:03.930,manual,-2.4,0.026
+US.JCT.BHZ.00,6.26492,203.177,Pn,2014-04-10 16:55:18.810,manual,-1.3,0.026
+US.CBKS.BHZ.00,3.35502,319.542,Pn,2014-04-10 16:54:39.980,manual,-0.1,0.034
+N4.R32B.BHZ.--,2.55006,327.166,Pn,2014-04-10 16:54:29.590,manual,0.6,0.04
+ZW.AZDA.EHZ.01,3.34536,188.739,Pn,2014-04-10 16:54:41.290,manual,1.4,0.038
+N4.R40B.BHZ.--,4.23486,60.4424,Pn,2014-04-10 16:54:52.770,manual,0.7,0.031
+US.OGNE.BHZ.00,6.11848,320.989,Pn,2014-04-10 16:55:17.140,manual,-0.9,0.024
+N4.T42B.BHZ.--,4.76782,79.3335,Pn,2014-04-10 16:55:00.120,manual,0.7,0.031
+NM.FVM.BHZ.--,5.47888,70.0946,Pn,2014-04-10 16:55:10.010,manual,0.8,0.026

@@ -1,0 +1,56 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000ldn6
+#time = 2013-12-08 06:27:32.980000
+#location = 9km SE of Edmond, Oklahoma
+#latitude = 35.6045
+#longitude = -97.3971
+#depth = 6.2
+#magnitude = 3.3
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000ldn6
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.CROK.HHZ.--,1.01621,332.299,Pg,2013-12-08 06:27:52.140,manual,-0.3,0.094
+AG.HHAR.HHZ.00,2.88545,75.4394,Pn,2013-12-08 06:28:19.640,manual,0.1,0.028
+GS.OK009.HNZ.01,0.0312717,222.251,Sg,2013-12-08 06:27:35.230,manual,0.1,0.146
+GS.OK009.HNZ.01,0.0312717,222.251,Pg,2013-12-08 06:27:34.070,manual,-0.2,0.0
+TA.W39A.BHZ.--,2.97958,96.8126,Pn,2013-12-08 06:28:20.810,manual,0.1,0.03
+GS.OK005.HNZ.01,0.175191,73.258,Pg,2013-12-08 06:27:36.990,manual,0.5,0.0
+TA.TUL1.BHZ.--,1.34079,76.3726,Pn,2013-12-08 06:27:57.260,manual,-1.0,0.039
+OK.X34A.HHZ.--,1.06297,199.754,Pg,2013-12-08 06:27:53.470,manual,0.1,0.067
+GS.ADOK.HNZ.--,0.0519151,24.0723,Pg,2013-12-08 06:27:34.910,manual,0.4,0.0
+OK.BCOK.HHZ.--,0.18054,286.83,Pg,2013-12-08 06:27:37.060,manual,0.4,0.0
+OK.OKCSW.EHZ.--,0.201348,189.552,Pg,2013-12-08 06:27:37.270,manual,0.3,0.0
+OK.U32A.BHZ.--,1.51351,301.198,Pn,2013-12-08 06:28:00.480,manual,-0.2,0.056
+TA.ABTX.BHZ.--,3.50862,212.713,Pn,2013-12-08 06:28:29.510,manual,1.4,0.0
+US.MIAR.BHZ.00,3.30677,107.529,Pn,2013-12-08 06:28:26.220,manual,1.0,0.0
+OK.W35A.EHZ.--,0.62096,136.397,Pg,2013-12-08 06:27:44.730,manual,-0.2,0.0
+US.WMOK.BHZ.10,1.42561,233.064,Pn,2013-12-08 06:27:58.450,manual,-1.0,0.047

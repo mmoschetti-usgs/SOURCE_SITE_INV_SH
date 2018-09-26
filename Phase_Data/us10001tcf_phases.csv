@@ -1,0 +1,69 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10001tcf
+#time = 2015-03-30 10:14:16.800000
+#location = 20km ENE of Mooreland, Oklahoma
+#latitude = 36.5194
+#longitude = -99.0039
+#depth = 5.0
+#magnitude = 2.7
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10001tcf
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.U32A.BHZ.--,0.139636,179.174,Pg,2015-03-30 10:14:20.050,manual,0.4,3.63
+OK.CROK.HHZ.--,0.82228,90.7188,Pg,2015-03-30 10:14:32.340,manual,-0.2,1.71
+OK.GC02.EHZ.--,0.977728,69.8426,Pg,2015-03-30 10:14:35.130,manual,-0.4,1.52
+OK.BCOK.HHZ.--,1.42025,126.9,Pn,2015-03-30 10:14:42.820,manual,-0.5,1.22
+GS.OK029.HHZ.00,1.44625,119.458,Pn,2015-03-30 10:14:43.180,manual,-0.5,1.21
+US.WMOK.BHZ.10,1.7869,174.094,Pn,2015-03-30 10:14:48.340,manual,0.0,1.17
+GS.OK025.HHZ.00,1.64296,124.251,Pn,2015-03-30 10:14:46.220,manual,-0.1,1.18
+GS.OK031.HHZ.00,1.83911,107.254,Pn,2015-03-30 10:14:49.470,manual,0.4,1.16
+GS.OK030.HHZ.00,1.88971,107.547,Pn,2015-03-30 10:14:50.160,manual,0.4,1.15
+OK.QUOK.HHZ.--,1.88581,99.9305,Pn,2015-03-30 10:14:49.840,manual,0.2,1.15
+OK.FNO.HHZ.01,1.81092,133.586,Pn,2015-03-30 10:14:49.630,manual,1.0,1.16
+US.CBKS.BHZ.00,2.36342,345.966,Pn,2015-03-30 10:14:58.040,manual,1.7,1.09
+N4.R32B.BHZ.--,1.91397,6.90236,Pn,2015-03-30 10:14:51.040,manual,0.9,1.15
+N4.T35B.BHZ.--,2.04106,78.0689,Pn,2015-03-30 10:14:52.790,manual,1.0,1.13
+GS.OK032.HHZ.00,0.698327,65.7807,Pg,2015-03-30 10:14:30.260,manual,0.0,1.89
+GS.KAN10.HHZ.01,0.946219,50.1442,Pg,2015-03-30 10:14:34.670,manual,-0.3,1.56
+GS.KAN08.HHZ.01,1.08835,49.252,Pg,2015-03-30 10:14:37.210,manual,-0.5,1.42
+GS.KAN11.HHZ.01,1.11114,51.5952,Pg,2015-03-30 10:14:36.790,manual,-1.3,1.4
+GS.KAN12.HHZ.01,1.11938,45.7747,Pg,2015-03-30 10:14:37.770,manual,-0.5,1.39
+GS.KAN13.HHZ.01,1.32073,67.6478,Pn,2015-03-30 10:14:41.660,manual,-0.3,1.23
+OK.KAY1.HHZ.--,1.46136,79.9015,Pn,2015-03-30 10:14:42.770,manual,-1.1,1.21
+OK.OKCFA.HHZ.--,1.67329,130.723,Pn,2015-03-30 10:14:47.090,manual,0.3,1.18
+US.AMTX.BHZ.00,2.72212,233.949,Pn,2015-03-30 10:15:04.210,manual,2.9,1.05
+OK.X37A.BHZ.--,3.5327,121.966,Pn,2015-03-30 10:15:12.760,manual,0.4,0.97
+OK.U32A.BHE.--,0.139636,179.174,Sg,2015-03-30 10:14:22.480,manual,0.9,1.36
+GS.OK032.HH1.00,0.698327,65.7807,Sg,2015-03-30 10:14:39.800,manual,0.5,1.1
+OK.CROK.HHE.--,0.82228,90.7188,Sg,2015-03-30 10:14:43.150,manual,-0.1,1.05
+GS.KAN10.HHN.01,0.946219,50.1442,Sg,2015-03-30 10:14:47.530,manual,0.3,1.01
+OK.GC02.EHE.--,0.977728,69.8426,Sg,2015-03-30 10:14:48.030,manual,-0.2,1.0

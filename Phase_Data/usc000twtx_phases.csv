@@ -1,0 +1,69 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000twtx
+#time = 2015-03-04 11:36:24.200000
+#location = 24km WNW of Pawnee, Oklahoma
+#latitude = 36.4402
+#longitude = -97.0448
+#depth = 4.6
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000twtx
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK031.HHZ.00,0.51379,161.044,Pg,2015-03-04 11:36:34.460,manual,0.4,2.25
+OK.QUOK.HHZ.--,0.382067,134.498,Pg,2015-03-04 11:36:32.040,manual,0.5,2.59
+OK.CROK.HHZ.--,0.759284,275.142,Pg,2015-03-04 11:36:38.700,manual,-0.1,1.8
+GS.KAN13.HHZ.01,0.669131,328.804,Pg,2015-03-04 11:36:37.250,manual,0.2,1.94
+GS.OK025.HHZ.00,0.889628,195.579,Pg,2015-03-04 11:36:41.240,manual,0.0,1.62
+OK.FNO.HHZ.01,1.21528,193.888,Pg,2015-03-04 11:36:46.650,manual,-0.9,1.31
+US.WMOK.BHZ.10,2.21056,220.301,Pn,2015-03-04 11:37:01.510,manual,-0.1,1.11
+OK.X34A.HHZ.--,1.9444,199.529,Pn,2015-03-04 11:36:56.730,manual,-1.2,1.15
+AG.HHAR.HHZ.00,2.51103,92.6833,Pn,2015-03-04 11:37:05.070,manual,-0.7,1.08
+N4.T35B.BHZ.--,0.639706,41.8842,Pg,2015-03-04 11:36:36.770,manual,0.3,1.99
+OK.U32A.BHZ.--,1.57951,268.383,Pn,2015-03-04 11:36:52.670,manual,-0.3,1.19
+OK.X37A.BHZ.--,2.29665,143.039,Pn,2015-03-04 11:37:02.250,manual,-0.5,1.1
+TA.TUL1.BHZ.--,1.1433,117.174,Pg,2015-03-04 11:36:45.910,manual,-0.2,1.37
+N4.R32B.BHZ.--,2.38213,326.668,Pn,2015-03-04 11:37:03.570,manual,-0.4,1.09
+N4.U38B.BHZ.--,2.14419,89.2315,Pn,2015-03-04 11:36:59.750,manual,-1.0,1.12
+OK.BCOK.HHZ.--,0.905862,210.498,Pg,2015-03-04 11:36:41.400,manual,-0.2,1.6
+GS.KAN14.HHZ.01,0.900231,305.215,Pg,2015-03-04 11:36:41.390,manual,-0.1,1.61
+GS.KAN01.HHZ.01,0.913973,321.367,Pg,2015-03-04 11:36:40.970,manual,-0.8,1.6
+GS.KAN05.HHZ.01,0.941529,315.363,Pg,2015-03-04 11:36:42.280,manual,0.0,1.56
+GS.OK012.HNZ.01,0.942202,172.836,Pg,2015-03-04 11:36:41.880,manual,-0.4,1.56
+GS.KAN08.HHZ.01,1.08087,316.851,Pg,2015-03-04 11:36:45.040,manual,0.1,1.42
+OK.OKCSW.EHZ.--,1.08072,197.292,Pg,2015-03-04 11:36:43.940,manual,-1.0,1.42
+GS.KAN12.HHZ.01,1.1473,318.506,Pg,2015-03-04 11:36:45.940,manual,-0.3,1.36
+TA.U40A.BHZ.--,3.38235,90.1739,Pn,2015-03-04 11:37:17.870,manual,0.1,0.99
+N4.S39B.BHZ.--,3.22815,66.1375,Pn,2015-03-04 11:37:15.780,manual,0.2,1.0
+ZW.AZDA.EHZ.01,3.48461,187.079,Pn,2015-03-04 11:37:18.730,manual,-0.4,0.98
+NM.MGMO.BHZ.--,3.89889,78.0477,Pn,2015-03-04 11:37:24.730,manual,-0.1,0.94
+N4.R40B.BHZ.--,4.22948,62.6698,Pn,2015-03-04 11:37:29.930,manual,0.6,0.91
+US.KSU1.BHZ.10,2.67849,7.26852,Pn,2015-03-04 11:37:07.690,manual,-0.4,1.06

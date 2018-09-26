@@ -1,0 +1,51 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usp000hv97
+#time = 2011-03-03 02:16:50
+#location = Oklahoma
+#latitude = 35.4500
+#longitude = -97.0830
+#depth = 5.0
+#magnitude = 2.8
+#magtype = md
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usp000hv97
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+IR.V34A.--.--,0.52,317.4,Pg,2011-03-03 02:17:00.070,manual,0.0,1.0
+IR.W34A.--.--,0.6,249.4,Pg,2011-03-03 02:17:01.430,manual,-0.2,1.0
+IR.U34A.--.--,1.05,339.7,Pg,2011-03-03 02:17:09.450,manual,-0.7,1.0
+IR.TUL1.--.--,1.15,66.0,Pg,2011-03-03 02:17:10.640,manual,-1.3,1.0
+IR.WMOK.--.--,1.56,243.5,Pn,2011-03-03 02:17:17.820,manual,-0.7,1.0
+IR.HHAR.--.--,2.68,71.1,Pn,2011-03-03 02:17:34.470,manual,0.6,1.0
+IR.MIAR.--.--,3.02,106.4,Pn,2011-03-03 02:17:39.360,manual,0.9,1.0
+IR.ABTX.--.--,3.53,217.7,Pn,2011-03-03 02:17:46.230,manual,0.7,1.0
+IR.AMTX.--.--,3.81,262.8,Pn,2011-03-03 02:17:48.660,manual,-0.8,1.0
+IR.CBKS.--.--,3.97,328.5,Pn,2011-03-03 02:17:53.790,manual,2.2,1.0
+IR.WHTX.--.--,3.46,185.3,Sg,2011-03-03 02:18:37.850,manual,-3.4,1.0

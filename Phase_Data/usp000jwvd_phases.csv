@@ -1,0 +1,56 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usp000jwvd
+#time = 2012-12-12 03:30:15
+#location = Oklahoma
+#latitude = 35.5320
+#longitude = -96.7590
+#depth = 5.0
+#magnitude = 3.1
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usp000jwvd
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+IR.TUL1.--.--,0.87,64.0,Pg,2012-12-12 03:30:30.850,manual,-0.9,1.0
+IR.X37A.--.--,1.48,129.2,Pn,2012-12-12 03:30:41.770,manual,-0.5,1.0
+IR.HHAR.--.--,2.41,71.1,Pn,2012-12-12 03:30:54.880,manual,-0.2,1.0
+IR.W39A.--.--,2.45,97.0,Pn,2012-12-12 03:30:55.600,manual,-0.1,1.0
+IR.MIAR.--.--,2.79,109.7,Pn,2012-12-12 03:31:01.000,manual,0.6,1.0
+IR.X40A.--.--,3.39,106.8,Pn,2012-12-12 03:31:08.360,manual,-0.1,1.0
+IR.WHAR.--.--,3.66,92.5,Pn,2012-12-12 03:31:12.380,manual,0.1,1.0
+IR.W41B.--.--,3.7,94.2,Pn,2012-12-12 03:31:12.870,manual,0.0,1.0
+IR.UALR.--.--,3.7,100.5,Pn,2012-12-12 03:31:14.940,manual,2.2,1.0
+IR.CBKS.--.--,4.05,324.9,Pn,2012-12-12 03:31:17.180,manual,-0.5,1.0
+IR.Z41A.--.--,3.98,123.6,Pn,2012-12-12 03:31:17.240,manual,0.6,1.0
+IR.KSU1.--.--,3.56,1.9,Pn,2012-12-12 03:31:18.450,manual,7.5,1.0
+IR.WHTX.--.--,3.58,189.5,Pn,2012-12-12 03:31:18.470,manual,7.3,1.0
+IR.ABTX.--.--,3.76,220.4,Pn,2012-12-12 03:31:23.200,manual,9.5,1.0
+IR.T42A.--.--,4.82,70.3,Pn,2012-12-12 03:31:28.160,manual,0.0,1.0
+IR.CCM.--.--,5.09,58.7,Pn,2012-12-12 03:31:33.470,manual,1.5,1.0

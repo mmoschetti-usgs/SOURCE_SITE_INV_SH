@@ -1,0 +1,59 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usp000gucq
+#time = 2009-02-25 04:14:15.330000
+#location = Oklahoma
+#latitude = 34.7350
+#longitude = -96.0360
+#depth = 5.0
+#magnitude = 3.3
+#magtype = mblg
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usp000gucq
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+IR.SIO.--.--,1.03,347.7,P,2009-02-25 04:14:35.000,manual,-0.2,1.0
+IR.TUL.--.--,1.19,9.6,P,2009-02-25 04:14:38.000,manual,-0.2,1.0
+IR.RFTA.--.--,1.8,197.8,Pn,2009-02-25 04:14:48.490,manual,1.4,1.0
+IR.MIAR.--.--,2.04,94.6,Pn,2009-02-25 04:14:51.080,manual,0.8,1.0
+IR.WMOK.--.--,2.26,270.9,Pn,2009-02-25 04:14:55.450,manual,2.1,1.0
+IR.NATX.--.--,3.18,158.4,Pn,2009-02-25 04:15:04.240,manual,-1.8,1.0
+IR.UALR.--.--,3.04,88.2,Pn,2009-02-25 04:15:04.670,manual,0.6,1.0
+IR.KSU1.--.--,4.38,354.2,Pn,2009-02-25 04:15:18.440,manual,-4.1,0.0
+IR.AMTX.--.--,4.65,273.4,Pn,2009-02-25 04:15:24.740,manual,-1.5,1.0
+IR.CBKS.--.--,5.04,325.0,Pn,2009-02-25 04:15:33.070,manual,1.4,1.0
+IR.JCT.--.--,5.3,217.9,Pn,2009-02-25 04:15:34.490,manual,-0.7,1.0
+IR.SIUC.--.--,6.26,59.7,Pn,2009-02-25 04:15:48.980,manual,0.6,0.0
+IR.CPRX.--.--,6.73,257.6,Pn,2009-02-25 04:15:59.260,manual,4.3,0.0
+IR.SDCO.--.--,8.22,294.2,Pn,2009-02-25 04:16:14.800,manual,-0.7,1.0
+IR.ECSD.--.--,9.0,357.3,Pn,2009-02-25 04:16:24.700,manual,-1.2,1.0
+IR.GDL2.--.--,7.4,252.4,Pg,2009-02-25 04:16:28.870,manual,-8.3,0.0
+IR.SCIA.--.--,7.5,16.4,Pg,2009-02-25 04:16:34.840,manual,-4.0,0.0
+IR.GNAR.--.--,5.07,74.3,Sg,2009-02-25 04:16:53.850,manual,-4.3,0.0
+IR.SLM.--.--,6.07,48.4,Sg,2009-02-25 04:17:23.840,manual,-6.5,0.0

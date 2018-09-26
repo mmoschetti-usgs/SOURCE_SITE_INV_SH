@@ -1,0 +1,70 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000sies
+#time = 2014-10-03 06:53:03.500000
+#location = 14km NE of Cherokee, Oklahoma
+#latitude = 36.8428
+#longitude = -98.2329
+#depth = 4.5
+#magnitude = 2.7
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000sies
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN10.HHZ.01,0.301121,21.4551,Pg,2014-10-03 06:53:09.760,manual,0.4,0.0
+GS.KAN12.HHZ.01,0.491117,22.4217,Pg,2014-10-03 06:53:13.270,manual,0.3,0.0
+OK.CROK.HHZ.--,0.392562,149.196,Pg,2014-10-03 06:53:11.440,manual,0.4,0.0
+GS.KAN13.HHZ.01,0.62845,74.0997,Pg,2014-10-03 06:53:15.700,manual,0.1,0.0
+OK.KNG1.EHZ.--,0.83088,148.425,Pg,2014-10-03 06:53:19.430,manual,0.0,0.089
+GS.OK029.HHZ.00,1.21855,148.73,Pg,2014-10-03 06:53:26.500,manual,-0.4,0.051
+OK.BCOK.HHZ.--,1.28654,156.748,Pg,2014-10-03 06:53:27.330,manual,-0.8,0.044
+OK.QUOK.HHZ.--,1.39942,118.153,Pn,2014-10-03 06:53:29.570,manual,-0.2,0.076
+GS.OK028.HHZ.00,1.59178,143.122,Pn,2014-10-03 06:53:32.760,manual,0.4,0.067
+GS.OK025.HHZ.00,1.45232,149.842,Pn,2014-10-03 06:53:30.460,manual,0.0,0.069
+GS.OK027.HHZ.00,1.36451,145.513,Pn,2014-10-03 06:53:29.090,manual,-0.2,0.071
+OK.FNO.HHZ.01,1.71966,156.68,Pn,2014-10-03 06:53:35.390,manual,1.2,0.065
+US.WMOK.BHZ.10,2.14708,192.133,Pn,2014-10-03 06:53:40.710,manual,0.6,0.068
+OK.W35A.EHZ.--,2.01436,146.449,Pn,2014-10-03 06:53:39.300,manual,1.1,0.061
+US.KSU1.BHZ.10,2.59381,29.1499,Pn,2014-10-03 06:53:45.850,manual,-0.3,0.074
+OK.X34A.HHZ.--,2.26055,171.598,Pn,2014-10-03 06:53:42.300,manual,0.7,0.06
+N4.R32B.BHZ.--,1.62202,346.609,Pn,2014-10-03 06:53:33.230,manual,0.4,0.103
+OK.U32A.BHZ.--,0.772108,233.441,Pg,2014-10-03 06:53:18.300,manual,0.0,0.117
+TA.TUL1.BHZ.--,2.17858,114.557,Pn,2014-10-03 06:53:40.880,manual,0.4,0.064
+N4.T35B.BHZ.--,1.38187,86.4449,Pn,2014-10-03 06:53:29.220,manual,-0.3,0.085
+OK.X37A.BHZ.--,3.2369,133.156,Pn,2014-10-03 06:53:55.630,manual,0.6,0.048
+OK.CROK.HHE.--,0.392562,149.196,Sg,2014-10-03 06:53:17.160,manual,1.0,0.141
+GS.KAN12.HHN.01,0.491117,22.4217,Sg,2014-10-03 06:53:20.480,manual,1.1,0.109
+GS.KAN13.HHE.01,0.62845,74.0997,Sg,2014-10-03 06:53:24.550,manual,0.8,0.155
+OK.KNG1.EHE.--,0.83088,148.425,Sg,2014-10-03 06:53:30.810,manual,0.6,0.095
+OK.U32A.BHE.--,0.772108,233.441,Sg,2014-10-03 06:53:28.730,manual,0.4,0.119
+GS.OK029.HH1.00,1.21855,148.73,Sg,2014-10-03 06:53:42.810,manual,0.1,0.073
+OK.BCOK.HHN.--,1.28654,156.748,Sg,2014-10-03 06:53:44.930,manual,0.1,0.065
+N4.U38B.BHZ.--,3.12018,96.2623,Pn,2014-10-03 06:53:54.030,manual,0.6,0.056
+AG.HHAR.HHZ.00,3.50099,97.9151,Pn,2014-10-03 06:53:59.130,manual,0.5,0.052

@@ -1,0 +1,65 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10004c0q
+#time = 2016-01-07 07:50:03.360000
+#location = 33km NW of Fairview, Oklahoma
+#latitude = 36.5009
+#longitude = -98.7147
+#depth = 7.9
+#magnitude = 2.5
+#magtype = mb_lg
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10004c0q
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.U32A.BHZ.--,0.261015,242.428,Pg,2016-01-07 07:50:07.770,manual,-0.6,3.02
+GS.OK035.HHZ.00,0.206931,1.11198,Pg,2016-01-07 07:50:07.080,manual,-0.4,3.27
+OK.CROK.HHZ.--,0.589243,89.4138,Pg,2016-01-07 07:50:13.760,manual,-0.5,2.5
+OK.GC02.EHZ.--,0.771379,62.7684,Pg,2016-01-07 07:50:17.040,manual,-0.3,2.27
+GS.KAN14.HHZ.01,0.756138,52.7794,Pg,2016-01-07 07:50:16.920,manual,-0.2,2.29
+OK.BLOK.HHZ.--,1.23389,77.4274,Pg,2016-01-07 07:50:25.430,manual,0.0,1.83
+OK.FNO.HHZ.01,1.63631,138.929,Pn,2016-01-07 07:50:32.360,manual,0.1,1.18
+OK.X34A.HHZ.--,2.02758,158.964,Pn,2016-01-07 07:50:39.040,manual,1.5,1.13
+GS.KAN17.HHZ.01,0.935761,54.3099,Pg,2016-01-07 07:50:20.490,manual,0.3,2.09
+N4.R32B.BHZ.--,1.91821,0.0844982,Pn,2016-01-07 07:50:37.070,manual,1.0,1.14
+N4.T35B.BHZ.--,1.81801,76.1645,Pn,2016-01-07 07:50:35.440,manual,0.7,1.16
+GS.KAN10.HHZ.01,0.795862,38.4811,Pg,2016-01-07 07:50:17.700,manual,-0.1,2.24
+GS.KAN11.HHZ.01,0.953129,42.1682,Pg,2016-01-07 07:50:20.860,manual,0.3,2.07
+GS.KAN08.HHZ.01,0.938406,39.2469,Pg,2016-01-07 07:50:20.160,manual,-0.1,2.09
+OK.OKCFA.HHZ.--,1.4913,136.214,Pg,2016-01-07 07:50:29.840,manual,0.0,0.9
+GS.OK035.HH2.00,0.206931,1.11198,Sg,2016-01-07 07:50:10.320,manual,-0.1,1.32
+OK.U32A.BHE.--,0.261015,242.428,Sg,2016-01-07 07:50:11.900,manual,-0.2,1.29
+OK.CROK.HHN.--,0.589243,89.4138,Sg,2016-01-07 07:50:21.960,manual,-0.2,1.22
+GS.KAN14.HHN.01,0.756138,52.7794,Sg,2016-01-07 07:50:26.540,manual,-0.6,1.18
+OK.GC02.EHE.--,0.771379,62.7684,Sg,2016-01-07 07:50:27.230,manual,-0.4,1.18
+GS.KAN10.HHN.01,0.795862,38.4811,Sg,2016-01-07 07:50:27.920,manual,-0.5,1.17
+ZD.KNG1.EHZ.--,0.9016,113.777,Pg,2016-01-07 07:50:19.540,manual,-0.1,2.13
+GS.KAN05.HHZ.01,0.908297,47.8531,Pg,2016-01-07 07:50:19.750,manual,0.0,2.12
+GS.KAN13.HHZ.01,1.11708,62.408,Pg,2016-01-07 07:50:23.410,manual,0.0,1.93
+GS.KAN01.HHZ.01,1.00605,49.3734,Pg,2016-01-07 07:50:21.490,manual,0.0,2.02

@@ -1,0 +1,58 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usp000hmff
+#time = 2010-10-01 22:39:14
+#location = Oklahoma
+#latitude = 34.8610
+#longitude = -96.0290
+#depth = 5.0
+#magnitude = 3.1
+#magtype = mblg
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usp000hmff
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+IR.TUL1.--.--,1.06,10.4,Pg,2010-10-01 22:39:32.850,manual,-1.6,1.0
+IR.W34A.--.--,1.48,285.1,Pn,2010-10-01 22:39:40.050,manual,-1.3,1.0
+IR.V34A.--.--,1.56,309.0,Pn,2010-10-01 22:39:41.310,manual,-1.1,1.0
+IR.U34A.--.--,1.99,322.5,Pn,2010-10-01 22:39:47.790,manual,-0.6,1.0
+IR.MIAR.--.--,2.04,98.2,Pn,2010-10-01 22:39:49.470,manual,0.4,1.0
+IR.WMOK.--.--,2.27,267.7,Pn,2010-10-01 22:39:51.950,manual,-0.2,1.0
+IR.UALR.--.--,3.03,90.6,Pn,2010-10-01 22:40:01.170,manual,-1.5,1.0
+IR.WHTX.--.--,3.1,203.0,Pn,2010-10-01 22:40:08.450,manual,4.9,1.0
+IR.NATX.--.--,3.3,159.3,Pn,2010-10-01 22:40:11.760,manual,5.5,1.0
+IR.ABTX.--.--,3.75,234.5,Pn,2010-10-01 22:40:12.550,manual,0.0,1.0
+IR.KSU1.--.--,4.26,353.9,Pn,2010-10-01 22:40:16.560,manual,-2.9,1.0
+IR.AMTX.--.--,4.65,271.9,Pn,2010-10-01 22:40:25.010,manual,0.1,1.0
+IR.PBMO.--.--,4.94,65.6,Pn,2010-10-01 22:40:25.520,manual,-3.3,1.0
+IR.JCT.--.--,5.4,217.1,Pn,2010-10-01 22:40:35.660,manual,0.4,1.0
+IR.MSTX.--.--,5.64,262.8,Pn,2010-10-01 22:40:38.230,manual,-0.4,1.0
+IR.OXF.--.--,5.47,91.8,Pn,2010-10-01 22:40:41.170,manual,5.1,1.0
+IR.T25A.--.--,7.16,290.9,Pn,2010-10-01 22:41:08.320,manual,8.7,1.0
+IR.TX31.--.--,8.5,231.7,Pn,2010-10-01 22:41:26.250,manual,8.3,1.0

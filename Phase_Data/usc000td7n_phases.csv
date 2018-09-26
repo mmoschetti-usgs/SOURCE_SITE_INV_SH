@@ -1,0 +1,69 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000td7n
+#time = 2015-01-08 08:55:42.100000
+#location = 8km NW of Helena, Oklahoma
+#latitude = 36.6041
+#longitude = -98.3245
+#depth = 5.0
+#magnitude = 2.6
+#magtype = mb_lg
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000td7n
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+TA.TUL1.BHZ.--,2.1608,107.933,Pn,2015-01-08 08:56:19.060,manual,0.3,1.12
+GS.OK031.HHZ.00,1.36478,117.985,Pn,2015-01-08 08:56:07.140,manual,-0.7,1.22
+OK.W35A.EHZ.--,1.86658,140.459,Pn,2015-01-08 08:56:15.060,manual,0.3,1.15
+OK.CROK.HHZ.--,0.292022,109.758,Pg,2015-01-08 08:55:48.090,manual,0.3,2.9
+GS.KAN14.HHZ.01,0.456241,39.3968,Pg,2015-01-08 08:55:51.260,manual,0.4,2.39
+OK.QUOK.HHZ.--,1.37398,107.837,Pn,2015-01-08 08:56:07.360,manual,-0.6,1.22
+OK.OKCSW.EHZ.--,1.39545,148.734,Pn,2015-01-08 08:56:07.520,manual,-0.7,1.22
+US.WMOK.BHZ.10,1.89883,191.414,Pn,2015-01-08 08:56:15.640,manual,0.5,1.15
+N4.T35B.BHZ.--,1.48857,77.3797,Pn,2015-01-08 08:56:09.450,manual,-0.1,1.21
+N4.U38B.BHZ.--,3.17689,91.7921,Pn,2015-01-08 08:56:32.710,manual,0.0,1.01
+N4.S39B.BHZ.--,4.14067,73.3127,Pn,2015-01-08 08:56:46.100,manual,0.1,0.92
+OK.GC02.EHN.--,0.447748,56.3924,Sg,2015-01-08 08:55:57.320,manual,0.7,1.2
+OK.U32A.BHN.--,0.589737,247.862,Sg,2015-01-08 08:56:02.010,manual,0.9,1.14
+GS.KAN13.HHN.01,0.792616,58.7645,Sg,2015-01-08 08:56:07.780,manual,0.2,1.06
+OK.KAY1.HHZ.--,0.908041,79.6288,Pg,2015-01-08 08:55:59.200,manual,-0.3,1.6
+GS.OK025.HH2.00,1.29641,141.656,Sg,2015-01-08 08:56:23.530,manual,-0.2,0.91
+GS.OK026.HHZ.00,1.38145,148.917,Pn,2015-01-08 08:56:07.370,manual,-0.7,1.22
+OK.FNO.HHZ.01,1.53864,150.584,Pn,2015-01-08 08:56:10.180,manual,0.0,1.2
+TA.W39A.BHZ.--,3.94464,109.522,Pn,2015-01-08 08:56:44.270,manual,1.0,0.94
+GS.OK025.HHZ.00,1.29641,141.656,Pn,2015-01-08 08:56:05.880,manual,-1.0,1.23
+GS.OK030.HHZ.00,1.41628,118.002,Pn,2015-01-08 08:56:08.040,manual,-0.5,1.22
+OK.GC02.EHZ.--,0.447748,56.3924,Pg,2015-01-08 08:55:50.860,manual,0.1,2.41
+GS.KAN10.HHZ.01,0.550091,19.4702,Pg,2015-01-08 08:55:53.140,manual,0.5,2.17
+OK.U32A.BHZ.--,0.589737,247.862,Pg,2015-01-08 08:55:53.850,manual,0.4,2.08
+GS.KAN08.HHZ.01,0.682992,24.4087,Pg,2015-01-08 08:55:55.360,manual,0.1,1.92
+GS.KAN11.HHZ.01,0.685239,28.6276,Pg,2015-01-08 08:55:55.440,manual,0.2,1.91
+GS.KAN12.HHZ.01,0.739777,20.607,Pg,2015-01-08 08:55:56.400,manual,0.1,1.83
+GS.KAN13.HHZ.01,0.792616,58.7645,Pg,2015-01-08 08:55:57.180,manual,-0.1,1.75
+OK.KAY1.HHN.--,0.908041,79.6288,Sg,2015-01-08 08:56:11.410,manual,0.1,1.02

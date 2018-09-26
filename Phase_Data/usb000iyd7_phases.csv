@@ -1,0 +1,62 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000iyd7
+#time = 2013-08-08 06:57:51
+#location = 16km NE of Seminole, Oklahoma
+#latitude = 35.3482
+#longitude = -96.5676
+#depth = 3.9
+#magnitude = 3.3
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000iyd7
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.ADOK.HNZ.--,0.722303,295.047,Pg,2013-08-08 06:58:04.390,manual,-0.5,0.156
+US.WMOK.BHZ.10,1.91522,252.101,Pn,2013-08-08 06:58:25.640,manual,1.2,0.152
+US.MIAR.BHZ.00,2.58425,107.193,Pn,2013-08-08 06:58:34.600,manual,1.0,0.085
+AG.HHAR.HHZ.00,2.32994,65.6625,Pn,2013-08-08 06:58:30.800,manual,0.7,0.0
+TA.TUL1.BHZ.--,0.844989,48.178,Pg,2013-08-08 06:58:07.250,manual,0.0,0.26
+AG.WLAR.HHZ.00,3.29885,119.145,Pn,2013-08-08 06:58:44.320,manual,0.9,0.068
+AG.WHAR.HHZ.00,3.49912,89.7132,Pn,2013-08-08 06:58:46.900,manual,0.7,0.086
+AG.FCAR.HHZ.00,3.66024,80.2169,Pn,2013-08-08 06:58:48.780,manual,0.4,0.093
+US.AMTX.BHZ.00,4.21687,265.167,Pn,2013-08-08 06:58:56.870,manual,0.7,0.0
+TA.W39A.BHZ.--,2.28264,93.0099,Pn,2013-08-08 06:58:30.300,manual,0.8,0.106
+NM.UALR.BHZ.--,3.51226,98.1504,Pn,2013-08-08 06:58:47.040,manual,0.7,0.0
+TA.U40A.BHZ.--,3.18031,70.4801,Pn,2013-08-08 06:58:42.310,manual,0.5,0.114
+US.NATX.BHZ.00,3.91688,155.485,Pg,2013-08-08 06:59:06.070,automatic,5.4,0.014
+GS.OK009.HNZ.01,0.735906,288.672,Sg,2013-08-08 06:58:14.870,automatic,0.2,0.151
+GS.ADOK.HNZ.--,0.722303,295.047,Sg,2013-08-08 06:58:13.640,manual,-0.6,0.151
+TA.X40A.BHZ.--,3.18572,104.566,Pn,2013-08-08 06:58:42.960,manual,1.1,0.077
+TA.TUL1.BHZ.--,0.844989,48.178,Sg,2013-08-08 06:58:16.760,manual,-1.4,0.282
+US.WMOK.BHZ.10,1.91522,252.101,Sn,2013-08-08 06:58:50.660,manual,1.6,0.147
+GS.OK011.HNZ.01,0.16735,324.801,Pg,2013-08-08 06:57:54.260,manual,0.0,0.0
+US.NATX.BHZ.00,3.91688,155.485,Sn,2013-08-08 06:59:37.750,automatic,-0.6,0.034
+TA.ABTX.BHZ.--,3.72985,224.109,Pn,2013-08-08 06:58:49.630,manual,0.2,0.098
+TA.WHTX.BHZ.--,3.42912,192.727,Pn,2013-08-08 06:58:46.940,manual,1.7,0.089

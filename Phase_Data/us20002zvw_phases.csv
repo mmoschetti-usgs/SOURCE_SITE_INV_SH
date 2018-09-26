@@ -1,0 +1,72 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20002zvw
+#time = 2015-07-24 16:21:23
+#location = 14km NE of Cherokee, Oklahoma
+#latitude = 36.8416
+#longitude = -98.2303
+#depth = 5.2
+#magnitude = 3.1
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20002zvw
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN05.HHZ.01,0.391432,46.9833,Pg,2015-07-24 16:21:31.110,manual,0.5,2.57
+OK.GC02.EHZ.--,0.297533,87.9851,Pg,2015-07-24 16:21:29.230,manual,0.4,2.88
+GS.KAN13.HHZ.01,0.626773,73.9436,Pg,2015-07-24 16:21:35.260,manual,0.2,2.01
+GS.KAN09.HHZ.01,0.571424,58.8576,Pg,2015-07-24 16:21:34.340,manual,0.3,2.12
+GS.KS20.HHZ.00,0.665334,54.1894,Pg,2015-07-24 16:21:35.960,manual,0.2,1.95
+OK.BCOK.HHZ.--,1.28461,156.814,Pn,2015-07-24 16:21:46.540,manual,-1.0,1.23
+OK.CHOK.HHZ.--,1.58961,143.155,Pn,2015-07-24 16:21:51.890,manual,0.2,1.19
+GS.OK032.HHZ.00,0.0409669,157.056,Pg,2015-07-24 16:21:24.660,manual,0.4,4.34
+N4.T35B.BHZ.--,1.37986,86.3914,Pn,2015-07-24 16:21:48.080,manual,-0.8,1.22
+N4.R32B.BHZ.--,1.62367,346.549,Pn,2015-07-24 16:21:52.880,manual,0.7,1.19
+GS.OK025.HHZ.00,1.45023,149.891,Pn,2015-07-24 16:21:49.430,manual,-0.4,1.21
+GS.OK029.HHZ.00,1.21645,148.786,Pg,2015-07-24 16:21:45.720,manual,-0.6,1.31
+OK.CCOK.HHZ.--,1.55297,162.406,Pn,2015-07-24 16:21:50.980,manual,-0.2,1.2
+OK.OKCSW.EHZ.--,1.57012,155.653,Pn,2015-07-24 16:21:50.860,manual,-0.6,1.19
+OK.FNO.HHZ.01,1.71773,156.729,Pn,2015-07-24 16:21:53.010,manual,-0.5,1.17
+GS.OK031.HHZ.00,1.43041,127.894,Pn,2015-07-24 16:21:49.130,manual,-0.4,1.21
+OK.QUOK.HHZ.--,1.39701,118.151,Pn,2015-07-24 16:21:48.980,manual,-0.1,1.22
+US.WMOK.BHZ.10,2.14635,192.195,Pn,2015-07-24 16:22:00.240,manual,0.9,1.12
+OK.U32A.BHZ.--,0.773073,233.606,Pg,2015-07-24 16:21:37.360,manual,-0.5,1.78
+OK.CROK.HHZ.--,0.390465,149.371,Pg,2015-07-24 16:21:30.840,manual,0.3,2.57
+OK.GORE.HHZ.--,0.234046,103.732,Pg,2015-07-24 16:21:28.160,manual,0.6,3.14
+GS.KAN10.HHZ.01,0.301483,21.0042,Pg,2015-07-24 16:21:29.410,manual,0.6,2.87
+GS.KAN11.HHZ.01,0.443463,34.801,Pg,2015-07-24 16:21:32.120,manual,0.6,2.42
+GS.KAN12.HHZ.01,0.491436,22.145,Pg,2015-07-24 16:21:32.950,manual,0.5,2.3
+GS.KAN08.HHZ.01,0.43685,28.2918,Pg,2015-07-24 16:21:32.060,manual,0.6,2.44
+GS.KAN17.HHZ.01,0.424193,61.4041,Pg,2015-07-24 16:21:31.570,manual,0.4,2.47
+GS.KAN10.HNE.01,0.301483,21.0042,Sg,2015-07-24 16:21:33.900,manual,1.1,1.27
+GS.OK032.HH1.00,0.0409669,157.056,Sg,2015-07-24 16:21:25.710,manual,0.6,1.42
+GS.KS20.HH2.00,0.665334,54.1894,Sg,2015-07-24 16:21:45.060,manual,0.6,1.11
+OK.X37A.BHZ.--,3.23455,133.167,Pn,2015-07-24 16:22:14.510,manual,0.2,1.0
+OK.BLOK.HHZ.--,0.818924,95.3611,Pg,2015-07-24 16:21:38.600,manual,-0.1,1.71
+OK.LOOK.HHZ.--,2.96942,162.902,Pn,2015-07-24 16:22:11.680,manual,1.0,1.03

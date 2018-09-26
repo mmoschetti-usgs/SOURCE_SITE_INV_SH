@@ -1,0 +1,48 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usp000hb8h
+#time = 2010-04-12 09:40:10
+#location = Oklahoma
+#latitude = 34.6350
+#longitude = -96.3230
+#depth = 0.1
+#magnitude = 2.8
+#magtype = md
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usp000hb8h
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+IR.TUL1.--.--,1.34,18.7,Pg,2010-04-12 09:40:33.520,manual,-2.3,1.0
+IR.W34A.--.--,1.33,297.1,P,2010-04-12 09:40:33.870,manual,-1.7,1.0
+IR.V34A.--.--,1.55,321.1,P,2010-04-12 09:40:37.130,manual,-1.6,1.0
+IR.U34A.--.--,2.05,331.5,Pn,2010-04-12 09:40:44.630,manual,-1.0,1.0
+IR.WMOK.--.--,2.03,273.6,Pn,2010-04-12 09:40:44.990,manual,-0.4,1.0
+IR.MIAR.--.--,2.27,91.5,Pn,2010-04-12 09:40:50.070,manual,1.4,1.0
+IR.WHTX.--.--,2.8,200.1,Pn,2010-04-12 09:40:58.450,manual,2.5,1.0
+IR.ABTX.--.--,3.42,235.0,Pn,2010-04-12 09:41:04.460,manual,0.0,1.0

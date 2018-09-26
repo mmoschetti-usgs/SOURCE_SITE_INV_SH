@@ -1,0 +1,60 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usp000jags
+#time = 2011-11-07 08:12:35
+#location = Oklahoma
+#latitude = 35.5120
+#longitude = -96.7860
+#depth = 3.1
+#magnitude = 3.1
+#magtype = md
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usp000jags
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+IR.V35A.--.--,0.25,350.4,Pg,2011-11-07 08:12:40.610,manual,0.7,1.0
+IR.W35A.--.--,0.37,191.4,Pg,2011-11-07 08:12:42.520,manual,0.5,1.0
+IR.W36A.--.--,0.59,128.9,Pg,2011-11-07 08:12:46.790,manual,0.5,1.0
+IR.V36A.--.--,0.74,68.0,Pg,2011-11-07 08:12:49.470,manual,0.3,1.0
+IR.U35A.--.--,0.86,2.9,Pg,2011-11-07 08:12:51.320,manual,-0.2,1.0
+IR.TUL1.--.--,0.9,63.5,Pg,2011-11-07 08:12:51.880,manual,-0.4,1.0
+IR.X35A.--.--,1.12,187.9,Pg,2011-11-07 08:12:55.940,manual,-0.5,1.0
+IR.W37B.--.--,1.17,108.2,Pg,2011-11-07 08:12:57.420,manual,0.0,1.0
+IR.X37A.--.--,1.48,128.0,Pn,2011-11-07 08:13:02.930,manual,0.4,1.0
+IR.WMOK.--.--,1.81,245.3,Pn,2011-11-07 08:13:07.130,manual,0.1,1.0
+IR.MIAR.--.--,2.81,109.2,Pn,2011-11-07 08:13:22.140,manual,1.4,1.0
+IR.W40A.--.--,3.05,94.9,Pn,2011-11-07 08:13:24.650,manual,0.5,1.0
+IR.WLAR.--.--,3.53,119.9,Pn,2011-11-07 08:13:29.560,manual,-1.2,1.0
+IR.WHTX.--.--,3.56,189.2,Pn,2011-11-07 08:13:32.180,manual,1.1,1.0
+IR.WHAR.--.--,3.68,92.1,Pn,2011-11-07 08:13:33.600,manual,0.8,1.0
+IR.UALR.--.--,3.71,100.1,Pn,2011-11-07 08:13:34.740,manual,1.5,1.0
+IR.HHAR.--.--,2.44,70.8,Sn,2011-11-07 08:13:47.950,manual,2.0,1.0
+IR.MSTX.--.--,5.16,254.4,Pn,2011-11-07 08:13:54.300,manual,1.0,1.0
+IR.JCT.--.--,5.62,207.6,Pn,2011-11-07 08:13:58.830,manual,-0.7,1.0
+IR.KSCO.--.--,5.82,308.6,Pn,2011-11-07 08:14:03.930,manual,1.6,1.0

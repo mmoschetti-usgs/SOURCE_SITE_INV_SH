@@ -1,0 +1,69 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10004b1b
+#time = 2016-01-03 16:47:00.970000
+#location = 7km ENE of Edmond, Oklahoma
+#latitude = 35.6795
+#longitude = -97.3990
+#depth = 5.0
+#magnitude = 2.7
+#magtype = mb_lg
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10004b1b
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK029.HHZ.00,0.125386,338.75,Pg,2016-01-03 16:47:04.100,manual,0.6,3.72
+GS.OK031.HHZ.00,0.530675,58.8746,Pg,2016-01-03 16:47:11.340,manual,0.2,2.21
+GS.OK033.HHZ.00,0.522196,45.655,Pg,2016-01-03 16:47:11.290,manual,0.3,2.23
+GS.OK034.HHZ.00,0.647575,59.1632,Pg,2016-01-03 16:47:13.320,manual,-0.1,1.98
+GS.OK030.HHZ.00,0.558101,63.4642,Pg,2016-01-03 16:47:11.720,manual,0.0,2.15
+OK.GORE.HHZ.--,1.18946,338.288,Pn,2016-01-03 16:47:23.350,manual,-0.9,1.25
+GS.OK025.HH1.00,0.110083,153.099,Sg,2016-01-03 16:47:05.060,manual,0.2,1.38
+GS.OK031.HH2.00,0.530675,58.8746,Sg,2016-01-03 16:47:18.540,manual,0.5,1.16
+GS.OK032.HHZ.00,1.29966,329.928,Pn,2016-01-03 16:47:25.030,manual,-0.7,1.23
+GS.KAN17.HHZ.01,1.39349,347.875,Pn,2016-01-03 16:47:26.860,manual,-0.2,1.22
+US.WMOK.BHZ.10,1.4706,230.696,Pn,2016-01-03 16:47:27.070,manual,-1.0,1.21
+GS.KAN14.HHZ.01,1.35364,340.503,Pn,2016-01-03 16:47:26.230,manual,-0.2,1.22
+GS.KAN01.HHZ.01,1.49934,348.939,Pn,2016-01-03 16:47:28.510,manual,0.0,1.2
+GS.KAN08.HHZ.01,1.61148,343.543,Pn,2016-01-03 16:47:30.480,manual,0.5,1.19
+GS.KAN13.HHZ.01,1.33223,357.286,Pn,2016-01-03 16:47:25.990,manual,-0.2,1.23
+GS.KAN10.HHZ.01,1.54665,338.915,Pn,2016-01-03 16:47:29.280,manual,0.1,1.2
+GS.KAN06.HHZ.01,1.60862,346.82,Pn,2016-01-03 16:47:30.410,manual,0.4,1.19
+GS.KAN12.HHZ.01,1.68529,343.533,Pn,2016-01-03 16:47:31.470,manual,0.4,1.18
+GS.KAN11.HHZ.01,1.57888,344.925,Pn,2016-01-03 16:47:29.030,manual,-0.5,1.19
+GS.KAN16.HHZ.01,1.63369,341.018,Pn,2016-01-03 16:47:30.620,manual,0.3,1.19
+TA.TUL1.BHZ.--,1.32667,79.5294,Pn,2016-01-03 16:47:24.640,manual,-1.5,1.23
+OK.U32A.BHZ.--,1.47478,298.741,Pn,2016-01-03 16:47:27.880,manual,-0.3,1.21
+N4.T35B.BHZ.--,1.42714,29.88,Pn,2016-01-03 16:47:27.020,manual,-0.5,1.21
+GS.KAN05.HHZ.01,1.47647,345.15,Pn,2016-01-03 16:47:28.330,manual,0.2,1.21
+US.KSU1.BHZ.10,3.47268,10.1955,Pn,2016-01-03 16:47:56.060,manual,0.5,0.0
+TA.WHTX.BHZ.--,3.67904,180.756,Pn,2016-01-03 16:47:56.550,manual,-1.8,0.0
+US.CBKS.BHZ.00,3.64265,329.89,Pn,2016-01-03 16:47:57.710,manual,-0.2,0.0
+GS.OK009.HNZ.01,0.0999029,191.243,Pg,2016-01-03 16:47:03.070,manual,0.0,3.89
+GS.OK025.HHZ.00,0.110083,153.099,Pg,2016-01-03 16:47:03.180,manual,-0.1,3.82

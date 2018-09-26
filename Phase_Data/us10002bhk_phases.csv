@@ -1,0 +1,72 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10002bhk
+#time = 2015-05-21 22:59:48.800000
+#location = 11km SW of Cherokee, Oklahoma
+#latitude = 36.6967
+#longitude = -98.4569
+#depth = 7.0
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10002bhk
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK032.HHZ.00,0.224993,61.5612,Pg,2015-05-21 22:59:53.360,manual,0.1,3.18
+OK.GC02.EHZ.--,0.503863,71.9646,Pg,2015-05-21 22:59:58.580,manual,0.0,2.27
+GS.KAN10.HHZ.01,0.515326,34.1358,Pg,2015-05-21 22:59:58.890,manual,0.1,2.24
+OK.CHOK.HHZ.--,1.60021,134.673,Pn,2015-05-21 23:00:17.490,manual,0.0,1.19
+GS.OK031.HHZ.00,1.50249,119.116,Pn,2015-05-21 23:00:16.390,manual,0.2,1.2
+OK.X34A.HHZ.--,2.15206,166.151,Pn,2015-05-21 23:00:25.630,manual,0.5,1.12
+GS.OK032.HH1.00,0.224993,61.5612,Sg,2015-05-21 22:59:56.920,manual,0.6,1.31
+OK.GC02.EHE.--,0.503863,71.9646,Sg,2015-05-21 23:00:05.630,manual,0.5,1.17
+OK.U32A.BHZ.--,0.540852,234.336,Pg,2015-05-21 22:59:59.120,manual,-0.1,2.19
+OK.U32A.BHE.--,0.540852,234.336,Sg,2015-05-21 23:00:06.740,manual,0.4,1.16
+GS.KAN10.HHN.01,0.515326,34.1358,Sg,2015-05-21 23:00:06.140,manual,0.6,1.17
+GS.KAN16.HHZ.01,0.614305,30.6382,Pg,2015-05-21 23:00:00.270,manual,-0.4,2.04
+GS.KAN16.HNN.01,0.614305,30.6382,Sg,2015-05-21 23:00:09.170,manual,0.5,1.13
+GS.KAN01.HHZ.01,0.721497,50.6083,Pg,2015-05-21 23:00:02.610,manual,-0.1,1.85
+GS.KAN11.HHZ.01,0.669358,40.4216,Pg,2015-05-21 23:00:02.380,manual,0.7,1.94
+GS.KAN08.HHZ.01,0.656791,36.2019,Pg,2015-05-21 23:00:00.610,manual,-0.8,1.96
+GS.KAN05.HHZ.01,0.623387,48.5636,Pg,2015-05-21 23:00:00.670,manual,-0.1,2.02
+GS.KAN09.HHZ.01,0.802522,56.6223,Pg,2015-05-21 23:00:05.470,manual,1.2,1.74
+GS.OK029.HHZ.00,1.20951,137.661,Pg,2015-05-21 23:00:11.730,manual,-0.3,1.31
+NQ.KAN15.HNZ.01,0.929221,49.3572,Pg,2015-05-21 23:00:07.060,manual,0.4,1.58
+GS.OK025.HHZ.00,1.43521,140.536,Pn,2015-05-21 23:00:14.800,manual,-0.5,1.21
+OK.BCOK.HHZ.--,1.24395,146.294,Pn,2015-05-21 23:00:10.510,manual,-2.1,1.24
+OK.QUOK.HHZ.--,1.50464,109.87,Pn,2015-05-21 23:00:16.450,manual,0.2,1.2
+OK.OKCFA.HHZ.--,1.51623,147.199,Pn,2015-05-21 23:00:15.640,manual,-0.7,1.2
+GS.OK030.HHZ.00,1.55398,119.092,Pn,2015-05-21 23:00:16.990,manual,0.1,1.19
+NQ.OK915.HNZ.01,1.54917,118.099,Pn,2015-05-21 23:00:17.060,manual,0.2,1.19
+N4.T35B.BHZ.--,1.5763,81.4293,Pn,2015-05-21 23:00:17.570,manual,0.4,1.19
+OK.FNO.HHZ.01,1.67214,148.885,Pn,2015-05-21 23:00:18.200,manual,-0.3,1.18
+GS.OK012.HNZ.01,1.73387,132.92,Pn,2015-05-21 23:00:18.500,manual,-0.9,1.17
+N4.R32B.BHZ.--,1.73459,353.39,Pn,2015-05-21 23:00:19.200,manual,-0.2,1.17
+US.CBKS.BHZ.00,2.34467,334.741,Pn,2015-05-21 23:00:27.450,manual,-0.4,1.09
+US.WMOK.BHZ.10,1.97225,187.773,Pn,2015-05-21 23:00:23.290,manual,0.6,1.14

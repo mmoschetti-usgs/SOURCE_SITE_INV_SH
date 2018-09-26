@@ -1,0 +1,55 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000nuuj
+#time = 2014-03-28 16:34:25.700000
+#location = 6km ENE of Edmond, Oklahoma
+#latitude = 35.6700
+#longitude = -97.4070
+#depth = 5.5
+#magnitude = 2.4
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000nuuj
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK028.HHZ.00,0.301826,111.0,Pg,2014-03-28 16:34:31.980,manual,0.4,0.0
+GS.OK027.HHZ.00,0.108842,67.3154,Pg,2014-03-28 16:34:28.440,manual,0.4,0.0
+GS.OK029.HHZ.00,0.132205,342.868,Pg,2014-03-28 16:34:28.850,manual,0.4,0.0
+OK.W35A.EHZ.--,0.674986,139.724,Pg,2014-03-28 16:34:38.630,manual,0.0,0.093
+GS.OK025.HHZ.00,0.105059,147.58,Pg,2014-03-28 16:34:28.350,manual,0.4,0.0
+GS.ADOK.HNZ.--,0.0343073,121.555,Pg,2014-03-28 16:34:27.070,manual,0.2,0.0
+OK.FNO.HHZ.01,0.411712,179.34,Pg,2014-03-28 16:34:34.160,manual,0.5,0.0
+OK.CROK.HHZ.--,0.954886,330.899,Pg,2014-03-28 16:34:43.800,manual,-0.2,0.058
+US.WMOK.BHZ.10,1.45956,230.818,Pn,2014-03-28 16:34:52.210,manual,-0.5,0.04
+GS.OK026.HHZ.00,0.256707,188.122,Pg,2014-03-28 16:34:30.970,manual,0.2,0.0
+OK.OKCSW.EHZ.--,0.265127,185.482,Pg,2014-03-28 16:34:31.150,manual,0.3,0.0
+N4.T35B.BHZ.--,1.43861,29.912,Pn,2014-03-28 16:34:51.950,manual,-0.5,0.081
+GS.ADOK.HNE.--,0.0343073,121.555,Sg,2014-03-28 16:34:28.110,manual,0.3,0.132
+GS.OK025.HH1.00,0.105059,147.58,Sg,2014-03-28 16:34:30.470,manual,1.0,0.074
+GS.OK026.HH2.00,0.256707,188.122,Sg,2014-03-28 16:34:35.240,manual,1.1,0.1

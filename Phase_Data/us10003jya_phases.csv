@@ -1,0 +1,87 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10003jya
+#time = 2015-10-03 05:11:58.340000
+#location = 11km NW of Caldwell, Kansas
+#latitude = 37.1015
+#longitude = -97.7032
+#depth = 5.7
+#magnitude = 3.4
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10003jya
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN06.HHZ.01,0.191806,319.722,Pg,2015-10-03 05:12:02.400,manual,0.2,3.34
+GS.KAN13.HHZ.01,0.200835,116.058,Pg,2015-10-03 05:12:02.610,manual,0.3,3.3
+GS.KS20.HHZ.00,0.174709,42.8646,Pg,2015-10-03 05:12:02.060,manual,0.2,3.43
+GS.KAN05.HHZ.01,0.135375,273.051,Pg,2015-10-03 05:12:01.320,manual,0.2,3.66
+GS.KAN11.HHZ.01,0.19763,301.92,Pg,2015-10-03 05:12:02.470,manual,0.2,3.31
+GS.KAN10.HHZ.01,0.314051,274.128,Pg,2015-10-03 05:12:04.740,manual,0.3,2.82
+OK.GC02.EHZ.--,0.279198,206.7,Pg,2015-10-03 05:12:03.980,manual,0.2,2.95
+GS.KAN16.HHZ.01,0.314231,293.326,Pg,2015-10-03 05:12:04.630,manual,0.2,2.82
+GS.KS21.HNZ.20,0.187429,9.84943,Pg,2015-10-03 05:12:02.300,manual,0.2,3.37
+OK.CROK.HHZ.--,0.636699,200.768,Pg,2015-10-03 05:12:10.630,manual,0.0,2.0
+GS.OK032.HHZ.00,0.503363,233.973,Pg,2015-10-03 05:12:08.180,manual,0.1,2.27
+OK.QUOK.HHZ.--,1.22575,138.93,Pg,2015-10-03 05:12:21.270,manual,-0.6,1.3
+GS.OK030.HHZ.00,1.38589,147.42,Pn,2015-10-03 05:12:23.860,manual,-0.3,1.22
+OK.BCOK.HHZ.--,1.44389,176.964,Pn,2015-10-03 05:12:24.920,manual,-0.1,1.21
+OK.CHOK.HHZ.--,1.62231,161.177,Pn,2015-10-03 05:12:27.680,manual,0.2,1.19
+N4.R32B.BHZ.--,1.54179,329.103,Pn,2015-10-03 05:12:26.560,manual,0.2,1.2
+IM.TX31.BHZ.--,9.21478,214.523,Pn,2015-10-03 05:14:10.980,manual,-0.6,0.97
+IM.TX32.BHZ.--,9.21476,214.518,Pn,2015-10-03 05:14:10.700,manual,-0.9,0.97
+GS.KAN09.HHZ.01,0.0761452,63.0027,Pg,2015-10-03 05:12:00.310,manual,0.2,4.06
+GS.KAN17.HHZ.01,0.0755637,220.712,Pg,2015-10-03 05:12:00.290,manual,0.2,4.06
+GS.KAN14.HHZ.01,0.253152,235.29,Pg,2015-10-03 05:12:03.480,manual,0.2,3.06
+GS.KAN12.HHZ.01,0.306017,309.806,Pg,2015-10-03 05:12:04.420,manual,0.1,2.85
+OK.BLOK.HHZ.--,0.518466,130.87,Pg,2015-10-03 05:12:08.380,manual,0.1,2.24
+N4.T35B.BHZ.--,0.971375,100.618,Pg,2015-10-03 05:12:16.660,manual,-0.3,1.53
+OK.U32A.BHZ.--,1.26755,235.744,Pn,2015-10-03 05:12:21.980,manual,-0.6,1.24
+GS.KAN17.HHE.01,0.0755637,220.712,Sg,2015-10-03 05:12:01.600,manual,0.2,1.4
+GS.KAN09.HHN.01,0.0761452,63.0027,Sg,2015-10-03 05:12:01.680,manual,0.3,1.4
+GS.KAN05.HHN.01,0.135375,273.051,Sg,2015-10-03 05:12:03.450,manual,0.4,1.36
+GS.KS20.HH2.00,0.174709,42.8646,Sg,2015-10-03 05:12:04.620,manual,0.4,1.34
+GS.KAN13.HHN.01,0.200835,116.058,Sg,2015-10-03 05:12:05.510,manual,0.5,1.32
+GS.KS21.HN2.20,0.187429,9.84943,Sg,2015-10-03 05:12:05.150,manual,0.5,1.33
+GS.KAN11.HHN.01,0.19763,301.92,Sg,2015-10-03 05:12:05.510,manual,0.6,1.32
+OK.GC02.EHE.--,0.279198,206.7,Sg,2015-10-03 05:12:07.970,manual,0.5,1.28
+GS.KAN10.HHN.01,0.314051,274.128,Sg,2015-10-03 05:12:09.190,manual,0.6,1.26
+GS.OK029.HHZ.00,1.3176,171.187,Pn,2015-10-03 05:12:22.770,manual,-0.5,1.23
+GS.OK031.HHZ.00,1.3409,148.473,Pn,2015-10-03 05:12:23.030,manual,-0.6,1.23
+GS.OK025.HHZ.00,1.54573,168.891,Pn,2015-10-03 05:12:26.520,manual,0.1,1.2
+OK.OKCFA.HHZ.--,1.69503,173.029,Pn,2015-10-03 05:12:28.650,manual,0.2,1.18
+OK.OKCSW.EHZ.--,1.70607,172.703,Pn,2015-10-03 05:12:28.660,manual,0.1,1.17
+NQ.KAN15.HNZ.01,0.22369,27.7244,Pg,2015-10-03 05:12:02.990,manual,0.2,3.19
+GS.OK032.HH2.00,0.503363,233.973,Sg,2015-10-03 05:12:15.050,manual,0.4,1.17
+GS.KAN06.HHN.01,0.191806,319.722,Sg,2015-10-03 05:12:05.270,manual,0.5,1.33
+IM.PDAR.SHZ.F0,10.7131,305.546,Pn,2015-10-03 05:14:31.350,manual,-0.9,0.83
+IM.TKL.BHZ.--,11.3224,93.1225,Pn,2015-10-03 05:14:42.290,manual,2.0,0.77
+IM.ILAR.SHZ.F0,39.9449,329.691,P,2015-10-03 05:19:32.350,manual,-0.5,0.92
+GS.KAN01.HHZ.01,0.0683567,319.291,Pg,2015-10-03 05:12:00.140,manual,0.1,4.11
+GS.KAN08.HHZ.01,0.247691,300.381,Pg,2015-10-03 05:12:03.490,manual,0.3,3.08

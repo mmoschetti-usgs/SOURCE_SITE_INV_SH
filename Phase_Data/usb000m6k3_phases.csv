@@ -1,0 +1,58 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000m6k3
+#time = 2014-01-22 06:50:14.940000
+#location = 3km SE of Stillwater, Oklahoma
+#latitude = 36.0975
+#longitude = -97.0304
+#depth = 5.0
+#magnitude = 2.4
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000m6k3
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.CROK.HHZ.--,0.870505,298.11,Sg,2014-01-22 06:50:43.780,automatic,0.8,0.312
+US.WMOK.BHZ.10,1.97073,227.012,Pn,2014-01-22 06:50:49.570,manual,0.6,0.115
+AG.HHAR.HHZ.00,2.50664,84.8763,Pn,2014-01-22 06:50:55.390,manual,-1.0,0.141
+GS.OK025.HHZ.00,0.572675,205.957,Pg,2014-01-22 06:50:26.090,manual,0.1,0.0
+OK.FNO.HHZ.01,0.890981,199.914,Pg,2014-01-22 06:50:32.340,manual,0.3,0.102
+OK.W35A.EHZ.--,0.951262,172.281,Pg,2014-01-22 06:50:32.580,manual,-0.6,0.142
+GS.ADOK.HNZ.--,0.523633,211.999,Pg,2014-01-22 06:50:25.110,manual,0.1,0.0
+GS.OK026.HHZ.00,0.762006,206.826,Pg,2014-01-22 06:50:29.140,manual,-0.4,0.123
+OK.CROK.HHZ.--,0.870505,298.11,Pg,2014-01-22 06:50:31.530,manual,-0.1,0.282
+OK.X34A.HHZ.--,1.63079,203.943,Pn,2014-01-22 06:50:43.890,manual,-0.4,0.119
+OK.U32A.BHZ.--,1.61809,280.598,Pn,2014-01-22 06:50:44.180,manual,0.0,0.167
+US.MIAR.BHZ.00,3.2208,117.729,Pn,2014-01-22 06:51:05.710,manual,-0.5,0.128
+AG.WHAR.HHZ.00,3.94226,100.402,Pn,2014-01-22 06:51:17.070,manual,1.0,0.111
+GS.OK025.HHZ.00,0.572675,205.957,Sg,2014-01-22 06:50:34.110,manual,0.7,0.143
+GS.OK026.HHZ.00,0.762006,206.826,Sg,2014-01-22 06:50:38.600,manual,-0.9,0.123
+OK.U32A.BHZ.--,1.61809,280.598,Sn,2014-01-22 06:51:06.330,manual,0.9,0.185
+OK.X34A.HHZ.--,1.63079,203.943,Sn,2014-01-22 06:51:05.310,manual,-0.4,0.123
+US.WMOK.BHZ.10,1.97073,227.012,Sn,2014-01-22 06:51:15.640,manual,1.5,0.105

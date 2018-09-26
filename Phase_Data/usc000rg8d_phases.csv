@@ -1,0 +1,59 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000rg8d
+#time = 2014-06-16 16:01:10.600000
+#location = 4km ESE of Harrah, Oklahoma
+#latitude = 35.4807
+#longitude = -97.1112
+#depth = 4.5
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000rg8d
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.W35A.EHZ.--,0.380229,149.328,Pg,2014-06-16 16:01:18.130,manual,0.2,0.0
+OK.OKCSW.EHZ.--,0.277194,254.389,Pg,2014-06-16 16:01:16.270,manual,0.3,0.0
+GS.OK027.HHZ.00,0.2702,328.718,Pg,2014-06-16 16:01:16.350,manual,0.5,0.0
+GS.OK026.HHZ.00,0.28533,256.877,Pg,2014-06-16 16:01:16.370,manual,0.2,0.0
+GS.OK029.HHZ.00,0.421591,318.489,Pg,2014-06-16 16:01:19.000,manual,0.3,0.0
+GS.OK028.HHZ.00,0.0899201,26.8416,Pg,2014-06-16 16:01:13.140,manual,0.6,0.0
+GS.OK025.HHZ.00,0.210299,298.514,Pg,2014-06-16 16:01:15.170,manual,0.5,0.0
+GS.ADOK.HNZ.--,0.272239,308.967,Pg,2014-06-16 16:01:16.440,manual,0.6,0.0
+OK.FNO.HHZ.01,0.32529,226.854,Pg,2014-06-16 16:01:17.540,manual,0.6,0.0
+OK.BCOK.HHZ.--,0.442427,293.531,Pg,2014-06-16 16:01:19.370,manual,0.2,0.0
+OK.QUOK.HHZ.--,0.763144,25.3089,Pg,2014-06-16 16:01:25.130,manual,-0.1,0.078
+OK.X34A.HHZ.--,1.05863,214.205,Pg,2014-06-16 16:01:30.870,manual,0.0,0.054
+TA.TUL1.BHZ.--,1.1563,67.8505,Pg,2014-06-16 16:01:31.670,manual,-1.1,0.039
+OK.CROK.HHZ.--,1.24276,325.565,Pg,2014-06-16 16:01:33.610,manual,-0.8,0.034
+N4.T35B.BHZ.--,1.51234,18.5183,Pn,2014-06-16 16:01:37.800,manual,-0.6,0.163
+US.WMOK.BHZ.10,1.55649,242.049,Pn,2014-06-16 16:01:38.410,manual,-0.6,0.127
+OK.X37A.BHZ.--,1.68211,121.42,Pn,2014-06-16 16:01:41.020,manual,0.3,0.091
+GS.OK025.HH1.00,0.210299,298.514,Sg,2014-06-16 16:01:18.420,manual,0.9,0.077
+GS.OK027.HH2.00,0.2702,328.718,Sg,2014-06-16 16:01:20.370,manual,1.0,0.08

@@ -1,0 +1,105 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20004usr
+#time = 2016-01-26 17:30:03.800000
+#location = 20km NE of Crescent, Oklahoma
+#latitude = 36.0883
+#longitude = -97.4449
+#depth = 5.3
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20004usr
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK029.HHZ.00,0.291197,181.6,Pg,2016-01-26 17:30:09.830,manual,0.4,2.91
+ZD.KNG1.EHZ.--,0.207625,282.284,Pg,2016-01-26 17:30:07.510,manual,-0.4,3.27
+OK.CHOK.HHZ.--,0.611501,149.238,Pg,2016-01-26 17:30:15.760,manual,0.2,2.04
+OK.QUOK.HHZ.--,0.602302,81.8689,Pg,2016-01-26 17:30:15.530,manual,0.2,2.06
+OK.CROK.HHZ.--,0.60161,313.848,Pg,2016-01-26 17:30:15.340,manual,0.0,2.06
+OK.CROK.HHN.--,0.60161,313.848,Sg,2016-01-26 17:30:23.450,manual,0.3,1.13
+OK.GC02.EHZ.--,0.831804,336.428,Pg,2016-01-26 17:30:19.700,manual,-0.1,1.7
+GS.KAN16.HHZ.01,1.23968,336.479,Pg,2016-01-26 17:30:26.850,manual,-0.7,1.29
+N4.T35B.BHZ.--,1.11705,42.02,Pg,2016-01-26 17:30:24.740,manual,-0.5,1.39
+ZD.KNG1.EHN.--,0.207625,282.284,Sg,2016-01-26 17:30:11.480,manual,0.8,1.32
+GS.OK029.HH2.00,0.291197,181.6,Sg,2016-01-26 17:30:14.060,manual,0.8,1.28
+GS.OK033.HH2.00,0.412863,95.9419,Sg,2016-01-26 17:30:17.900,manual,0.7,1.22
+GS.OK033.HHZ.00,0.412863,95.9419,Pg,2016-01-26 17:30:12.180,manual,0.4,2.5
+OK.BCOK.HHN.--,0.450905,197.273,Sg,2016-01-26 17:30:18.910,manual,0.5,1.2
+OK.BCOK.HHZ.--,0.450905,197.273,Pg,2016-01-26 17:30:12.670,manual,0.2,2.4
+GS.OK031.HH2.00,0.5093,105.183,Sg,2016-01-26 17:30:20.340,manual,0.1,1.17
+GS.OK031.HHZ.00,0.5093,105.183,Pg,2016-01-26 17:30:13.870,manual,0.3,2.26
+GS.OK025.HH1.00,0.513532,170.221,Sg,2016-01-26 17:30:21.240,manual,0.9,1.17
+GS.OK025.HHZ.00,0.513532,170.221,Pg,2016-01-26 17:30:13.890,manual,0.2,2.25
+NQ.OK914.HNN.01,0.531939,102.546,Sg,2016-01-26 17:30:21.600,manual,0.6,1.16
+NQ.OK914.HNZ.01,0.531939,102.546,Pg,2016-01-26 17:30:13.590,manual,-0.4,2.21
+GS.OK030.HH2.00,0.559441,106.442,Sg,2016-01-26 17:30:22.380,manual,0.5,1.15
+GS.OK030.HHZ.00,0.559441,106.442,Pg,2016-01-26 17:30:14.850,manual,0.3,2.15
+NQ.OK915.HNZ.01,0.561348,103.656,Pg,2016-01-26 17:30:13.780,manual,-0.8,2.14
+NQ.OK915.HNN.01,0.561348,103.656,Sg,2016-01-26 17:30:22.300,manual,0.4,1.15
+GS.OK034.HH2.00,0.598055,97.2724,Sg,2016-01-26 17:30:23.460,manual,0.4,1.14
+GS.OK034.HHZ.00,0.598055,97.2724,Pg,2016-01-26 17:30:15.500,manual,0.2,2.07
+OK.QUOK.HHN.--,0.602302,81.8689,Sg,2016-01-26 17:30:23.270,manual,0.1,1.13
+OK.CHOK.HHE.--,0.611501,149.238,Sg,2016-01-26 17:30:23.750,manual,0.2,1.13
+OK.OKCFA.HHZ.--,0.671575,180.453,Pg,2016-01-26 17:30:16.560,manual,-0.1,1.93
+OK.BLOK.HHZ.--,0.696108,15.3805,Pg,2016-01-26 17:30:17.160,manual,0.0,1.89
+OK.BLOK.HHN.--,0.696108,15.3805,Sg,2016-01-26 17:30:26.630,manual,0.4,1.1
+OK.CCOK.HHZ.--,0.749879,193.31,Pg,2016-01-26 17:30:16.750,manual,-1.5,1.81
+OK.CCOK.HHN.--,0.749879,193.31,Sg,2016-01-26 17:30:28.490,manual,0.6,1.08
+NQ.OK916.HNZ.01,0.757937,341.305,Pg,2016-01-26 17:30:17.990,manual,-0.4,1.8
+OK.GORE.HHN.--,0.805164,329.952,Sg,2016-01-26 17:30:29.590,manual,-0.1,1.06
+OK.GORE.HHZ.--,0.805164,329.952,Pg,2016-01-26 17:30:18.990,manual,-0.3,1.73
+OK.FNO.HHN.01,0.829861,177.53,Sg,2016-01-26 17:30:31.170,manual,0.7,1.05
+OK.FNO.HHZ.01,0.829861,177.53,Pg,2016-01-26 17:30:19.600,manual,-0.1,1.7
+GS.KAN13.HHE.01,0.92316,358.365,Sg,2016-01-26 17:30:33.380,manual,-0.1,1.02
+GS.KAN13.HHZ.01,0.92316,358.365,Pg,2016-01-26 17:30:21.340,manual,-0.2,1.58
+GS.KAN14.HNE.01,0.962017,334.444,Sg,2016-01-26 17:30:35.000,manual,0.3,1.0
+GS.KAN14.HHZ.01,0.962017,334.444,Pg,2016-01-26 17:30:21.880,manual,-0.4,1.54
+GS.KAN17.HHN.01,0.988075,344.986,Sg,2016-01-26 17:30:35.010,manual,-0.6,1.0
+GS.KAN17.HHZ.01,0.988075,344.986,Pg,2016-01-26 17:30:22.500,manual,-0.3,1.51
+OK.W35A.HHZ.--,1.04283,153.369,Pg,2016-01-26 17:30:23.130,manual,-0.7,1.46
+GS.KAN05.HHE.01,1.07482,341.464,Pg,2016-01-26 17:30:21.360,manual,-3.1,1.43
+GS.KAN01.HHZ.01,1.09264,346.721,Pg,2016-01-26 17:30:24.090,manual,-0.7,1.41
+GS.KAN01.HNE.01,1.09264,346.721,Sg,2016-01-26 17:30:38.740,manual,-0.2,0.96
+N4.T35B.BHN.--,1.11705,42.02,Sg,2016-01-26 17:30:39.260,manual,-0.5,0.96
+GS.KAN10.HHZ.01,1.15809,333.336,Pg,2016-01-26 17:30:25.300,manual,-0.7,1.36
+GS.KAN11.HHZ.01,1.17741,341.48,Pg,2016-01-26 17:30:25.270,manual,-1.1,1.34
+GS.KAN11.HHN.01,1.17741,341.48,Sg,2016-01-26 17:30:40.700,manual,-1.0,0.94
+GS.OK035.HH1.00,1.19332,301.601,Sg,2016-01-26 17:30:42.290,manual,0.1,0.94
+GS.KAN06.HHZ.01,1.20429,344.09,Pg,2016-01-26 17:30:26.400,manual,-0.5,1.32
+GS.KAN06.HHE.01,1.20429,344.09,Sg,2016-01-26 17:30:42.180,manual,-0.3,0.93
+GS.KAN08.HHZ.01,1.21236,339.738,Pn,2016-01-26 17:30:25.940,manual,-1.4,1.25
+GS.KAN12.HHZ.01,1.28603,339.941,Pn,2016-01-26 17:30:27.660,manual,-0.7,1.23
+OK.U32A.BHZ.--,1.29153,283.463,Pn,2016-01-26 17:30:27.880,manual,-0.6,1.23
+TA.TUL1.BHZ.--,1.3521,97.0581,Pn,2016-01-26 17:30:28.110,manual,-1.1,1.22
+OK.X34A.HHZ.--,1.51743,192.169,Pn,2016-01-26 17:30:31.410,manual,-0.1,1.2
+US.WMOK.BHZ.10,1.73374,219.389,Pn,2016-01-26 17:30:34.330,manual,-0.2,1.17
+OK.RLOK.HHZ.--,1.9592,86.9726,Pn,2016-01-26 17:30:37.000,manual,-0.6,1.14
+OK.LOOK.HHZ.--,2.10233,173.989,Pn,2016-01-26 17:30:39.850,manual,0.3,1.12
+OK.X37A.BHZ.--,2.26072,130.818,Pn,2016-01-26 17:30:40.590,manual,-1.1,1.11

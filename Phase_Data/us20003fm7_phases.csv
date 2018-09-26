@@ -1,0 +1,69 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20003fm7
+#time = 2015-09-02 06:15:31.800000
+#location = 8km ENE of Edmond, Oklahoma
+#latitude = 35.6813
+#longitude = -97.3886
+#depth = 3.8
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20003fm7
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK025.HHZ.00,0.108179,157.538,Pg,2015-09-02 06:15:34.140,manual,0.2,3.83
+OK.OKCSW.EHZ.--,0.27813,188.343,Pg,2015-09-02 06:15:37.240,manual,0.1,2.96
+GS.OK029.HHZ.00,0.127067,334.902,Pg,2015-09-02 06:15:34.570,manual,0.2,3.71
+OK.OKCFA.HHZ.--,0.270314,190.939,Pg,2015-09-02 06:15:37.080,manual,0.0,2.99
+AG.WHAR.HHZ.00,4.17957,93.8752,Pn,2015-09-02 06:16:38.500,manual,2.3,0.92
+ZW.AZDA.EHZ.01,2.70535,182.97,Pn,2015-09-02 06:16:18.620,automatic,2.6,1.06
+OK.CHOK.HHZ.--,0.292394,114.122,Pg,2015-09-02 06:15:37.760,manual,0.3,2.9
+OK.GC02.EHZ.--,1.22828,342.086,Pg,2015-09-02 06:15:54.550,manual,-0.8,1.3
+GS.OK009.HNZ.01,0.103622,195.651,Pg,2015-09-02 06:15:34.120,manual,0.2,3.86
+GS.OK029.HH2.00,0.127067,334.902,Sg,2015-09-02 06:15:36.970,manual,0.9,1.37
+GS.OK031.HHZ.00,0.522506,58.5695,Pg,2015-09-02 06:15:42.000,manual,0.2,2.23
+OK.FNO.HHZ.01,0.423088,181.396,Pg,2015-09-02 06:15:39.840,manual,-0.1,2.47
+OK.QUOK.HHZ.--,0.737785,48.281,Pg,2015-09-02 06:15:45.990,manual,0.0,1.83
+GS.KAN14.HHZ.01,1.3548,340.146,Pn,2015-09-02 06:15:56.630,manual,-0.8,1.23
+OK.CROK.HHZ.--,0.952495,329.792,Pg,2015-09-02 06:15:49.560,manual,-0.5,1.55
+OK.BLOK.HHZ.--,1.0862,7.37461,Pg,2015-09-02 06:15:52.150,manual,-0.5,1.42
+OK.X34A.HHZ.--,1.13759,198.783,Pg,2015-09-02 06:15:53.040,manual,-0.6,1.37
+OK.GORE.HHZ.--,1.19095,337.884,Pg,2015-09-02 06:15:53.750,manual,-0.9,1.33
+GS.OK032.HHZ.00,1.30238,329.572,Pg,2015-09-02 06:15:55.690,manual,-1.1,1.24
+GS.KAN13.HHZ.01,1.33086,356.925,Pn,2015-09-02 06:15:56.510,manual,-0.6,1.23
+GS.KAN17.HHZ.01,1.39354,347.525,Pn,2015-09-02 06:15:57.580,manual,-0.4,1.22
+US.WMOK.BHZ.10,1.47829,230.856,Pn,2015-09-02 06:15:58.020,manual,-1.2,1.21
+N4.T35B.BHZ.--,1.42138,29.6263,Pn,2015-09-02 06:15:57.660,manual,-0.7,1.22
+OK.X37A.BHZ.--,1.98007,122.802,Pn,2015-09-02 06:16:06.700,manual,0.7,1.14
+N4.U38B.BHZ.--,2.54793,71.8483,Pn,2015-09-02 06:16:15.520,manual,1.7,1.07
+AG.HHAR.HHZ.00,2.86041,76.8942,Pn,2015-09-02 06:16:19.440,manual,1.3,1.04
+TA.W39A.BHZ.--,2.9828,98.2938,Pn,2015-09-02 06:16:19.690,manual,-0.1,1.03
+US.MIAR.BHZ.00,3.32411,108.828,Pn,2015-09-02 06:16:25.600,manual,1.1,0.99
+N4.237B.BHZ.--,3.89871,159.841,Pn,2015-09-02 06:16:32.930,manual,0.6,0.94

@@ -1,0 +1,53 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usp000hdvg
+#time = 2010-06-12 04:29:53
+#location = Oklahoma
+#latitude = 35.6320
+#longitude = -97.1980
+#depth = 5.0
+#magnitude = 2.7
+#magtype = md
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usp000hdvg
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+IR.OK001.--.--,0.1,226.7,P,2010-06-12 04:29:55.520,manual,0.3,1.0
+IR.OK002.--.--,0.08,179.5,P,2010-06-12 04:29:55.740,manual,0.9,1.0
+IR.OK003.--.--,0.14,233.8,P,2010-06-12 04:29:56.000,manual,0.2,1.0
+IR.OK007.--.--,0.15,168.4,P,2010-06-12 04:29:56.620,manual,0.7,1.0
+IR.V34A.--.--,0.33,307.9,Pg,2010-06-12 04:29:59.940,manual,0.6,1.0
+IR.W34A.--.--,0.61,230.1,Pg,2010-06-12 04:30:04.710,manual,-0.1,1.0
+IR.U34A.--.--,0.85,341.3,Pg,2010-06-12 04:30:09.640,manual,0.4,1.0
+IR.TUL1.--.--,1.18,75.9,Pg,2010-06-12 04:30:14.950,manual,-0.6,1.0
+IR.WMOK.--.--,1.57,235.9,Pn,2010-06-12 04:30:21.190,manual,-0.4,1.0
+IR.MIAR.--.--,3.16,109.0,Pn,2010-06-12 04:30:44.630,manual,1.2,1.0
+IR.ABTX.--.--,3.62,214.8,Pn,2010-06-12 04:30:47.590,manual,-2.2,1.0
+IR.MSTX.--.--,4.88,251.7,Pn,2010-06-12 04:31:06.960,manual,-0.2,1.0
+IR.JCT.--.--,5.58,203.8,Pg,2010-06-12 04:31:35.530,manual,-4.5,0.0

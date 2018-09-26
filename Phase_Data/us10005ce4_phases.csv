@@ -1,0 +1,60 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10005ce4
+#time = 2016-04-29 07:23:37.100000
+#location = 7km N of Spencer, Oklahoma
+#latitude = 35.5942
+#longitude = -97.3794
+#depth = 5.9
+#magnitude = 2.7
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10005ce4
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.OKCSW.EHZ.--,0.194262,194.266,Pg,2016-04-29 07:23:41.400,manual,0.5,3.33
+OK.OKCFA.HHZ.--,0.187925,198.236,Pg,2016-04-29 07:23:41.270,manual,0.5,3.36
+OK.CHOK.HHZ.--,0.261401,97.1661,Pg,2016-04-29 07:23:42.730,manual,0.7,3.02
+OK.CCOK.HHZ.--,0.327281,223.714,Pg,2016-04-29 07:23:43.850,manual,0.6,2.77
+GS.OK029.HHZ.00,0.211106,343.097,Pg,2016-04-29 07:23:41.650,manual,0.5,3.25
+GS.OK030.HHZ.00,0.587764,55.3298,Pg,2016-04-29 07:23:48.270,manual,0.3,2.09
+OK.FNO.HHZ.01,0.336523,183.039,Pg,2016-04-29 07:23:43.930,manual,0.5,2.74
+ZD.KNG1.EHZ.--,0.595189,334.536,Pg,2016-04-29 07:23:48.670,manual,0.6,2.07
+OK.BCOK.HHZ.--,0.197404,288.483,Pg,2016-04-29 07:23:41.310,manual,0.4,3.32
+GS.OK031.HHZ.00,0.566829,50.6585,Pg,2016-04-29 07:23:48.110,manual,0.5,2.13
+GS.OK034.HHZ.00,0.682343,52.3345,Pg,2016-04-29 07:23:50.030,manual,0.3,1.92
+OK.QUOK.HHZ.--,0.793106,43.233,Pg,2016-04-29 07:23:52.140,manual,0.5,2.32
+GS.OK025.HHZ.00,0.036266,111.114,Pg,2016-04-29 07:23:38.650,manual,0.3,4.38
+OK.CROK.HHZ.--,1.03205,331.866,Pg,2016-04-29 07:23:56.480,manual,0.7,2.06
+OK.GC02.EHZ.--,1.31343,342.946,Pg,2016-04-29 07:24:01.460,manual,0.8,1.82
+GS.KAN06.HHZ.01,1.69514,346.962,Pn,2016-04-29 07:24:07.600,manual,0.6,1.18
+GS.OK032.HHZ.00,1.38163,331.134,Pg,2016-04-29 07:24:02.400,manual,0.6,1.77
+OK.X37A.BHZ.--,1.92792,120.757,Pn,2016-04-29 07:24:11.560,manual,1.4,1.15
+TA.TUL1.BHZ.--,1.32925,75.806,Pg,2016-04-29 07:24:00.920,manual,0.0,1.81
+GS.OK009.HNZ.01,0.0377165,250.056,Pg,2016-04-29 07:23:38.480,manual,0.1,4.36

@@ -1,0 +1,69 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = ismpkansas70067963
+#time = 2015-01-19 23:21:06.170000
+#location = Kansas
+#latitude = 37.2498
+#longitude = -97.6523
+#depth = 4.8
+#magnitude = 2.7
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/ismpkansas70067963
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN01.HHZ.01,0.1285,221.4,P,2015-01-19 23:21:09.000,automatic,-0.04,0.14
+GS.KAN06.HHZ.01,0.1646,269.4,P,2015-01-19 23:21:09.670,automatic,-0.06,0.14
+GS.KAN10.HHZ.01,0.3754,250.3,P,2015-01-19 23:21:13.640,automatic,-0.05,0.07
+GS.KAN11.HHZ.01,0.2129,258.1,P,2015-01-19 23:21:10.580,automatic,-0.06,0.14
+GS.KAN12.HHN.01,0.2798,279.8,S,2015-01-19 23:21:16.010,automatic,0.12,0.14
+GS.KAN12.HHZ.01,0.2798,279.8,P,2015-01-19 23:21:11.850,automatic,-0.06,0.14
+GS.KAN13.HHZ.01,0.2746,149.6,P,2015-01-19 23:21:11.760,automatic,0.01,0.14
+GS.KAN14.HHZ.01,0.3837,220.2,P,2015-01-19 23:21:13.770,automatic,-0.05,0.14
+NQ.KAN15.HNZ.01,0.08075,51.8,P,2015-01-19 23:21:08.190,automatic,0.01,0.14
+OK.CROK.HHZ.,0.7896,199.6,P,2015-01-19 23:21:21.200,automatic,-0.02,0.03
+GS.KS21.HHZ.00,0.03757,346.9,P,2015-01-19 23:21:07.440,manual,-0.03,0.14
+GS.KS21.HH2.00,0.03757,346.9,S,2015-01-19 23:21:08.290,manual,-0.07,0.07
+NQ.KAN15.HNN.01,0.08075,51.8,S,2015-01-19 23:21:09.670,manual,0.1,0.14
+GS.KAN01.HHE.01,0.1285,221.4,S,2015-01-19 23:21:11.090,manual,0.05,0.07
+GS.KAN06.HHN.01,0.1646,269.4,S,2015-01-19 23:21:12.240,manual,0.06,0.07
+NQ.KAN02.HNZ.01,0.188,253.9,P,2015-01-19 23:21:10.130,manual,-0.08,0.07
+NQ.KAN02.HNN.01,0.188,253.9,S,2015-01-19 23:21:13.070,manual,0.08,0.07
+GS.KAN11.HHN.01,0.2129,258.1,S,2015-01-19 23:21:13.790,manual,0.05,0.07
+GS.KAN08.HHZ.01,0.2553,264.8,P,2015-01-19 23:21:11.370,manual,-0.07,0.14
+GS.KAN08.HHN.01,0.2553,264.8,S,2015-01-19 23:21:15.200,manual,0.11,0.07
+GS.KAN13.HHN.01,0.2746,149.6,S,2015-01-19 23:21:15.760,manual,0.17,0.07
+GS.KAN10.HHN.01,0.3754,250.3,S,2015-01-19 23:21:19.020,manual,0.16,0.07
+GS.KAN14.HHN.01,0.3837,220.2,S,2015-01-19 23:21:19.310,manual,0.2,0.07
+OK.CROK.HHN.,0.7896,199.6,S,2015-01-19 23:21:32.350,manual,0.4,0.0
+N4.T35B.HHZ.,0.9709,110.1,P,2015-01-19 23:21:24.450,manual,0.0,0.0
+OK.QUOK.HHZ.,1.317,144.9,P,2015-01-19 23:21:30.920,manual,0.22,0.0
+OK.QUOK.HHN.,1.317,144.9,S,2015-01-19 23:21:48.580,manual,0.34,0.0
+OK.U32A.BHZ.,1.388,231.1,P,2015-01-19 23:21:31.750,manual,-0.14,0.0
+N4.R32B.HHZ.,1.44,324.5,P,2015-01-19 23:21:32.900,manual,0.11,0.0

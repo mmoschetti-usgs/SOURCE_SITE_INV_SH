@@ -1,0 +1,56 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000tvjt
+#time = 2015-03-06 14:49:43.800000
+#location = 8km W of Meeker, Oklahoma
+#latitude = 35.4909
+#longitude = -96.9993
+#depth = 6.4
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000tvjt
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK025.HHZ.00,0.290456,288.15,Pg,2015-03-06 14:49:49.890,manual,0.4,2.91
+US.WMOK.BHZ.10,1.64229,243.292,Pn,2015-03-06 14:50:13.650,manual,0.5,1.18
+GS.OK005.HNZ.01,0.226335,316.359,Pg,2015-03-06 14:49:48.760,manual,0.5,3.18
+N4.T35B.BHZ.--,1.47599,15.3471,Pn,2015-03-06 14:50:10.570,manual,-0.3,1.21
+OK.X37A.BHZ.--,1.6105,123.488,Pn,2015-03-06 14:50:13.460,manual,0.7,1.19
+OK.CROK.HHZ.--,1.28852,322.022,Pn,2015-03-06 14:50:07.830,manual,-0.5,1.23
+OK.QUOK.HHZ.--,0.719123,19.1329,Pg,2015-03-06 14:49:57.420,manual,-0.2,1.86
+OK.BCOK.HHZ.--,0.524075,288.579,Pg,2015-03-06 14:49:53.950,manual,0.0,2.22
+GS.OK031.HHZ.00,0.479271,15.7353,Pg,2015-03-06 14:49:53.230,manual,0.2,2.33
+OK.FNO.HHZ.01,0.40268,234.767,Pg,2015-03-06 14:49:52.200,manual,0.6,2.53
+OK.OKCFA.HHZ.--,0.376737,258.581,Pg,2015-03-06 14:49:51.360,manual,0.2,2.61
+OK.OKCSW.EHZ.--,0.368187,256.746,Pg,2015-03-06 14:49:51.190,manual,0.2,2.64
+GS.OK029.HHZ.00,0.480371,309.553,Pg,2015-03-06 14:49:53.240,manual,0.2,2.33
+GS.OK025.HH1.00,0.290456,288.15,Sg,2015-03-06 14:49:54.440,manual,1.1,1.28
+OK.OKCSW.EHN.--,0.368187,256.746,Sg,2015-03-06 14:49:56.760,manual,1.0,1.24
+OK.OKCFA.HHE.--,0.376737,258.581,Sg,2015-03-06 14:49:56.940,manual,0.9,1.23

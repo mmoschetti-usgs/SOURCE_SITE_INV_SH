@@ -1,0 +1,50 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000tavp
+#time = 2014-12-30 21:24:06.700000
+#location = 25km NE of Helena, Oklahoma
+#latitude = 36.7008
+#longitude = -98.0550
+#depth = 5.0
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000tavp
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.GC02.EHZ.--,0.217343,46.1495,Pg,2014-12-30 21:24:11.390,manual,0.4,3.22
+OK.CROK.HHZ.--,0.204023,163.575,Pg,2014-12-30 21:24:11.280,manual,0.6,3.28
+OK.CROK.HHE.--,0.204023,163.575,Sg,2014-12-30 21:24:14.330,manual,0.9,1.32
+OK.GC02.EHN.--,0.217343,46.1495,Sg,2014-12-30 21:24:14.820,manual,1.0,1.31
+GS.KAN14.HHZ.01,0.265958,16.0869,Pg,2014-12-30 21:24:12.220,manual,0.3,3.01
+GS.KAN14.HHN.01,0.265958,16.0869,Sg,2014-12-30 21:24:16.240,manual,0.8,1.29
+GS.KAN13.HHZ.01,0.557996,55.8917,Pg,2014-12-30 21:24:17.510,manual,0.1,2.15
+GS.KAN12.HHZ.01,0.597229,4.36492,Pg,2014-12-30 21:24:18.580,manual,0.4,2.07
+GS.KAN12.HHN.01,0.597229,4.36492,Sg,2014-12-30 21:24:26.740,manual,0.8,1.14
+N4.T35B.BHZ.--,1.25695,79.6902,Pg,2014-12-30 21:24:30.070,manual,-0.7,1.28

@@ -1,0 +1,69 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20003k6w
+#time = 2015-09-15 23:37:23
+#location = 4km SSW of Cushing, Oklahoma
+#latitude = 35.9487
+#longitude = -96.7803
+#depth = 4.2
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20003k6w
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.QUOK.HHZ.--,0.229826,14.7456,Pg,2015-09-15 23:37:27.870,manual,0.4,3.16
+GS.OK031.HHZ.00,0.0479171,275.273,Pg,2015-09-15 23:37:24.500,manual,0.3,4.28
+N4.T35B.BHZ.--,0.989528,12.5554,Pg,2015-09-15 23:37:41.650,manual,-0.3,1.51
+NQ.OK915.HNN.01,0.00793355,51.9317,Sg,2015-09-15 23:37:24.660,manual,0.3,1.44
+NQ.OK915.HNZ.01,0.00793355,51.9317,Pg,2015-09-15 23:37:24.040,manual,0.3,4.64
+GS.OK031.HH2.00,0.0479171,275.273,Sg,2015-09-15 23:37:25.480,manual,0.4,1.41
+OK.QUOK.HHE.--,0.229826,14.7456,Sg,2015-09-15 23:37:31.290,manual,0.8,1.31
+OK.CHOK.HHE.--,0.449255,210.663,Sg,2015-09-15 23:37:38.390,manual,0.9,1.2
+OK.CHOK.HHZ.--,0.449255,210.663,Pg,2015-09-15 23:37:31.930,manual,0.3,2.4
+GS.OK029.HH1.00,0.568537,254.714,Sg,2015-09-15 23:37:42.200,manual,0.9,1.15
+GS.OK029.HHZ.00,0.568537,254.714,Pg,2015-09-15 23:37:34.190,manual,0.3,2.13
+GS.OK025.HHZ.00,0.583264,231.195,Pg,2015-09-15 23:37:34.280,manual,0.1,2.1
+GS.OK025.HH2.00,0.583264,231.195,Sg,2015-09-15 23:37:42.720,manual,0.9,1.14
+OK.FNO.HHZ.01,0.855466,216.442,Pg,2015-09-15 23:37:39.580,manual,0.2,1.67
+OK.BLOK.HHZ.--,0.882987,336.712,Pg,2015-09-15 23:37:39.600,manual,-0.3,1.63
+OK.BLOK.HHN.--,0.882987,336.712,Sg,2015-09-15 23:37:51.260,manual,-0.1,1.03
+N4.T35B.BHN.--,0.989528,12.5554,Sg,2015-09-15 23:37:55.030,manual,0.2,1.0
+OK.CROK.HHZ.--,1.1199,300.054,Pg,2015-09-15 23:37:43.910,manual,-0.6,1.39
+GS.KAN13.HHZ.01,1.20168,332.315,Pg,2015-09-15 23:37:46.120,manual,0.1,1.32
+GS.KAN13.HHN.01,1.20168,332.315,Sg,2015-09-15 23:38:01.480,manual,-0.1,0.93
+OK.GC02.EHZ.--,1.25299,316.297,Pg,2015-09-15 23:37:46.410,manual,-0.6,1.28
+OK.GORE.HHZ.--,1.25875,311.914,Pg,2015-09-15 23:37:46.490,manual,-0.6,1.28
+OK.X34A.HHZ.--,1.59667,212.937,Pn,2015-09-15 23:37:52.540,manual,0.6,1.19
+OK.LOOK.HHZ.--,1.97916,189.662,Pn,2015-09-15 23:37:58.030,manual,0.8,1.14
+N4.U38B.BHZ.--,1.99788,75.1072,Pn,2015-09-15 23:37:58.280,manual,0.8,1.14
+TA.U40A.BHZ.--,3.20377,81.5506,Pn,2015-09-15 23:38:13.300,manual,-0.7,1.0
+AG.WHAR.HHZ.00,3.71748,98.8692,Pn,2015-09-15 23:38:21.830,manual,0.8,0.96
+AG.FCAR.HHZ.00,3.77966,89.5211,Pn,2015-09-15 23:38:22.660,manual,0.8,0.95
+US.MIAR.BHZ.00,2.97242,117.168,Pn,2015-09-15 23:38:11.570,manual,0.8,1.03

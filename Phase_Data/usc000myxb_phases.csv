@@ -1,0 +1,70 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000myxb
+#time = 2014-01-15 23:57:27
+#location = 7km SE of Luther, Oklahoma
+#latitude = 35.6091
+#longitude = -97.1491
+#depth = 2.7
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000myxb
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK025.HHZ.00,0.156384,259.764,Pg,2014-01-15 23:57:30.340,manual,0.3,0.0
+OK.OKCSW.EHZ.--,0.311175,229.326,Pg,2014-01-15 23:57:32.980,manual,0.0,0.0
+GS.OK026.HHZ.00,0.313397,231.988,Pg,2014-01-15 23:57:33.260,manual,0.2,0.0
+OK.W35A.EHZ.--,0.507667,153.688,Pg,2014-01-15 23:57:36.940,manual,0.2,0.0
+OK.FNO.HHZ.01,0.406849,210.471,Pg,2014-01-15 23:57:35.680,manual,0.9,0.0
+OK.CROK.HHZ.--,1.12061,323.14,Pg,2014-01-15 23:57:48.220,manual,-0.3,0.063
+OK.X34A.HHZ.--,1.15137,209.323,Pg,2014-01-15 23:57:48.960,manual,-0.1,0.046
+US.WMOK.BHZ.10,1.59438,237.436,Pn,2014-01-15 23:57:55.600,manual,-0.6,0.089
+TA.TUL1.BHZ.--,1.14405,74.3681,Pg,2014-01-15 23:57:47.990,manual,-0.9,0.032
+AG.HHAR.HHZ.00,2.68903,74.6019,Pn,2014-01-15 23:58:11.490,manual,0.3,0.044
+TA.U40A.BHZ.--,3.56257,76.6633,Pn,2014-01-15 23:58:23.250,manual,0.0,0.037
+GS.OK005.HNZ.01,0.0570881,323.191,Pg,2014-01-15 23:57:28.980,manual,0.8,0.0
+OK.U32A.BHZ.--,1.68738,297.646,Sn,2014-01-15 23:58:19.270,automatic,-0.4,0.117
+GS.OK001.HNZ.01,0.124055,247.33,Pg,2014-01-15 23:57:29.690,manual,0.3,0.0
+GS.ADOK.HNZ.--,0.185847,283.381,Pg,2014-01-15 23:57:31.060,manual,0.5,0.0
+OK.U32A.BHZ.--,1.68738,297.646,Pn,2014-01-15 23:57:57.670,manual,0.2,0.111
+US.MIAR.BHZ.00,3.11622,108.876,Pn,2014-01-15 23:58:16.590,manual,-0.5,0.037
+GS.OK025.HH1.00,0.156384,259.764,Sg,2014-01-15 23:57:31.840,manual,-0.3,0.073
+US.WMOK.BHZ.10,1.59438,237.436,Sn,2014-01-15 23:58:16.700,manual,-0.6,0.094
+TA.W39A.BHZ.--,2.77965,97.5498,Pn,2014-01-15 23:58:12.710,manual,0.3,0.04
+TA.ABTX.BHZ.--,3.62577,215.5,Pn,2014-01-15 23:58:22.060,manual,-2.1,0.053
+TA.X40A.BHZ.--,3.71258,106.296,Pn,2014-01-15 23:58:23.530,manual,-1.7,0.033
+US.AMTX.BHZ.00,3.77877,260.273,Pn,2014-01-15 23:58:27.110,manual,0.8,0.063
+US.CBKS.BHZ.00,3.80797,327.915,Pn,2014-01-15 23:58:26.100,manual,-0.5,0.074
+US.CBKS.BHZ.00,3.80797,327.915,Pg,2014-01-15 23:58:37.980,manual,3.1,0.017
+AG.WHAR.HHZ.00,3.98043,93.1748,Pn,2014-01-15 23:58:29.590,manual,0.6,0.032
+AG.WHAR.HHZ.00,3.98043,93.1748,Pg,2014-01-15 23:58:39.090,manual,1.3,0.005
+AG.WHAR.HHZ.00,3.98043,93.1748,Sn,2014-01-15 23:59:12.070,manual,-4.1,0.016
+NM.UALR.BHZ.--,4.023,100.543,Pn,2014-01-15 23:58:30.010,manual,0.5,0.031
+NM.MGMO.BHZ.--,4.22875,67.185,Pn,2014-01-15 23:58:30.750,manual,-1.6,0.035

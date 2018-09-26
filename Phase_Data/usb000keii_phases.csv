@@ -1,0 +1,58 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000keii
+#time = 2013-10-15 08:52:51.100000
+#location = 23km NNE of Enid, Oklahoma
+#latitude = 36.6050
+#longitude = -97.8180
+#depth = 5.0
+#magnitude = 2.7
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000keii
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.FNO.HHZ.01,1.38665,165.758,Pn,2013-10-15 08:53:16.660,manual,-0.5,0.129
+AG.HHAR.HHZ.00,3.14335,94.7313,Pn,2013-10-15 08:53:41.960,manual,0.7,0.068
+TA.TUL1.BHZ.--,1.77822,112.341,Pn,2013-10-15 08:53:23.260,manual,0.8,0.088
+US.WMOK.BHZ.10,2.0212,203.1,Pn,2013-10-15 08:53:26.140,manual,0.3,0.12
+TA.U40A.BHZ.--,4.00844,92.071,Pg,2013-10-15 08:54:03.400,manual,1.2,0.023
+TA.W39A.BHZ.--,3.56385,112.041,Pg,2013-10-15 08:53:54.580,manual,0.0,0.027
+TA.ABTX.BHZ.--,4.24708,201.281,Pg,2013-10-15 08:54:05.720,manual,-0.6,0.033
+OK.X34A.HHZ.--,1.99966,180.345,Pn,2013-10-15 08:53:25.290,manual,-0.3,0.119
+OK.U32A.BHZ.--,0.979823,257.074,Pg,2013-10-15 08:53:09.890,manual,0.0,0.291
+OK.FNO.HHZ.01,1.38665,165.758,Sn,2013-10-15 08:53:35.860,manual,0.0,0.186
+TA.TUL1.BHZ.--,1.77822,112.341,Sn,2013-10-15 08:53:46.490,manual,1.0,0.105
+AG.WLAR.HHZ.00,4.83036,125.666,Pg,2013-10-15 08:54:17.330,manual,1.1,0.022
+TA.T25A.BHZ.--,5.3125,277.728,Pn,2013-10-15 08:54:11.100,manual,-0.2,0.056
+OK.U32A.BHZ.--,0.979823,257.074,Sg,2013-10-15 08:53:22.760,manual,0.1,0.352
+GS.ADOK.HNZ.--,1.01752,159.04,Pg,2013-10-15 08:53:10.740,manual,0.1,0.378
+TA.X40A.BHZ.--,4.57982,116.005,Pg,2013-10-15 08:54:14.190,manual,2.3,0.021
+AG.FCAR.HHZ.00,4.65705,97.1206,Pg,2013-10-15 08:54:15.860,manual,2.6,0.021
+TA.MSTX.BHZ.--,4.83026,238.477,Pg,2013-10-15 08:54:19.400,manual,3.1,0.026

@@ -1,0 +1,68 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10001qci
+#time = 2015-03-24 15:02:23.300000
+#location = 19km ENE of Mooreland, Oklahoma
+#latitude = 36.5200
+#longitude = -99.0107
+#depth = 5.0
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10001qci
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.CROK.HHZ.--,0.827763,90.7514,Pg,2015-03-24 15:02:39.080,manual,-0.1,1.7
+OK.U32A.BHZ.--,0.140419,176.939,Pg,2015-03-24 15:02:26.360,manual,0.2,3.63
+US.WMOK.BHZ.10,1.78807,173.918,Pn,2015-03-24 15:02:54.410,manual,-0.5,1.16
+OK.GC02.EHZ.--,0.982666,69.9813,Pg,2015-03-24 15:02:41.840,manual,-0.3,1.52
+N4.R32B.BHZ.--,1.91404,7.06315,Pn,2015-03-24 15:02:56.350,manual,-0.3,1.15
+GS.OK032.HHZ.00,0.703081,66.0041,Pg,2015-03-24 15:02:36.810,manual,0.0,1.88
+GS.KAN14.HHZ.01,0.947814,62.303,Pg,2015-03-24 15:02:41.290,manual,-0.2,1.56
+GS.KAN10.HHZ.01,0.950048,50.3795,Pg,2015-03-24 15:02:41.190,manual,-0.3,1.55
+GS.KAN08.HHZ.01,1.09212,49.4592,Pg,2015-03-24 15:02:43.800,manual,-0.5,1.41
+GS.KAN11.HHZ.01,1.11507,51.79,Pg,2015-03-24 15:02:44.190,manual,-0.5,1.39
+GS.KAN12.HHZ.01,1.12289,45.9874,Pg,2015-03-24 15:02:44.250,manual,-0.6,1.39
+GS.KAN01.HHZ.01,1.18661,57.4334,Pg,2015-03-24 15:02:45.660,manual,-0.4,1.33
+GS.KAN09.HHZ.01,1.27524,60.755,Pg,2015-03-24 15:02:47.110,manual,-0.6,1.26
+GS.KAN13.HHZ.01,1.32557,67.7577,Pn,2015-03-24 15:02:47.800,manual,-0.7,1.23
+OK.BCOK.HHZ.--,1.42499,126.783,Pn,2015-03-24 15:02:49.330,manual,-0.5,1.21
+GS.OK029.HHZ.00,1.45131,119.368,Pn,2015-03-24 15:02:49.800,manual,-0.4,1.21
+OK.KAY1.HHZ.--,1.46665,79.9579,Pn,2015-03-24 15:02:50.440,manual,0.0,1.21
+GS.OK025.HHZ.00,1.64783,124.157,Pn,2015-03-24 15:02:52.820,manual,-0.1,1.18
+GS.OK030.HHZ.00,1.89512,107.51,Pn,2015-03-24 15:02:56.380,manual,0.1,1.15
+N4.T35B.BHZ.--,2.0463,78.1129,Pn,2015-03-24 15:02:58.460,manual,0.1,1.13
+OK.X37A.BHZ.--,3.53767,121.923,Pn,2015-03-24 15:03:18.890,manual,0.0,0.97
+OK.U32A.BHN.--,0.140419,176.939,Sg,2015-03-24 15:02:28.540,manual,0.5,1.36
+GS.OK032.HH1.00,0.703081,66.0041,Sg,2015-03-24 15:02:45.430,manual,-0.5,1.09
+GS.KAN14.HHN.01,0.947814,62.303,Sg,2015-03-24 15:02:53.790,manual,0.0,1.01
+GS.KAN10.HHZ.01,0.950048,50.3795,Sg,2015-03-24 15:02:54.060,manual,0.2,1.01
+OK.GC02.EHE.--,0.982666,69.9813,Sg,2015-03-24 15:02:54.730,manual,-0.2,1.0
+GS.KAN05.HHE.01,1.08614,56.9166,Sg,2015-03-24 15:02:58.230,manual,0.0,0.97
+GS.KAN08.HHN.01,1.09212,49.4592,Sg,2015-03-24 15:02:58.030,manual,-0.4,0.96

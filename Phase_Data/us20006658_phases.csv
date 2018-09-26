@@ -1,0 +1,95 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20006658
+#time = 2016-06-23 02:08:58.300000
+#location = 8km S of Perry, Oklahoma
+#latitude = 36.2160
+#longitude = -97.2869
+#depth = 6.6
+#magnitude = 2.4
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20006658
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK033.HHZ.00,0.330174,121.139,Pg,2016-06-23 02:09:05.050,manual,0.5,2.76
+GS.OK029.HHZ.00,0.440131,198.078,Pg,2016-06-23 02:09:07.070,manual,0.6,2.43
+GS.OK034.HHZ.00,0.507916,113.681,Pg,2016-06-23 02:09:08.220,manual,0.5,2.26
+GS.OK030.HHZ.00,0.498844,125.059,Pg,2016-06-23 02:09:08.180,manual,0.6,2.28
+GS.OK031.HHZ.00,0.447663,125.746,Pg,2016-06-23 02:09:07.220,manual,0.6,2.41
+OK.BLOK.HHZ.--,0.546601,6.06433,Pg,2016-06-23 02:09:08.870,manual,0.4,2.17
+N4.T35B.BHZ.--,0.936821,41.5294,Pg,2016-06-23 02:09:15.860,manual,0.6,2.13
+ZD.KNG1.EHN.--,0.34099,255.942,Sg,2016-06-23 02:09:09.770,manual,0.4,1.25
+ZD.KNG1.EHZ.--,0.34099,255.942,Pg,2016-06-23 02:09:05.030,manual,0.3,2.73
+GS.OK033.HH2.00,0.330174,121.139,Sg,2016-06-23 02:09:09.820,manual,0.8,1.26
+GS.OK029.HH2.00,0.440131,198.078,Sg,2016-06-23 02:09:13.160,manual,0.6,1.2
+GS.OK031.HH2.00,0.447663,125.746,Sg,2016-06-23 02:09:13.420,manual,0.7,1.2
+OK.QUOK.HHN.--,0.47039,95.2587,Sg,2016-06-23 02:09:13.950,manual,0.5,1.19
+OK.QUOK.HHZ.--,0.47039,95.2587,Pg,2016-06-23 02:09:07.610,manual,0.5,2.35
+GS.OK030.HH2.00,0.498844,125.059,Sg,2016-06-23 02:09:15.060,manual,0.7,1.18
+GS.OK034.HH1.00,0.507916,113.681,Sg,2016-06-23 02:09:15.240,manual,0.6,1.17
+OK.BLOK.HHN.--,0.546601,6.06433,Sg,2016-06-23 02:09:16.330,manual,0.5,1.16
+OK.CROK.HHZ.--,0.631736,297.34,Pg,2016-06-23 02:09:10.320,manual,0.3,2.0
+OK.CROK.HHN.--,0.631736,297.34,Sg,2016-06-23 02:09:18.980,manual,0.4,1.12
+OK.BCOK.HHZ.--,0.616401,205.211,Pg,2016-06-23 02:09:10.080,manual,0.4,2.03
+OK.BCOK.HHN.--,0.616401,205.211,Sg,2016-06-23 02:09:18.560,manual,0.5,1.13
+GS.OK025.HH2.00,0.634907,183.754,Sg,2016-06-23 02:09:19.610,manual,1.0,1.12
+GS.OK025.HHZ.00,0.634907,183.754,Pg,2016-06-23 02:09:10.670,manual,0.6,2.0
+OK.CHOK.HHN.--,0.678702,164.275,Sg,2016-06-23 02:09:20.750,manual,0.8,1.21
+OK.CHOK.HHZ.--,0.678702,164.275,Pg,2016-06-23 02:09:11.280,manual,0.5,2.43
+OK.DEOK.HHN.--,0.739855,120.0,Sg,2016-06-23 02:09:22.540,manual,0.8,1.2
+OK.DEOK.HHZ.--,0.739855,120.0,Pg,2016-06-23 02:09:12.420,manual,0.6,2.35
+OK.GORE.HHZ.--,0.778541,317.097,Pg,2016-06-23 02:09:12.850,manual,0.3,2.3
+OK.GC02.EHZ.--,0.784231,324.144,Pg,2016-06-23 02:09:12.950,manual,0.3,2.3
+GS.KAN13.HHZ.01,0.810036,349.127,Pg,2016-06-23 02:09:13.580,manual,0.5,2.27
+OK.OKCFA.HHZ.--,0.8101,189.548,Pg,2016-06-23 02:09:13.440,manual,0.4,2.27
+OK.OKCSW.EHZ.--,0.818042,188.679,Pg,2016-06-23 02:09:13.910,manual,0.7,2.26
+OK.HTCH.HHZ.--,0.869729,257.116,Pg,2016-06-23 02:09:14.490,manual,0.4,2.2
+GS.KAN17.HHZ.01,0.911513,335.197,Pg,2016-06-23 02:09:15.260,manual,0.4,2.15
+OK.CCOK.HHZ.--,0.908387,199.404,Pg,2016-06-23 02:09:15.490,manual,0.7,2.16
+GS.OK032.HHZ.00,0.94747,308.529,Pg,2016-06-23 02:09:15.940,manual,0.5,2.12
+OK.FNO.HHZ.01,0.961045,185.586,Pg,2016-06-23 02:09:16.380,manual,0.7,2.1
+GS.KAN05.HHZ.01,1.00757,332.324,Pg,2016-06-23 02:09:16.880,manual,0.4,2.06
+GS.KAN01.HHZ.01,1.00961,338.062,Pg,2016-06-23 02:09:17.190,manual,0.7,2.06
+GS.KS20.HHZ.00,1.0343,348.091,Pg,2016-06-23 02:09:17.570,manual,0.6,2.03
+GS.KAN10.HHZ.01,1.11471,324.584,Pg,2016-06-23 02:09:18.890,manual,0.5,1.96
+GS.KAN08.HHZ.01,1.14873,331.622,Pg,2016-06-23 02:09:19.720,manual,0.8,1.93
+GS.KAN16.HHZ.01,1.1857,328.425,Pg,2016-06-23 02:09:20.160,manual,0.6,1.9
+GS.OK038.HHZ.00,1.20369,282.986,Pg,2016-06-23 02:09:19.580,manual,-0.3,1.89
+GS.KAN12.HHZ.01,1.22108,332.328,Pg,2016-06-23 02:09:20.920,manual,0.7,1.87
+TA.TUL1.BHZ.--,1.2491,103.69,Pg,2016-06-23 02:09:20.960,manual,0.3,1.85
+OK.NOKA.HHZ.--,1.39097,287.969,Pg,2016-06-23 02:09:23.870,manual,0.7,1.75
+OK.X34A.HHZ.--,1.67192,195.622,Pn,2016-06-23 02:09:28.850,manual,1.0,1.18
+OK.ELIS.HHZ.--,1.73153,265.647,Pn,2016-06-23 02:09:29.640,manual,1.0,1.17
+OK.RLOK.HHZ.--,1.82886,90.8458,Pn,2016-06-23 02:09:31.120,manual,1.2,1.16
+US.WMOK.BHZ.10,1.91348,220.016,Pn,2016-06-23 02:09:31.860,manual,0.8,1.15
+OK.LOOK.HHZ.--,2.22023,177.707,Pn,2016-06-23 02:09:36.580,manual,1.4,1.11
+OK.X37A.BHZ.--,2.25459,135.488,Pn,2016-06-23 02:09:37.220,manual,1.5,1.1
+US.MIAR.BHZ.00,3.45956,117.717,Pn,2016-06-23 02:09:53.340,manual,1.4,0.98
+N4.S39B.BHZ.--,3.49984,63.9463,Pn,2016-06-23 02:09:55.610,manual,3.1,0.97

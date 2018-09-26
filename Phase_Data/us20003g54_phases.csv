@@ -1,0 +1,69 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20003g54
+#time = 2015-09-03 20:08:05.400000
+#location = 16km SE of Tonkawa, Oklahoma
+#latitude = 36.5575
+#longitude = -97.1965
+#depth = 5.0
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20003g54
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.BLOK.HHZ.--,0.203251,355.81,Pg,2015-09-03 20:08:10.090,manual,0.7,3.29
+GS.OK032.HHZ.00,0.851326,287.086,Pg,2015-09-03 20:08:21.590,manual,-0.1,1.67
+GS.KAN17.HHZ.01,0.666287,316.966,Pg,2015-09-03 20:08:18.240,manual,0.0,1.94
+OK.QUOK.HHZ.--,0.551311,134.196,Pg,2015-09-03 20:08:16.240,manual,0.2,2.16
+OK.GC02.EHZ.--,0.608338,299.037,Pg,2015-09-03 20:08:17.400,manual,0.3,2.05
+GS.OK029.HHZ.00,0.787589,195.47,Pg,2015-09-03 20:08:20.650,manual,0.1,1.76
+OK.CHOK.HHZ.--,1.00034,173.673,Pg,2015-09-03 20:08:24.080,manual,-0.5,1.5
+US.WMOK.BHZ.10,2.22733,215.864,Pn,2015-09-03 20:08:42.890,manual,0.0,1.11
+OK.X37A.BHZ.--,2.46386,142.318,Pn,2015-09-03 20:08:45.460,manual,-0.7,1.08
+TA.W39A.BHZ.--,3.08626,115.108,Pn,2015-09-03 20:08:54.890,manual,0.2,1.02
+N4.S39B.BHZ.--,3.29618,68.7669,Pn,2015-09-03 20:08:57.090,manual,-0.5,0.99
+GS.KAN13.HHZ.01,0.507536,333.664,Pg,2015-09-03 20:08:15.660,manual,0.5,2.26
+OK.CROK.HHZ.--,0.635983,265.482,Pg,2015-09-03 20:08:17.700,manual,0.1,2.0
+OK.GORE.HHZ.--,0.64498,290.893,Pg,2015-09-03 20:08:17.920,manual,0.1,1.98
+N4.T35B.BHZ.--,0.656207,56.7319,Pg,2015-09-03 20:08:18.200,manual,0.2,1.96
+GS.OK031.HHZ.00,0.668776,154.303,Pg,2015-09-03 20:08:18.420,manual,0.2,1.94
+GS.KS20.HHZ.00,0.729668,336.959,Pg,2015-09-03 20:08:19.470,manual,0.1,1.84
+GS.KAN14.HHZ.01,0.733314,303.149,Pg,2015-09-03 20:08:19.610,manual,0.1,1.84
+OK.FNO.HHZ.01,1.30795,187.359,Pn,2015-09-03 20:08:29.750,manual,-0.5,1.23
+OK.U32A.BHZ.--,1.46569,263.576,Pn,2015-09-03 20:08:31.940,manual,-0.5,1.21
+OK.X34A.HHZ.--,2.01989,195.06,Pn,2015-09-03 20:08:39.860,manual,-0.2,1.13
+N4.R32B.BHZ.--,2.21744,327.551,Pn,2015-09-03 20:08:42.420,manual,-0.4,1.11
+AG.HHAR.HHZ.00,2.64088,95.0073,Pn,2015-09-03 20:08:48.450,manual,-0.1,1.06
+US.CBKS.BHZ.00,3.02262,318.946,Pn,2015-09-03 20:08:53.280,manual,-0.6,1.02
+N4.R40B.BHZ.--,4.28721,64.7167,Pn,2015-09-03 20:09:12.500,manual,1.4,0.91
+N4.U38B.BHZ.--,2.26787,92.1424,Pn,2015-09-03 20:08:43.910,manual,0.5,1.1
+OK.BLOK.HHE.--,0.203251,355.81,Sg,2015-09-03 20:08:13.400,manual,1.3,1.32
+OK.GC02.EHN.--,0.608338,299.037,Sg,2015-09-03 20:08:25.760,manual,0.8,1.13
+OK.CROK.HHN.--,0.635983,265.482,Sg,2015-09-03 20:08:26.520,manual,0.6,1.12

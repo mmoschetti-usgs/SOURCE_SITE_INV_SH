@@ -1,0 +1,64 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20002xh4
+#time = 2015-07-13 19:00:17.500000
+#location = 5km NW of Helena, Oklahoma
+#latitude = 36.5833
+#longitude = -98.3122
+#depth = 5.7
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20002xh4
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.GC02.EHZ.--,0.451566,53.51,Pg,2015-07-13 19:00:26.480,manual,0.3,2.4
+N4.T35B.BHZ.--,1.48362,76.5215,Pn,2015-07-13 19:00:44.820,manual,0.1,1.21
+GS.OK032.HHZ.00,0.234788,20.3647,Pg,2015-07-13 19:00:21.550,manual,-0.6,3.14
+OK.CROK.HHZ.--,0.276164,106.405,Pg,2015-07-13 19:00:22.600,manual,-0.3,2.96
+OK.GORE.HHZ.--,0.356233,55.3652,Pg,2015-07-13 19:00:24.620,manual,0.2,2.68
+GS.KAN10.HHZ.01,0.566594,17.8339,Pg,2015-07-13 19:00:27.940,manual,-0.5,2.13
+OK.U32A.BHZ.--,0.59153,250.094,Pg,2015-07-13 19:00:28.360,manual,-0.5,2.08
+GS.KAN05.HHZ.01,0.63199,33.8108,Pg,2015-07-13 19:00:29.460,manual,-0.2,2.0
+GS.KAN17.HHZ.01,0.636006,43.5224,Pg,2015-07-13 19:00:29.310,manual,-0.4,2.0
+GS.KAN09.HHZ.01,0.783675,45.0396,Pg,2015-07-13 19:00:32.320,manual,-0.2,1.76
+GS.KAN13.HHZ.01,0.795244,57.1231,Pg,2015-07-13 19:00:32.560,manual,-0.2,1.75
+OK.BLOK.HHZ.--,0.899704,78.3298,Pg,2015-07-13 19:00:34.430,manual,-0.3,1.61
+GS.OK029.HHZ.00,1.04752,138.29,Pg,2015-07-13 19:00:37.070,manual,-0.5,1.45
+OK.BCOK.HHZ.--,1.08578,148.181,Pg,2015-07-13 19:00:37.830,manual,-0.5,1.42
+GS.OK031.HHZ.00,1.34637,117.41,Pn,2015-07-13 19:00:42.630,manual,-0.2,1.22
+OK.OKCFA.HHZ.--,1.35857,148.83,Pn,2015-07-13 19:00:42.720,manual,-0.3,1.22
+OK.CHOK.HHZ.--,1.43788,134.818,Pn,2015-07-13 19:00:43.820,manual,-0.3,1.21
+OK.FNO.HHZ.01,1.5157,150.532,Pn,2015-07-13 19:00:45.550,manual,0.4,1.2
+GS.OK025.HHZ.00,1.274,141.434,Pn,2015-07-13 19:00:41.040,manual,-0.8,1.24
+US.WMOK.BHZ.10,1.8805,191.842,Pn,2015-07-13 19:00:50.030,manual,-0.1,1.15
+US.CBKS.BHZ.00,2.4973,333.518,Pn,2015-07-13 19:00:58.530,manual,-0.1,1.08
+OK.CROK.HHN.--,0.276164,106.405,Sg,2015-07-13 19:00:27.480,manual,0.9,1.28
+GS.KAN10.HHE.01,0.566594,17.8339,Sg,2015-07-13 19:00:36.280,manual,0.5,1.15
+GS.KAN05.HHE.01,0.63199,33.8108,Sg,2015-07-13 19:00:38.420,manual,0.5,1.12

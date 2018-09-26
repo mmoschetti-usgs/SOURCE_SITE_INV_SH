@@ -1,0 +1,59 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000n58c
+#time = 2014-03-07 22:33:55.900000
+#location = 3km NE of Cherokee, Oklahoma
+#latitude = 36.7770
+#longitude = -98.3320
+#depth = 5.0
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000n58c
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.CROK.HHZ.--,0.390478,134.002,Pg,2014-03-07 22:34:03.860,manual,0.4,0.0
+GS.OK025.HHZ.00,1.43914,145.729,Pn,2014-03-07 22:34:22.890,automatic,0.2,0.05
+GS.OK027.HHZ.00,1.35935,141.12,Pn,2014-03-07 22:34:21.460,automatic,-0.1,0.049
+GS.OK028.HHZ.00,1.59036,139.349,Pn,2014-03-07 22:34:25.060,automatic,0.3,0.046
+OK.FNO.HHZ.01,1.69378,153.269,Pn,2014-03-07 22:34:26.110,automatic,0.0,0.052
+US.WMOK.BHZ.10,2.06718,190.3,Pn,2014-03-07 22:34:32.250,automatic,0.9,0.094
+OK.W35A.EHZ.--,2.00626,143.46,Pn,2014-03-07 22:34:31.290,automatic,0.8,0.043
+N4.R32B.BHZ.--,1.67001,349.728,Pn,2014-03-07 22:34:26.950,automatic,1.1,0.078
+N4.T35B.BHZ.--,1.4666,84.0189,Pn,2014-03-07 22:34:22.870,manual,-0.2,0.102
+OK.U32A.BHZ.--,0.669124,233.837,Pg,2014-03-07 22:34:11.050,manual,2.3,0.611
+GS.OK029.HHZ.00,1.20807,143.824,Pg,2014-03-07 22:34:18.540,manual,-0.5,0.09
+OK.BCOK.HHZ.--,1.26154,152.188,Pn,2014-03-07 22:34:19.280,manual,-0.9,0.057
+TA.TUL1.BHZ.--,2.2256,112.11,Pn,2014-03-07 22:34:33.790,manual,0.3,0.052
+US.CBKS.BHZ.00,2.31829,331.728,Pn,2014-03-07 22:34:36.010,manual,1.2,0.054
+US.KSU1.BHZ.10,2.69014,29.8891,Pn,2014-03-07 22:34:39.830,manual,0.0,0.098
+N4.U38B.BHZ.--,3.19296,94.8777,Pn,2014-03-07 22:34:47.480,manual,0.7,0.059
+OK.CROK.HHE.--,0.390478,134.002,Sg,2014-03-07 22:34:09.570,manual,1.0,0.221
+OK.X34A.HHZ.--,2.20901,169.249,Pn,2014-03-07 22:34:34.580,manual,1.3,0.063
+OK.X37A.BHZ.--,3.25165,131.296,Pn,2014-03-07 22:34:48.260,manual,0.7,0.033

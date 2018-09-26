@@ -1,0 +1,83 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20002lds
+#time = 2015-06-02 16:42:16.300000
+#location = 9km WSW of Perry, Oklahoma
+#latitude = 36.2652
+#longitude = -97.3847
+#depth = 6.9
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20002lds
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.QUOK.HHZ.--,0.555164,99.5076,Pg,2015-06-02 16:42:27.090,manual,0.1,2.15
+OK.BCOK.HHZ.--,0.633972,196.77,Pg,2015-06-02 16:42:28.420,manual,-0.1,2.0
+OK.CHOK.HHZ.--,0.750055,159.417,Pg,2015-06-02 16:42:30.610,manual,-0.1,1.81
+GS.OK025.HHZ.00,0.683713,176.801,Pg,2015-06-02 16:42:29.460,manual,0.0,1.91
+GS.OK029.HHZ.00,0.471073,186.959,Pg,2015-06-02 16:42:25.510,manual,0.1,2.35
+OK.FNO.HHZ.01,1.00573,180.769,Pg,2015-06-02 16:42:35.080,manual,-0.5,1.5
+OK.GC02.EHZ.--,0.698998,326.978,Pg,2015-06-02 16:42:29.610,manual,-0.1,1.89
+GS.KAN08.HHZ.01,1.06893,334.04,Pg,2015-06-02 16:42:36.140,manual,-0.7,1.43
+OK.CROK.HHZ.--,0.539011,296.501,Pg,2015-06-02 16:42:26.730,manual,0.0,2.19
+N4.T35B.BHZ.--,0.956844,46.9735,Pg,2015-06-02 16:42:34.020,manual,-0.7,1.55
+OK.W35A.HHZ.--,1.18521,159.343,Pg,2015-06-02 16:42:37.880,manual,-1.2,1.33
+GS.OK031.HHZ.00,0.540553,125.022,Pg,2015-06-02 16:42:26.660,manual,-0.1,2.19
+NQ.OK915.HNZ.01,0.585124,121.922,Pg,2015-06-02 16:42:27.870,manual,0.3,2.09
+GS.OK030.HHZ.00,0.591789,124.5,Pg,2015-06-02 16:42:27.710,manual,0.0,2.08
+GS.KAN13.HHZ.01,0.749988,354.297,Pg,2015-06-02 16:42:30.610,manual,-0.1,1.81
+OK.OKCFA.HHZ.--,0.849823,183.676,Pg,2015-06-02 16:42:32.490,manual,-0.1,1.67
+GS.OK032.HHZ.00,0.855099,309.193,Pg,2015-06-02 16:42:32.570,manual,-0.2,1.67
+OK.OKCSW.EHZ.--,0.858964,182.906,Pg,2015-06-02 16:42:32.590,manual,-0.2,1.66
+GS.KAN09.HHZ.01,0.889256,347.881,Pg,2015-06-02 16:42:33.070,manual,-0.3,1.62
+GS.KAN01.HHZ.01,0.936118,341.369,Pg,2015-06-02 16:42:33.500,manual,-0.8,1.57
+GS.KAN10.HHZ.01,1.02948,326.526,Pg,2015-06-02 16:42:35.660,manual,-0.4,1.47
+GS.KAN16.HHZ.01,1.10323,330.528,Pg,2015-06-02 16:42:36.850,manual,-0.6,1.4
+GS.KAN12.HHZ.01,1.14183,334.638,Pg,2015-06-02 16:42:37.800,manual,-0.4,1.37
+OK.U32A.BHZ.--,1.31059,275.472,Pn,2015-06-02 16:42:40.370,manual,-0.7,1.23
+GS.OK029.HH1.00,0.471073,186.959,Sg,2015-06-02 16:42:31.690,manual,0.1,1.19
+OK.CROK.HHN.--,0.539011,296.501,Sg,2015-06-02 16:42:33.540,manual,-0.2,1.16
+OK.QUOK.HHE.--,0.555164,99.5076,Sg,2015-06-02 16:42:34.310,manual,0.0,1.15
+NQ.OK915.HNE.01,0.585124,121.922,Sg,2015-06-02 16:42:35.540,manual,0.3,1.14
+GS.OK030.HH2.00,0.591789,124.5,Sg,2015-06-02 16:42:34.960,manual,-0.5,1.14
+OK.BCOK.HHN.--,0.633972,196.77,Sg,2015-06-02 16:42:36.570,manual,-0.2,1.12
+OK.GC02.EHE.--,0.698998,326.978,Sg,2015-06-02 16:42:38.860,manual,0.0,1.1
+GS.KAN13.HHN.01,0.749988,354.297,Sg,2015-06-02 16:42:40.470,manual,0.0,1.08
+OK.CHOK.HHE.--,0.750055,159.417,Sg,2015-06-02 16:42:40.470,manual,0.0,1.08
+GS.OK032.HH1.00,0.855099,309.193,Sg,2015-06-02 16:42:43.650,manual,-0.2,1.04
+GS.KAN09.HHN.01,0.889256,347.881,Sg,2015-06-02 16:42:44.790,manual,-0.2,1.03
+US.WMOK.BHZ.10,1.90253,217.183,Pn,2015-06-02 16:42:49.190,manual,0.0,1.15
+OK.LOV1.HHZ.--,2.20403,176.892,Pn,2015-06-02 16:42:52.950,manual,-0.4,1.11
+OK.LOV7.HHZ.--,2.26284,177.548,Pn,2015-06-02 16:42:54.020,manual,-0.1,1.1
+OK.LOOK.HHZ.--,2.2738,175.709,Pn,2015-06-02 16:42:53.640,manual,-0.7,1.1
+N4.U38B.BHZ.--,2.42718,85.0048,Pn,2015-06-02 16:42:56.800,manual,0.4,1.08
+N4.S39B.BHZ.--,3.55014,65.1598,Pn,2015-06-02 16:43:12.020,manual,0.2,0.97
+US.MIAR.BHZ.00,3.55239,117.768,Pn,2015-06-02 16:43:12.270,manual,0.4,0.97
+AG.WHAR.HHZ.00,4.25572,101.718,Pn,2015-06-02 16:43:20.990,manual,-0.5,0.91

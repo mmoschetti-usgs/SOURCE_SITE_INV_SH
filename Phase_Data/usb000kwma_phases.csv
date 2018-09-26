@@ -1,0 +1,73 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000kwma
+#time = 2013-11-13 05:16:36.860000
+#location = 5km E of Luther, Oklahoma
+#latitude = 35.6520
+#longitude = -97.1332
+#depth = 6.1
+#magnitude = 2.7
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000kwma
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.OKCSW.EHZ.--,0.349723,225.396,Pg,2013-11-13 05:16:44.010,automatic,0.4,0.0
+OK.BCOK.HHZ.--,0.38776,270.832,Pg,2013-11-13 05:16:44.630,automatic,0.3,0.0
+OK.FNO.HHZ.01,0.450435,209.139,Pg,2013-11-13 05:16:45.850,automatic,0.3,0.0
+US.WMOK.BHZ.10,1.6286,236.422,Pn,2013-11-13 05:17:06.170,manual,0.1,0.083
+OK.CROK.HHZ.--,1.09472,321.263,Pg,2013-11-13 05:16:57.890,automatic,0.0,0.083
+OK.X34A.HHZ.--,1.19507,208.868,Pg,2013-11-13 05:16:59.510,automatic,-0.3,0.059
+TA.W39A.BHZ.--,2.77279,98.4704,Pn,2013-11-13 05:17:22.520,automatic,0.7,0.024
+GS.OK005.HNZ.01,0.0472423,273.528,Pg,2013-11-13 05:16:38.380,manual,0.1,0.0
+TA.TUL1.BHZ.--,1.12068,76.3068,Pg,2013-11-13 05:16:57.880,manual,-0.5,0.055
+GS.ADOK.HNZ.--,0.19375,270.069,Pg,2013-11-13 05:16:41.030,manual,0.3,0.0
+OK.U32A.BHZ.--,1.67956,296.157,Pn,2013-11-13 05:17:07.080,manual,0.3,0.094
+AG.HHAR.HHZ.00,2.66545,75.4239,Pn,2013-11-13 05:17:20.200,manual,-0.2,0.024
+US.MIAR.BHZ.00,3.11814,109.706,Pn,2013-11-13 05:17:27.480,manual,0.9,0.025
+OK.W35A.EHZ.--,0.541165,156.937,Pg,2013-11-13 05:16:47.060,manual,-0.2,0.0
+TA.U40A.BHZ.--,3.54031,77.2975,Pn,2013-11-13 05:17:32.810,manual,0.4,0.02
+TA.WHTX.BHZ.--,3.66117,184.301,Pn,2013-11-13 05:17:35.080,manual,1.1,0.045
+TA.ABTX.BHZ.--,3.66817,215.286,Pn,2013-11-13 05:17:34.740,manual,0.6,0.051
+TA.X40A.BHZ.--,3.71244,106.995,Pn,2013-11-13 05:17:35.620,manual,0.9,0.022
+AG.WHAR.HHZ.00,3.97011,93.8102,Pn,2013-11-13 05:17:38.600,manual,0.3,0.019
+NM.UALR.BHZ.--,4.01836,101.185,Pn,2013-11-13 05:17:38.960,manual,0.0,0.02
+AG.FCAR.HHZ.00,4.08003,85.2009,Pn,2013-11-13 05:17:40.510,manual,0.7,0.018
+TA.W41B.BHZ.--,4.01848,95.4012,Pn,2013-11-13 05:17:39.460,manual,0.5,0.019
+NM.MGMO.BHZ.--,4.20036,67.6631,Pn,2013-11-13 05:17:41.920,manual,0.5,0.019
+IU.CCM.BHZ.10,5.29612,61.3269,Pn,2013-11-13 05:17:56.540,manual,0.1,0.017
+IU.CCM.BHZ.10,5.29612,61.3269,Sg,2013-11-13 05:19:18.190,manual,4.6,0.099
+OK.W35A.EHZ.--,0.541165,156.937,Sg,2013-11-13 05:16:54.540,manual,0.2,0.178
+OK.CROK.HHZ.--,1.09472,321.263,Sg,2013-11-13 05:17:12.290,manual,0.2,0.109
+TA.TUL1.BHZ.--,1.12068,76.3068,Sg,2013-11-13 05:17:13.210,manual,0.3,0.074
+OK.X34A.HHZ.--,1.19507,208.868,Sg,2013-11-13 05:17:15.500,manual,0.2,0.083
+US.WMOK.BHZ.10,1.6286,236.422,Sn,2013-11-13 05:17:28.030,manual,0.6,0.09
+AG.HHAR.HHZ.00,2.66545,75.4239,Sn,2013-11-13 05:17:54.730,manual,1.7,0.017
+US.AMTX.BHZ.00,3.79898,259.679,Pn,2013-11-13 05:17:38.400,manual,2.4,0.057
+TA.MSTX.BHZ.--,4.9334,251.74,Pn,2013-11-13 05:17:51.970,manual,0.3,0.046

@@ -1,0 +1,65 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20004wrm
+#time = 2016-02-03 03:13:32.450000
+#location = 26km WNW of McAlester, Oklahoma
+#latitude = 34.9910
+#longitude = -96.0509
+#depth = 5.0
+#magnitude = 2.5
+#magtype = mb_lg
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20004wrm
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.W35A.HHZ.--,0.694538,283.668,Pg,2016-02-03 03:13:45.750,manual,0.0,1.9
+OK.FNO.HHZ.01,1.13832,283.891,Pg,2016-02-03 03:13:54.380,manual,0.1,1.37
+OK.RLOK.HHZ.--,1.44054,35.1182,Pn,2016-02-03 03:13:59.150,manual,0.0,1.21
+OK.X34A.HHZ.--,1.51702,255.649,Pn,2016-02-03 03:14:00.310,manual,0.1,1.2
+TA.TUL1.BHZ.--,0.941418,12.9056,Pg,2016-02-03 03:13:51.020,manual,0.5,1.56
+OK.X37A.BHZ.--,0.688142,125.433,Pg,2016-02-03 03:13:45.400,manual,-0.3,1.91
+OK.CHOK.HHZ.--,1.00348,304.821,Pg,2016-02-03 03:13:52.010,manual,0.3,1.5
+GS.OK025.HHZ.00,1.20631,299.584,Pg,2016-02-03 03:13:55.730,manual,0.2,1.32
+N4.T35B.BHZ.--,1.95721,349.118,Pn,2016-02-03 03:14:06.280,manual,0.0,1.14
+TA.W39A.BHZ.--,1.8701,83.0704,Pn,2016-02-03 03:14:05.950,manual,0.9,1.15
+N4.Z38B.BHZ.--,1.93988,152.588,Pn,2016-02-03 03:14:06.310,manual,0.3,1.14
+US.MIAR.BHZ.00,2.08494,101.603,Pn,2016-02-03 03:14:07.790,manual,-0.2,1.13
+US.WMOK.BHZ.10,2.2588,264.363,Pn,2016-02-03 03:14:10.050,manual,-0.3,1.11
+TA.X40A.BHZ.--,2.6962,99.8214,Pn,2016-02-03 03:14:15.540,manual,-0.8,1.06
+OK.BCOK.HHZ.--,1.43702,297.978,Pn,2016-02-03 03:13:58.430,manual,-0.7,1.21
+OK.W35A.HHE.--,0.694538,283.668,Sg,2016-02-03 03:13:55.140,manual,0.3,1.1
+OK.X37A.BHN.--,0.688142,125.433,Sg,2016-02-03 03:13:54.800,manual,0.2,1.1
+TA.TUL1.BHN.--,0.941418,12.9056,Sg,2016-02-03 03:14:02.730,manual,0.0,1.01
+OK.CHOK.HHE.--,1.00348,304.821,Sn,2016-02-03 03:14:06.880,manual,-0.8,0.95
+GS.OK034.HHZ.00,1.15161,332.206,Pg,2016-02-03 03:13:54.640,manual,0.1,1.36
+OK.OKCFA.HHZ.--,1.22253,290.662,Pn,2016-02-03 03:13:55.750,manual,-0.4,1.24
+OK.QUOK.HHZ.--,1.29388,335.737,Pn,2016-02-03 03:13:55.440,manual,-1.7,1.23
+OK.CCOK.HHZ.--,1.3647,285.973,Pn,2016-02-03 03:13:57.400,manual,-0.7,1.22
+N4.Z35B.BHZ.--,1.93277,211.385,Pn,2016-02-03 03:14:04.490,manual,-1.4,1.15
+AG.HHAR.HHZ.00,2.14841,52.549,Pn,2016-02-03 03:14:08.220,manual,-0.6,1.12

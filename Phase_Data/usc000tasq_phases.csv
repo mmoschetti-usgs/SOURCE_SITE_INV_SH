@@ -1,0 +1,69 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000tasq
+#time = 2014-12-30 15:11:50.100000
+#location = 5km WNW of Helena, Oklahoma
+#latitude = 36.5709
+#longitude = -98.3251
+#depth = 5.0
+#magnitude = 3.1
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000tasq
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.BCOK.HHZ.--,1.08085,147.36,Pg,2014-12-30 15:12:10.300,manual,-0.5,1.42
+GS.OK031.HHZ.00,1.34999,116.733,Pn,2014-12-30 15:12:15.080,manual,-0.5,1.23
+GS.OK030.HHZ.00,1.40146,116.797,Pn,2014-12-30 15:12:16.060,manual,-0.3,1.22
+OK.QUOK.HHZ.--,1.36466,106.506,Pn,2014-12-30 15:12:15.390,manual,-0.4,1.22
+US.WMOK.BHZ.10,1.86627,191.601,Pn,2014-12-30 15:12:22.950,manual,0.2,1.15
+OK.W35A.EHZ.--,1.84146,139.791,Pn,2014-12-30 15:12:22.590,manual,0.2,1.16
+N4.T35B.BHZ.--,1.49663,76.1458,Pn,2014-12-30 15:12:17.660,manual,0.0,1.2
+OK.CROK.HHZ.--,0.283019,103.398,Pg,2014-12-30 15:11:56.020,manual,0.4,2.94
+OK.GC02.EHZ.--,0.467291,53.0395,Pg,2014-12-30 15:11:59.430,manual,0.3,2.36
+GS.KAN14.HHZ.01,0.482596,36.9434,Pg,2014-12-30 15:11:59.770,manual,0.4,2.32
+OK.U32A.BHZ.--,0.577607,250.89,Pg,2014-12-30 15:12:01.380,manual,0.2,2.11
+GS.KAN10.HHZ.01,0.581589,18.4268,Pg,2014-12-30 15:12:01.340,manual,0.1,2.1
+GS.KAN08.HHZ.01,0.713488,23.3443,Pg,2014-12-30 15:12:03.930,manual,0.1,1.87
+GS.KAN11.HHZ.01,0.714722,27.3887,Pg,2014-12-30 15:12:04.070,manual,0.2,1.86
+GS.KAN12.HHZ.01,0.771043,19.7738,Pg,2014-12-30 15:12:05.050,manual,0.1,1.78
+GS.KAN13.HHZ.01,0.810699,56.7793,Pg,2014-12-30 15:12:05.740,manual,0.1,1.72
+GS.OK025.HHZ.00,1.2709,140.712,Pg,2014-12-30 15:12:13.740,manual,-0.7,1.27
+GS.OK026.HHZ.00,1.35344,148.175,Pn,2014-12-30 15:12:15.100,manual,-0.6,1.23
+OK.OKCSW.EHZ.--,1.36749,147.996,Pn,2014-12-30 15:12:15.300,manual,-0.6,1.22
+OK.FNO.HHZ.01,1.51011,149.95,Pn,2014-12-30 15:12:17.830,manual,0.0,1.2
+US.KSU1.BHZ.10,2.86772,27.7501,Pn,2014-12-30 15:12:36.610,manual,0.1,1.04
+N4.U38B.BHZ.--,3.1765,91.1947,Pn,2014-12-30 15:12:40.950,manual,0.2,1.01
+AG.HHAR.HHZ.00,3.54809,93.356,Pn,2014-12-30 15:12:45.760,manual,-0.1,0.97
+ZW.AZDA.EHZ.01,3.64506,169.767,Pn,2014-12-30 15:12:47.120,manual,-0.1,0.96
+N4.S39B.BHZ.--,4.15077,72.8769,Pn,2014-12-30 15:12:54.070,manual,-0.1,0.92
+TA.ABTX.BHZ.--,4.08484,195.814,Pn,2014-12-30 15:12:53.320,manual,0.1,0.92
+N4.N33B.BHZ.--,4.21581,9.07053,Pn,2014-12-30 15:12:54.850,manual,-0.2,0.91
+TA.W41B.BHZ.--,5.12794,103.978,Pn,2014-12-30 15:13:07.750,manual,0.2,0.85
+N4.L34B.BHZ.--,5.59628,15.0721,Pn,2014-12-30 15:13:13.720,manual,-0.3,0.81

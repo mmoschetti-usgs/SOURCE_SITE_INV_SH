@@ -1,0 +1,58 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000eq9n
+#time = 2013-01-17 00:53:26.600000
+#location = 6km NW of Jones, Oklahoma
+#latitude = 35.5990
+#longitude = -97.3450
+#depth = 4.8
+#magnitude = 2.8
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000eq9n
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+IR.OK001.--.--,0.06,129.9,Pg,2013-01-17 00:53:27.550,manual,-0.5,1.0
+IR.OK002.--.--,0.13,112.2,Pg,2013-01-17 00:53:29.230,manual,0.0,1.0
+IR.TUL1.--.--,1.3,75.7,Pn,2013-01-17 00:53:48.970,manual,-2.5,1.0
+IR.WMOK.--.--,1.46,234.3,Pn,2013-01-17 00:53:51.810,manual,-1.8,1.0
+IR.U32A.--.--,1.55,300.6,Pn,2013-01-17 00:53:53.630,manual,-1.3,1.0
+IR.X37A.--.--,1.91,121.3,Pn,2013-01-17 00:54:00.000,manual,0.2,1.0
+IR.HHAR.--.--,2.85,75.2,Pn,2013-01-17 00:54:12.580,manual,-0.2,1.0
+IR.W39A.--.--,2.94,96.8,Pn,2013-01-17 00:54:12.800,manual,-1.2,1.0
+IR.MIAR.--.--,3.27,107.7,Pn,2013-01-17 00:54:17.920,manual,-0.6,1.0
+IR.WHTX.--.--,3.6,181.5,Pn,2013-01-17 00:54:21.020,manual,-2.1,1.0
+IR.KSU1.--.--,3.54,9.3,Pn,2013-01-17 00:54:21.280,manual,-1.0,1.0
+IR.AMTX.--.--,3.62,259.9,Pn,2013-01-17 00:54:23.250,manual,-0.2,1.0
+IR.ABTX.--.--,3.53,213.4,Pn,2013-01-17 00:54:23.380,manual,1.3,1.0
+IR.CBKS.--.--,3.73,330.0,Pn,2013-01-17 00:54:23.970,manual,-1.0,1.0
+IR.X40A.--.--,3.86,105.4,Pn,2013-01-17 00:54:25.560,manual,-1.1,1.0
+IR.WHAR.--.--,4.14,92.8,Pn,2013-01-17 00:54:29.810,manual,-0.7,1.0
+IR.W41B.--.--,4.19,94.3,Pn,2013-01-17 00:54:30.430,manual,-0.7,1.0
+IR.JCT.--.--,5.51,202.7,Pn,2013-01-17 00:54:46.410,manual,-2.9,1.0

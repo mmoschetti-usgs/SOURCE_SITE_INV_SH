@@ -1,0 +1,79 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us100062pl
+#time = 2016-07-11 20:28:57.700000
+#location = 7km ENE of Langston, Oklahoma
+#latitude = 35.9767
+#longitude = -97.1863
+#depth = 5.8
+#magnitude = 3.1
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us100062pl
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK029.HHZ.00,0.282617,230.591,Pg,2016-07-11 20:29:03.450,manual,0.4,2.94
+GS.OK033.HHZ.00,0.212196,71.3624,Pg,2016-07-11 20:29:02.400,manual,0.6,3.24
+GS.OK030.HHZ.00,0.330207,98.3801,Pg,2016-07-11 20:29:04.590,manual,0.7,2.76
+OK.QUOK.HHZ.--,0.43347,63.2292,Pg,2016-07-11 20:29:06.480,manual,0.7,2.45
+ZD.KNG1.EHZ.--,0.440871,290.772,Pg,2016-07-11 20:29:06.430,manual,0.5,2.43
+OK.CHOK.HHZ.--,0.426985,166.191,Pg,2016-07-11 20:29:06.330,manual,0.7,2.46
+OK.BCOK.HHZ.--,0.469206,227.238,Pg,2016-07-11 20:29:07.040,manual,0.6,2.35
+GS.OK031.HHZ.00,0.282646,94.6779,Pg,2016-07-11 20:29:03.630,manual,0.6,2.94
+GS.OK025.HHZ.00,0.41355,197.386,Pg,2016-07-11 20:29:06.030,manual,0.6,2.5
+OK.OKCFA.HHZ.--,0.60031,201.144,Pg,2016-07-11 20:29:09.590,manual,0.8,2.06
+OK.DEOK.HHZ.--,0.574308,103.262,Pg,2016-07-11 20:29:09.130,manual,0.8,2.12
+GS.OK034.HHZ.00,0.385115,84.8811,Pg,2016-07-11 20:29:05.480,manual,0.6,2.59
+OK.CCOK.HHZ.--,0.727286,211.871,Pg,2016-07-11 20:29:11.740,manual,0.6,1.84
+OK.FNO.HHZ.01,0.73878,193.772,Pg,2016-07-11 20:29:11.840,manual,0.6,2.39
+OK.CROK.HHZ.--,0.832395,309.508,Pg,2016-07-11 20:29:13.620,manual,0.7,2.27
+OK.GORE.HHZ.--,1.0142,322.971,Pg,2016-07-11 20:29:16.810,manual,0.8,2.08
+OK.GC02.EHZ.--,1.02819,328.314,Pg,2016-07-11 20:29:17.060,manual,0.8,2.06
+GS.OK032.HHZ.00,1.16797,315.272,Pg,2016-07-11 20:29:19.540,manual,0.8,1.94
+OK.BLOK.HHZ.--,0.782667,358.313,Pg,2016-07-11 20:29:12.740,manual,0.7,2.33
+GS.KAN14.HHZ.01,1.16135,327.608,Pg,2016-07-11 20:29:19.420,manual,0.8,1.94
+OK.NOKA.HHZ.--,1.5554,295.487,Pg,2016-07-11 20:29:26.160,manual,0.7,1.66
+OK.X34A.HHZ.--,1.4709,201.254,Pg,2016-07-11 20:29:25.290,manual,1.3,1.71
+US.WMOK.BHZ.10,1.79611,226.98,Pn,2016-07-11 20:29:30.190,manual,1.2,1.16
+GS.KAN08.HHZ.01,1.3982,333.39,Pg,2016-07-11 20:29:23.210,manual,0.5,1.76
+OK.RLOK.HHZ.--,1.75983,83.1506,Pn,2016-07-11 20:29:29.120,manual,0.6,1.17
+OK.X37A.BHZ.--,2.03006,132.466,Pn,2016-07-11 20:29:33.360,manual,1.2,0.0
+US.MIAR.BHZ.00,3.28084,114.75,Pn,2016-07-11 20:29:50.720,manual,1.7,0.0
+GS.KAN17.HHZ.01,1.16277,336.542,Pg,2016-07-11 20:29:19.130,manual,0.5,1.94
+N4.T35B.BHZ.--,1.08389,29.9118,Pg,2016-07-11 20:29:18.070,manual,0.8,2.01
+N4.U38B.BHZ.--,2.31152,77.6524,Pn,2016-07-11 20:29:37.370,manual,1.4,0.0
+N4.S39B.BHZ.--,3.54023,59.9556,Pn,2016-07-11 20:29:53.840,manual,1.3,0.0
+GS.OK033.HH2.00,0.212196,71.3624,Sg,2016-07-11 20:29:05.720,manual,1.0,1.32
+GS.OK031.HH1.00,0.282646,94.6779,Sg,2016-07-11 20:29:08.060,manual,1.1,1.28
+NQ.OK914.HNN.01,0.309512,90.9782,Sg,2016-07-11 20:29:09.020,manual,1.2,1.27
+GS.OK030.HH1.00,0.330207,98.3801,Sg,2016-07-11 20:29:09.620,manual,1.2,1.26
+GS.OK005.HNE.01,0.321137,180.697,Sg,2016-07-11 20:29:08.950,manual,0.8,1.26
+OK.U32A.BHZ.--,1.52254,285.843,Pg,2016-07-11 20:29:25.380,manual,0.5,1.68
+OK.LOOK.HHZ.--,1.97971,179.848,Pn,2016-07-11 20:29:32.630,manual,1.2,1.14
+AG.WHAR.HHZ.00,4.04734,98.3128,Pn,2016-07-11 20:30:01.090,manual,1.7,0.0

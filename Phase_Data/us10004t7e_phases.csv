@@ -1,0 +1,68 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10004t7e
+#time = 2016-02-27 21:02:38.100000
+#location = 33km NW of Fairview, Oklahoma
+#latitude = 36.4736
+#longitude = -98.7528
+#depth = 7.2
+#magnitude = 3.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10004t7e
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK038.HHZ.00,0.00969729,61.7369,Pg,2016-02-27 21:02:39.760,manual,0.3,4.62
+GS.OK043.HHZ.00,0.0405258,171.874,Pg,2016-02-27 21:02:39.840,manual,0.2,4.34
+GS.OK037.HHZ.00,0.0351763,10.9598,Pg,2016-02-27 21:02:40.020,manual,0.4,4.39
+GS.OK040.HHZ.00,0.0641043,81.6514,Pg,2016-02-27 21:02:40.290,manual,0.4,4.15
+GS.OK036.HHZ.00,0.102595,71.7099,Pg,2016-02-27 21:02:40.940,manual,0.5,3.87
+GS.OK042.HHZ.00,0.0948241,222.033,Pg,2016-02-27 21:02:40.680,manual,0.3,3.92
+GS.OK039.HHZ.00,0.122666,138.361,Pg,2016-02-27 21:02:41.100,manual,0.3,3.74
+OK.U32A.BHZ.--,0.221406,244.977,Pg,2016-02-27 21:02:42.930,manual,0.4,3.2
+GS.OK035.HHZ.00,0.236695,8.4139,Pg,2016-02-27 21:02:43.460,manual,0.6,3.13
+OK.CROK.HHZ.--,0.620815,86.9054,Pg,2016-02-27 21:02:50.220,manual,0.2,2.02
+GS.OK039.HH2.00,0.122666,138.361,Sg,2016-02-27 21:02:43.070,manual,0.5,1.37
+GS.OK043.HH2.00,0.0405258,171.874,Sg,2016-02-27 21:02:41.070,manual,0.3,1.42
+GS.OK038.HH2.00,0.00969729,61.7369,Sg,2016-02-27 21:02:40.940,manual,0.6,1.44
+GS.OK037.HH1.00,0.0351763,10.9598,Sg,2016-02-27 21:02:41.350,manual,0.7,1.42
+GS.OK042.HH2.00,0.0948241,222.033,Sg,2016-02-27 21:02:42.580,manual,0.7,1.38
+OK.U32A.BHE.--,0.221406,244.977,Sg,2016-02-27 21:02:46.600,manual,1.1,1.31
+OK.GORE.HHN.--,0.719044,64.098,Sg,2016-02-27 21:03:01.750,manual,0.5,1.09
+GS.KAN14.HHE.01,0.797077,52.5327,Sg,2016-02-27 21:03:04.110,manual,0.3,1.06
+GS.OK036.HH1.00,0.102595,71.7099,Sg,2016-02-27 21:02:42.980,manual,0.9,1.38
+GS.OK041.HHZ.00,0.17753,91.9956,Pg,2016-02-27 21:02:42.180,manual,0.4,3.42
+GS.OK041.HH2.00,0.17753,91.9956,Sg,2016-02-27 21:02:45.150,manual,1.0,1.34
+OK.CROK.HHN.--,0.620815,86.9054,Sg,2016-02-27 21:02:58.830,manual,0.7,1.13
+GS.OK040.HH1.00,0.0641043,81.6514,Sg,2016-02-27 21:02:41.800,manual,0.6,1.4
+OK.GC02.EHZ.--,0.811215,62.0275,Pg,2016-02-27 21:02:53.540,manual,-0.2,1.72
+NQ.OK916.HNZ.01,0.8744,67.3118,Pg,2016-02-27 21:02:54.700,manual,-0.2,1.64
+ZD.KNG1.EHZ.--,0.919478,111.429,Pg,2016-02-27 21:02:55.510,manual,-0.3,1.59
+GS.KAN08.HHZ.01,0.978954,39.6075,Pg,2016-02-27 21:02:56.490,manual,-0.4,1.52
+GS.KAN12.HHZ.01,1.02093,36.1272,Pg,2016-02-27 21:02:57.650,manual,-0.1,1.48

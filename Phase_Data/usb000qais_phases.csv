@@ -1,0 +1,71 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000qais
+#time = 2014-05-05 02:36:19.200000
+#location = 15km WNW of Helena, Oklahoma
+#latitude = 36.6106
+#longitude = -98.4234
+#depth = 5.0
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000qais
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.KNG1.EHZ.--,0.756948,128.878,Pg,2014-05-05 02:36:33.680,manual,-0.1,0.084
+GS.OK029.HHZ.00,1.12847,135.754,Pg,2014-05-05 02:36:39.140,manual,-1.7,0.049
+OK.BCOK.HHZ.--,1.15779,145.064,Pg,2014-05-05 02:36:39.490,manual,-1.9,0.048
+GS.OK028.HHZ.00,1.52115,133.108,Pn,2014-05-05 02:36:47.250,automatic,0.2,0.029
+OK.FNO.HHZ.01,1.58479,148.135,Pn,2014-05-05 02:36:47.660,manual,-0.3,0.029
+OK.X34A.HHZ.--,2.06218,166.327,Pn,2014-05-05 02:36:56.510,automatic,2.0,0.028
+GS.OK027.HHZ.00,1.28642,133.856,Pn,2014-05-05 02:36:43.140,automatic,-0.7,0.03
+US.WMOK.BHZ.10,1.89115,188.953,Sg,2014-05-05 02:37:17.820,automatic,-0.3,0.0
+N4.T35B.BHZ.--,1.56498,78.1904,Pn,2014-05-05 02:36:48.070,automatic,0.4,0.035
+N4.R32B.BHZ.--,1.82313,352.879,Pn,2014-05-05 02:36:53.050,automatic,1.8,0.037
+N4.R32B.BHZ.--,1.82313,352.879,Sg,2014-05-05 02:37:16.970,automatic,0.7,0.0
+N4.U38B.BHZ.--,3.25663,91.8041,Pn,2014-05-05 02:37:12.300,manual,1.3,0.023
+OK.U32A.BHZ.--,0.519738,243.828,Pg,2014-05-05 02:36:29.570,manual,0.4,0.0
+OK.CROK.HHZ.--,0.369704,106.48,Pg,2014-05-05 02:36:26.870,manual,0.5,0.0
+OK.CROK.HHN.--,0.369704,106.48,Sg,2014-05-05 02:36:32.100,manual,0.9,0.12
+OK.U32A.BHE.--,0.519738,243.828,Sg,2014-05-05 02:36:36.750,manual,0.8,0.128
+OK.KNG1.EHZ.--,0.756948,128.878,Sg,2014-05-05 02:36:44.150,manual,0.6,0.084
+OK.KAY1.HHZ.--,0.985361,80.7763,Sg,2014-05-05 02:36:51.300,manual,0.4,0.088
+OK.KAY1.HHZ.--,0.985361,80.7763,Pg,2014-05-05 02:36:36.530,manual,-1.6,0.072
+GS.OK025.HHZ.00,1.35216,139.124,Pn,2014-05-05 02:36:44.070,manual,-0.7,0.03
+OK.QUOK.HHZ.--,1.45185,107.062,Pn,2014-05-05 02:36:46.000,manual,-0.1,0.031
+GS.OK026.HHZ.00,1.4296,146.261,Pn,2014-05-05 02:36:45.480,manual,-0.3,0.03
+GS.OK028.HHZ.00,1.52115,133.108,Sn,2014-05-05 02:37:08.300,manual,1.0,0.035
+N4.T35B.BHZ.--,1.56498,78.1904,Sn,2014-05-05 02:37:09.000,manual,0.6,0.042
+OK.W35A.EHZ.--,1.92313,138.696,Pn,2014-05-05 02:36:52.170,manual,-0.4,0.026
+US.WMOK.BHZ.10,1.89115,188.953,Pn,2014-05-05 02:36:52.790,manual,0.6,0.032
+US.KSU1.BHZ.10,2.87081,29.4559,Pn,2014-05-05 02:37:05.670,manual,0.0,0.03
+US.KSU1.BHZ.10,2.87081,29.4559,Pg,2014-05-05 02:37:13.110,manual,2.2,0.013
+US.AMTX.BHZ.00,3.16047,237.923,Pn,2014-05-05 02:37:10.740,manual,1.0,0.028
+N4.Z35B.BHZ.--,3.41026,163.292,Pn,2014-05-05 02:37:13.760,manual,0.7,0.021
+AG.HHAR.HHZ.00,3.62954,93.8487,Pn,2014-05-05 02:37:17.140,manual,1.1,0.021

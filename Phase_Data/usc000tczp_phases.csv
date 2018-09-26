@@ -1,0 +1,71 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000tczp
+#time = 2014-12-31 05:18:19.500000
+#location = 18km SSE of Medford, Oklahoma
+#latitude = 36.6561
+#longitude = -97.6392
+#depth = 6.9
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000tczp
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.GC02.EHZ.--,0.263375,317.838,Pg,2014-12-31 05:18:25.190,manual,0.5,3.02
+GS.KAN13.HHZ.01,0.378931,19.9336,Pg,2014-12-31 05:18:27.290,manual,0.4,2.6
+OK.QUOK.HHZ.--,0.893427,122.504,Pg,2014-12-31 05:18:36.530,manual,-0.1,1.62
+GS.OK031.HHZ.00,0.953883,137.111,Pg,2014-12-31 05:18:37.570,manual,-0.2,1.55
+OK.W35A.EHZ.--,1.62359,157.294,Pn,2014-12-31 05:18:47.970,manual,-0.6,1.18
+OK.BCOK.HHZ.--,0.997637,178.601,Pn,2014-12-31 05:18:39.760,automatic,-0.2,1.28
+OK.CROK.HHZ.--,0.315584,241.495,Pg,2014-12-31 05:18:26.030,manual,0.4,2.81
+GS.KAN14.HHZ.01,0.397,319.208,Pg,2014-12-31 05:18:27.550,manual,0.3,2.55
+GS.KAN10.HHZ.01,0.592645,322.059,Pg,2014-12-31 05:18:30.780,manual,-0.1,2.08
+N4.T35B.BHZ.--,0.941483,73.6573,Pg,2014-12-31 05:18:37.720,manual,0.1,1.56
+GS.OK030.HHZ.00,1.00292,136.19,Pg,2014-12-31 05:18:38.480,manual,-0.3,1.5
+GS.OK025.HHZ.00,1.10017,167.1,Pg,2014-12-31 05:18:40.480,manual,-0.1,1.41
+OK.U32A.BHZ.--,1.13154,256.286,Pn,2014-12-31 05:18:41.580,manual,-0.2,1.26
+OK.OKCSW.EHZ.--,1.2586,172.496,Pn,2014-12-31 05:18:43.920,manual,0.4,1.24
+US.WMOK.BHZ.10,2.12761,206.228,Pn,2014-12-31 05:18:56.710,manual,1.2,1.12
+US.KSU1.BHZ.10,2.5731,18.1483,Pn,2014-12-31 05:19:04.490,manual,2.9,1.07
+N4.U38B.BHZ.--,2.62873,93.7489,Pn,2014-12-31 05:19:04.980,manual,2.6,1.06
+US.CBKS.BHZ.00,2.72157,322.962,Pn,2014-12-31 05:19:03.210,manual,-0.5,1.05
+OK.X37A.BHZ.--,2.76883,137.477,Pn,2014-12-31 05:19:07.190,manual,2.9,1.05
+OK.GC02.EHN.--,0.263375,317.838,Sg,2014-12-31 05:18:28.950,manual,0.7,1.29
+OK.CROK.HHN.--,0.315584,241.495,Sg,2014-12-31 05:18:30.560,manual,0.7,1.26
+GS.KAN13.HHN.01,0.378931,19.9336,Sg,2014-12-31 05:18:31.860,manual,0.0,1.23
+GS.KAN14.HHN.01,0.397,319.208,Sg,2014-12-31 05:18:32.960,manual,0.5,1.22
+GS.KAN10.HNN.01,0.592645,322.059,Sg,2014-12-31 05:18:39.130,manual,0.5,1.14
+GS.KAN08.HNN.01,0.628476,335.085,Sg,2014-12-31 05:18:40.100,manual,0.3,1.12
+GS.KAN08.HHN.01,0.628476,335.085,Pg,2014-12-31 05:18:39.730,manual,8.1,2.01
+GS.KAN12.HHN.01,0.701629,335.933,Sg,2014-12-31 05:18:42.760,manual,0.6,1.09
+N4.T35B.BHE.--,0.941483,73.6573,Sg,2014-12-31 05:18:49.550,manual,-0.3,1.01
+OK.BCOK.HHE.--,0.997637,178.601,Sg,2014-12-31 05:18:52.020,manual,0.4,0.99
+GS.OK025.HH1.00,1.10017,167.1,Sg,2014-12-31 05:18:55.100,manual,0.2,0.96
+GS.OK026.HH2.00,1.24753,172.936,Sg,2014-12-31 05:18:59.780,manual,0.2,0.92

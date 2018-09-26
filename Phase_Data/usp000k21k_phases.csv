@@ -1,0 +1,54 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usp000k21k
+#time = 2013-07-15 16:15:18.740000
+#location = Oklahoma
+#latitude = 36.6970
+#longitude = -98.1860
+#depth = 5.0
+#magnitude = 2.8
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usp000k21k
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+IR.WMOK.--.--,2.01,194.1,Pn,2013-07-15 16:15:54.040,manual,0.6,1.0
+IR.TUL1.--.--,2.09,111.4,Pn,2013-07-15 16:15:56.130,manual,1.7,1.0
+IR.CBKS.--.--,2.44,330.3,Pn,2013-07-15 16:15:58.750,manual,-0.6,1.0
+IR.X37A.--.--,3.11,131.7,Pn,2013-07-15 16:16:08.660,manual,0.2,1.0
+IR.AMTX.--.--,3.37,238.5,Pn,2013-07-15 16:16:12.610,manual,0.5,1.0
+IR.HHAR.--.--,3.45,95.6,Pn,2013-07-15 16:16:14.170,manual,1.1,1.0
+IR.ABTX.--.--,4.24,196.9,Pn,2013-07-15 16:16:24.100,manual,0.1,1.0
+IR.KSCO.--.--,4.21,304.7,Pn,2013-07-15 16:16:24.890,manual,1.2,1.0
+IR.MIAR.--.--,4.33,118.4,Pn,2013-07-15 16:16:26.100,manual,0.9,1.0
+IR.MSTX.--.--,4.63,235.4,Pn,2013-07-15 16:16:30.000,manual,0.5,1.0
+IR.WHTX.--.--,4.73,172.5,Pn,2013-07-15 16:16:31.150,manual,0.4,1.0
+IR.X40A.--.--,4.89,115.2,Pn,2013-07-15 16:16:34.340,manual,1.5,1.0
+IR.WHAR.--.--,4.98,104.6,Pn,2013-07-15 16:16:34.820,manual,0.6,1.0
+IR.T25A.--.--,5.01,276.9,Pn,2013-07-15 16:16:34.970,manual,0.2,1.0

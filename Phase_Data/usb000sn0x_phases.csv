@@ -1,0 +1,69 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000sn0x
+#time = 2014-10-08 11:40:58.700000
+#location = 11km NE of Luther, Oklahoma
+#latitude = 35.7503
+#longitude = -97.1216
+#depth = 3.7
+#magnitude = 2.8
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000sn0x
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK027.HHZ.00,0.137237,253.878,Pg,2014-10-08 11:41:01.880,manual,0.5,0.0
+GS.OK029.HHZ.00,0.27495,279.771,Pg,2014-10-08 11:41:04.460,manual,0.4,0.0
+GS.OK025.HHZ.00,0.243981,226.275,Pg,2014-10-08 11:41:03.900,manual,0.5,0.0
+GS.OK028.HHZ.00,0.195052,165.426,Pg,2014-10-08 11:41:03.110,manual,0.6,0.0
+OK.BCOK.HHZ.--,0.40778,256.902,Pg,2014-10-08 11:41:06.870,manual,0.3,0.0
+OK.QUOK.HHZ.--,0.537743,38.4866,Pg,2014-10-08 11:41:09.470,manual,0.4,0.0
+GS.OK026.HHZ.00,0.428958,218.903,Pg,2014-10-08 11:41:07.300,manual,0.3,0.0
+OK.OKCSW.EHZ.--,0.429993,216.95,Pg,2014-10-08 11:41:07.150,manual,0.2,0.0
+OK.KNG1.EHZ.--,0.60183,309.469,Pg,2014-10-08 11:41:10.500,manual,0.2,0.0
+OK.CROK.HHZ.--,1.02642,317.43,Pg,2014-10-08 11:41:18.260,manual,-0.1,0.058
+OK.FNO.HHZ.01,0.542148,204.966,Pg,2014-10-08 11:41:09.220,manual,0.1,0.0
+GS.KAN13.HHZ.01,1.29243,347.255,Pn,2014-10-08 11:41:23.020,manual,-0.6,0.082
+US.WMOK.BHZ.10,1.69244,233.838,Pn,2014-10-08 11:41:29.400,manual,0.3,0.123
+GS.KAN13.HHZ.01,1.29243,347.255,Sn,2014-10-08 11:41:40.300,manual,-1.1,0.095
+TA.TUL1.BHZ.--,1.09227,81.2008,Pg,2014-10-08 11:41:18.880,manual,-0.8,0.033
+N4.T35B.BHZ.--,1.2634,22.7539,Pg,2014-10-08 11:41:22.630,manual,-0.3,0.031
+TA.TUL1.BHZ.--,1.09227,81.2008,Sg,2014-10-08 11:41:33.910,manual,0.1,0.043
+OK.X37A.BHZ.--,1.84337,128.427,Pn,2014-10-08 11:41:31.690,manual,0.5,0.116
+OK.U32A.BHZ.--,1.64738,292.956,Sn,2014-10-08 11:41:51.260,manual,1.1,0.099
+GS.OK027.HH1.00,0.137237,253.878,Sg,2014-10-08 11:41:04.130,manual,0.9,0.079
+GS.OK028.HH2.00,0.195052,165.426,Sg,2014-10-08 11:41:06.210,manual,1.1,0.106
+GS.OK025.HH2.00,0.243981,226.275,Sg,2014-10-08 11:41:07.580,manual,0.9,0.054
+OK.BCOK.HHN.--,0.40778,256.902,Sg,2014-10-08 11:41:12.530,manual,0.7,0.06
+GS.OK026.HH1.00,0.428958,218.903,Sg,2014-10-08 11:41:13.510,manual,1.0,0.053
+OK.U32A.BHZ.--,1.64738,292.956,Pn,2014-10-08 11:41:28.990,manual,0.5,0.099
+GS.OK005.HNZ.01,0.110736,210.741,Pg,2014-10-08 11:41:01.440,manual,0.5,0.0
+OK.KAY1.HHZ.--,1.01299,355.881,Pg,2014-10-08 11:41:17.960,manual,-0.2,0.056
+GS.KAN09.HHZ.01,1.43985,343.997,Pn,2014-10-08 11:41:25.590,manual,0.0,0.081
+GS.KAN05.HHZ.01,1.48463,336.156,Pn,2014-10-08 11:41:26.390,manual,0.1,0.083

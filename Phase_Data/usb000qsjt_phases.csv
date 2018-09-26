@@ -1,0 +1,58 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000qsjt
+#time = 2014-05-17 14:18:39.400000
+#location = Oklahoma
+#latitude = 36.0958
+#longitude = -97.0599
+#depth = 5.0
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000qsjt
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK028.HHZ.00,0.53356,180.132,Pg,2014-05-17 14:18:49.950,manual,0.3,0.0
+GS.OK029.HHZ.00,0.438036,227.147,Pg,2014-05-17 14:18:46.950,manual,-0.9,0.0
+GS.OK026.HHZ.00,0.749995,205.239,Pg,2014-05-17 14:18:51.860,manual,-1.9,0.09
+GS.OK025.HHZ.00,0.561079,203.821,Pg,2014-05-17 14:18:50.580,manual,0.4,0.0
+GS.OK027.HHZ.00,0.423865,205.436,Pg,2014-05-17 14:18:48.040,manual,0.5,0.0
+OK.W35A.EHZ.--,0.953091,170.827,Pg,2014-05-17 14:18:57.060,manual,-0.6,0.109
+US.WMOK.BHZ.10,1.95216,226.553,Pn,2014-05-17 14:19:14.360,manual,1.1,0.046
+N4.T35B.BHZ.--,0.930228,28.1728,Pg,2014-05-17 14:18:57.230,manual,0.0,0.072
+ZW.AZDA.EHZ.01,3.14217,187.62,Pn,2014-05-17 14:19:28.790,manual,-0.8,0.032
+N4.U38B.BHZ.--,2.18812,80.1948,Pn,2014-05-17 14:19:18.010,manual,1.6,0.081
+GS.OK028.HH2.00,0.53356,180.132,Sg,2014-05-17 14:18:57.470,manual,0.9,0.132
+GS.KAN13.HHZ.01,0.975186,339.939,Pg,2014-05-17 14:18:58.300,manual,0.2,0.143
+TA.TUL1.BHZ.--,1.04467,99.8277,Pg,2014-05-17 14:18:58.870,manual,-0.6,0.237
+GS.KAN10.HHZ.01,1.32129,321.228,Pn,2014-05-17 14:19:04.300,manual,-0.2,0.079
+OK.U32A.BHZ.--,1.59493,280.798,Pn,2014-05-17 14:19:07.920,manual,-0.4,0.092
+GS.KAN12.HHZ.01,1.41657,328.122,Pn,2014-05-17 14:19:06.560,manual,0.7,0.07
+GS.KAN11.HHZ.01,1.30335,328.48,Pn,2014-05-17 14:19:03.160,manual,-1.1,0.071
+GS.OK027.HH2.00,0.423865,205.436,Sg,2014-05-17 14:18:54.130,manual,1.0,0.113

@@ -1,0 +1,95 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10001n9m
+#time = 2015-03-13 18:32:31.200000
+#location = 1km NW of Minco, Oklahoma
+#latitude = 35.3241
+#longitude = -97.9580
+#depth = 9.3
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10001n9m
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.FNO.HHZ.01,0.460329,98.1515,Pg,2015-03-13 18:32:40.670,manual,0.5,2.38
+GS.OK025.HHZ.00,0.567507,62.9576,Pg,2015-03-13 18:32:42.170,manual,0.0,2.13
+OK.BCOK.HHZ.--,0.437158,40.5102,Pg,2015-03-13 18:32:39.480,manual,-0.3,2.44
+OK.CROK.HHZ.--,1.17829,359.005,Pn,2015-03-13 18:32:52.980,manual,-0.9,1.24
+GS.OK029.HHZ.00,0.624931,40.8788,Pg,2015-03-13 18:32:42.210,manual,-1.1,2.02
+GS.OK032.HHZ.00,1.49071,352.189,Pn,2015-03-13 18:32:58.010,manual,-0.1,1.2
+OK.GC02.EHZ.--,1.52632,2.96452,Pn,2015-03-13 18:32:57.790,manual,-0.9,1.19
+OK.CROK.HHE.--,1.17829,359.005,Sg,2015-03-13 18:33:08.900,manual,-0.2,0.74
+OK.QUOK.HHZ.--,1.32238,49.8927,Pn,2015-03-13 18:32:55.070,manual,-0.8,1.22
+OK.U32A.BHZ.--,1.35189,321.475,Pn,2015-03-13 18:32:56.370,manual,0.1,1.22
+OK.OKCFA.HHZ.--,0.423906,77.458,Pg,2015-03-13 18:32:39.370,manual,-0.1,2.47
+OK.OKCFA.HHE.--,0.423906,77.458,Sg,2015-03-13 18:32:45.520,manual,0.4,1.21
+OK.OKCSW.EHZ.--,0.43269,79.0309,Pg,2015-03-13 18:32:39.670,manual,0.0,2.45
+OK.BCOK.HHN.--,0.437158,40.5102,Sg,2015-03-13 18:32:45.890,manual,0.4,1.2
+OK.FNO.HHE.01,0.460329,98.1515,Sg,2015-03-13 18:32:46.110,manual,-0.2,1.19
+GS.OK025.HH1.00,0.567507,62.9576,Sg,2015-03-13 18:32:50.150,manual,0.5,1.15
+GS.OK029.HH1.00,0.624931,40.8788,Sg,2015-03-13 18:32:51.670,manual,0.2,1.12
+US.WMOK.BHZ.10,0.893229,229.336,Pg,2015-03-13 18:32:47.780,manual,-0.6,1.62
+US.WMOK.BH2.10,0.893229,229.336,Sg,2015-03-13 18:33:00.290,manual,0.3,1.03
+GS.OK031.HHZ.00,1.10659,55.122,Pg,2015-03-13 18:32:52.070,manual,-0.4,1.4
+GS.OK031.HH1.00,1.10659,55.122,Sg,2015-03-13 18:33:06.550,manual,-0.3,0.96
+GS.OK030.HHZ.00,1.13045,57.4598,Pn,2015-03-13 18:32:51.890,manual,-1.3,1.25
+GS.OK030.HH1.00,1.13045,57.4598,Sg,2015-03-13 18:33:07.370,manual,-0.2,0.95
+OK.QUOK.HHE.--,1.32238,49.8927,Sn,2015-03-13 18:33:13.220,manual,-0.3,0.82
+OK.U32A.BHE.--,1.35189,321.475,Sn,2015-03-13 18:33:14.220,manual,-0.1,0.81
+OK.KAY1.HHZ.--,1.55764,22.6139,Pn,2015-03-13 18:32:59.410,manual,0.3,1.19
+GS.KAN13.HHZ.01,1.72953,12.8418,Pn,2015-03-13 18:33:02.270,manual,0.8,1.17
+GS.KAN10.HHZ.01,1.79914,356.508,Pn,2015-03-13 18:33:02.560,manual,0.2,1.16
+GS.KAN09.HHZ.01,1.82903,8.53646,Pn,2015-03-13 18:33:02.990,manual,0.2,1.15
+N4.T35B.BHZ.--,1.97356,35.9638,Pn,2015-03-13 18:33:05.690,manual,0.9,1.14
+N4.Z35B.BHZ.--,2.07211,163.446,Pn,2015-03-13 18:33:07.290,manual,1.2,1.12
+OK.X37A.BHZ.--,2.24754,108.295,Pn,2015-03-13 18:33:10.070,manual,1.5,1.1
+ZW.AZDA.EHZ.01,2.36907,171.782,Pn,2015-03-13 18:33:11.310,manual,1.1,1.09
+US.AMTX.BHZ.00,3.08368,262.882,Pn,2015-03-13 18:33:19.890,manual,-0.2,1.01
+N4.R32B.BHZ.--,3.15089,349.175,Pn,2015-03-13 18:33:19.760,manual,-1.2,1.01
+N4.U38B.BHZ.--,3.10693,67.9708,Pn,2015-03-13 18:33:21.340,manual,1.0,1.01
+N4.Z38B.BHZ.--,3.20871,129.07,Pn,2015-03-13 18:33:21.870,manual,0.1,1.0
+AG.HHAR.HHZ.00,3.40288,72.5187,Pn,2015-03-13 18:33:24.390,manual,-0.1,0.98
+TA.W39A.BHZ.--,3.41799,90.9368,Pn,2015-03-13 18:33:25.230,manual,0.6,0.98
+US.MIAR.BHZ.00,3.68239,100.917,Pn,2015-03-13 18:33:28.290,manual,0.0,0.96
+TA.U40A.BHZ.--,4.27287,74.567,Pn,2015-03-13 18:33:36.710,manual,0.3,0.91
+TA.X40A.BHZ.--,4.29263,99.739,Pn,2015-03-13 18:33:37.780,manual,1.1,0.9
+US.KSU1.BHZ.10,3.9205,15.5342,Pn,2015-03-13 18:33:30.360,manual,-1.2,0.93
+N4.S39B.BHZ.--,4.41808,56.3236,Pn,2015-03-13 18:33:38.130,manual,-0.3,0.89
+AG.WHAR.HHZ.00,4.63612,88.781,Pn,2015-03-13 18:33:41.810,manual,0.4,0.88
+AG.FCAR.HHZ.00,4.78666,81.5328,Pn,2015-03-13 18:33:41.920,manual,-1.5,0.87
+NM.MGMO.BHZ.--,4.94767,66.6794,Pn,2015-03-13 18:33:43.940,manual,-1.7,0.86
+US.JCT.BHZ.00,5.07398,198.311,Pn,2015-03-13 18:33:46.340,manual,-1.1,0.85
+N4.R40B.BHZ.--,5.4407,55.3565,Pn,2015-03-13 18:33:53.270,manual,0.8,0.82
+N4.T42B.BHZ.--,5.80815,70.9527,Pn,2015-03-13 18:33:58.730,manual,1.3,0.81
+IU.CCM.BHZ.10,6.04362,61.217,Pn,2015-03-13 18:34:02.080,manual,1.4,0.82
+N4.342B.BHZ.--,6.14171,128.296,Pn,2015-03-13 18:34:02.980,manual,0.9,0.83
+US.OGNE.BHZ.00,6.46488,331.444,Pn,2015-03-13 18:34:07.680,manual,1.1,0.84
+N4.P40B.BHZ.--,6.30275,46.4893,Pn,2015-03-13 18:34:05.060,manual,0.8,0.83
+N4.735B.BHZ.--,6.45108,178.83,Pn,2015-03-13 18:34:05.710,manual,-0.6,0.84

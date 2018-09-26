@@ -1,0 +1,68 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10002a9k
+#time = 2015-05-18 10:07:42.600000
+#location = 23km NNE of Enid, Oklahoma
+#latitude = 36.6055
+#longitude = -97.8238
+#depth = 7.1
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10002a9k
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK032.HHZ.00,0.368375,302.613,Pg,2015-05-18 10:07:50.150,automatic,0.4,2.64
+GS.OK031.HHZ.00,1.02809,129.001,Pg,2015-05-18 10:08:01.960,automatic,-0.4,1.47
+OK.QUOK.HHZ.--,0.999149,115.364,Pg,2015-05-18 10:08:01.250,manual,-0.5,1.5
+OK.FNO.HHZ.01,1.38828,165.573,Pn,2015-05-18 10:08:08.140,manual,-0.2,1.22
+US.WMOK.BHZ.10,2.01984,202.97,Pn,2015-05-18 10:08:17.720,automatic,0.7,1.13
+N4.T35B.BHZ.--,1.09821,73.2066,Pg,2015-05-18 10:08:03.180,manual,-0.5,1.41
+OK.U32A.BHZ.--,0.975388,256.981,Pg,2015-05-18 10:08:00.830,manual,-0.5,1.53
+OK.CROK.HHZ.--,0.163202,231.992,Pg,2015-05-18 10:07:46.180,manual,0.2,3.5
+OK.GC02.EHZ.--,0.247206,353.33,Pg,2015-05-18 10:07:47.750,manual,0.3,3.08
+GS.KAN17.HHZ.01,0.440317,6.15429,Pg,2015-05-18 10:07:51.150,manual,0.0,2.43
+GS.KAN13.HHZ.01,0.492393,34.2259,Pg,2015-05-18 10:07:52.220,manual,0.1,2.3
+GS.KAN05.HHZ.01,0.503649,355.585,Pg,2015-05-18 10:07:52.310,manual,0.0,2.27
+GS.KAN01.HHZ.01,0.549324,5.40776,Pg,2015-05-18 10:07:53.270,manual,0.1,2.17
+GS.KAN09.HHZ.01,0.55464,17.2228,Pg,2015-05-18 10:07:53.140,manual,-0.2,2.16
+GS.KAN10.HHZ.01,0.560933,337.258,Pg,2015-05-18 10:07:51.150,manual,-2.3,2.14
+GS.OK029.HHZ.00,0.860618,159.605,Pg,2015-05-18 10:07:59.300,manual,0.2,1.66
+OK.BCOK.HHZ.--,0.962631,169.544,Pg,2015-05-18 10:07:59.900,manual,-1.2,1.54
+GS.OK025.HHZ.00,1.09541,158.801,Pg,2015-05-18 10:08:02.850,manual,-0.8,1.41
+OK.CHOK.HHZ.--,1.21149,149.123,Pn,2015-05-18 10:08:04.800,manual,-1.1,1.24
+OK.W35A.HHZ.--,1.64194,151.717,Pn,2015-05-18 10:08:11.810,manual,0.0,1.18
+N4.R32B.BHZ.--,1.94618,339.014,Pn,2015-05-18 10:08:15.400,manual,-0.6,1.14
+OK.X34A.HHZ.--,2.00014,180.208,Pn,2015-05-18 10:08:17.240,manual,0.5,1.13
+OK.X37A.BHZ.--,2.83573,134.469,Pn,2015-05-18 10:08:28.710,manual,0.5,1.04
+OK.CROK.HHE.--,0.163202,231.992,Sg,2015-05-18 10:07:48.810,manual,0.6,1.34
+OK.GC02.EHE.--,0.247206,353.33,Sg,2015-05-18 10:07:51.790,manual,1.0,1.3
+GS.OK032.HH1.00,0.368375,302.613,Sg,2015-05-18 10:07:55.490,manual,0.9,1.24
+GS.KAN17.HNE.01,0.440317,6.15429,Sg,2015-05-18 10:07:57.710,manual,0.8,1.2
+GS.KAN13.HHE.01,0.492393,34.2259,Sg,2015-05-18 10:07:58.300,manual,-0.3,1.18

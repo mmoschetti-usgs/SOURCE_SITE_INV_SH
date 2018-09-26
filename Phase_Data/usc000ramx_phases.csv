@@ -1,0 +1,73 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000ramx
+#time = 2014-06-03 08:20:12.600000
+#location = 12km SSW of Perkins, Oklahoma
+#latitude = 35.8638
+#longitude = -97.0760
+#depth = 5.0
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000ramx
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK029.HHZ.00,0.315122,257.825,Pg,2014-06-03 08:20:19.110,manual,0.4,0.0
+GS.OK028.HHZ.00,0.30228,177.744,Pg,2014-06-03 08:20:19.000,manual,0.5,0.0
+GS.OK025.HHZ.00,0.353541,217.146,Pg,2014-06-03 08:20:19.920,manual,0.5,0.0
+OK.BCOK.HHZ.--,0.480461,244.681,Pg,2014-06-03 08:20:22.150,manual,0.3,0.0
+GS.OK027.HHZ.00,0.226792,228.156,Pg,2014-06-03 08:20:17.530,manual,0.5,0.0
+OK.W35A.EHZ.--,0.728331,166.896,Pg,2014-06-03 08:20:26.390,manual,-0.2,0.077
+OK.FNO.HHZ.01,0.660617,203.758,Pg,2014-06-03 08:20:25.840,manual,0.5,0.051
+GS.KAN13.HHZ.01,1.1917,344.342,Pg,2014-06-03 08:20:35.170,manual,-0.3,0.043
+OK.CROK.HHZ.--,0.973624,311.331,Pg,2014-06-03 08:20:31.520,manual,0.2,0.068
+AG.HHAR.HHZ.00,2.57454,79.7505,Pn,2014-06-03 08:20:56.170,manual,1.2,0.076
+TA.TUL1.BHZ.--,1.04376,87.0703,Pg,2014-06-03 08:20:32.010,manual,-0.6,0.049
+N4.T35B.BHZ.--,1.14467,23.2636,Pg,2014-06-03 08:20:34.320,manual,-0.2,0.03
+OK.U32A.BHZ.--,1.64161,288.835,Pn,2014-06-03 08:20:42.980,manual,0.8,0.129
+N4.U38B.BHZ.--,2.25177,74.4304,Pn,2014-06-03 08:20:51.790,manual,1.3,0.08
+US.MIAR.BHZ.00,3.15299,113.639,Pn,2014-06-03 08:21:03.910,manual,1.0,0.081
+GS.OK027.HH2.00,0.226792,228.156,Sg,2014-06-03 08:20:20.970,manual,0.9,0.059
+GS.OK028.HH2.00,0.30228,177.744,Sg,2014-06-03 08:20:23.430,manual,1.0,0.089
+GS.OK029.HH1.00,0.315122,257.825,Sg,2014-06-03 08:20:23.730,manual,0.9,0.082
+GS.ADOK.HNZ.--,0.319809,228.722,Pg,2014-06-03 08:20:19.660,manual,0.9,0.0
+GS.OK025.HH2.00,0.353541,217.146,Sg,2014-06-03 08:20:25.070,manual,1.0,0.05
+OK.BCOK.HHN.--,0.480461,244.681,Sg,2014-06-03 08:20:29.070,manual,1.0,0.058
+GS.OK026.HHZ.00,0.542017,214.453,Pg,2014-06-03 08:20:23.270,manual,0.2,0.0
+GS.OK026.HH2.00,0.542017,214.453,Sg,2014-06-03 08:20:31.120,manual,1.0,0.045
+OK.OKCSW.EHZ.--,0.544138,212.921,Pg,2014-06-03 08:20:23.410,manual,0.3,0.0
+OK.KNG1.EHZ.--,0.569349,298.255,Pg,2014-06-03 08:20:23.910,manual,0.4,0.0
+OK.KNG1.EHN.--,0.569349,298.255,Sg,2014-06-03 08:20:31.900,manual,0.9,0.105
+OK.FNO.HHN.01,0.660617,203.758,Sg,2014-06-03 08:20:35.120,manual,1.2,0.046
+OK.W35A.EHE.--,0.728331,166.896,Sg,2014-06-03 08:20:36.750,manual,0.7,0.075
+OK.KAY1.HHZ.--,0.903799,353.049,Pg,2014-06-03 08:20:30.000,manual,0.1,0.059
+OK.X34A.HHZ.--,1.40394,206.398,Pn,2014-06-03 08:20:39.140,manual,0.3,0.142
+GS.KAN11.HHZ.01,1.4997,333.527,Pn,2014-06-03 08:20:40.550,manual,0.3,0.113
+GS.KAN10.HHZ.01,1.50163,327.149,Pn,2014-06-03 08:20:40.380,manual,0.2,0.117
+US.WMOK.BHZ.10,1.79054,231.638,Pn,2014-06-03 08:20:45.130,manual,0.9,0.13

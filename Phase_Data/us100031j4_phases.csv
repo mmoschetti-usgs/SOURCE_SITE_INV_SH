@@ -1,0 +1,76 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us100031j4
+#time = 2015-07-04 06:10:10.270000
+#location = 8km SE of Harper, Kansas
+#latitude = 37.2263
+#longitude = -97.9607
+#depth = 3.4
+#magnitude = 2.7
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us100031j4
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN12.HHN.01,0.0769599,337.263,Sg,2015-07-04 06:10:13.580,manual,0.6,1.4
+GS.KAN11.HHN.01,0.0429238,118.151,Sg,2015-07-04 06:10:12.500,manual,0.4,1.42
+GS.KAN08.HHN.01,0.00815187,272.814,Sg,2015-07-04 06:10:11.660,manual,0.2,1.44
+GS.KAN10.HHZ.01,0.148502,226.334,Pg,2015-07-04 06:10:13.530,manual,0.3,3.58
+GS.KAN17.HHZ.01,0.239965,139.218,Pg,2015-07-04 06:10:15.230,manual,0.3,3.12
+GS.KAN09.HHZ.01,0.287906,108.12,Pg,2015-07-04 06:10:16.070,manual,0.2,2.92
+GS.KAN13.HHZ.01,0.440865,118.746,Pg,2015-07-04 06:10:18.720,manual,0.0,2.43
+GS.KS20.HH1.00,0.324402,89.2778,Sg,2015-07-04 06:10:21.430,manual,0.7,1.26
+GS.OK032.HHZ.00,0.466676,205.433,Pg,2015-07-04 06:10:19.430,manual,0.2,2.36
+OK.GORE.HHZ.--,0.440012,178.578,Pg,2015-07-04 06:10:19.000,manual,0.3,2.43
+OK.CROK.HHZ.--,0.720458,181.455,Pg,2015-07-04 06:10:23.690,manual,-0.4,1.86
+OK.BLOK.HHZ.--,0.756647,127.678,Pg,2015-07-04 06:10:24.530,manual,-0.3,1.8
+OK.QUOK.HHZ.--,1.45673,135.905,Pn,2015-07-04 06:10:37.350,manual,0.0,1.21
+GS.OK030.HHZ.00,1.60526,143.48,Pn,2015-07-04 06:10:39.730,manual,0.3,1.19
+GS.OK029.HHZ.00,1.48391,163.911,Pn,2015-07-04 06:10:37.960,manual,0.2,1.21
+GS.OK031.HHZ.00,1.55867,144.275,Pn,2015-07-04 06:10:38.900,manual,0.1,1.2
+OK.BCOK.HHZ.--,1.59189,169.642,Pn,2015-07-04 06:10:39.400,manual,0.2,1.19
+GS.OK025.HHZ.00,1.71705,162.8,Pn,2015-07-04 06:10:41.460,manual,0.5,1.18
+OK.CHOK.HHZ.--,1.81337,156.143,Pn,2015-07-04 06:10:42.160,manual,-0.1,1.16
+N4.R32B.BHZ.--,1.33385,333.775,Pn,2015-07-04 06:10:35.280,manual,-0.4,1.23
+N4.T35B.BHZ.--,1.1994,104.518,Pg,2015-07-04 06:10:32.770,manual,-0.5,1.32
+NQ.KAN02.HNN.01,0.0714189,113.535,Sg,2015-07-04 06:10:13.420,manual,0.6,1.4
+GS.KAN06.HHN.01,0.0843185,75.0822,Pg,2015-07-04 06:10:13.770,manual,1.8,4.0
+GS.KS21.HH1.00,0.245013,75.713,Sg,2015-07-04 06:10:18.870,manual,0.6,1.3
+GS.KAN10.HHN.01,0.148502,226.334,Sg,2015-07-04 06:10:15.850,manual,0.7,1.35
+GS.KAN17.HHN.01,0.239965,139.218,Sg,2015-07-04 06:10:18.740,manual,0.7,1.3
+GS.KAN13.HHE.01,0.440865,118.746,Sg,2015-07-04 06:10:25.020,manual,0.5,1.2
+GS.KAN09.HHE.01,0.287906,108.12,Sg,2015-07-04 06:10:20.270,manual,0.7,1.28
+GS.OK032.HH2.00,0.466676,205.433,Sg,2015-07-04 06:10:26.030,manual,0.7,1.19
+GS.KAN08.HHZ.01,0.00815187,272.814,Pg,2015-07-04 06:10:11.030,manual,0.1,4.64
+GS.KAN11.HHZ.01,0.0429238,118.151,Pg,2015-07-04 06:10:11.550,manual,0.2,4.32
+NQ.KAN02.HNZ.01,0.0714189,113.535,Pg,2015-07-04 06:10:12.060,manual,0.3,4.09
+GS.KAN12.HHZ.01,0.0769599,337.263,Pg,2015-07-04 06:10:12.130,manual,0.2,4.05
+GS.KAN05.HHZ.01,0.137073,148.964,Pg,2015-07-04 06:10:13.340,manual,0.4,3.65
+GS.KS20.HHZ.00,0.324402,89.2778,Pg,2015-07-04 06:10:16.950,manual,0.4,2.78
+OK.U32A.BHZ.--,1.18828,224.976,Pg,2015-07-04 06:10:32.700,manual,-0.4,1.33

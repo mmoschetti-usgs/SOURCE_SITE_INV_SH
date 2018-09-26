@@ -1,0 +1,55 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000s94c
+#time = 2014-08-29 13:37:02.100000
+#location = 26km WSW of Medford, Oklahoma
+#latitude = 36.6771
+#longitude = -97.9859
+#depth = 6.0
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000s94c
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.CROK.HHZ.--,0.172075,179.329,Pg,2014-08-29 13:37:05.920,manual,0.3,0.0
+GS.KAN10.HHZ.01,0.454072,348.918,Pg,2014-08-29 13:37:11.250,manual,0.4,0.0
+OK.KNG1.EHZ.--,0.592033,156.603,Pg,2014-08-29 13:37:13.560,manual,0.1,0.0
+GS.OK027.HHZ.00,1.11817,149.258,Pg,2014-08-29 13:37:23.110,manual,-0.4,0.081
+OK.QUOK.HHZ.--,1.1476,115.709,Pg,2014-08-29 13:37:23.670,manual,-0.4,0.166
+GS.OK028.HHZ.00,1.34186,145.821,Pn,2014-08-29 13:37:26.940,manual,-0.4,0.159
+GS.OK029.HHZ.00,0.977959,153.805,Pg,2014-08-29 13:37:20.550,manual,-0.3,0.089
+GS.OK025.HHZ.00,1.21303,154.184,Pg,2014-08-29 13:37:24.860,manual,-0.5,0.066
+US.WMOK.BHZ.10,2.04025,198.717,Pn,2014-08-29 13:37:37.770,manual,0.8,0.179
+US.KSU1.BHZ.10,2.65345,23.8113,Pn,2014-08-29 13:37:44.630,manual,-0.8,0.107
+N4.T35B.BHZ.--,1.20698,78.1558,Pg,2014-08-29 13:37:24.750,manual,-0.5,0.224
+OK.U32A.BHZ.--,0.870206,250.346,Pg,2014-08-29 13:37:18.530,manual,-0.3,0.338
+US.AMTX.BHZ.00,3.49657,240.31,Pn,2014-08-29 13:37:57.840,manual,0.7,0.167
+OK.X37A.BHZ.--,2.97914,133.599,Pn,2014-08-29 13:37:49.960,manual,0.1,0.113
+TA.TUL1.BHZ.--,1.93053,112.697,Pn,2014-08-29 13:37:36.660,manual,1.2,0.15

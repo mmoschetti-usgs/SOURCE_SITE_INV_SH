@@ -1,0 +1,105 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000tn52
+#time = 2015-02-08 02:58:07.300000
+#location = 23km W of Medford, Oklahoma
+#latitude = 36.8142
+#longitude = -97.9977
+#depth = 6.3
+#magnitude = 2.8
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000tn52
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN14.HHZ.01,0.145021,11.0518,Pg,2015-02-08 02:58:10.760,manual,0.5,3.6
+GS.KAN10.HHZ.01,0.318421,345.849,Pg,2015-02-08 02:58:14.030,manual,0.5,2.8
+GS.KAN11.HHZ.01,0.396861,9.77648,Pg,2015-02-08 02:58:15.400,manual,0.4,2.55
+GS.OK028.HHZ.00,1.46201,148.519,Pn,2015-02-08 02:58:34.430,manual,0.2,1.21
+N4.R32B.BHZ.--,1.70251,340.782,Pn,2015-02-08 02:58:38.590,manual,1.0,1.17
+US.KSU1.BHZ.10,2.53289,25.2492,LR,2015-02-08 02:59:26.870,automatic,0.0,0.0
+US.AMTX.BHZ.00,3.55827,238.316,LR,2015-02-08 02:59:58.020,automatic,0.0,0.0
+NM.MGMO.BHZ.--,4.59925,84.051,Sn,2015-02-08 03:00:10.420,automatic,-0.7,0.39
+TA.W39A.BHZ.--,3.77851,114.047,LR,2015-02-08 03:00:06.400,automatic,0.0,0.0
+IU.CCM.BHZ.10,5.51514,74.9784,LR,2015-02-08 03:00:59.670,automatic,0.0,0.0
+N4.N35B.BHZ.--,4.43958,23.7424,LR,2015-02-08 03:00:29.470,automatic,0.0,0.0
+TA.MSTX.BHZ.--,4.82325,235.364,LR,2015-02-08 03:00:39.320,automatic,0.0,0.0
+N4.T42B.BHZ.--,5.53671,85.698,Sg,2015-02-08 03:00:51.470,automatic,0.5,1.32
+N4.P40B.BHZ.--,5.41476,58.1484,LR,2015-02-08 03:00:57.500,automatic,0.0,0.0
+GS.KAN14.HHE.01,0.145021,11.0518,Sg,2015-02-08 02:58:12.970,manual,0.6,1.35
+OK.CROK.HHE.--,0.309113,177.863,Sg,2015-02-08 02:58:18.150,manual,0.7,1.27
+GS.KAN10.HHE.01,0.318421,345.849,Sg,2015-02-08 02:58:18.390,manual,0.7,1.26
+GS.KAN13.HHE.01,0.461479,64.3917,Sg,2015-02-08 02:58:22.600,manual,0.3,1.19
+GS.KAN11.HHE.01,0.396861,9.77648,Sg,2015-02-08 02:58:21.090,manual,0.9,1.22
+GS.KAN08.HHE.01,0.412287,2.97436,Sg,2015-02-08 02:58:21.280,manual,0.6,1.22
+GS.KAN12.HHE.01,0.482302,359.972,Sg,2015-02-08 02:58:23.450,manual,0.5,1.18
+US.WMOK.BHZ.10,2.16745,197.313,Pn,2015-02-08 02:58:44.210,manual,0.3,1.12
+US.CBKS.BHZ.00,2.4256,325.919,Pn,2015-02-08 02:58:49.660,manual,2.2,1.09
+OK.X37A.BHZ.--,3.08175,135.312,Pn,2015-02-08 02:58:57.530,manual,1.1,1.01
+US.AMTX.BHZ.00,3.55827,238.316,Pn,2015-02-08 02:59:03.620,manual,0.5,0.97
+TA.W39A.BHZ.--,3.77851,114.047,Pn,2015-02-08 02:59:06.430,manual,0.4,0.95
+N4.S39B.BHZ.--,3.8312,75.3895,Pn,2015-02-08 02:59:06.740,manual,0.0,0.95
+US.MIAR.BHZ.00,4.25147,120.863,Pn,2015-02-08 02:59:12.640,manual,0.1,0.91
+N4.Z38B.BHZ.--,4.32209,144.244,Pn,2015-02-08 02:59:13.860,manual,0.3,0.9
+TA.KSCO.BHZ.--,4.26752,302.329,Pn,2015-02-08 02:59:14.710,manual,1.8,0.91
+N4.N35B.BHZ.--,4.43958,23.7424,Pn,2015-02-08 02:59:15.900,manual,0.8,0.9
+TA.ABTX.BHZ.--,4.39445,198.437,Pn,2015-02-08 02:59:15.280,manual,0.7,0.9
+N4.P38B.BHZ.--,4.49853,50.0523,Pn,2015-02-08 02:59:16.050,manual,0.1,0.89
+NM.MGMO.BHZ.--,4.59925,84.051,Pn,2015-02-08 02:59:17.260,manual,-0.1,0.88
+TA.BGNE.BHZ.--,4.58924,358.566,Pn,2015-02-08 02:59:18.940,manual,1.7,0.88
+TA.X40A.BHZ.--,4.80266,117.38,Pn,2015-02-08 02:59:20.970,manual,0.8,0.87
+AG.WHAR.HHZ.00,4.86876,106.505,Pn,2015-02-08 02:59:21.250,manual,0.2,0.86
+TA.MSTX.BHZ.--,4.82325,235.364,Pn,2015-02-08 02:59:21.910,manual,1.4,0.87
+N4.P40B.BHZ.--,5.41476,58.1484,Pn,2015-02-08 02:59:28.430,manual,-0.1,0.83
+N4.N38B.BHZ.--,5.4419,41.6544,Pn,2015-02-08 02:59:28.460,manual,-0.4,0.82
+IU.CCM.BHZ.10,5.51514,74.9784,Pn,2015-02-08 02:59:30.340,manual,0.4,0.82
+GS.KAN01.HHZ.01,0.388791,29.3753,Pg,2015-02-08 02:58:14.950,manual,0.1,2.57
+GS.OK025.HHZ.00,1.34131,156.358,Pn,2015-02-08 02:58:32.330,manual,-0.2,1.23
+OK.OKCSW.EHZ.--,1.47703,161.965,Pn,2015-02-08 02:58:35.010,manual,0.6,1.21
+OK.FNO.HHZ.01,1.62704,162.537,Pn,2015-02-08 02:58:37.080,manual,0.6,1.18
+GS.OK026.HHZ.00,1.46441,162.257,Pn,2015-02-08 02:58:34.510,manual,0.3,1.21
+OK.U32A.BHZ.--,0.916871,242.059,Pg,2015-02-08 02:58:24.790,manual,-0.1,1.59
+US.KSU1.BHZ.10,2.53289,25.2492,Pn,2015-02-08 02:58:49.360,manual,0.4,1.07
+AG.HHAR.HHZ.00,3.31014,98.0206,Pn,2015-02-08 02:58:59.830,manual,0.2,0.99
+N4.T35B.BHZ.--,1.19591,84.6713,Pg,2015-02-08 02:58:29.370,manual,-0.9,1.32
+TA.TUL1.BHZ.--,1.99584,116.21,Pn,2015-02-08 02:58:41.460,manual,-0.1,1.14
+OK.W35A.HHZ.--,1.89176,150.882,Pn,2015-02-08 02:58:40.590,manual,0.5,1.15
+N4.U38B.BHZ.--,2.92948,96.2556,Pn,2015-02-08 02:58:54.440,manual,0.0,1.03
+TA.U40A.BHZ.--,4.1651,94.7606,Pn,2015-02-08 02:59:11.280,manual,-0.1,0.92
+OK.CROK.HHZ.--,0.309113,177.863,Pg,2015-02-08 02:58:13.630,manual,0.3,2.84
+OK.KAY1.HHZ.--,0.632676,94.425,Pg,2015-02-08 02:58:18.740,manual,-0.7,2.0
+GS.OK029.HHZ.00,1.10614,156.487,Pg,2015-02-08 02:58:27.720,manual,-0.8,1.4
+GS.KAN13.HHZ.01,0.461479,64.3917,Pg,2015-02-08 02:58:15.830,manual,-0.4,2.37
+OK.BCOK.HHZ.--,1.19706,164.677,Pg,2015-02-08 02:58:29.580,manual,-0.7,1.32
+GS.OK031.HHZ.00,1.26988,132.244,Pn,2015-02-08 02:58:30.790,manual,-0.8,1.24
+OK.QUOK.HHZ.--,1.22132,121.301,Pg,2015-02-08 02:58:29.990,manual,-0.7,1.3
+GS.KAN05.HHZ.01,0.31054,18.8343,Pg,2015-02-08 02:58:13.760,manual,0.4,2.83
+GS.OK030.HHZ.00,1.31999,131.718,Pn,2015-02-08 02:58:31.530,manual,-0.7,1.23
+GS.KAN08.HHZ.01,0.412287,2.97436,Pg,2015-02-08 02:58:15.160,manual,-0.1,2.51
+GS.KAN12.HHZ.01,0.482302,359.972,Pg,2015-02-08 02:58:16.710,manual,0.1,2.32

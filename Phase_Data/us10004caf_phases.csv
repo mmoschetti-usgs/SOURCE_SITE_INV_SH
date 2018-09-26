@@ -1,0 +1,95 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10004caf
+#time = 2016-01-08 03:03:31.900000
+#location = 31km S of Alva, Oklahoma
+#latitude = 36.5234
+#longitude = -98.6936
+#depth = 6.5
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10004caf
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK035.HHZ.00,0.184892,355.988,Pg,2016-01-08 03:03:36.100,manual,0.5,3.38
+OK.U32A.BHZ.--,0.286725,240.034,Pg,2016-01-08 03:03:37.830,manual,0.3,2.92
+OK.CROK.HHZ.--,0.572456,91.6569,Pg,2016-01-08 03:03:42.940,manual,0.0,2.12
+GS.KAN13.HHZ.01,1.09168,63.052,Pg,2016-01-08 03:03:52.350,manual,-0.5,1.41
+OK.BLOK.HHZ.--,1.21256,78.3007,Pg,2016-01-08 03:03:53.440,manual,-1.7,1.31
+OK.GC02.EHZ.--,0.746094,63.7172,Pg,2016-01-08 03:03:46.040,manual,-0.2,1.82
+ZD.KNG1.EHZ.--,0.895524,115.543,Pg,2016-01-08 03:03:48.610,manual,-0.5,1.62
+GS.KAN12.HHZ.01,0.952702,35.609,Pg,2016-01-08 03:03:49.930,manual,-0.3,1.55
+GS.KAN17.HHZ.01,0.908897,54.8473,Pg,2016-01-08 03:03:49.010,manual,-0.3,1.6
+GS.KAN14.HHZ.01,0.729063,53.3895,Pg,2016-01-08 03:03:45.760,manual,-0.2,1.84
+GS.KAN11.HHZ.01,0.925081,42.3344,Pg,2016-01-08 03:03:49.230,manual,-0.4,1.58
+US.WMOK.BHZ.10,1.78303,182.306,Pn,2016-01-08 03:04:03.220,manual,0.1,1.16
+OK.QUOK.HHZ.--,1.64105,101.771,Pn,2016-01-08 03:04:01.040,manual,-0.1,1.18
+OK.FNO.HHZ.01,1.6423,139.903,Pn,2016-01-08 03:04:01.420,manual,0.2,1.18
+GS.OK031.HHZ.00,1.60363,110.237,Pn,2016-01-08 03:04:01.170,manual,0.5,1.19
+OK.X34A.HHZ.--,2.04258,159.647,Pn,2016-01-08 03:04:08.350,manual,1.7,1.13
+OK.CHOK.HHZ.--,1.63466,125.493,Pn,2016-01-08 03:04:01.040,manual,0.0,1.18
+US.CBKS.BHZ.00,2.432,340.406,Pn,2016-01-08 03:04:14.410,manual,2.3,1.08
+US.AMTX.BHZ.00,2.9303,236.94,Pn,2016-01-08 03:04:21.700,manual,2.8,1.03
+N4.T35B.BHZ.--,1.79623,76.7428,Pn,2016-01-08 03:04:04.150,manual,0.8,1.16
+N4.R32B.BHZ.--,1.8958,359.585,Pn,2016-01-08 03:04:05.870,manual,1.2,1.15
+GS.OK035.HH2.00,0.184892,355.988,Sg,2016-01-08 03:03:39.190,manual,1.0,1.33
+OK.U32A.BHN.--,0.286725,240.034,Sg,2016-01-08 03:03:42.260,manual,0.9,1.28
+OK.CROK.HHN.--,0.572456,91.6569,Sg,2016-01-08 03:03:50.880,manual,0.5,1.15
+OK.GC02.EHN.--,0.746094,63.7172,Sg,2016-01-08 03:03:56.400,manual,0.5,1.08
+GS.KAN10.HHZ.01,0.767709,38.5437,Pg,2016-01-08 03:03:46.530,manual,-0.1,1.78
+GS.KAN16.HHZ.01,0.863443,35.5484,Pg,2016-01-08 03:03:48.140,manual,-0.3,1.66
+GS.KAN05.HHZ.01,0.880645,48.2071,Pg,2016-01-08 03:03:48.710,manual,-0.1,1.63
+GS.KAN05.HHE.01,0.880645,48.2071,Sg,2016-01-08 03:04:00.860,manual,0.6,1.03
+ZD.KNG1.EHN.--,0.895524,115.543,Sg,2016-01-08 03:04:01.190,manual,0.5,1.03
+GS.KAN17.HHE.01,0.908897,54.8473,Sg,2016-01-08 03:04:01.270,manual,0.1,1.02
+GS.KAN08.HHZ.01,0.910265,39.3254,Pg,2016-01-08 03:03:49.150,manual,-0.2,1.6
+GS.KAN06.HHZ.01,0.985516,42.5398,Pg,2016-01-08 03:03:50.610,manual,-0.2,1.52
+OK.BCOK.HHZ.--,1.23261,134.241,Pn,2016-01-08 03:03:54.610,manual,-0.9,1.24
+GS.OK025.HHZ.00,1.44605,130.161,Pn,2016-01-08 03:03:58.440,manual,-0.1,1.21
+OK.CCOK.HHZ.--,1.43667,143.819,Pn,2016-01-08 03:03:58.430,manual,0.1,1.21
+OK.OKCFA.HHZ.--,1.49601,137.291,Pn,2016-01-08 03:03:59.170,manual,0.0,1.2
+OK.OKCSW.EHZ.--,1.5106,137.231,Pn,2016-01-08 03:03:59.410,manual,0.0,1.2
+N4.Z35B.BHZ.--,3.39778,159.197,Pn,2016-01-08 03:04:26.070,manual,0.8,0.98
+N4.S39B.BHZ.--,4.44845,73.2057,Pn,2016-01-08 03:04:40.040,manual,0.4,0.89
+TA.WHTX.BHZ.--,4.63548,166.873,Pn,2016-01-08 03:04:43.420,manual,1.2,0.88
+TA.U40A.BHZ.--,4.71158,90.2909,Pn,2016-01-08 03:04:44.180,manual,0.9,0.87
+N4.P38B.BHZ.--,5.11523,51.1904,Pn,2016-01-08 03:04:49.610,manual,0.8,0.85
+OK.W35A.HHZ.--,2.01376,132.245,Pn,2016-01-08 03:04:06.740,manual,0.5,1.13
+TA.TUL1.BHZ.--,2.42484,103.752,Pn,2016-01-08 03:04:12.080,manual,0.2,1.08
+OK.LOOK.HHZ.--,2.81262,153.431,Pn,2016-01-08 03:04:17.140,manual,-0.1,1.04
+OK.RLOK.HHZ.--,2.98143,95.7505,Pn,2016-01-08 03:04:20.790,manual,1.2,1.02
+OK.X37A.BHZ.--,3.32577,124.492,Pn,2016-01-08 03:04:25.260,manual,1.0,0.99
+N4.U38B.BHZ.--,3.4727,90.1015,Pn,2016-01-08 03:04:25.950,manual,-0.4,0.98
+TA.KSCO.BHZ.--,3.98507,309.736,Pn,2016-01-08 03:04:33.790,manual,0.3,0.93
+AG.HHAR.HHZ.00,3.8422,92.1814,Pn,2016-01-08 03:04:32.100,manual,0.7,0.94
+TA.W39A.BHZ.--,4.20175,106.923,Pn,2016-01-08 03:04:35.980,manual,-0.3,0.91
+TA.T25A.BHZ.--,4.6273,279.335,Pn,2016-01-08 03:04:41.030,manual,-1.3,0.88
+TA.BGNE.BHZ.--,4.89628,4.79389,Pn,2016-01-08 03:04:45.260,manual,-0.6,0.86
+TA.X40A.BHZ.--,5.19323,111.302,Pn,2016-01-08 03:04:48.540,manual,-1.3,0.84

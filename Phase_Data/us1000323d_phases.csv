@@ -1,0 +1,69 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us1000323d
+#time = 2015-08-13 18:50:20.400000
+#location = 3km NNE of Edmond, Oklahoma
+#latitude = 35.6864
+#longitude = -97.4684
+#depth = 5.5
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us1000323d
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK029.HHZ.00,0.110509,5.69802,Pg,2015-08-13 18:50:23.120,manual,0.4,3.81
+OK.BCOK.HHZ.--,0.11849,255.556,Pg,2015-08-13 18:50:23.100,manual,0.2,3.76
+GS.OK025.HHZ.00,0.14947,134.627,Pg,2015-08-13 18:50:23.590,manual,0.2,3.57
+OK.OKCSW.EHZ.--,0.28138,174.937,Pg,2015-08-13 18:50:25.970,manual,0.1,2.94
+OK.OKCFA.HHZ.--,0.270863,177.062,Pg,2015-08-13 18:50:25.880,manual,0.2,2.99
+OK.CHOK.HHZ.--,0.354447,110.537,Pg,2015-08-13 18:50:27.640,manual,0.4,2.68
+OK.CCOK.HHZ.--,0.362771,205.019,Pg,2015-08-13 18:50:27.650,manual,0.2,2.65
+OK.FNO.HHZ.01,0.431552,172.678,Pg,2015-08-13 18:50:28.820,manual,0.1,2.45
+OK.QUOK.HHZ.--,0.78428,51.6734,Pg,2015-08-13 18:50:35.420,manual,0.0,1.76
+OK.BLOK.HHZ.--,1.09141,10.7462,Pg,2015-08-13 18:50:41.170,manual,-0.2,1.41
+US.WMOK.BHZ.10,1.43185,229.01,Pn,2015-08-13 18:50:46.490,manual,-0.4,1.21
+OK.X34A.HHZ.--,1.1233,195.514,Pg,2015-08-13 18:50:41.880,manual,-0.1,1.39
+N4.T35B.BHZ.--,1.45025,31.9108,Pn,2015-08-13 18:50:46.810,manual,-0.4,1.21
+OK.X37A.BHZ.--,2.03768,121.887,Pn,2015-08-13 18:50:55.660,manual,0.4,1.13
+GS.OK031.HHZ.00,0.576537,62.3259,Pg,2015-08-13 18:50:31.620,manual,0.1,2.11
+OK.CROK.HHZ.--,0.916956,333.094,Pg,2015-08-13 18:50:37.910,manual,-0.1,1.59
+OK.GORE.HHZ.--,1.16322,340.708,Pg,2015-08-13 18:50:42.110,manual,-0.6,1.35
+OK.GC02.EHZ.--,1.20494,344.905,Pg,2015-08-13 18:50:42.980,manual,-0.5,1.32
+GS.OK032.HHZ.00,1.26619,331.943,Pn,2015-08-13 18:50:42.810,manual,-1.8,1.24
+GS.KAN17.HHZ.01,1.37592,350.074,Pn,2015-08-13 18:50:44.870,manual,-1.3,1.22
+OK.U32A.BHZ.--,1.42208,299.551,Pn,2015-08-13 18:50:46.170,manual,-0.6,1.21
+GS.KAN08.HHZ.01,1.58971,345.385,Pn,2015-08-13 18:50:49.370,manual,0.3,1.19
+TA.W39A.BHZ.--,3.04782,98.1664,Pn,2015-08-13 18:51:08.520,manual,-0.6,1.02
+US.MIAR.BHZ.00,3.38728,108.509,Pn,2015-08-13 18:51:13.960,manual,0.2,0.99
+AG.WHAR.HHZ.00,4.24473,93.8382,Pn,2015-08-13 18:51:25.160,manual,-0.3,0.91
+GS.OK025.HH1.00,0.14947,134.627,Sg,2015-08-13 18:50:26.280,manual,0.8,1.35
+OK.OKCFA.HHE.--,0.270863,177.062,Sg,2015-08-13 18:50:30.010,manual,0.7,1.29
+OK.CHOK.HHN.--,0.354447,110.537,Sg,2015-08-13 18:50:32.780,manual,0.9,1.24
+OK.FNO.HHE.01,0.431552,172.678,Sg,2015-08-13 18:50:35.390,manual,1.0,1.21

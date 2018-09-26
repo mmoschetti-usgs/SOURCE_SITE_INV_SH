@@ -1,0 +1,63 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000hsej
+#time = 2013-06-16 22:35:04
+#location = 8km W of Luther, Oklahoma
+#latitude = 35.5660
+#longitude = -97.2920
+#depth = 6.1
+#magnitude = 3.2
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000hsej
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+IR.OK001.--.--,0.01,156.6,Pg,2013-06-16 22:35:05.060,manual,-0.1,1.0
+IR.OK009.--.--,0.11,278.0,Pg,2013-06-16 22:35:06.600,manual,0.3,1.0
+IR.OK005.--.--,0.12,43.0,Pg,2013-06-16 22:35:06.940,manual,0.4,1.0
+IR.TUL1.--.--,1.27,73.9,Pn,2013-06-16 22:35:26.680,manual,-1.6,1.0
+IR.WMOK.--.--,1.47,236.3,Pn,2013-06-16 22:35:30.460,manual,-0.6,1.0
+IR.U32A.--.--,1.61,300.8,Pn,2013-06-16 22:35:32.840,manual,-0.1,1.0
+IR.X37A.--.--,1.85,121.2,Pn,2013-06-16 22:35:37.070,manual,0.8,1.0
+IR.HHAR.--.--,2.81,74.3,Pn,2013-06-16 22:35:50.850,manual,1.3,1.0
+IR.W39A.--.--,2.89,96.3,Pn,2013-06-16 22:35:51.310,manual,0.7,1.0
+IR.MIAR.--.--,3.21,107.4,Pn,2013-06-16 22:35:56.490,manual,1.5,1.0
+IR.ABTX.--.--,3.52,214.3,Pn,2013-06-16 22:36:00.290,manual,1.0,1.0
+IR.AMTX.--.--,3.66,260.5,Pn,2013-06-16 22:36:02.250,manual,1.0,1.0
+IR.X40A.--.--,3.81,105.1,Pn,2013-06-16 22:36:04.570,manual,1.3,1.0
+IR.WHAR.--.--,4.09,92.4,Pn,2013-06-16 22:36:07.300,manual,0.2,1.0
+IR.W41B.--.--,4.14,94.0,Pn,2013-06-16 22:36:08.300,manual,0.6,1.0
+IR.MSTX.--.--,4.78,252.1,Pn,2013-06-16 22:36:16.770,manual,0.1,1.0
+IR.T25A.--.--,5.96,287.4,Pn,2013-06-16 22:36:33.480,manual,0.6,1.0
+IR.SDCO.--.--,6.95,290.7,Pn,2013-06-16 22:36:46.900,manual,0.3,1.0
+IR.N41A.--.--,7.21,42.7,Pn,2013-06-16 22:36:50.420,manual,0.4,1.0
+IR.MNTX.--.--,7.77,242.5,Pn,2013-06-16 22:36:56.550,manual,-1.1,1.0
+IR.TX31.--.--,8.22,222.7,Pn,2013-06-16 22:37:03.760,manual,-0.2,1.0
+IR.MDPB.--.--,17.61,283.2,Sn,2013-06-16 22:42:55.050,manual,28.2,0.0
+IR.LTY.--.--,20.98,311.0,S,2013-06-16 22:43:46.200,manual,4.4,1.0

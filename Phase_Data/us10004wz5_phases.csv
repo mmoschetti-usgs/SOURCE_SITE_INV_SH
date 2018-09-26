@@ -1,0 +1,59 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10004wz5
+#time = 2016-03-12 07:48:29.400000
+#location = 7km E of McLoud, Oklahoma
+#latitude = 35.4361
+#longitude = -97.0126
+#depth = 6.7
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10004wz5
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.CHOK.HHZ.--,0.130901,342.343,Pg,2016-03-12 07:48:32.540,manual,0.4,3.68
+OK.OKCSW.EHZ.--,0.348784,265.101,Pg,2016-03-12 07:48:36.470,manual,0.3,2.7
+OK.W35A.HHZ.--,0.304497,158.182,Pg,2016-03-12 07:48:35.490,manual,0.1,2.86
+OK.FNO.HHZ.01,0.36429,240.808,Pg,2016-03-12 07:48:36.620,manual,0.1,2.65
+GS.OK025.HHZ.00,0.302271,298.692,Pg,2016-03-12 07:48:35.830,manual,0.5,2.86
+GS.OK029.HHZ.00,0.50918,315.076,Pg,2016-03-12 07:48:39.180,manual,-0.1,2.26
+OK.OKCFA.HHZ.--,0.358966,266.812,Pg,2016-03-12 07:48:36.710,manual,0.3,2.67
+OK.CCOK.HHZ.--,0.531651,261.628,Pg,2016-03-12 07:48:39.800,manual,0.1,2.21
+GS.OK031.HHZ.00,0.534862,15.2595,Pg,2016-03-12 07:48:39.760,manual,0.0,2.2
+GS.OK030.HHZ.00,0.524805,20.723,Pg,2016-03-12 07:48:39.570,manual,0.0,2.22
+OK.BCOK.HHZ.--,0.534065,294.513,Pg,2016-03-12 07:48:39.750,manual,0.0,2.2
+OK.CROK.HHZ.--,1.3256,323.838,Pn,2016-03-12 07:48:53.780,manual,-0.5,1.23
+OK.X34A.HHZ.--,1.07104,219.167,Pg,2016-03-12 07:48:50.050,manual,0.1,1.43
+GS.OK032.HHZ.00,1.6743,324.956,Pn,2016-03-12 07:48:59.190,manual,0.1,1.18
+GS.KAN13.HHZ.01,1.61791,346.693,Pn,2016-03-12 07:48:58.230,manual,-0.1,1.19
+GS.KAN17.HHZ.01,1.71606,339.468,Pn,2016-03-12 07:48:59.530,manual,-0.1,1.17
+GS.KAN14.HHZ.01,1.70116,333.414,Pn,2016-03-12 07:48:59.560,manual,0.1,1.17
+TA.TUL1.BHZ.--,1.10082,64.1822,Pg,2016-03-12 07:48:49.530,manual,-1.0,1.4
+N4.T35B.BHZ.--,1.5316,15.19,Pn,2016-03-12 07:48:56.850,manual,-0.3,1.2

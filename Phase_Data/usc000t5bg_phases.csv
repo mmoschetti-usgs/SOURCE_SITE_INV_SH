@@ -1,0 +1,68 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000t5bg
+#time = 2014-12-09 22:38:39.600000
+#location = 24km ENE of Cherokee, Oklahoma
+#latitude = 36.8671
+#longitude = -98.1195
+#depth = 6.7
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000t5bg
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN14.HHZ.01,0.154108,54.4355,Pg,2014-12-09 22:38:43.280,manual,0.5,3.55
+GS.KAN10.HHZ.01,0.256666,4.35751,Pg,2014-12-09 22:38:45.090,manual,0.4,3.04
+GS.KAN05.HHZ.01,0.3119,39.3161,Pg,2014-12-09 22:38:46.140,manual,0.4,2.83
+GS.KAN11.HHZ.01,0.376366,25.9397,Pg,2014-12-09 22:38:47.420,manual,0.5,2.61
+GS.KAN08.HHZ.01,0.378109,18.2818,Pg,2014-12-09 22:38:47.390,manual,0.4,2.61
+GS.KAN12.HHZ.01,0.440358,12.7104,Pg,2014-12-09 22:38:48.500,manual,0.4,2.43
+OK.GC02.EHZ.--,0.209033,94.1934,Pg,2014-12-09 22:38:44.310,manual,0.5,3.26
+OK.CROK.HHZ.--,0.37788,163.13,Pg,2014-12-09 22:38:47.310,manual,0.4,2.61
+GS.KAN01.HHZ.01,0.406117,45.1707,Pg,2014-12-09 22:38:47.900,manual,0.4,2.52
+US.WMOK.BHZ.10,2.19156,194.391,Pn,2014-12-09 22:39:18.010,manual,1.5,1.11
+GS.KAN14.HHE.01,0.154108,54.4355,Sg,2014-12-09 22:38:45.770,manual,0.8,1.35
+OK.GC02.EHN.--,0.209033,94.1934,Sg,2014-12-09 22:38:47.480,manual,0.9,1.32
+GS.KAN11.HHE.01,0.376366,25.9397,Sg,2014-12-09 22:38:52.760,manual,0.9,1.23
+OK.CROK.HHE.--,0.37788,163.13,Sg,2014-12-09 22:38:52.800,manual,0.9,1.23
+GS.KAN08.HHN.01,0.378109,18.2818,Sg,2014-12-09 22:38:52.670,manual,0.7,1.23
+GS.KAN12.HHN.01,0.440358,12.7104,Sg,2014-12-09 22:38:55.000,manual,1.1,1.2
+GS.KAN13.HHZ.01,0.534328,74.0028,Pg,2014-12-09 22:38:50.120,manual,0.2,2.2
+GS.KS20.HHZ.00,0.579198,51.1573,Pg,2014-12-09 22:38:50.990,manual,0.2,2.11
+OK.U32A.BHZ.--,0.860335,235.817,Pg,2014-12-09 22:38:56.260,manual,0.1,1.66
+N4.T35B.BHZ.--,1.28973,87.34,Pn,2014-12-09 22:39:03.570,manual,-0.5,1.23
+OK.QUOK.HHZ.--,1.33226,120.988,Pn,2014-12-09 22:39:02.440,manual,-2.2,1.23
+GS.OK027.HHZ.00,1.336,149.388,Pn,2014-12-09 22:39:02.020,manual,-2.7,1.23
+GS.OK031.HHZ.00,1.37798,131.067,Pn,2014-12-09 22:39:02.290,manual,-3.0,1.22
+GS.OK028.HHZ.00,1.55909,146.4,Pn,2014-12-09 22:39:05.690,manual,-2.1,1.19
+OK.W35A.EHZ.--,1.98636,149.09,Pn,2014-12-09 22:39:13.090,manual,-0.6,1.14
+TA.TUL1.BHZ.--,2.10682,116.253,Pn,2014-12-09 22:39:15.750,manual,0.4,1.12
+OK.X37A.BHZ.--,3.18819,134.659,Pn,2014-12-09 22:39:31.430,manual,1.2,1.0
+US.MIAR.BHZ.00,4.36243,120.728,Pn,2014-12-09 22:39:47.580,manual,1.2,0.9

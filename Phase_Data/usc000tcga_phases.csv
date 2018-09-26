@@ -1,0 +1,68 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000tcga
+#time = 2015-01-01 08:35:23.800000
+#location = 15km SE of Caldwell, Kansas
+#latitude = 36.9319
+#longitude = -97.4921
+#depth = 6.8
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000tcga
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN11.HHZ.01,0.433993,309.207,Pg,2015-01-01 08:35:32.600,manual,0.4,2.44
+OK.GC02.EHZ.--,0.305352,254.874,Pg,2015-01-01 08:35:30.000,manual,0.2,2.85
+GS.KAN08.HHZ.01,0.482917,307.685,Pg,2015-01-01 08:35:33.590,manual,0.4,2.32
+OK.CROK.HHZ.--,0.581056,222.942,Pg,2015-01-01 08:35:35.080,manual,0.1,2.1
+OK.QUOK.HHZ.--,0.987275,140.01,Pg,2015-01-01 08:35:42.330,manual,-0.4,1.51
+GS.OK030.HHZ.00,1.15347,150.104,Pg,2015-01-01 08:35:45.330,manual,-0.6,1.36
+GS.OK031.HHZ.00,1.10972,151.48,Pg,2015-01-01 08:35:44.540,manual,-0.6,1.4
+GS.OK025.HHZ.00,1.3538,174.672,Pn,2015-01-01 08:35:48.980,manual,-0.2,1.22
+OK.U32A.BHZ.--,1.33303,246.022,Pn,2015-01-01 08:35:48.420,manual,-0.5,1.23
+N4.T35B.BHZ.--,0.785652,90.8485,Pg,2015-01-01 08:35:38.620,manual,-0.3,1.76
+GS.KAN13.HHZ.01,0.0816569,8.06082,Pg,2015-01-01 08:35:26.150,manual,0.4,4.01
+GS.KAN14.HHZ.01,0.378075,273.91,Pg,2015-01-01 08:35:31.410,manual,0.3,2.61
+GS.KAN10.HHZ.01,0.519081,291.8,Pg,2015-01-01 08:35:34.150,manual,0.3,2.23
+OK.BCOK.HHZ.--,1.27613,184.29,Pn,2015-01-01 08:35:47.500,manual,-0.6,1.23
+OK.OKCSW.EHZ.--,1.52389,178.338,Pn,2015-01-01 08:35:51.640,manual,0.1,1.2
+GS.OK026.HHZ.00,1.51384,178.741,Pn,2015-01-01 08:35:50.720,manual,-0.6,1.2
+OK.X37A.BHZ.--,2.90496,142.953,Pn,2015-01-01 08:36:11.420,manual,0.9,1.03
+N4.S39B.BHZ.--,3.4093,75.903,Pn,2015-01-01 08:36:17.520,manual,0.1,0.98
+GS.KAN13.HHE.01,0.0816569,8.06082,Sg,2015-01-01 08:35:27.780,manual,0.6,1.39
+OK.GC02.EHN.--,0.305352,254.874,Sg,2015-01-01 08:35:34.260,manual,0.4,1.27
+GS.KAN14.HHE.01,0.378075,273.91,Sg,2015-01-01 08:35:36.640,manual,0.5,1.23
+GS.KAN08.HHN.01,0.482917,307.685,Sg,2015-01-01 08:35:40.270,manual,0.8,1.18
+GS.KAN10.HHN.01,0.519081,291.8,Sg,2015-01-01 08:35:41.290,manual,0.7,1.17
+GS.KAN12.HHE.01,0.544644,312.207,Sg,2015-01-01 08:35:42.230,manual,0.8,1.16
+OK.CROK.HHN.--,0.581056,222.942,Sg,2015-01-01 08:35:42.860,manual,0.3,1.14
+N4.T35B.BHN.--,0.785652,90.8485,Sg,2015-01-01 08:35:48.990,manual,-0.1,1.06
+OK.QUOK.HHN.--,0.987275,140.01,Sg,2015-01-01 08:35:55.100,manual,-0.5,1.0
+GS.KAN12.HHZ.01,0.544644,312.207,Pg,2015-01-01 08:35:34.580,manual,0.3,2.18

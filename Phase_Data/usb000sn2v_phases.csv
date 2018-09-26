@@ -1,0 +1,64 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000sn2v
+#time = 2014-10-01 07:45:07.200000
+#location = 19km S of Medford, Oklahoma
+#latitude = 36.6308
+#longitude = -97.7094
+#depth = 5.0
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000sn2v
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.KAY1.HHZ.--,0.420738,71.618,Pg,2014-10-01 07:45:17.170,manual,1.9,0.0
+OK.QUOK.HHZ.--,0.928925,119.277,Pg,2014-10-01 07:45:24.580,manual,-0.4,0.085
+GS.KAN12.HHZ.01,0.70436,340.928,Sg,2014-10-01 07:45:31.280,automatic,1.4,0.095
+GS.KAN10.HHN.01,0.580936,327.949,Sg,2014-10-01 07:45:26.600,manual,0.7,0.111
+OK.KNG1.EHE.--,0.497622,178.705,Sg,2014-10-01 07:45:23.960,manual,0.7,0.102
+OK.KAY1.HHE.--,0.420738,71.618,Sg,2014-10-01 07:45:20.580,manual,-0.2,0.126
+OK.CROK.HHN.--,0.253964,240.376,Sg,2014-10-01 07:45:16.630,manual,1.1,0.134
+OK.X37A.BHZ.--,2.78901,136.231,Pn,2014-10-01 07:45:53.720,manual,1.2,0.03
+US.WMOK.BHZ.10,2.08039,205.099,Pn,2014-10-01 07:45:42.450,manual,-0.3,0.031
+N4.N35B.BHZ.--,4.52245,20.2978,Pg,2014-10-01 07:46:34.020,automatic,7.0,0.006
+OK.X34A.HHZ.--,2.02786,182.874,Pn,2014-10-01 07:45:43.670,manual,1.6,0.031
+N4.R32B.BHZ.--,1.95782,336.302,Pn,2014-10-01 07:45:40.910,manual,-0.2,0.038
+OK.W35A.EHZ.--,1.62329,155.07,Pn,2014-10-01 07:45:36.310,manual,-0.2,0.037
+OK.OKCSW.EHZ.--,1.24237,169.719,Pn,2014-10-01 07:45:30.190,manual,-1.1,0.039
+GS.OK028.HHZ.00,1.18951,153.628,Pg,2014-10-01 07:45:29.460,manual,-0.6,0.052
+OK.KNG1.EHZ.--,0.497622,178.705,Pg,2014-10-01 07:45:16.940,manual,0.2,0.0
+OK.CROK.HHZ.--,0.253964,240.376,Pg,2014-10-01 07:45:12.570,manual,0.4,0.0
+GS.KAN13.HHZ.01,0.424243,25.9102,Pg,2014-10-01 07:45:15.630,manual,0.2,0.0
+GS.KAN10.HHZ.01,0.580936,327.949,Pg,2014-10-01 07:45:18.780,manual,0.4,0.0
+OK.BCOK.HHZ.--,0.97546,175.206,Pg,2014-10-01 07:45:25.500,manual,-0.4,0.062
+GS.OK027.HHZ.00,0.979496,159.28,Pg,2014-10-01 07:45:25.160,manual,-0.8,0.067
+N4.T35B.BHZ.--,1.0028,73.1398,Pg,2014-10-01 07:45:24.770,manual,-1.7,0.069
+OK.U32A.BHZ.--,1.07076,256.839,Pg,2014-10-01 07:45:27.050,manual,-0.7,0.064
+GS.OK025.HHZ.00,1.08987,163.867,Pg,2014-10-01 07:45:27.690,manual,-0.4,0.056

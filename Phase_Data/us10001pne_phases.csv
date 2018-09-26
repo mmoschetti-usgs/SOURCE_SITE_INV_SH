@@ -1,0 +1,84 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10001pne
+#time = 2015-03-21 16:23:39
+#location = 5km NNE of Guthrie, Oklahoma
+#latitude = 35.9260
+#longitude = -97.3975
+#depth = 5.3
+#magnitude = 2.8
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10001pne
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK029.HHZ.00,0.137285,199.872,Pg,2015-03-21 16:23:42.180,manual,0.4,3.65
+OK.BCOK.HHZ.--,0.319159,212.713,Pg,2015-03-21 16:23:45.520,manual,0.3,2.8
+GS.OK025.HHZ.00,0.347555,171.965,Pg,2015-03-21 16:23:46.180,manual,0.4,2.7
+OK.OKCFA.HHZ.--,0.51148,184.938,Pg,2015-03-21 16:23:49.090,manual,0.2,2.25
+OK.OKCSW.EHZ.--,0.520418,183.645,Pg,2015-03-21 16:23:49.300,manual,0.3,2.23
+OK.QUOK.HHZ.--,0.61007,66.131,Pg,2015-03-21 16:23:50.970,manual,0.2,2.05
+GS.OK031.HHZ.00,0.453946,86.4209,Pg,2015-03-21 16:23:48.030,manual,0.3,2.39
+GS.OK030.HHZ.00,0.498102,89.6133,Pg,2015-03-21 16:23:48.960,manual,0.4,2.28
+OK.CROK.HHZ.--,0.747005,320.807,Pg,2015-03-21 16:23:53.420,manual,0.1,1.81
+OK.FNO.HHZ.01,0.667145,180.26,Pg,2015-03-21 16:23:52.350,manual,0.5,1.94
+GS.KAN09.HHZ.01,1.22073,351.689,Pg,2015-03-21 16:24:01.930,manual,-0.5,1.31
+OK.GC02.EHZ.--,0.996064,338.153,Pg,2015-03-21 16:23:57.680,manual,-0.4,1.51
+GS.KAN01.HHZ.01,1.2591,346.738,Pg,2015-03-21 16:24:02.610,manual,-0.5,1.28
+GS.OK032.HHZ.00,1.0945,323.408,Pg,2015-03-21 16:23:59.560,manual,-0.4,1.41
+OK.U32A.BHZ.--,1.37469,289.693,Pn,2015-03-21 16:24:04.280,manual,-0.6,1.22
+N4.S39B.BHZ.--,3.71409,60.4816,Pn,2015-03-21 16:24:37.530,manual,0.5,0.96
+TA.W39A.BHZ.--,3.03473,102.831,Pn,2015-03-21 16:24:28.130,manual,0.5,1.02
+GS.OK005.HNZ.01,0.318338,148.128,Pg,2015-03-21 16:23:45.730,manual,0.5,2.8
+NQ.OK915.HNZ.01,0.507855,86.7075,Pg,2015-03-21 16:23:49.190,manual,0.4,2.26
+OK.KAY1.HHZ.--,0.848309,10.1029,Pg,2015-03-21 16:23:55.220,manual,-0.1,1.67
+GS.KAN08.HHZ.01,1.37775,340.597,Pn,2015-03-21 16:24:04.710,manual,-0.2,1.22
+GS.KAN10.HHZ.01,1.32063,335.025,Pn,2015-03-21 16:24:03.310,manual,-0.8,1.23
+GS.KAN11.HHZ.01,1.34327,342.146,Pn,2015-03-21 16:24:03.990,manual,-0.4,1.23
+US.WMOK.BHZ.10,1.63835,224.055,Pn,2015-03-21 16:24:08.890,manual,0.4,1.18
+N4.T35B.BHZ.--,1.21933,35.5978,Pg,2015-03-21 16:24:01.840,manual,-0.5,1.31
+US.MIAR.BHZ.00,3.41742,112.657,Pn,2015-03-21 16:24:33.680,manual,0.8,0.98
+N4.Z35B.BHZ.--,2.59162,177.323,Pn,2015-03-21 16:24:22.210,manual,0.7,1.07
+TA.U40A.BHZ.--,3.70276,82.004,Pn,2015-03-21 16:24:36.920,manual,0.1,0.96
+GS.KAN05.HHZ.01,1.24069,342.185,Pg,2015-03-21 16:24:02.200,manual,-0.6,1.29
+OK.X37A.BHZ.--,2.12797,128.223,Pn,2015-03-21 16:24:16.450,manual,1.3,1.12
+TA.X40A.BHZ.--,4.00255,109.687,Pn,2015-03-21 16:24:41.560,manual,0.6,0.93
+AG.WHAR.HHZ.00,4.21032,97.1745,Pn,2015-03-21 16:24:44.000,manual,0.2,0.91
+N4.R40B.BHZ.--,4.73021,58.5417,Pn,2015-03-21 16:24:51.040,manual,0.1,0.87
+N4.P38B.BHZ.--,4.79647,38.5064,Pn,2015-03-21 16:24:52.800,manual,0.9,0.87
+N4.T42B.BHZ.--,5.19875,75.9034,Pn,2015-03-21 16:24:57.150,manual,-0.2,0.84
+GS.OK029.HH2.00,0.137285,199.872,Sg,2015-03-21 16:23:44.360,manual,0.7,1.36
+OK.BCOK.HHE.--,0.319159,212.713,Sg,2015-03-21 16:23:50.270,manual,0.9,1.26
+GS.OK005.HNN.01,0.318338,148.128,Sg,2015-03-21 16:23:50.480,manual,1.1,1.26
+GS.OK025.HH2.00,0.347555,171.965,Sg,2015-03-21 16:23:51.400,manual,1.1,1.25
+GS.OK031.HH2.00,0.453946,86.4209,Sg,2015-03-21 16:23:54.350,manual,0.7,1.2
+GS.OK030.HH2.00,0.498102,89.6133,Sg,2015-03-21 16:23:55.770,manual,0.7,1.18
+OK.OKCFA.HHN.--,0.51148,184.938,Sg,2015-03-21 16:23:56.460,manual,0.9,1.17
+OK.QUOK.HHN.--,0.61007,66.131,Sg,2015-03-21 16:23:59.290,manual,0.6,1.13
+OK.FNO.HHE.01,0.667145,180.26,Sg,2015-03-21 16:24:01.880,manual,1.4,1.11

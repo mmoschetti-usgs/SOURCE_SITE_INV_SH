@@ -1,0 +1,68 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10006t36
+#time = 2016-09-27 07:16:50.610000
+#location = 13km NW of Pawnee, Oklahoma
+#latitude = 36.4187
+#longitude = -96.9114
+#depth = 5.0
+#magnitude = 2.4
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10006t36
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK044.HHZ.00,0.103593,116.272,Pg,2016-09-27 07:16:53.310,manual,0.1,3.86
+GS.OK047.HHZ.00,0.159501,71.6383,Pg,2016-09-27 07:16:54.270,manual,-0.1,3.52
+GS.OK049.HHZ.00,0.317234,267.989,Pg,2016-09-27 07:16:57.050,manual,-0.4,3.23
+GS.OK033.HHZ.00,0.374166,183.328,Pg,2016-09-27 07:16:58.290,manual,-0.1,3.1
+GS.OK051.HHZ.00,0.105579,35.1281,Pg,2016-09-27 07:16:53.260,manual,0.1,3.85
+GS.OK031.HHZ.00,0.468314,172.804,Pg,2016-09-27 07:17:00.030,manual,-0.1,2.91
+GS.OK034.HHZ.00,0.438041,158.478,Pg,2016-09-27 07:16:59.490,manual,-0.1,2.97
+GS.OK045.HHZ.00,0.0309508,339.245,Pg,2016-09-27 07:16:52.000,manual,0.2,4.42
+GS.OK050.HHZ.00,0.0617128,246.982,Pg,2016-09-27 07:16:52.440,manual,0.0,4.17
+GS.OK029.HHZ.00,0.760994,215.495,Pg,2016-09-27 07:17:05.330,manual,0.0,2.44
+GS.OK048.HHZ.00,0.0261753,264.535,Pg,2016-09-27 07:16:51.920,manual,0.2,4.47
+GS.KS20.HHZ.00,0.959849,327.683,Pg,2016-09-27 07:17:08.760,manual,0.0,2.2
+GS.OK046.HHZ.00,0.0216976,171.451,Pg,2016-09-27 07:16:51.980,manual,0.3,4.51
+N4.T35B.BHZ.--,0.591367,32.7799,Pg,2016-09-27 07:17:02.030,manual,-0.3,2.69
+TA.TUL1.BHZ.--,1.03825,118.915,Pg,2016-09-27 07:17:10.220,manual,0.0,2.11
+GS.PW02.CHZ.--,0.0171376,17.2499,Pg,2016-09-27 07:16:51.880,manual,0.3,4.55
+NQ.OK914.HNZ.01,0.455225,169.05,Pg,2016-09-27 07:16:59.810,manual,-0.1,2.93
+NQ.OK915.HNZ.01,0.477534,166.359,Pg,2016-09-27 07:17:00.220,manual,0.0,2.89
+GS.PW02.CHN.--,0.0171376,17.2499,Sg,2016-09-27 07:16:52.650,manual,0.0,1.43
+GS.OK048.HH1.00,0.0261753,264.535,Sg,2016-09-27 07:16:52.700,manual,0.0,1.43
+GS.OK046.HH1.00,0.0216976,171.451,Sg,2016-09-27 07:16:52.810,manual,0.1,1.43
+GS.OK045.HH1.00,0.0309508,339.245,Sg,2016-09-27 07:16:52.850,manual,0.0,1.42
+GS.OK050.HH1.00,0.0617128,246.982,Sg,2016-09-27 07:16:53.570,manual,-0.2,1.4
+GS.OK051.HH1.00,0.105579,35.1281,Sg,2016-09-27 07:16:54.960,manual,-0.2,1.38
+GS.OK044.HH1.00,0.103593,116.272,Sg,2016-09-27 07:16:55.080,manual,0.0,1.38
+GS.OK047.HH1.00,0.159501,71.6383,Sg,2016-09-27 07:16:56.740,manual,-0.1,1.35
+GS.OK031.HH1.00,0.468314,172.804,Sg,2016-09-27 07:17:06.380,manual,-0.2,1.3
+N4.T35B.BHE.--,0.591367,32.7799,Sg,2016-09-27 07:17:09.780,manual,-0.5,1.27

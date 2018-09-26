@@ -1,0 +1,68 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000pits
+#time = 2014-04-13 13:10:51.600000
+#location = 13km N of Edmond, Oklahoma
+#latitude = 35.7713
+#longitude = -97.4824
+#depth = 6.3
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000pits
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.BCOK.HHZ.--,0.154083,222.121,Pg,2014-04-13 13:10:54.980,manual,0.2,0.0
+GS.OK027.HHZ.00,0.172211,110.038,Pg,2014-04-13 13:10:55.520,manual,0.4,0.0
+OK.OKCSW.EHZ.--,0.366793,174.326,Pg,2014-04-13 13:10:58.910,manual,0.2,0.0
+GS.OK029.HHZ.00,0.0337214,41.5199,Pg,2014-04-13 13:10:53.100,manual,0.2,0.0
+OK.QUOK.HHZ.--,0.744316,57.3337,Pg,2014-04-13 13:11:05.610,manual,-0.3,0.083
+OK.KAY1.HHZ.--,1.01319,12.3664,Pg,2014-04-13 13:11:10.820,manual,-0.2,0.036
+GS.OK025.HHZ.00,0.223296,148.163,Pg,2014-04-13 13:10:56.380,manual,0.3,0.0
+GS.OK026.HHZ.00,0.356123,175.923,Pg,2014-04-13 13:10:58.720,manual,0.2,0.0
+OK.W35A.EHZ.--,0.791983,141.024,Pg,2014-04-13 13:11:06.340,manual,-0.5,0.051
+US.WMOK.BHZ.10,1.48055,226.238,Pn,2014-04-13 13:11:18.440,manual,-0.3,0.036
+GS.ADOK.HNZ.--,0.149584,142.701,Pg,2014-04-13 13:10:55.060,manual,0.4,0.0
+OK.FNO.HHZ.01,0.517031,172.615,Pg,2014-04-13 13:11:01.860,manual,0.3,0.0
+OK.CROK.HHZ.--,0.836732,331.156,Pg,2014-04-13 13:11:07.380,manual,-0.3,0.047
+OK.X34A.HHZ.--,1.20236,193.904,Pg,2014-04-13 13:11:14.100,manual,-0.6,0.028
+GS.OK029.HH1.00,0.0337214,41.5199,Sg,2014-04-13 13:10:54.370,manual,0.5,0.161
+OK.BCOK.HHN.--,0.154083,222.121,Sg,2014-04-13 13:10:57.600,manual,0.7,0.137
+GS.OK027.HH1.00,0.172211,110.038,Sg,2014-04-13 13:10:58.380,manual,0.9,0.102
+GS.OK025.HH1.00,0.223296,148.163,Sg,2014-04-13 13:11:00.070,manual,1.0,0.067
+GS.OK026.HH2.00,0.356123,175.923,Sg,2014-04-13 13:11:04.010,manual,0.8,0.059
+OK.OKCSW.EHE.--,0.366793,174.326,Sg,2014-04-13 13:11:04.490,manual,0.9,0.058
+OK.FNO.HHE.01,0.517031,172.615,Sg,2014-04-13 13:11:09.410,manual,1.1,0.051
+OK.U32A.BHZ.--,1.37209,296.699,Pn,2014-04-13 13:11:16.040,manual,-1.3,0.029
+TA.TUL1.BHZ.--,1.38052,83.735,Pn,2014-04-13 13:11:16.240,manual,-1.1,0.06
+N4.T35B.BHZ.--,1.38542,34.1544,Pn,2014-04-13 13:11:16.810,manual,-0.7,0.045
+OK.X37A.BHZ.--,2.09314,123.683,Pn,2014-04-13 13:11:27.220,manual,0.1,0.047
+N4.U38B.BHZ.--,2.59473,74.2026,Pn,2014-04-13 13:11:33.580,manual,-0.5,0.045
+AG.HHAR.HHZ.00,2.91622,78.8972,Pn,2014-04-13 13:11:37.400,manual,-1.1,0.042
+US.MIAR.BHZ.00,3.42583,109.783,Pn,2014-04-13 13:11:46.370,manual,0.9,0.038

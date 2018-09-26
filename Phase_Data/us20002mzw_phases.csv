@@ -1,0 +1,69 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20002mzw
+#time = 2015-06-08 15:08:27.200000
+#location = 9km ENE of Enid, Oklahoma
+#latitude = 36.4233
+#longitude = -97.7738
+#depth = 6.3
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20002mzw
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.BCOK.HHZ.--,0.776534,170.065,Pg,2015-06-08 15:08:41.760,manual,-0.4,1.77
+GS.OK029.HHZ.00,0.67662,157.47,Pg,2015-06-08 15:08:40.290,manual,0.1,1.93
+GS.OK031.HHZ.00,0.889899,121.546,Pg,2015-06-08 15:08:43.830,manual,-0.5,1.62
+OK.FNO.HHZ.01,1.20216,165.305,Pg,2015-06-08 15:08:49.410,manual,-0.9,1.32
+OK.CROK.HHZ.--,0.187476,295.74,Pg,2015-06-08 15:08:31.010,manual,0.0,3.37
+OK.GORE.HHZ.--,0.387544,338.963,Pg,2015-06-08 15:08:34.720,manual,0.0,2.58
+OK.GC02.EHZ.--,0.432899,350.853,Pg,2015-06-08 15:08:35.580,manual,0.0,2.45
+GS.OK032.HHZ.00,0.517311,317.36,Pg,2015-06-08 15:08:37.300,manual,0.1,2.24
+GS.KAN13.HHZ.01,0.634706,21.919,Pg,2015-06-08 15:08:39.420,manual,0.0,2.0
+GS.KAN09.HHZ.01,0.722302,9.90684,Pg,2015-06-08 15:08:40.990,manual,-0.1,1.85
+GS.KAN10.HHZ.01,0.744948,339.835,Pg,2015-06-08 15:08:41.550,manual,0.0,1.82
+GS.KAN08.HHZ.01,0.81731,348.902,Pg,2015-06-08 15:08:42.590,manual,-0.3,1.72
+GS.KAN16.HHZ.01,0.834091,343.836,Pg,2015-06-08 15:08:43.080,manual,-0.1,1.69
+GS.KAN12.HHZ.01,0.890774,348.421,Pg,2015-06-08 15:08:44.090,manual,-0.2,1.62
+OK.QUOK.HHZ.--,0.89695,105.961,Pg,2015-06-08 15:08:44.110,manual,-0.3,1.61
+GS.OK025.HHZ.00,0.911737,157.062,Pg,2015-06-08 15:08:44.660,manual,0.0,1.6
+GS.OK030.HHZ.00,0.941336,121.395,Pg,2015-06-08 15:08:44.860,manual,-0.4,1.56
+OK.U32A.BHZ.--,0.991357,267.837,Pg,2015-06-08 15:08:45.720,manual,-0.5,1.51
+OK.CHOK.HHZ.--,1.0364,145.906,Pg,2015-06-08 15:08:46.710,manual,-0.4,1.47
+N4.T35B.BHZ.--,1.12754,63.7567,Pg,2015-06-08 15:08:48.300,manual,-0.5,1.38
+US.WMOK.BHZ.10,1.87128,206.309,Pn,2015-06-08 15:08:59.640,manual,-0.1,1.15
+OK.LOV1.HHZ.--,2.39866,169.366,Pn,2015-06-08 15:09:06.600,manual,-0.4,1.09
+US.KSU1.BHZ.10,2.82779,18.6922,Pn,2015-06-08 15:09:12.670,manual,-0.2,1.04
+OK.CROK.HHN.--,0.187476,295.74,Sg,2015-06-08 15:08:33.940,manual,0.4,1.33
+OK.GORE.HHN.--,0.387544,338.963,Sg,2015-06-08 15:08:39.570,manual,-0.2,1.23
+GS.OK032.HH2.00,0.517311,317.36,Sg,2015-06-08 15:08:43.630,manual,-0.3,1.17
+OK.BLOK.HHN.--,0.561769,53.0178,Sg,2015-06-08 15:08:45.010,manual,-0.3,1.15
+GS.OK029.HH1.00,0.67662,157.47,Sg,2015-06-08 15:08:48.470,manual,-0.5,1.1
+OK.BCOK.HHE.--,0.776534,170.065,Sg,2015-06-08 15:08:52.110,manual,-0.1,1.07

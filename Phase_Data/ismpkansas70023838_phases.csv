@@ -1,0 +1,65 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = ismpkansas70023838
+#time = 2014-07-29 03:23:35.270000
+#location = Kansas
+#latitude = 37.1128
+#longitude = -97.7928
+#depth = 4.8
+#magnitude = 2.4
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/ismpkansas70023838
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+NQ.KAN01.HNZ.01,0.04869,33.4,P,2014-07-29 03:23:36.730,manual,0.0,0.18
+NQ.KAN01.HNN.01,0.04869,33.4,S,2014-07-29 03:23:37.820,manual,0.08,0.09
+NQ.KAN05.HNZ.01,0.06308,265.6,P,2014-07-29 03:23:36.950,manual,-0.03,0.18
+NQ.KAN05.HNE.01,0.06308,265.6,S,2014-07-29 03:23:38.090,manual,-0.11,0.09
+NQ.KAN02.HNZ.01,0.109,321.1,P,2014-07-29 03:23:37.820,manual,-0.03,0.09
+NQ.KAN07.HNE.01,0.1784,224.0,S,2014-07-29 03:23:41.850,manual,0.1,0.04
+NQ.KAN08.HNZ.01,0.1821,308.7,P,2014-07-29 03:23:39.230,manual,0.06,0.09
+GS.KAN10.HHZ.01,0.2419,272.5,P,2014-07-29 03:23:40.320,manual,0.03,0.09
+GS.KAN10.HHN.01,0.2419,272.5,S,2014-07-29 03:23:43.950,manual,0.22,0.09
+GS.KAN12.HHZ.01,0.2465,318.5,P,2014-07-29 03:23:40.350,manual,-0.04,0.18
+GS.KAN12.HNN.01,0.2465,318.5,S,2014-07-29 03:23:44.390,manual,0.45,0.0
+GS.KAN13.HHZ.01,0.271,111.7,P,2014-07-29 03:23:40.730,manual,-0.06,0.18
+GS.KAN13.HHN.01,0.271,111.7,S,2014-07-29 03:23:44.670,manual,0.1,0.18
+OK.KAY1.HHZ.,0.5819,127.0,P,2014-07-29 03:23:46.380,manual,-0.23,0.02
+OK.KAY1.HHE.,0.5819,127.0,S,2014-07-29 03:23:54.830,manual,0.3,0.0
+OK.CROK.HHZ.,0.6259,194.1,P,2014-07-29 03:23:47.320,manual,-0.06,0.07
+OK.CROK.HHE.,0.6259,194.1,S,2014-07-29 03:23:56.020,manual,0.05,0.07
+N4.T35B.HHZ.,1.044,100.9,P,2014-07-29 03:23:54.870,manual,0.01,0.0
+N4.T35B.HHE.,1.044,100.9,S,2014-07-29 03:24:08.600,manual,-0.12,0.0
+OK.U32A.BHZ.,1.216,232.9,P,2014-07-29 03:23:58.070,manual,0.17,0.0
+OK.QUOK.HHZ.,1.282,137.2,P,2014-07-29 03:23:59.150,manual,-0.02,0.0
+OK.QUOK.HHE.,1.282,137.2,S,2014-07-29 03:24:16.660,manual,0.39,0.0
+N4.R32B.HHZ.,1.496,331.0,P,2014-07-29 03:24:02.790,manual,-0.11,0.0
+NQ.KAN02.HNE.01,0.109,321.1,S,2014-07-29 03:23:39.670,manual,0.06,0.09
+NQ.KAN08.HNN.01,0.1821,308.7,S,2014-07-29 03:23:42.040,manual,0.17,0.04

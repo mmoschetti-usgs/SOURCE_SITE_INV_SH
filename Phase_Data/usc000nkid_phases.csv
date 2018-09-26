@@ -1,0 +1,71 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000nkid
+#time = 2014-03-21 22:41:07.900000
+#location = 1km SE of Choctaw, Oklahoma
+#latitude = 35.4890
+#longitude = -97.2580
+#depth = 6.7
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000nkid
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK025.HHZ.00,0.112657,324.684,Pg,2014-03-21 22:41:10.650,manual,0.3,0.0
+GS.OK027.HHZ.00,0.223492,354.652,Pg,2014-03-21 22:41:12.710,manual,0.4,0.0
+OK.W35A.EHZ.--,0.459286,136.824,Pg,2014-03-21 22:41:16.710,manual,-0.1,0.0
+US.WMOK.BHZ.10,1.45597,239.463,Pn,2014-03-21 22:41:34.020,manual,-0.7,0.053
+GS.OK001.HNZ.01,0.0763922,340.358,Pg,2014-03-21 22:41:09.960,manual,0.2,0.0
+GS.OK026.HHZ.00,0.174181,245.083,Pg,2014-03-21 22:41:11.580,manual,0.1,0.0
+GS.OK005.HNZ.01,0.174291,18.2162,Pg,2014-03-21 22:41:11.800,manual,0.3,0.0
+OK.FNO.HHZ.01,0.259023,206.9,Pg,2014-03-21 22:41:13.420,manual,0.4,0.0
+GS.OK028.HHZ.00,0.175766,65.7813,Pg,2014-03-21 22:41:11.840,manual,0.4,0.0
+OK.BCOK.HHZ.--,0.331686,300.4,Pg,2014-03-21 22:41:14.430,manual,0.1,0.0
+OK.X34A.HHZ.--,1.00358,208.185,Pg,2014-03-21 22:41:27.090,manual,-0.1,0.029
+GS.OK029.HHZ.00,0.346307,332.47,Pg,2014-03-21 22:41:15.110,manual,0.5,0.0
+OK.X37A.BHZ.--,1.78956,119.564,Pn,2014-03-21 22:41:40.120,manual,0.9,0.023
+N4.T35B.BHZ.--,1.54683,22.7425,Pn,2014-03-21 22:41:35.590,manual,-0.4,0.054
+OK.U32A.BHZ.--,1.67074,302.641,Pn,2014-03-21 22:41:38.120,manual,0.5,0.073
+TA.W39A.BHZ.--,2.85498,94.8702,Pn,2014-03-21 22:41:54.200,manual,0.3,0.022
+US.MIAR.BHZ.00,3.16473,106.242,Pn,2014-03-21 22:41:59.180,manual,1.0,0.019
+AG.WHAR.HHZ.00,4.06442,91.3586,Pn,2014-03-21 22:42:09.870,manual,-0.7,0.018
+TA.W41B.BHZ.--,4.10813,92.9407,Pn,2014-03-21 22:42:11.160,manual,0.0,0.017
+GS.OK025.HH1.00,0.112657,324.684,Sg,2014-03-21 22:41:12.630,manual,0.6,0.062
+GS.OK001.HNE.01,0.0763922,340.358,Sg,2014-03-21 22:41:11.640,manual,0.5,0.086
+OK.OKCSW.EHZ.--,0.16894,240.503,Pg,2014-03-21 22:41:11.350,manual,0.0,0.0
+OK.OKCSW.EHE.--,0.16894,240.503,Sg,2014-03-21 22:41:14.340,manual,0.7,0.077
+GS.OK026.HH2.00,0.174181,245.083,Sg,2014-03-21 22:41:14.510,manual,0.7,0.074
+GS.OK005.HNN.01,0.174291,18.2162,Sg,2014-03-21 22:41:14.780,manual,0.9,0.059
+GS.OK028.HH1.00,0.175766,65.7813,Sg,2014-03-21 22:41:14.710,manual,0.8,0.113
+GS.OK027.HH2.00,0.223492,354.652,Sg,2014-03-21 22:41:16.300,manual,0.9,0.052
+OK.FNO.HHE.01,0.259023,206.9,Sg,2014-03-21 22:41:17.470,manual,1.0,0.076
+OK.BCOK.HHN.--,0.331686,300.4,Sg,2014-03-21 22:41:19.600,manual,0.8,0.067
+GS.OK029.HH1.00,0.346307,332.47,Sg,2014-03-21 22:41:20.090,manual,0.9,0.058
+OK.W35A.EHE.--,0.459286,136.824,Sg,2014-03-21 22:41:23.260,manual,0.5,0.1

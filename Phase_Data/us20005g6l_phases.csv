@@ -1,0 +1,70 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20005g6l
+#time = 2016-04-07 18:17:53.300000
+#location = 32km NW of Fairview, Oklahoma
+#latitude = 36.4749
+#longitude = -98.7444
+#depth = 4.2
+#magnitude = 2.4
+#magtype = mb_lg
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20005g6l
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK036.HHZ.00,0.0957629,71.1812,Pg,2016-04-07 18:17:55.280,manual,0.0,3.92
+GS.OK042.HHZ.00,0.100408,224.412,Pg,2016-04-07 18:17:55.180,manual,-0.2,3.88
+GS.OK037.HHZ.00,0.0332363,359.862,Pg,2016-04-07 18:17:54.130,manual,-0.2,4.41
+GS.OK038.HHZ.00,0.00373916,28.2698,Pg,2016-04-07 18:17:52.900,manual,-1.2,4.69
+GS.OK043.HHZ.00,0.0414306,181.447,Pg,2016-04-07 18:17:54.300,manual,-0.1,4.33
+GS.OK040.HHZ.00,0.0572178,81.9585,Pg,2016-04-07 18:17:54.620,manual,0.0,4.21
+GS.OK039.HH2.00,0.119285,141.212,Sg,2016-04-07 18:17:57.870,manual,0.5,1.37
+GS.OK039.HHZ.00,0.119285,141.212,Pg,2016-04-07 18:17:55.650,manual,0.0,3.76
+GS.OK043.HH2.00,0.0414306,181.447,Sg,2016-04-07 18:17:55.510,manual,0.3,1.42
+GS.OK042.HH1.00,0.100408,224.412,Sg,2016-04-07 18:17:57.230,manual,0.4,1.38
+GS.OK040.HH1.00,0.0572178,81.9585,Sg,2016-04-07 18:17:55.940,manual,0.3,1.41
+GS.OK037.HH1.00,0.0332363,359.862,Sg,2016-04-07 18:17:55.240,manual,0.2,1.42
+GS.OK036.HH1.00,0.0957629,71.1812,Sg,2016-04-07 18:17:57.030,manual,0.3,1.38
+GS.OK041.HH2.00,0.170816,92.5149,Sg,2016-04-07 18:17:59.340,manual,0.3,1.34
+GS.OK041.HHZ.00,0.170816,92.5149,Pg,2016-04-07 18:17:56.600,manual,0.0,3.46
+OK.U32A.BHN.--,0.228096,245.406,Sg,2016-04-07 18:18:01.130,manual,0.3,1.31
+OK.U32A.BHZ.--,0.228096,245.406,Pg,2016-04-07 18:17:57.450,manual,-0.2,3.17
+OK.NOKA.HHZ.--,0.219611,316.627,Pg,2016-04-07 18:17:57.480,manual,0.0,3.21
+OK.NOKA.HHE.--,0.219611,316.627,Sg,2016-04-07 18:18:00.800,manual,0.3,1.31
+GS.OK038.HH1.00,0.00373916,28.2698,Sg,2016-04-07 18:17:53.920,manual,-0.8,1.44
+OK.HTCH.HHE.--,0.565228,143.807,Sg,2016-04-07 18:18:11.430,manual,0.0,1.15
+OK.HTCH.HHZ.--,0.565228,143.807,Pg,2016-04-07 18:18:04.040,manual,0.3,2.13
+OK.CROK.HHN.--,0.613985,86.9973,Sg,2016-04-07 18:18:13.180,manual,0.3,1.13
+OK.CROK.HHZ.--,0.613985,86.9973,Pg,2016-04-07 18:18:04.580,manual,-0.1,2.04
+OK.GORE.HHZ.--,0.712389,63.9591,Pg,2016-04-07 18:18:06.210,manual,-0.2,1.87
+GS.KAN14.HHZ.01,0.79092,52.314,Pg,2016-04-07 18:18:07.760,manual,-0.1,1.75
+OK.GC02.EHZ.--,0.804629,61.888,Pg,2016-04-07 18:18:07.770,manual,-0.3,1.73
+OK.GC02.EHN.--,0.804629,61.888,Sg,2016-04-07 18:18:19.130,manual,0.2,1.06
+OK.BLOK.HHZ.--,1.26306,76.4975,Pg,2016-04-07 18:18:15.820,manual,-0.2,1.91
+N4.T35B.BHZ.--,1.84756,75.5433,Pn,2016-04-07 18:18:25.960,manual,0.5,1.16

@@ -1,0 +1,69 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us20003ncw
+#time = 2015-09-22 23:54:40.800000
+#location = 23km ENE of Mooreland, Oklahoma
+#latitude = 36.4826
+#longitude = -98.9509
+#depth = 8.7
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us20003ncw
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.CROK.HHZ.--,0.779945,88.0919,Pg,2015-09-22 23:54:55.030,manual,-0.8,1.77
+OK.CROK.HHN.--,0.779945,88.0919,Sg,2015-09-22 23:55:05.820,manual,-0.2,1.07
+GS.KAN14.HHZ.01,0.924145,58.8999,Pg,2015-09-22 23:54:57.230,manual,-1.3,1.58
+GS.KAN14.HHE.01,0.924145,58.8999,Sg,2015-09-22 23:55:09.620,manual,-1.0,1.02
+GS.KAN10.HHZ.01,0.938601,46.7824,Pg,2015-09-22 23:54:57.320,manual,-1.5,1.57
+OK.GC02.EHZ.--,0.951552,66.9114,Pg,2015-09-22 23:54:57.700,manual,-1.4,1.55
+OK.GC02.EHN.--,0.951552,66.9114,Sg,2015-09-22 23:55:10.510,manual,-1.0,1.01
+GS.KAN16.HHZ.01,1.02722,43.5211,Pg,2015-09-22 23:54:58.780,manual,-1.8,1.47
+GS.KAN16.HHN.01,1.02722,43.5211,Sg,2015-09-22 23:55:13.420,manual,-0.5,0.98
+GS.KAN05.HHZ.01,1.06768,53.8616,Pg,2015-09-22 23:54:59.880,manual,-1.4,1.44
+GS.KAN17.HHZ.01,1.1051,59.1741,Pg,2015-09-22 23:55:00.410,manual,-1.6,1.4
+GS.KAN12.HHZ.01,1.11579,42.9244,Pg,2015-09-22 23:55:00.700,manual,-1.5,1.39
+GS.KAN12.HHE.01,1.11579,42.9244,Sg,2015-09-22 23:55:15.340,manual,-1.4,0.96
+GS.KAN09.HHZ.01,1.25267,58.2241,Pn,2015-09-22 23:55:02.980,manual,-1.5,1.23
+GS.KAN13.HHZ.01,1.29616,65.46,Pn,2015-09-22 23:55:03.480,manual,-1.6,1.23
+GS.KS20.HHZ.00,1.34564,55.9316,Pn,2015-09-22 23:55:04.620,manual,-1.1,1.22
+OK.BCOK.HHZ.--,1.36405,126.775,Pn,2015-09-22 23:55:05.470,manual,-0.5,1.22
+GS.OK029.HHZ.00,1.39104,119.038,Pn,2015-09-22 23:55:05.890,manual,-0.5,1.21
+OK.BLOK.HHZ.--,1.42381,78.2462,Pn,2015-09-22 23:55:06.150,manual,-0.7,1.21
+GS.OK025.HHZ.00,1.587,124.055,Pn,2015-09-22 23:55:09.080,manual,0.0,1.19
+OK.FNO.HHZ.01,1.75466,133.711,Pn,2015-09-22 23:55:11.570,manual,0.2,1.16
+US.WMOK.BHZ.10,1.74641,175.396,Pn,2015-09-22 23:55:11.230,manual,0.0,1.17
+OK.CHOK.HHZ.--,1.78659,120.419,Pn,2015-09-22 23:55:12.060,manual,0.3,1.16
+GS.OK031.HHZ.00,1.78757,106.568,Pn,2015-09-22 23:55:12.070,manual,0.3,1.16
+GS.OK030.HHZ.00,1.83805,106.889,Pn,2015-09-22 23:55:13.130,manual,0.6,1.15
+N4.R32B.BHZ.--,1.94585,5.55562,Pn,2015-09-22 23:55:13.650,manual,-0.4,1.14
+N4.T35B.BHZ.--,2.00736,76.8234,Pn,2015-09-22 23:55:15.460,manual,0.6,1.13
+OK.X37A.BHZ.--,3.47704,121.857,Pn,2015-09-22 23:55:35.050,manual,0.1,0.97
+OK.U32A.BHZ.--,0.110663,201.612,Pg,2015-09-22 23:54:46.420,manual,2.9,3.81

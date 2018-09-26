@@ -1,0 +1,68 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000rbyl
+#time = 2014-06-06 01:18:03.400000
+#location = 3km E of Choctaw, Oklahoma
+#latitude = 35.4984
+#longitude = -97.2355
+#depth = 6.2
+#magnitude = 2.4
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000rbyl
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK025.HHZ.00,0.117404,314.686,Pg,2014-06-06 01:18:06.310,manual,0.4,0.0
+GS.OK028.HHZ.00,0.155172,66.1728,Pg,2014-06-06 01:18:06.980,manual,0.4,0.0
+GS.OK026.HHZ.00,0.194791,244.869,Pg,2014-06-06 01:18:07.480,manual,0.2,0.0
+OK.FNO.HHZ.01,0.275968,209.433,Pg,2014-06-06 01:18:09.370,manual,0.6,0.0
+OK.OKCSW.EHZ.--,0.189547,240.781,Pg,2014-06-06 01:18:07.410,manual,0.2,0.0
+OK.BCOK.HHZ.--,0.343218,297.509,Pg,2014-06-06 01:18:10.320,manual,0.2,0.0
+GS.OK029.HHZ.00,0.347087,329.076,Pg,2014-06-06 01:18:10.510,manual,0.4,0.0
+GS.OK027.HHZ.00,0.216709,349.593,Pg,2014-06-06 01:18:08.230,automatic,0.5,0.0
+OK.W35A.EHZ.--,0.453996,139.338,Pg,2014-06-06 01:18:12.310,automatic,0.1,0.0
+OK.X34A.HHZ.--,1.02059,208.858,Pg,2014-06-06 01:18:23.130,automatic,0.1,0.038
+OK.CROK.HHZ.--,1.1731,329.091,Pg,2014-06-06 01:18:25.570,automatic,-0.3,0.035
+US.WMOK.BHZ.10,1.47656,239.525,Pn,2014-06-06 01:18:30.120,automatic,-0.4,0.078
+GS.KAN13.HHZ.01,1.52405,352.688,Pn,2014-06-06 01:18:31.110,manual,0.0,0.083
+TA.TUL1.BHZ.--,1.24476,70.2946,Pn,2014-06-06 01:18:25.570,manual,-1.8,0.043
+OK.X37A.BHZ.--,1.7783,120.132,Pn,2014-06-06 01:18:35.640,manual,1.0,0.028
+N4.T35B.BHZ.--,1.53113,22.2577,Pn,2014-06-06 01:18:31.150,automatic,-0.1,0.066
+GS.OK001.HNZ.01,0.0765106,324.868,Pg,2014-06-06 01:18:05.560,manual,0.3,0.0
+GS.ADOK.HNZ.--,0.18897,324.238,Pg,2014-06-06 01:18:07.600,manual,0.4,0.0
+N4.Z35B.BHZ.--,2.16226,180.388,Pn,2014-06-06 01:18:41.020,manual,1.1,0.037
+US.MIAR.BHZ.00,3.14976,106.512,Pn,2014-06-06 01:18:53.990,manual,0.5,0.022
+TA.U40A.BHZ.--,3.65776,75.1864,Pn,2014-06-06 01:19:01.260,manual,0.7,0.025
+AG.WHAR.HHZ.00,4.04629,91.5105,Pn,2014-06-06 01:19:06.170,manual,0.3,0.02
+GS.OK025.HH2.00,0.117404,314.686,Sg,2014-06-06 01:18:08.420,manual,0.8,0.067
+OK.OKCSW.EHN.--,0.189547,240.781,Sg,2014-06-06 01:18:10.490,manual,0.7,0.08
+GS.OK026.HH1.00,0.194791,244.869,Sg,2014-06-06 01:18:10.630,manual,0.7,0.078
+TA.W41B.BHZ.--,4.09028,93.098,Pn,2014-06-06 01:19:07.210,manual,0.8,0.019
+N4.R40B.BHZ.--,4.85929,53.5371,Pn,2014-06-06 01:19:17.310,manual,0.3,0.025
+OK.QUOK.HHZ.--,0.796688,32.3939,Pg,2014-06-06 01:18:19.170,manual,0.5,0.052

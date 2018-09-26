@@ -1,0 +1,69 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us10006r1a
+#time = 2016-09-20 11:33:28
+#location = 12km N of Cherokee, Oklahoma
+#latitude = 36.8652
+#longitude = -98.3467
+#depth = 6.1
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us10006r1a
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN14.HHZ.01,0.320841,73.3286,Pg,2016-09-20 11:33:34.500,manual,0.3,2.8
+GS.KAN10.HHZ.01,0.327182,37.9258,Pg,2016-09-20 11:33:34.880,manual,0.5,2.77
+OK.CROK.HHZ.--,0.463405,140.826,Pg,2016-09-20 11:33:37.280,manual,0.3,2.37
+OK.NOKA.HHZ.--,0.523296,244.095,Pg,2016-09-20 11:33:38.420,manual,0.3,2.22
+GS.KAN17.HHZ.01,0.499161,68.8643,Pg,2016-09-20 11:33:37.880,manual,0.3,2.28
+GS.OK038.HHZ.00,0.500296,219.581,Pg,2016-09-20 11:33:38.010,manual,0.4,2.28
+OK.GC02.EHZ.--,0.390922,91.8582,Pg,2016-09-20 11:33:35.900,manual,0.3,2.57
+GS.KAN09.HHZ.01,0.64277,64.9042,Pg,2016-09-20 11:33:40.650,manual,0.3,1.98
+GS.KAN16.HHZ.01,0.424636,32.012,Pg,2016-09-20 11:33:36.410,manual,0.2,2.47
+GS.OK034.HHZ.00,1.56944,122.447,Pn,2016-09-20 11:33:56.440,manual,0.1,1.19
+OK.BLOK.HHZ.--,0.914193,96.2181,Pg,2016-09-20 11:33:45.200,manual,-0.3,1.59
+GS.KAN13.HHZ.01,0.711608,77.7826,Pg,2016-09-20 11:33:41.780,manual,0.1,1.87
+ZD.KNG1.EHZ.--,0.900185,144.151,Pg,2016-09-20 11:33:45.110,manual,-0.2,1.61
+OK.HTCH.HHZ.--,0.846482,179.232,Pg,2016-09-20 11:33:44.090,manual,-0.2,1.68
+GS.KAN12.HHZ.01,0.513684,32.7742,Pg,2016-09-20 11:33:38.140,manual,0.2,2.25
+GS.OK029.HHZ.00,1.28679,145.705,Pn,2016-09-20 11:33:52.050,manual,-0.4,1.23
+GS.OK032.HHZ.00,0.125354,119.227,Pg,2016-09-20 11:33:31.050,manual,0.4,3.72
+N4.T35B.BHZ.--,1.47184,87.4675,Pn,2016-09-20 11:33:55.190,manual,0.2,1.21
+TA.TUL1.BHZ.--,2.27097,114.046,Pn,2016-09-20 11:34:07.500,manual,1.5,1.1
+N4.R32B.BHZ.--,1.58129,349.571,Pn,2016-09-20 11:33:56.690,manual,0.2,1.19
+GS.KS20.HHZ.00,0.730955,59.9117,Pg,2016-09-20 11:33:42.150,manual,0.1,1.84
+ZD.RH09.EHZ.--,0.953967,162.246,Pg,2016-09-20 11:33:45.960,manual,-0.3,1.55
+GS.OK033.HHZ.00,1.40017,125.386,Pn,2016-09-20 11:33:53.970,manual,0.0,1.22
+GS.OK047.HHZ.00,1.36363,106.375,Pn,2016-09-20 11:33:53.460,automatic,0.0,1.22
+OK.QUOK.HHZ.--,1.49064,117.189,Pn,2016-09-20 11:33:55.260,manual,0.0,1.2
+OK.CSTR.HHZ.--,1.24815,192.905,Pn,2016-09-20 11:33:51.520,manual,-0.4,1.24
+GS.OK044.HHZ.00,1.34068,111.044,Pn,2016-09-20 11:33:52.990,manual,-0.2,1.23
+US.WMOK.BHZ.10,2.15186,189.564,Pn,2016-09-20 11:34:04.690,manual,0.3,1.12
+GS.OK031.HHZ.00,1.51907,126.365,Pn,2016-09-20 11:33:55.840,manual,0.2,1.2

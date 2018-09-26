@@ -1,0 +1,62 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000n5aw
+#time = 2014-03-08 02:55:24.590000
+#location = 2km ESE of Choctaw, Oklahoma
+#latitude = 35.4910
+#longitude = -97.2470
+#depth = 6.3
+#magnitude = 2.4
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000n5aw
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.FNO.HHZ.01,0.264963,208.442,Pg,2014-03-08 02:55:30.410,manual,0.6,0.0
+US.WMOK.BHZ.10,1.46472,239.581,Sn,2014-03-08 02:56:10.620,manual,-0.4,0.07
+N4.U38B.BHZ.--,2.50659,66.9823,Sg,2014-03-08 02:56:41.470,manual,0.4,0.201
+OK.OKCSW.EHZ.--,0.177759,241.374,Pg,2014-03-08 02:55:28.360,manual,0.2,0.0
+OK.BCOK.HHZ.--,0.338476,299.346,Pg,2014-03-08 02:55:31.390,manual,0.2,0.0
+GS.OK026.HHZ.00,0.183176,245.706,Pg,2014-03-08 02:55:28.380,manual,0.1,0.0
+OK.W35A.EHZ.--,0.454669,137.828,Pg,2014-03-08 02:55:33.400,manual,0.0,0.0
+GS.OK001.HNZ.01,0.0780629,333.65,Pg,2014-03-08 02:55:26.680,manual,0.2,0.0
+GS.OK025.HHZ.00,0.116525,320.517,Pg,2014-03-08 02:55:27.280,manual,0.2,0.0
+GS.OK028.HHZ.00,0.166769,65.1486,Pg,2014-03-08 02:55:28.310,manual,0.3,0.0
+GS.OK005.HNZ.01,0.16977,15.5544,Pg,2014-03-08 02:55:28.480,manual,0.4,0.0
+GS.ADOK.HNZ.--,0.189849,327.835,Pg,2014-03-08 02:55:28.730,manual,0.3,0.0
+GS.OK027.HHZ.00,0.222526,352.308,Pg,2014-03-08 02:55:29.280,manual,0.3,0.0
+GS.OK029.HHZ.00,0.348798,331.016,Pg,2014-03-08 02:55:31.630,manual,0.3,0.0
+OK.X34A.HHZ.--,1.00961,208.587,Pg,2014-03-08 02:55:43.800,manual,-0.2,0.034
+US.WMOK.BHZ.10,1.46472,239.581,Pn,2014-03-08 02:55:51.080,manual,-0.5,0.063
+OK.U32A.BHZ.--,1.67723,302.424,Pn,2014-03-08 02:55:53.910,manual,-0.6,0.08
+N4.U38B.BHZ.--,2.50659,66.9823,Pn,2014-03-08 02:56:06.520,manual,0.6,0.033
+N4.T35B.BHZ.--,1.54153,22.47,Pn,2014-03-08 02:55:52.290,manual,-0.3,0.059
+N4.T35B.BHZ.--,1.54153,22.47,Sn,2014-03-08 02:56:12.620,manual,-0.3,0.064
+ZW.AZDA.EHZ.01,2.5249,185.893,Pn,2014-03-08 02:56:06.600,manual,0.5,0.029
+OK.U32A.BHZ.--,1.67723,302.424,Sn,2014-03-08 02:56:14.330,manual,-2.0,0.084

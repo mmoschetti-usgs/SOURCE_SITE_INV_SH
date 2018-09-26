@@ -1,0 +1,70 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us100031k6
+#time = 2015-07-23 17:34:05.020000
+#location = 16km SSE of Anthony, Kansas
+#latitude = 37.0275
+#longitude = -97.9370
+#depth = 5.9
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us100031k6
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN10.HHZ.01,0.158655,307.203,Pg,2015-07-23 17:34:08.480,manual,0.2,3.52
+GS.KAN17.HHZ.01,0.138783,83.0907,Pg,2015-07-23 17:34:08.140,manual,0.3,3.64
+GS.KAN08.HHZ.01,0.200671,352.249,Pg,2015-07-23 17:34:09.300,manual,0.3,3.3
+GS.KAN05.HHN.01,0.0960773,32.5699,Sg,2015-07-23 17:34:09.000,manual,0.4,1.38
+GS.KAN11.HHZ.01,0.179176,6.06137,Pg,2015-07-23 17:34:08.880,manual,0.3,3.41
+GS.KAN12.HHZ.01,0.273779,349.765,Pg,2015-07-23 17:34:10.640,manual,0.3,2.97
+GS.KAN09.HHZ.01,0.27696,66.8629,Pg,2015-07-23 17:34:10.640,manual,0.2,2.96
+AG.WHAR.HHZ.00,4.88755,109.091,Pn,2015-07-23 17:35:17.620,manual,-1.3,0.86
+TA.X40A.BHZ.--,4.86205,119.903,Pn,2015-07-23 17:35:13.150,manual,-5.4,0.86
+GS.KAN17.HHN.01,0.138783,83.0907,Sg,2015-07-23 17:34:10.330,manual,0.5,1.36
+GS.KAN10.HHE.01,0.158655,307.203,Sg,2015-07-23 17:34:10.910,manual,0.5,1.35
+NQ.KAN02.HNZ.01,0.176162,15.3219,Pg,2015-07-23 17:34:08.920,manual,0.4,3.42
+NQ.KAN02.HNN.01,0.176162,15.3219,Sg,2015-07-23 17:34:11.550,manual,0.6,1.34
+GS.KAN11.HHE.01,0.179176,6.06137,Sg,2015-07-23 17:34:11.680,manual,0.6,1.34
+GS.KAN08.HHN.01,0.200671,352.249,Sg,2015-07-23 17:34:12.170,manual,0.5,1.32
+GS.KAN06.HHZ.01,0.228839,15.8656,Pg,2015-07-23 17:34:09.800,manual,0.3,3.17
+GS.KAN06.HHN.01,0.228839,15.8656,Sg,2015-07-23 17:34:13.180,manual,0.6,1.31
+GS.KAN12.HHE.01,0.273779,349.765,Sg,2015-07-23 17:34:14.570,manual,0.6,1.28
+GS.KAN09.HHN.01,0.27696,66.8629,Sg,2015-07-23 17:34:14.690,manual,0.6,1.28
+GS.KS21.HHZ.00,0.338751,40.1731,Pg,2015-07-23 17:34:11.830,manual,0.2,2.73
+GS.KS21.HH1.00,0.338751,40.1731,Sg,2015-07-23 17:34:16.640,manual,0.6,1.25
+GS.KAN13.HHZ.01,0.367813,92.1322,Pg,2015-07-23 17:34:12.350,manual,0.2,2.64
+GS.KAN13.HHE.01,0.367813,92.1322,Sg,2015-07-23 17:34:17.430,manual,0.5,1.24
+NQ.KAN15.HNN.01,0.398207,46.8458,Sg,2015-07-23 17:34:18.690,manual,0.7,1.22
+GS.KAN05.HHZ.01,0.0960773,32.5699,Pg,2015-07-23 17:34:07.340,manual,0.2,3.91
+NM.MGMO.BHZ.--,4.5336,86.6955,Pn,2015-07-23 17:35:12.760,manual,-1.3,0.89
+US.CBKS.BHZ.00,2.28207,321.948,Pn,2015-07-23 17:34:42.070,manual,-1.1,1.1
+OK.GC02.EHZ.--,0.186292,160.533,Pg,2015-07-23 17:34:06.210,manual,-2.5,3.37
+OK.GORE.HHZ.--,0.24158,181.924,Pg,2015-07-23 17:34:07.520,manual,-2.3,3.11
+GS.KS20.HHZ.00,0.36645,56.4654,Pg,2015-07-23 17:34:10.290,manual,-1.8,2.64

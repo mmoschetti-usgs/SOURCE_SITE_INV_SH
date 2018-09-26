@@ -1,0 +1,63 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000rd1a
+#time = 2014-06-09 18:56:47
+#location = 12km NW of Blackwell, Oklahoma
+#latitude = 36.8745
+#longitude = -97.3985
+#depth = 6.2
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000rd1a
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN13.HHZ.01,0.15205,335.326,Pg,2014-06-09 18:56:50.640,manual,0.5,0.0
+OK.KAY1.HHZ.--,0.186553,126.682,Pg,2014-06-09 18:56:50.550,manual,-0.2,0.0
+OK.CROK.HHZ.--,0.597707,232.041,Pg,2014-06-09 18:56:58.230,manual,-0.3,0.0
+GS.KAN10.HHZ.01,0.610559,294.23,Pg,2014-06-09 18:56:58.840,manual,0.1,0.0
+OK.QUOK.HHZ.--,0.895411,141.392,Pg,2014-06-09 18:57:03.740,manual,-0.5,0.078
+GS.OK028.HHZ.00,1.33876,168.151,Pn,2014-06-09 18:57:11.430,manual,-0.8,0.068
+GS.OK029.HHZ.00,1.07669,182.441,Pg,2014-06-09 18:57:07.070,manual,-0.6,0.093
+GS.OK025.HHZ.00,1.29169,177.808,Pn,2014-06-09 18:57:10.820,manual,-0.8,0.071
+OK.BCOK.HHZ.--,1.2272,188.042,Pg,2014-06-09 18:57:09.760,manual,-0.8,0.082
+OK.FNO.HHZ.01,1.61374,180.078,Pn,2014-06-09 18:57:16.470,manual,0.5,0.067
+GS.OK027.HHZ.00,1.16385,175.391,Pg,2014-06-09 18:57:08.690,manual,-0.6,0.076
+OK.W35A.EHZ.--,1.76993,165.957,Pn,2014-06-09 18:57:17.760,manual,-0.4,0.061
+N4.T35B.BHZ.--,0.711967,86.3827,Pg,2014-06-09 18:57:00.730,manual,0.0,0.173
+AG.HHAR.HHZ.00,2.84586,100.958,Pn,2014-06-09 18:57:33.870,manual,0.9,0.071
+TA.TUL1.BHZ.--,1.61433,126.105,Pn,2014-06-09 18:57:15.940,manual,-0.1,0.073
+N4.R32B.BHZ.--,1.86369,326.411,Pn,2014-06-09 18:57:19.300,manual,-0.2,0.095
+N4.U38B.BHZ.--,2.46121,99.2602,Pn,2014-06-09 18:57:27.720,manual,0.0,0.078
+OK.U32A.BHZ.--,1.38083,249.516,Sn,2014-06-09 18:57:30.740,manual,-0.7,0.115
+TA.W39A.BHZ.--,3.37431,118.686,Pn,2014-06-09 18:57:40.010,manual,-0.2,0.054
+OK.X37A.BHZ.--,2.81416,143.526,Pn,2014-06-09 18:57:32.170,manual,-0.3,0.05
+OK.KNG1.EHZ.--,0.778423,197.992,Pg,2014-06-09 18:57:01.590,manual,-0.4,0.174
+OK.U32A.BHZ.--,1.38083,249.516,Pn,2014-06-09 18:57:11.910,manual,-0.9,0.094
+TA.U40A.BHZ.--,3.69279,96.69,Pn,2014-06-09 18:57:43.710,manual,-0.9,0.062

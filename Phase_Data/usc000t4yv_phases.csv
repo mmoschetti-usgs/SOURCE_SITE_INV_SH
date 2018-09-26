@@ -1,0 +1,74 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000t4yv
+#time = 2014-12-09 21:53:29
+#location = 4km WSW of Boley, Oklahoma
+#latitude = 35.4798
+#longitude = -96.5257
+#depth = 4.3
+#magnitude = 2.9
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000t4yv
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK028.HHZ.00,0.444459,280.672,Pg,2014-12-09 21:53:38.020,manual,0.5,2.42
+OK.W35A.EHZ.--,0.43345,221.254,Pg,2014-12-09 21:53:37.620,manual,0.3,2.45
+GS.OK030.HHZ.00,0.493925,334.906,Pg,2014-12-09 21:53:38.960,manual,0.5,2.29
+GS.OK031.HHZ.00,0.536737,331.722,Pg,2014-12-09 21:53:39.720,manual,0.4,2.19
+GS.OK025.HHZ.00,0.670129,278.911,Pg,2014-12-09 21:53:41.690,manual,-0.2,1.94
+GS.OK027.HHZ.00,0.659698,290.782,Pg,2014-12-09 21:53:41.620,manual,0.0,1.95
+OK.QUOK.HHZ.--,0.705844,347.938,Pg,2014-12-09 21:53:42.620,manual,0.1,1.88
+OK.FNO.HHZ.01,0.749137,253.023,Pg,2014-12-09 21:53:43.450,manual,0.1,1.81
+GS.OK029.HHZ.00,0.820242,292.938,Pg,2014-12-09 21:53:44.680,manual,-0.1,1.71
+OK.BCOK.HHZ.--,0.900874,281.614,Pg,2014-12-09 21:53:45.870,manual,-0.4,1.61
+GS.OK026.HHZ.00,0.758547,265.401,Pg,2014-12-09 21:53:43.790,manual,0.2,1.8
+OK.CROK.HHZ.--,1.56313,311.292,Pn,2014-12-09 21:53:57.420,manual,-0.1,1.2
+GS.KAN13.HHZ.01,1.71262,333.576,Pn,2014-12-09 21:53:59.890,manual,0.3,1.18
+US.WMOK.BHZ.10,1.99142,248.832,Pn,2014-12-09 21:54:04.140,manual,0.7,1.14
+N4.T35B.BHZ.--,1.4335,0.442139,Pn,2014-12-09 21:53:55.100,manual,-0.7,1.21
+TA.TUL1.BHZ.--,0.735786,54.057,Pg,2014-12-09 21:53:43.220,manual,0.1,1.83
+AG.HHAR.HHZ.00,2.24716,68.3777,Pn,2014-12-09 21:54:06.940,manual,0.0,1.11
+OK.X37A.BHZ.--,1.2988,132.834,Pn,2014-12-09 21:53:53.610,manual,-0.3,1.23
+TA.U40A.BHZ.--,3.10625,72.575,Pn,2014-12-09 21:54:19.090,manual,0.3,1.01
+TA.X40A.BHZ.--,3.18855,107.026,Pn,2014-12-09 21:54:21.230,manual,1.3,1.01
+GS.OK011.HNZ.01,0.130769,272.407,Pg,2014-12-09 21:53:32.160,manual,0.5,3.68
+GS.OK011.HNN.01,0.130769,272.407,Sg,2014-12-09 21:53:34.360,manual,1.0,1.36
+OK.W35A.EHN.--,0.43345,221.254,Sg,2014-12-09 21:53:43.710,manual,0.7,1.21
+GS.OK028.HH1.00,0.444459,280.672,Sg,2014-12-09 21:53:44.440,manual,1.1,1.2
+GS.OK030.HH2.00,0.493925,334.906,Sg,2014-12-09 21:53:45.960,manual,1.0,1.18
+GS.OK031.HH2.00,0.536737,331.722,Sg,2014-12-09 21:53:47.290,manual,1.0,1.16
+GS.OK027.HH2.00,0.659698,290.782,Sg,2014-12-09 21:53:51.220,manual,1.0,1.11
+OK.QUOK.HHE.--,0.705844,347.938,Sg,2014-12-09 21:53:52.510,manual,0.8,1.09
+TA.TUL1.BHN.--,0.735786,54.057,Sg,2014-12-09 21:53:52.990,manual,0.3,1.08
+OK.OKCSW.EHZ.--,0.748598,264.581,Pg,2014-12-09 21:53:43.400,manual,0.0,1.81
+OK.KAY1.HHZ.--,1.39568,336.734,Pn,2014-12-09 21:53:55.450,manual,0.2,1.22
+OK.GC02.EHZ.--,1.7432,322.136,Pn,2014-12-09 21:54:00.280,manual,0.2,1.17
+GS.KAN14.HHZ.01,1.87704,322.166,Pn,2014-12-09 21:54:02.310,manual,0.4,1.15
+TA.W39A.BHZ.--,2.25931,96.4054,Pn,2014-12-09 21:54:07.410,manual,0.3,1.11

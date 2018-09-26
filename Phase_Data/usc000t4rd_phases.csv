@@ -1,0 +1,95 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000t4rd
+#time = 2014-12-09 05:28:01.900000
+#location = 6km SSW of Guthrie, Oklahoma
+#latitude = 35.8213
+#longitude = -97.4398
+#depth = 4.6
+#magnitude = 2.9
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000t4rd
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK025.HHZ.00,0.253625,160.883,Pg,2014-12-09 05:28:07.370,manual,0.5,3.06
+GS.OK030.HHZ.00,0.543273,78.5272,Pg,2014-12-09 05:28:12.790,manual,0.4,2.18
+OK.OKCSW.EHZ.--,0.414898,179.798,Pg,2014-12-09 05:28:10.220,manual,0.3,2.5
+GS.OK026.HHZ.00,0.405228,181.34,Pg,2014-12-09 05:28:10.030,manual,0.3,2.53
+OK.QUOK.HHZ.--,0.688631,59.2991,Pg,2014-12-09 05:28:15.350,manual,0.2,1.91
+GS.OK029.HHZ.00,0.0275366,206.486,Pg,2014-12-09 05:28:03.220,manual,0.3,4.45
+OK.W35A.EHZ.--,0.811097,145.171,Pg,2014-12-09 05:28:17.160,manual,-0.3,1.72
+OK.FNO.HHZ.01,0.563542,176.787,Pg,2014-12-09 05:28:12.920,manual,0.2,2.14
+OK.CROK.HHZ.--,0.811552,327.338,Pg,2014-12-09 05:28:17.450,manual,0.0,1.72
+GS.KAN14.HHZ.01,1.2093,339.722,Pg,2014-12-09 05:28:24.510,manual,-0.6,1.31
+GS.KAN13.HHZ.01,1.18961,358.535,Pg,2014-12-09 05:28:24.310,manual,-0.4,1.33
+OK.GC02.EHZ.--,1.08255,341.877,Pg,2014-12-09 05:28:22.150,manual,-0.5,1.42
+US.WMOK.BHZ.10,1.54012,225.813,Pn,2014-12-09 05:28:29.630,manual,-0.5,1.2
+GS.KS20.HHZ.00,1.40864,356.28,Pn,2014-12-09 05:28:28.180,automatic,-0.1,1.22
+TA.TUL1.BHZ.--,1.34144,85.7172,Pn,2014-12-09 05:28:26.250,manual,-1.1,1.23
+N4.U38B.BHZ.--,2.54812,75.0947,Pn,2014-12-09 05:28:45.820,automatic,1.9,1.07
+OK.U32A.BHZ.--,1.38191,294.23,Pn,2014-12-09 05:28:27.150,automatic,-0.8,1.22
+OK.X37A.BHZ.--,2.09288,125.369,Pn,2014-12-09 05:28:38.650,automatic,1.0,1.13
+AG.WLAR.HHZ.00,4.14996,119.6,Sn,2014-12-09 05:30:13.360,automatic,18.5,0.0
+OK.BCOK.HHZ.--,0.214458,220.065,Pg,2014-12-09 05:28:06.510,manual,0.4,3.23
+GS.OK031.HHZ.00,0.505203,74.7345,Pg,2014-12-09 05:28:12.080,manual,0.5,2.27
+OK.KAY1.HHZ.--,0.957313,11.0068,Pg,2014-12-09 05:28:20.100,manual,-0.2,1.55
+GS.OK029.HH2.00,0.0275366,206.486,Sg,2014-12-09 05:28:04.050,manual,0.4,1.43
+OK.BCOK.HHE.--,0.214458,220.065,Sg,2014-12-09 05:28:09.730,manual,0.8,1.32
+GS.OK025.HH1.00,0.253625,160.883,Sg,2014-12-09 05:28:11.340,manual,1.2,1.29
+GS.OK026.HH2.00,0.405228,181.34,Sg,2014-12-09 05:28:15.990,manual,1.0,1.22
+OK.OKCSW.EHN.--,0.414898,179.798,Sg,2014-12-09 05:28:16.560,manual,1.3,1.21
+GS.OK031.HH2.00,0.505203,74.7345,Sg,2014-12-09 05:28:18.970,manual,0.8,1.17
+GS.OK030.HH2.00,0.543273,78.5272,Sg,2014-12-09 05:28:20.140,manual,0.7,1.16
+OK.FNO.HHE.01,0.563542,176.787,Sg,2014-12-09 05:28:21.100,manual,1.0,1.15
+OK.QUOK.HHN.--,0.688631,59.2991,Sg,2014-12-09 05:28:24.570,manual,0.5,1.1
+OK.KAY1.HHN.--,0.957313,11.0068,Sg,2014-12-09 05:28:32.850,manual,0.2,1.01
+GS.KAN05.HHZ.01,1.3312,344.945,Pn,2014-12-09 05:28:26.700,manual,-0.5,1.23
+N4.T35B.BHZ.--,1.32469,34.1518,Pn,2014-12-09 05:28:26.530,manual,-0.6,1.23
+GS.KAN01.HHZ.01,1.35411,349.143,Pn,2014-12-09 05:28:26.890,manual,-0.7,1.23
+GS.KAN10.HHZ.01,1.40284,338.076,Pn,2014-12-09 05:28:27.710,manual,-0.5,1.22
+GS.KAN11.HHZ.01,1.43363,344.709,Pn,2014-12-09 05:28:28.440,manual,-0.2,1.21
+GS.KAN08.HHZ.01,1.46641,343.195,Pn,2014-12-09 05:28:29.080,manual,0.0,1.21
+N4.Z35B.BHZ.--,2.48918,176.397,Pn,2014-12-09 05:28:43.690,manual,0.6,1.08
+ZW.AZDA.EHZ.01,2.84314,181.958,Pn,2014-12-09 05:28:49.890,manual,1.9,1.04
+TA.W39A.BHZ.--,3.047,100.749,Pn,2014-12-09 05:28:51.450,manual,0.7,1.02
+US.MIAR.BHZ.00,3.41065,110.792,Pn,2014-12-09 05:28:56.730,manual,0.9,0.98
+US.CBKS.BHZ.00,3.50387,329.175,Pn,2014-12-09 05:28:58.170,manual,1.0,0.98
+TA.ABTX.BHZ.--,3.67481,210.412,Pn,2014-12-09 05:28:59.780,manual,0.3,0.96
+N4.S39B.BHZ.--,3.79619,59.3418,Pn,2014-12-09 05:29:01.340,manual,0.2,0.95
+TA.X40A.BHZ.--,4.00122,108.09,Pn,2014-12-09 05:29:05.170,manual,1.3,0.93
+TA.W41B.BHZ.--,4.28495,97.1596,Pn,2014-12-09 05:29:07.930,manual,0.1,0.91
+N4.R40B.BHZ.--,4.81457,57.6717,Pn,2014-12-09 05:29:16.360,manual,1.3,0.87
+TA.T25A.BHZ.--,5.76871,285.23,Pn,2014-12-09 05:29:28.660,manual,0.2,0.81
+NM.UALR.BHZ.--,4.29726,102.574,Sn,2014-12-09 05:30:17.550,automatic,19.0,0.0
+N4.R32B.BHZ.--,2.78808,339.008,Pn,2014-12-09 05:28:48.460,manual,1.2,1.05
+N4.Z38B.BHZ.--,3.26083,140.883,Pn,2014-12-09 05:28:53.570,manual,-0.2,1.0
+US.KSU1.BHZ.10,3.33978,11.1601,Pn,2014-12-09 05:28:55.630,manual,0.8,0.99
+TA.U40A.BHZ.--,3.75262,80.4746,Pn,2014-12-09 05:29:00.750,manual,0.2,0.95
+AG.WHAR.HHZ.00,4.23274,95.691,Pn,2014-12-09 05:29:08.600,manual,1.5,0.91

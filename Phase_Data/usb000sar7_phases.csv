@@ -1,0 +1,70 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000sar7
+#time = 2014-09-06 07:45:27.700000
+#location = 7km SW of Pawnee, Oklahoma
+#latitude = 36.2869
+#longitude = -96.8643
+#depth = 6.8
+#magnitude = 2.6
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000sar7
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.QUOK.HHZ.--,0.171049,132.321,Pg,2014-09-06 07:45:31.600,manual,0.4,0.0
+GS.OK028.HH1.00,0.741725,192.513,Sg,2014-09-06 07:45:52.010,manual,0.4,0.06
+OK.KAY1.HHZ.--,0.551379,329.557,Pg,2014-09-06 07:45:38.360,manual,0.0,0.0
+GS.OK027.HHZ.00,0.666877,210.777,Pg,2014-09-06 07:45:40.530,manual,0.0,0.072
+GS.OK005.HNZ.01,0.68412,202.895,Pg,2014-09-06 07:45:40.860,manual,0.0,0.067
+GS.OK029.HHZ.00,0.684472,224.545,Pg,2014-09-06 07:45:40.900,manual,0.0,0.077
+N4.T35B.BHZ.--,0.689118,24.195,Pg,2014-09-06 07:45:41.040,manual,0.1,0.083
+OK.KNG1.EHZ.--,0.689705,257.32,Pg,2014-09-06 07:45:40.810,manual,-0.2,0.109
+GS.OK028.HHZ.00,0.741725,192.513,Pg,2014-09-06 07:45:41.880,manual,-0.1,0.061
+GS.OK025.HHZ.00,0.802355,208.761,Pg,2014-09-06 07:45:42.850,manual,-0.3,0.056
+OK.BCOK.HHZ.--,0.872169,224.079,Pg,2014-09-06 07:45:44.090,manual,-0.4,0.055
+GS.KAN13.HHZ.01,0.876607,325.931,Pg,2014-09-06 07:45:44.180,manual,-0.4,0.09
+OK.CROK.HHZ.--,0.928713,283.867,Pg,2014-09-06 07:45:45.130,manual,-0.4,0.085
+TA.TUL1.BHZ.--,0.946296,113.077,Pg,2014-09-06 07:45:45.840,manual,0.0,0.069
+GS.OK026.HHZ.00,0.991937,208.912,Pg,2014-09-06 07:45:46.060,manual,-0.7,0.042
+OK.OKCSW.EHZ.--,0.995393,208.09,Pg,2014-09-06 07:45:46.080,manual,-0.7,0.042
+OK.FNO.HHZ.01,1.11622,203.183,Pg,2014-09-06 07:45:48.530,manual,-0.6,0.036
+OK.W35A.EHZ.--,1.13179,180.423,Pg,2014-09-06 07:45:48.450,manual,-1.0,0.039
+GS.KAN11.HHZ.01,1.24554,317.745,Pn,2014-09-06 07:45:50.750,manual,-0.8,0.112
+GS.KAN10.HHZ.01,1.29441,310.537,Pn,2014-09-06 07:45:51.650,manual,-0.6,0.112
+OK.U32A.BHZ.--,1.7281,273.698,Pn,2014-09-06 07:45:58.740,manual,0.5,0.111
+OK.X34A.HHZ.--,1.85867,205.456,Pn,2014-09-06 07:46:00.580,manual,0.6,0.147
+OK.QUOK.HHN.--,0.171049,132.321,Sg,2014-09-06 07:45:34.300,manual,0.7,0.143
+GS.OK027.HH1.00,0.666877,210.777,Sg,2014-09-06 07:45:49.800,manual,0.6,0.065
+GS.OK005.HNE.01,0.68412,202.895,Sg,2014-09-06 07:45:50.440,manual,0.7,0.062
+N4.T35B.BHE.--,0.689118,24.195,Sg,2014-09-06 07:45:49.950,manual,0.0,0.078
+OK.KNG1.EHN.--,0.689705,257.32,Sg,2014-09-06 07:45:50.180,manual,0.2,0.102
+OK.BCOK.HHN.--,0.872169,224.079,Sg,2014-09-06 07:45:55.790,manual,0.0,0.061
+OK.CROK.HHN.--,0.928713,283.867,Sg,2014-09-06 07:45:57.430,manual,-0.2,0.099
+TA.TUL1.BHN.--,0.946296,113.077,Sg,2014-09-06 07:45:57.950,manual,-0.2,0.082

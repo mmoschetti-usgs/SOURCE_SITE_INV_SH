@@ -1,0 +1,70 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000tv0l
+#time = 2015-03-04 12:33:16.500000
+#location = 6km SSW of Guthrie, Oklahoma
+#latitude = 35.8223
+#longitude = -97.4547
+#depth = 4.7
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000tv0l
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.BCOK.HHZ.--,0.207664,217.321,Pg,2015-03-04 12:33:20.900,manual,0.3,3.26
+GS.OK025.HHZ.00,0.258773,158.413,Pg,2015-03-04 12:33:21.830,manual,0.3,3.04
+OK.OKCSW.EHZ.--,0.416115,178.122,Pg,2015-03-04 12:33:24.820,manual,0.3,2.49
+GS.OK031.HHZ.00,0.516639,75.1862,Pg,2015-03-04 12:33:26.790,manual,0.4,2.24
+OK.QUOK.HHZ.--,0.698569,59.8679,Pg,2015-03-04 12:33:29.990,manual,0.1,1.89
+OK.CROK.HHZ.--,0.804234,328.017,Pg,2015-03-04 12:33:32.340,manual,0.4,1.73
+OK.FNO.HHZ.01,0.565345,175.558,Pg,2015-03-04 12:33:27.900,manual,0.5,2.13
+US.WMOK.BHZ.10,1.53216,225.462,Pn,2015-03-04 12:33:44.730,manual,0.1,1.2
+OK.X34A.HHZ.--,1.2572,194.358,Pn,2015-03-04 12:33:40.620,manual,-0.2,1.24
+N4.T35B.BHZ.--,1.33071,34.5987,Pn,2015-03-04 12:33:41.370,manual,-0.4,1.23
+NQ.OK915.HNZ.01,0.569168,76.4912,Pg,2015-03-04 12:33:27.700,manual,0.3,2.13
+GS.KAN14.HHZ.01,1.20421,340.238,Pn,2015-03-04 12:33:39.240,manual,-0.8,1.25
+TA.TUL1.BHZ.--,1.35345,85.7889,Pn,2015-03-04 12:33:40.280,manual,-1.8,1.23
+GS.KAN01.HHZ.01,1.3509,349.631,Pn,2015-03-04 12:33:42.030,manual,-0.1,1.23
+OK.U32A.BHZ.--,1.37046,294.391,Pn,2015-03-04 12:33:42.090,manual,-0.3,1.22
+GS.KAN08.HHZ.01,1.46199,343.63,Pn,2015-03-04 12:33:43.980,manual,0.4,1.21
+OK.X37A.BHZ.--,2.10334,125.192,Pn,2015-03-04 12:33:53.250,manual,0.8,1.13
+TA.W39A.BHZ.--,3.05908,100.717,Pn,2015-03-04 12:34:06.030,manual,0.5,1.02
+US.MIAR.BHZ.00,3.42233,110.727,Pn,2015-03-04 12:34:11.630,manual,1.1,0.98
+AG.WHAR.HHZ.00,4.24489,95.6795,Pn,2015-03-04 12:34:21.920,manual,0.1,0.91
+N4.R40B.BHZ.--,4.82427,57.7497,Pn,2015-03-04 12:34:29.870,manual,0.1,0.87
+GS.OK025.HH2.00,0.258773,158.413,Sg,2015-03-04 12:33:25.950,manual,1.0,1.29
+OK.OKCSW.EHE.--,0.416115,178.122,Sg,2015-03-04 12:33:31.070,manual,1.1,1.21
+GS.OK031.HH2.00,0.516639,75.1862,Sg,2015-03-04 12:33:33.850,manual,0.7,1.17
+OK.FNO.HHE.01,0.565345,175.558,Sg,2015-03-04 12:33:36.110,manual,1.4,1.15
+OK.QUOK.HHE.--,0.698569,59.8679,Sg,2015-03-04 12:33:37.490,manual,-1.5,1.1
+TA.X40A.BHZ.--,4.01304,108.041,Pn,2015-03-04 12:34:18.650,manual,0.0,0.93
+AG.HHAR.HHZ.00,2.88469,79.8185,Pn,2015-03-04 12:34:03.040,manual,-0.1,1.04
+N4.S39B.BHZ.--,3.80611,59.4388,Pn,2015-03-04 12:34:16.270,manual,0.4,0.95
+TA.WHTX.BHZ.--,3.82123,180.018,Pn,2015-03-04 12:34:15.370,manual,-0.7,0.95

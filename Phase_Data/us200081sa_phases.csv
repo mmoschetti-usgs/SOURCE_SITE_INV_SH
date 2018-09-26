@@ -1,0 +1,73 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = us200081sa
+#time = 2016-12-16 14:20:42.100000
+#location = 12km S of Caldwell, Kansas
+#latitude = 36.9182
+#longitude = -97.5809
+#depth = 6.8
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/us200081sa
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+OK.CROK.HHZ.--,0.524339,218.206,Pg,2016-12-16 14:20:52.420,manual,0.2,2.22
+OK.GC02.EHZ.--,0.233156,253.493,Pg,2016-12-16 14:20:46.980,manual,0.3,3.15
+GS.OK046.HHZ.00,0.750793,133.633,Pg,2016-12-16 14:20:56.700,manual,0.2,1.81
+Y7.PW15.EHZ.--,0.639681,134.377,Pg,2016-12-16 14:20:54.520,manual,0.1,1.99
+GS.OK032.HHZ.00,0.517624,257.445,Pg,2016-12-16 14:20:52.430,manual,0.3,2.24
+OK.CHOK.HHZ.--,1.41797,162.614,Pn,2016-12-16 14:21:08.160,manual,-0.1,1.21
+US.WMOK.BHZ.10,2.38407,204.492,Pn,2016-12-16 14:21:23.160,manual,1.6,1.09
+US.CBKS.BHZ.00,2.54835,318.614,Pn,2016-12-16 14:21:23.710,manual,-0.1,1.07
+TA.TUL1.BHZ.--,1.75895,124.342,Pn,2016-12-16 14:21:13.280,manual,0.3,1.17
+OK.W35A.HHZ.--,1.8525,161.788,Pn,2016-12-16 14:21:15.850,manual,1.6,1.15
+GS.KAN13.HHZ.01,0.125514,41.1109,Pg,2016-12-16 14:20:45.360,manual,0.6,3.72
+GS.KAN09.HHZ.01,0.219543,352.176,Pg,2016-12-16 14:20:47.010,manual,0.5,3.21
+GS.KAN14.HHZ.01,0.308558,277.287,Pg,2016-12-16 14:20:48.380,manual,0.2,2.84
+GS.KS20.HHZ.00,0.311646,3.90687,Pg,2016-12-16 14:20:48.780,manual,0.6,2.83
+OK.BLOK.HHZ.--,0.333035,118.075,Pg,2016-12-16 14:20:48.850,manual,0.3,2.75
+GS.OK050.HHZ.00,0.710838,137.153,Pg,2016-12-16 14:20:55.410,manual,-0.4,1.87
+ZD.RH11.EHZ.--,0.713435,156.936,Pg,2016-12-16 14:20:55.890,manual,0.1,1.87
+GS.OK048.HHZ.00,0.716591,134.17,Pg,2016-12-16 14:20:55.520,manual,-0.4,1.86
+N4.T35B.BHZ.--,0.856733,89.8126,Pg,2016-12-16 14:20:58.630,manual,0.1,1.66
+OK.QUOK.HHZ.--,1.02451,136.416,Pg,2016-12-16 14:21:01.410,manual,-0.4,1.48
+ZD.RH07.EHZ.--,1.05493,159.676,Pg,2016-12-16 14:21:01.990,manual,-0.4,1.45
+OK.HTCH.HHZ.--,1.08443,214.199,Pg,2016-12-16 14:21:02.340,manual,-0.6,1.42
+GS.OK053.HHZ.00,1.10575,144.441,Pg,2016-12-16 14:21:02.960,manual,-0.4,1.4
+GS.OK052.HHZ.00,1.11579,145.559,Pg,2016-12-16 14:21:02.730,manual,-0.8,1.39
+OK.BCOK.HHZ.--,1.25915,181.052,Pn,2016-12-16 14:21:04.690,manual,-1.4,1.24
+GS.OK025.HHZ.00,1.34875,171.554,Pn,2016-12-16 14:21:06.560,manual,-0.8,1.22
+OK.DEOK.HHZ.--,1.38393,140.534,Pn,2016-12-16 14:21:07.690,manual,-0.1,1.22
+OK.FNO.HHZ.01,1.66373,174.928,Pn,2016-12-16 14:21:10.900,manual,-0.7,1.18
+N4.R32B.BHZ.--,1.74909,329.498,Pn,2016-12-16 14:21:13.570,manual,0.7,1.17
+OK.RLOK.HHZ.--,2.18894,109.248,Pn,2016-12-16 14:21:20.260,manual,1.4,1.11
+GS.KAN13.HHN.01,0.125514,41.1109,Sg,2016-12-16 14:20:47.420,manual,0.8,1.37
+GS.KAN09.HHE.01,0.219543,352.176,Sg,2016-12-16 14:20:50.390,manual,1.0,1.31
+OK.GC02.EHN.--,0.233156,253.493,Sg,2016-12-16 14:20:50.220,manual,0.4,1.31

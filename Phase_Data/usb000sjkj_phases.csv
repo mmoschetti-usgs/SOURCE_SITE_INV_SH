@@ -1,0 +1,48 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000sjkj
+#time = 2014-10-02 18:03:09.640000
+#location = 9km SE of Harper, Kansas
+#latitude = 37.2270
+#longitude = -97.9502
+#depth = 5.0
+#magnitude = 2.9
+#magtype = mwr
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000sjkj
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.KAN12.HHZ.01,0.0799531,331.527,Pg,2014-10-02 18:03:11.080,manual,-0.4,0.0
+NQ.KAN02.HNZ.01,0.0641405,117.107,Pg,2014-10-02 18:03:10.990,manual,-0.2,0.0
+GS.KAN10.HHZ.01,0.155138,228.29,Pg,2014-10-02 18:03:13.030,manual,0.3,0.0
+OK.CROK.HHZ.--,0.72142,182.125,Pg,2014-10-02 18:03:23.300,manual,-0.2,0.124
+GS.KAN08.HHN.01,0.0165243,268.963,Pg,2014-10-02 18:03:10.610,manual,0.0,0.0
+GS.KAN05.HHZ.01,0.133567,152.207,Pg,2014-10-02 18:03:12.370,manual,0.0,0.0
+GS.KAN05.HHN.01,0.133567,152.207,Sg,2014-10-02 18:03:14.380,manual,0.2,0.114
+NQ.KAN02.HNN.01,0.0641405,117.107,Sg,2014-10-02 18:03:12.380,manual,0.1,0.131

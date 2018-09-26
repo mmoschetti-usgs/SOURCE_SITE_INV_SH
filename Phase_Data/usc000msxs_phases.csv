@@ -1,0 +1,73 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usc000msxs
+#time = 2014-02-18 15:17:18.850000
+#location = 12km SSW of Guthrie, Oklahoma
+#latitude = 35.7710
+#longitude = -97.4540
+#depth = 4.8
+#magnitude = 2.8
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usc000msxs
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK025.HHZ.00,0.211758,153.453,Pg,2014-02-18 15:17:23.300,manual,0.3,0.0
+OK.OKCSW.EHZ.--,0.364936,177.948,Pg,2014-02-18 15:17:26.060,manual,0.2,0.0
+GS.OK026.HHZ.00,0.354931,179.657,Pg,2014-02-18 15:17:25.870,manual,0.2,0.0
+OK.FNO.HHZ.01,0.514276,175.18,Pg,2014-02-18 15:17:29.340,manual,0.6,0.0
+OK.W35A.EHZ.--,0.77743,142.35,Pg,2014-02-18 15:17:33.290,manual,-0.5,0.06
+OK.CROK.HHZ.--,0.848371,329.816,Pg,2014-02-18 15:17:34.920,manual,-0.2,0.045
+US.WMOK.BHZ.10,1.49711,226.874,Pn,2014-02-18 15:17:45.810,manual,-0.6,0.05
+US.MIAR.BHZ.00,3.40401,109.926,Pn,2014-02-18 15:18:13.120,manual,0.5,0.033
+GS.OK029.HHZ.00,0.0255561,358.359,Pg,2014-02-18 15:17:20.170,manual,0.3,0.0
+GS.ADOK.HNZ.--,0.136571,150.372,Pg,2014-02-18 15:17:21.880,manual,0.3,0.0
+OK.BCOK.HHZ.--,0.170235,227.98,Pg,2014-02-18 15:17:22.340,manual,0.1,0.0
+GS.OK029.HH2.00,0.0255561,358.359,Sg,2014-02-18 15:17:21.160,manual,0.6,0.14
+GS.ADOK.HNN.--,0.136571,150.372,Sg,2014-02-18 15:17:24.300,manual,0.8,0.092
+GS.OK001.HNZ.01,0.248617,147.351,Pg,2014-02-18 15:17:24.000,manual,0.3,0.0
+OK.X34A.HHZ.--,1.20782,194.987,Pg,2014-02-18 15:17:41.570,manual,-0.4,0.04
+TA.TUL1.BHZ.--,1.3576,83.6328,Pn,2014-02-18 15:17:43.200,manual,-1.3,0.061
+OK.U32A.BHZ.--,1.39289,296.3,Pn,2014-02-18 15:17:44.420,manual,-0.6,0.047
+OK.X37A.BHZ.--,2.07379,124.046,Pn,2014-02-18 15:17:53.650,manual,-0.7,0.037
+ZW.AZDA.EHZ.01,2.7926,181.748,Pn,2014-02-18 15:18:05.970,manual,1.7,0.023
+ZW.AZLE.HHZ.--,2.7953,185.735,Pn,2014-02-18 15:18:04.210,manual,-0.1,0.024
+AG.HHAR.HHZ.00,2.89362,78.82,Pn,2014-02-18 15:18:05.150,manual,-0.5,0.044
+ZW.AZWP.HHZ.--,2.98898,183.33,Pn,2014-02-18 15:18:06.920,manual,0.0,0.023
+TA.W39A.BHZ.--,3.04942,99.7747,Pn,2014-02-18 15:18:07.980,manual,0.2,0.039
+ZW.AZWR.HHZ.--,3.03641,193.773,Pn,2014-02-18 15:18:07.610,manual,0.0,0.025
+US.CBKS.BHZ.00,3.54123,329.743,Pn,2014-02-18 15:18:15.330,manual,0.8,0.022
+US.AMTX.BHZ.00,3.56745,256.861,Pn,2014-02-18 15:18:15.550,manual,0.6,0.036
+TA.U40A.BHZ.--,3.77261,79.7446,Pn,2014-02-18 15:18:17.420,manual,-0.3,0.037
+TA.WHTX.BHZ.--,3.77004,180.027,Pn,2014-02-18 15:18:18.250,manual,0.6,0.019
+TA.X40A.BHZ.--,3.99694,107.347,Pn,2014-02-18 15:18:21.000,manual,0.2,0.03
+N4.237B.BHZ.--,4.00112,159.53,Pn,2014-02-18 15:18:20.190,manual,-0.6,0.017
+AG.WHAR.HHZ.00,4.23956,94.9935,Pn,2014-02-18 15:18:24.160,manual,0.0,0.032
+TA.W41B.BHZ.--,4.29046,96.4683,Pn,2014-02-18 15:18:24.310,manual,-0.5,0.031
+TA.MSTX.BHZ.--,4.72703,249.195,Pn,2014-02-18 15:18:30.770,manual,-0.2,0.029

@@ -1,0 +1,68 @@
+#%This file contains information about either a preferred
+#%solution for a given earthquake, or a solution from 
+#%a particular catalog/network.
+#%The header information will consist of the following fields:
+#%--------------------------------------------------------------
+#%id: The ID for the event from the preferred or specific network.
+#%time: The time of the event, always in UTC.
+#%location: A string describing the earthquake location.
+#%latitude: Earthquake latitude in decimal degrees.
+#%longitude: Earthquake longitude in decimal degrees.
+#%depth: Earthquake depth in kilometers.
+#%magnitude: Earthquake magnitude
+#%magtype: Magnitude type (mw,mww,mb,etc.)
+#%url:  The ComCat URL where all of the data for this earthquake can be found.
+#%*_mrr,mtt,mpp,mrt,mrp,mtp: Moment tensor components (if available) from preferred source (N m).
+#%*_np1_strike,dip,rake: Two sets of nodal plane angles for focal mechanism.
+#%--------------------------------------------------------------
+#%The remaining rows/columns contain the phase data for the event,
+#%with the following columns:
+#%--------------------------------------------------------------
+#%Channel: Network.Station.Channel.Location (NSCL) style station description.
+#%         ("--" indicates missing information)
+#%Distance: Distance (kilometers) from epicenter to station.
+#%Azimuth: Azimuth (degrees) from epicenter to station.
+#%Phase: Name of the phase (Pn,Pg, etc.)
+#%Arrival Time: Pick arrival time (UTC).
+#%Status: "manual" or "automatic".
+#%Residual: Arrival time residual.
+#%Weight: Arrival weight.
+#%--------------------------------------------------------------
+#id = usb000rrac
+#time = 2014-07-09 16:25:26.500000
+#location = 7km S of Langston, Oklahoma
+#latitude = 35.8824
+#longitude = -97.2657
+#depth = 5.2
+#magnitude = 2.5
+#magtype = ml
+#url = https://earthquake.usgs.gov/earthquakes/eventpage/usb000rrac
+Channel,Distance,Azimuth,Phase,Arrival Time,Status,Residual,Weight
+GS.OK029.HHZ.00,0.175964,240.94,Pg,2014-07-09 16:25:30.320,manual,0.3,0.0
+GS.OK027.HHZ.00,0.170656,184.896,Pg,2014-07-09 16:25:30.300,manual,0.4,0.0
+GS.OK025.HHZ.00,0.306336,191.076,Pg,2014-07-09 16:25:32.840,manual,0.4,0.0
+GS.OK028.HHZ.00,0.361145,152.533,Pg,2014-07-09 16:25:33.960,manual,0.5,0.0
+OK.BCOK.HHZ.--,0.358887,231.231,Pg,2014-07-09 16:25:33.700,manual,0.3,0.0
+OK.QUOK.HHZ.--,0.536233,57.3012,Pg,2014-07-09 16:25:37.070,manual,0.3,0.0
+OK.W35A.EHZ.--,0.794964,156.218,Pg,2014-07-09 16:25:41.330,manual,-0.4,0.067
+OK.KNG1.EHZ.--,0.428525,305.714,Pg,2014-07-09 16:25:35.030,manual,0.3,0.0
+N4.T35B.BHZ.--,1.19762,30.2947,Pg,2014-07-09 16:25:48.750,manual,-0.7,0.033
+GS.ADOK.HNZ.--,0.245365,200.478,Pg,2014-07-09 16:25:31.780,manual,0.5,0.0
+GS.OK026.HHZ.00,0.490012,198.032,Pg,2014-07-09 16:25:35.430,manual,-0.5,0.0
+OK.OKCSW.EHZ.--,0.496128,196.482,Pg,2014-07-09 16:25:36.030,manual,0.0,0.0
+OK.FNO.HHZ.01,0.633339,190.084,Pg,2014-07-09 16:25:39.240,manual,0.6,0.056
+OK.CROK.HHZ.--,0.850118,317.141,Pg,2014-07-09 16:25:42.670,manual,-0.2,0.082
+OK.KAY1.HHZ.--,0.879581,2.79999,Pg,2014-07-09 16:25:43.180,manual,-0.2,0.048
+GS.KAN13.HHZ.01,1.14113,351.444,Pg,2014-07-09 16:25:47.970,manual,-0.4,0.036
+TA.TUL1.BHZ.--,1.19696,88.2304,Pg,2014-07-09 16:25:48.200,manual,-1.3,0.062
+GS.OK027.HH2.00,0.170656,184.896,Sg,2014-07-09 16:25:32.550,manual,0.3,0.072
+OK.X34A.HHZ.--,1.3601,200.113,Pn,2014-07-09 16:25:52.120,manual,0.0,0.124
+GS.KAN10.HHZ.01,1.4074,331.898,Pn,2014-07-09 16:25:52.610,manual,-0.2,0.091
+GS.KAN11.HHZ.01,1.4202,338.649,Pn,2014-07-09 16:25:53.510,manual,0.5,0.086
+OK.U32A.BHZ.--,1.49011,289.956,Pn,2014-07-09 16:25:54.060,manual,0.1,0.118
+US.WMOK.BHZ.10,1.68497,227.776,Pn,2014-07-09 16:25:56.560,manual,-0.1,0.121
+OK.X37A.BHZ.--,2.01727,129.212,Pn,2014-07-09 16:26:01.950,manual,0.8,0.093
+N4.U38B.BHZ.--,2.39589,75.7385,Pn,2014-07-09 16:26:06.930,manual,0.5,0.068
+AG.HHAR.HHZ.00,2.72319,80.6029,Pn,2014-07-09 16:26:10.930,manual,0.0,0.065
+US.MIAR.BHZ.00,3.30192,112.754,Pn,2014-07-09 16:26:18.800,manual,0.0,0.068
+N4.S39B.BHZ.--,3.64347,59.137,Pn,2014-07-09 16:26:23.770,manual,0.2,0.048
