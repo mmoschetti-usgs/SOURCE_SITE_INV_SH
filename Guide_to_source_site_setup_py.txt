@@ -1,0 +1,26 @@
+This is a guide to setting up the input files for the source site inversion.
+The first step is to edit the setup files and then run the python script ‘setup_source_site_files.py’.  This will gather all the sac files and set up all the files needed to run the Fortran inversion code.
+
+There are three input files for the setup_source_site_files.py
+1. event_list.csv
+	A list of the events you want to include in the inversion.  It is necessary to have the event ID in order to match with picks from comcat otherwise the picks will have to be done manually.
+
+2. station_list.csv
+	A list of the stations you want to include in the inversion.
+
+3. setup_patameters.csv
+	Define any of the variable parameters.  Below are definitions for the possible parameters:
+
+	waveformlength - length in seconds that you want all the sac files to be, default is now set to 100
+
+	fmin1,fmin2,fmax1,fmax2 - these are the four corners of the bandpass filter in Hz, default is currently set to 0.01 0.025 10.0 20.0
+	
+	magfilt - This is a yes or no question, yes means you want to apply an additional high pass filter that varies by the event magnitude (higher magnitude means lower filter cut off. No means you just use the bandpass defined above.
+
+	magfilterlowerlimit - If you are using the magfilt option this is the filter cut off you want at magnitude 3.0.  Currently it is set to 0.5 Hz which means the high pass at M 3.0 is 0.5 Hz and at M 6.0 it is about 0.025 Hz.  Lowering this value will shift the high pass cut off for all magnitudes.
+
+	PorS - This is asking if you are inverting for P-wave spectra or S-wave.  This will determine which picks and window is used. The possible input for this are just P or S.
+
+	windowtype - This defines the type of window you want to use over your P or S arrival.  The two options are fixed or variable.  For a fixed window you are using a fixed number of seconds for the window in all the events.  For variable it will use the window length from the P pick to the S pick regardless of whether you are using P or S spectra.
+
+	windowlength - If you define windowtype as fixed this parameter is the length in seconds of the window you want.  If you define windowtype as variable then this is the multiplier applied to the P-pick to S-pick window.  For example if you P to S pick separation is 5 seconds and you give a window length of 1 then it will remain 5 seconds.  If you want a larger multiplier you could put 2 and get 10 second window or 0.5 and a 2.5 second window etc.
