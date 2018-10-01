@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 # User needs to run "conda activate comcat" before running script
-print("Prior to first call, user needs to run:\n    conda activate comcat")
+print("Prior to first call, user needs to activate comcat environment:\n    conda activate comcat")
 
 ## Import needed packages and functions
 import obspy as op
@@ -33,8 +33,8 @@ if os.path.exists('fortran_stations.txt'):
 # Import event and station list
 #eventFile=str(cwd+'/event_list_1.csv')
 #eventFile=str(cwd+'/event_list.csv')
-#eventFile=str(cwd+'/event_list.csv')
-eventFile=str(cwd+'/event_list_test.csv')
+#eventFile=str(cwd+'/event_list_test.csv')
+eventFile=str(cwd+'/event_list.csv')
 stationFile=str(cwd+'/station_list.csv')
 #stationFile=str(cwd+'/station_list_test.csv')
 parameterFile=str(cwd+'/setup_parameters.csv')
