@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Sep 27 09:37:24 2018
+Updated Thu Oct 4 12:05
 
 @author: jrekoske
 
@@ -415,7 +416,7 @@ for file1 in os.listdir(dataDir):
             for xx in range(len(sacfiles_z)):
 
                 file_name = sacfiles_z[xx]
-                sacfiles_all = [f for f in sacfilesEv if file_name[0:22] in f]
+                sacfiles_all = [f for f in sacfilesEv if file_name[0:23] in f]
                 file_name_e = [f for f in sacfiles_all if 'E.sac' in f or '1.sac' in f]
                 file_name_n = [f for f in sacfiles_all if 'N.sac' in f or '2.sac' in f]
                 time_name = file_name[0:14]
