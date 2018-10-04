@@ -9,6 +9,7 @@ Faster version of setup source site files.
 
 """
 
+import sys
 import os
 import shutil
 import pandas as pd
@@ -28,6 +29,10 @@ def channel_split(chan):
     station = channel_split[1]
     channel = channel_split[2]
     location = channel_split[3]
+
+    if len(location) == 1:
+        location = '0' + location
+
     return (network, station, channel, location)
 
 
@@ -140,7 +145,7 @@ for ev_num, event_id in enumerate(df_event.id):
     # Get all the waveforms for this event from IRIS
     success = False
     num_tries = 0
-    while (success is False and num_tries < 10):
+    while (success is False and num_tries < 5):
         try:
             start = time.time()
             st = fdsn_client.get_waveforms_bulk(bulk, attach_response=True)
@@ -151,13 +156,18 @@ for ev_num, event_id in enumerate(df_event.id):
             print('No data was available.')
             break
         except FDSNException:
+            print('FDSN Error trying to request data. Trying again...')
+            num_tries += 1
+        except KeyboardInterrupt:
+            sys.exit('Keyboard interrupt.')
+        except:
             print('Error trying to request data. Trying again...')
             num_tries += 1
 
     if not success:
-        continue
         print('Failed to get waveform data. Continuing on to the next event.')
         print('------------------------------------------------------------------')
+        continue
 
     for tr in st:
 
@@ -301,17 +311,21 @@ for xx in range(len(stations)):
         netst = networks[xx]
         stast = stations[xx]
         stachan = channels[xx]
-        staloc = locations[xx]
+        staloc = str(locations[xx])
+        if len(staloc) == 1:
+            staloc = '0' + staloc
+
         print('inv-get_stations: station/network: ', stast, netst)
         print('staloc/start-time/end-time: ', staloc, t_start, t_end)
 
-        # Sometimes station inventory is not avaialble
+        # Sometimes station inventory is not available
+
         try:
             inv = fdsn_client.get_stations(network=netst, station=stast,
                                            location=staloc, channel=stachan,
                                            starttime=t_start, endtime=t_end,
-                                           level='channel', includeavailability=True)
-        except:
+                                           level='channel')
+        except FDSNNoDataException:
             print('Unable to get station inventory from IRIS for', stast)
 
             # Waveform data is useless without having station information
@@ -326,6 +340,10 @@ for xx in range(len(stations)):
                     files_to_delete = glob.glob(cwd + '/data/' + fil + '/*' + stast + '*.sac')
                     for del_fil in files_to_delete:
                         os.remove(del_fil)
+
+            print('Continuing to next station.')
+            continue
+
         net = inv[0]
         sta = net[0]
         station_lat = sta.latitude
