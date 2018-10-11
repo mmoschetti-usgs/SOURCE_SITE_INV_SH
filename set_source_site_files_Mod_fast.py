@@ -54,6 +54,10 @@ df_event = pd.read_csv(eventFile)
 df_station = pd.read_csv(stationFile)
 df_setup = pd.read_csv(parameterFile)
 
+# Set up the datframe for the events and stations with data
+df_events_with_data = pd.DataFrame(columns=df_event.columns)
+df_stations_with_data = pd.DataFrame(columns=df_station.columns)
+
 print('Reading event file:', eventFile)
 print('Reading station file:', stationFile)
 print('Reading parameter file:', parameterFile)
@@ -74,7 +78,7 @@ minWindow = df_setup.windowlength[0]
 outputRate = df_setup.outputSampleRate[0]
 
 # Set up IRIS client
-fdsn_client = Client('https://service.iris.edu')
+fdsn_client = Client('IRIS')
 print('Using minimum window duration of', minWindow, 's')
 print('Decimating to output rate of', outputRate, 'Hz')
 
@@ -101,6 +105,31 @@ for ev_num, event_id in enumerate(df_event.id):
     print(event_id + ' (' + str(ev_num + 1) + '/' + str(len(df_event.id)) + ')')
     t1 = UTCDateTime(str(df_event.year[ev_num])+'-'+str(df_event.month[ev_num])+'-'+str(df_event.day[ev_num])+'T'+str(df_event.hour[ev_num])+':'+str(df_event.minute[ev_num])+':'+str(df_event.second[ev_num])+'.000')
     t2 = t1 + waveformlength
+
+    # Format the time and station to have consistent lengths
+    year = str(t1.year)
+    month = str(t1.month)
+    day = str(t1.day)
+    hour = str(t1.hour)
+    minute = str(t1.minute)
+    second = str(t1.second)
+
+    if (len(month) == 1):
+        month = '0' + month
+
+    if (len(day) == 1):
+        day = '0' + day
+
+    if (len(hour) == 1):
+        hour = '0' + hour
+
+    if (len(minute) == 1):
+        minute = '0' + minute
+
+    if (len(second) == 1):
+        second = '0' + second
+
+    ev_string = year + month + day + hour + minute + second
 
     # Load picks for this event
     pick_id = df_event.id[ev_num]
@@ -235,34 +264,9 @@ for ev_num, event_id in enumerate(df_event.id):
 
         tr.detrend('simple').taper(0.05, type='hann').filter('highpass', freq=fmin, corners=2, zerophase=True)
 
-        # Format the time and station to have consistent lengths
-        year = str(t1.year)
-        month = str(t1.month)
-        day = str(t1.day)
-        hour = str(t1.hour)
-        minute = str(t1.minute)
-        second = str(t1.second)
-
-        if (len(month) == 1):
-            month = '0' + month
-
-        if (len(day) == 1):
-            day = '0' + day
-
-        if (len(hour) == 1):
-            hour = '0' + hour
-
-        if (len(minute) == 1):
-            minute = '0' + minute
-
-        if (len(second) == 1):
-            second = '0' + second
-
         stnn = tr.stats.station
         while (len(stnn) < 5):
             stnn += '_'
-
-        ev_string = year + month + day + hour + minute + second
 
         # Create a directory for each event if it doesn't already exist
         if not os.path.exists(cwd + '/data/'):
@@ -284,6 +288,25 @@ for ev_num, event_id in enumerate(df_event.id):
             window.append(str(pick_file_diff_ps))
             ev_time_file.append(ev_string)
             channel_list.append(stnn + '.' + tr.stats.location + '.' + tr.stats.channel[0:2])
+
+        # Check if we already have this station in our stations with data dataframe
+        if ((df_stations_with_data.network == tr.stats.network) &
+            (df_stations_with_data.station == tr.stats.station) &
+            (df_stations_with_data.location == tr.stats.location)).any():
+            continue
+        else:
+            df_stations_with_data = df_stations_with_data.append(pd.Series([tr.stats.network, tr.stats.station,
+                                                                            tr.stats.location, tr.stats.channel[:-1] + '*'],
+                                                                            index=df_stations_with_data.columns), ignore_index=True)
+            df_stations_with_data.to_csv('stations_with_data.csv', sep=',', index=False)
+
+    # Check if we saved any data for this event
+    if os.path.exists(cwd + '/data/' + ev_string):
+
+        # Add to the dataframe of events with data if so
+        print('Found the directory:', ev_string)
+        df_events_with_data = df_events_with_data.append(df_event.iloc[ev_num])
+        df_events_with_data.to_csv('event_list_with_data.csv', sep=',', index=False)
 
     print('------------------------------------------------------------------')
 
@@ -320,7 +343,6 @@ for xx in range(len(stations)):
         print('staloc/start-time/end-time: ', staloc, t_start, t_end)
 
         # Sometimes station inventory is not available
-
         try:
             inv = fdsn_client.get_stations(network=netst, station=stast,
                                            location=staloc, channel=stachan,
