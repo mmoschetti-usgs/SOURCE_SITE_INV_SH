@@ -27,6 +27,27 @@ np.warnings.filterwarnings('ignore')  # To ignore numpy deprecation warning from
 def format2(value):
     return "%02.0f" % value
 
+def location_format(staLocIn):
+    staLoc=str(staLocIn)
+    if staLoc == '__':
+        locationV='--'
+    elif staLoc == 'nan':
+        locationV='--'
+    elif staLoc == '':
+        locationV='--'
+    elif staLoc == '0.0':
+        locationV='00'
+    elif staLoc == '1.0':
+        locationV='01'
+    elif staLoc == '2.0':
+        locationV='02'
+    elif staLoc == '20.0':
+        locationV='20'
+    else:
+        locationV=staLoc
+    print('formatted location: ',str(staLocIn),locationV)
+    return locationV
+
 #
 cwd = os.getcwd()
 
@@ -99,17 +120,19 @@ for ev_num, event_id in enumerate(df_event.id):
     dist_m,az,baz=calc_vincenty_inverse(latEv, lonEv, latCenter, lonCenter, a=6378137.0, f=0.0033528106647474805)
     dist_km=dist_m/1000
     if (dist_km < distEv and magEv>=minMag):
-        print('Event within distance threshold: ',dist_km,'(',lonEv,latEv,')')
+#        print('Event within distance threshold: ',dist_km,'(',lonEv,latEv,')')
 #        outStr=('year,month,day,hour,minute,second,magnitude,latitude,longitude,id\n')
         outStr=(str(df_event.year[ev_num])+','+str(format2(df_event.month[ev_num]))+','+str(format2(df_event.day[ev_num]))+','+str(format2(df_event.hour[ev_num]))+','+str(format2(df_event.minute[ev_num]))+','+str(format2(df_event.second[ev_num]))+','+str(df_event.magnitude[ev_num])+','+str(df_event.latitude[ev_num])+','+str(df_event.longitude[ev_num])+','+str(df_event.id[ev_num])+'\n')
         f.write(outStr)
         cntEv +=1
 # list number of events selected and close file
-print('Number of events within distance threshold of ',distEv,'km =',cntEv)
+print('  Number of events within distance threshold of ',distEv,'km =',cntEv)
 f.close()
 
 # reference start and end times from input to parameter file
-t_start = UTCDateTime('2009'+'-'+'01'+'-'+'01'+'T00:00:00.000')
+# first-available data is from event 20130801
+#t_start = UTCDateTime('2009'+'-'+'01'+'-'+'01'+'T00:00:00.000')
+t_start = UTCDateTime('2013'+'-'+'08'+'-'+'01'+'T00:00:00.000')
 t_end= UTCDateTime('2017'+'-'+'12'+'-'+'31'+'T23:59:59.000')
 cntSta=0
 print('Station sorting...')
@@ -118,11 +141,13 @@ outStr=('network,station,location,channel\n')
 f.write(outStr)
 for numSta, sta in enumerate(df_station.station):
     netW=df_station.network[numSta]
-    staLoc=str(df_station.location[numSta])
-    if staLoc == '__':
-        staLoc='--'
+#    staLoc=str(df_station.location[numSta])
+    staLoc=location_format(df_station.location[numSta])
+#    print(' location/staLoc:', df_station.location[numSta], staLoc)
+#    if staLoc == '__':
+#        staLoc='--'
     staChan=df_station.channel[numSta]
-#    print('   ',numSta,sta,netW,staLoc,staChan)
+    print('   ',numSta,sta,netW,staLoc,staChan)
     try:
         inv = fdsn_client.get_stations(network=netW, station=sta,
                                            location=staLoc, channel=staChan,
